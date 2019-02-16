@@ -5,27 +5,11 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
-//var token = '';
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-    client.user.setActivity("with silver's heart", {type: 'PLAYING'});
-    // uptimeUpdate();
+    client.user.setActivity("aaaAAAAAAAAAAAAAA", {type: 'PLAYING'});
 });
-
-
-var uptimeUpdate = function() {
-    let totalSeconds = (client.uptime / 1000);
-    let hours = Math.floor(totalSeconds / 3600);
-    totalSeconds %= 3600;
-    let minutes = Math.floor(totalSeconds / 60);
-    let seconds = Math.round(totalSeconds % 60);
-
-    let uptime = `${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-    client.user.setActivity("Online for: " + uptime); 
-}
-
-// node C:\Users\Jonathan\Desktop\DiscordBots\ItemBot\bot.js
 
 var calcMultiplier = function (level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
     // https://docs.google.com/document/d/1tt_cjHVJ5MqWxqi4EeIVd5zf2Uv8vK9TwL1bbW942Vw/edit
