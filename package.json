@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/Major-Lue/wcitembot"
+    "url": "git+https://github.com/Major-Lue/wcitembot"
   },
   "keywords": [
     "discord.js"
