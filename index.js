@@ -5,7 +5,7 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
-var token = 'process.env.TOKEN';
+//var token = '';
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
@@ -1025,5 +1025,4 @@ client.on('message', message => {
 
 });
 
-// node C:\Users\Jonathan\Desktop\DiscordBots\ItemBot\bot.js
-client.login(token);
+client.login(process.env.TOKEN);
