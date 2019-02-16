@@ -193,38 +193,6 @@ client.on('message', message => {
     var thirdInput;
     var fourthInput = "";
 
-    let oneEmoji = message.guild.emojis.find('name', "one1");
-    let twoEmoji = message.guild.emojis.find('name', "two5");
-    let threeEmoji = message.guild.emojis.find('name', "three3");
-    let fourEmoji = message.guild.emojis.find('name', "four4");
-    let fiveEmoji = message.guild.emojis.find('name', "five5");
-	
-	var doNothing = function () { }
-	
-	var oneReaction = function () {
-		message.react(oneEmoji).catch();
-		setTimeout(doNothing, 10000);
-	}
-	var twoReaction = function () {
-		message.react(twoEmoji).catch();
-		setTimeout(oneReaction, 500);
-	}
-	var threeReaction = function () {
-		message.react(threeEmoji).catch();
-		setTimeout(twoReaction, 500);
-	}
-	var fourReaction = function () {
-		message.react(fourEmoji).catch();
-		setTimeout(threeReaction, 500);
-	}
-	var fiveReaction = function () {
-		message.react(fiveEmoji).catch();
-		setTimeout(fourReaction, 500);
-	}
-if((message.content.includes('_ _') || message.channel.id == '376942095711338496') && !message.content.includes('[r]')) {
-	setTimeout(fiveReaction, 500);
-}
-	
     if (message.content === "ping" && !message.author.bot) {
         message.channel.send('Pong! Latency: ' + client.ping + 'ms');
     }
