@@ -1,0 +1,21 @@
+{
+  "name": "wcitembot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Major-Lue/wcitembot"
+  },
+  "keywords": [
+    "discord.js"
+  ],
+  "author": "majorlue",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
