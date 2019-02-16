@@ -16,7 +16,8 @@
     "url": "git+https://github.com/Major-Lue/wcitembot"
   },
   "keywords": [
-    "discord.js"
+    "discord.js",
+    "xhr"
   ],
   "author": "majorlue",
   "license": "ISC",
