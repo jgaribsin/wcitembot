@@ -5,7 +5,7 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
-var token = 'NDgzNDIwNTQ4MTU2NjIwODA0.DmTNZw.KYh-prgOFS3NYdk6vOL8fMYl2nA';
+var token = 'process.env.TOKEN';
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
