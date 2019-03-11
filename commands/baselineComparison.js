@@ -38,7 +38,7 @@ request.send();
               var botResponse = "Multiple items found: ";
 
               for (i = 0; i < parsedReturn.items.length; i++) {
-                  botResponse += "`" + parsedReturn.items[i].name + "`";
+                  botResponse += parsedReturn.items[i].name;
                   if (i + 1 < parsedReturn.items.length) botResponse += ", ";
                   else botResponse += ".";
               }
