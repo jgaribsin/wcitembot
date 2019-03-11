@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "engines": {
+  "engines": {
     "node": "10.15.1",
     "npm": "6.4.1"
   },
@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
+    "fs": "0.0.1-security",
     "xmlhttprequest": "^1.8.0"
   }
 }
