@@ -142,8 +142,10 @@ message.channel.send(botResponse);
 
 
               var baseStats = "";
-              if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger")
+              if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
                 message.channel.send("Please request an armour or accessory.");
+                return;
+              }
 
               else {
                   var iHealth = item.health;
