@@ -158,10 +158,25 @@ message.channel.send(botResponse);
                   var baseStatsStats = [iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
                   var baseStatsDisplay = ["fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
 
-                  baseStats += "health: " + iHealth + " --> placeholder (";
-                  if (item.accessoryType) baseStats += Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
-                  else baseStats += Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
-                  baseStats += ") (0.00x)\n";
+                  var baselineHealth = 0;
+                  var itemHealth = 0;
+                  if (item.accessoryType) {
+                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + ((iHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                    if (iHealthBonus !== 0) {
+                      itemHealth = iHealth + iHealthBonus;
+                      baseStats += "health (with health bonus): " + itemHealth + " (" + iHealth + " + " + iHealthBonus + ") --> placeholder (p +p) [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]\n";
+                    }
+                  }
+                  else {
+                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + ((iHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                    if (iHealthBonus !== 0) {
+                      itemHealth = iHealth + iHealthBonus;
+                      baseStats += "health (with health bonus): " + itemHealth + " (" + iHealth + " + " + iHealthBonus + ") --> placeholder (p +p) [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]\n";
+                    }
+                  }
+
                   for (i = 0; i < baseStatsStats.length; i++) {
                       if (baseStatsStats[i] !== undefined) {
                           if (baseStatsStats[i] !== 0)
