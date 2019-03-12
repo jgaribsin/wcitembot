@@ -1,0 +1,58 @@
+{
+  "name": "Arcane Anomaly",
+  "tier": 0,
+  "level": 75,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 432,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "SPELLDAMAGE": {
+      "minimum": -22,
+      "maximum": -16
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -25000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 20,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "CruukArcaneSpawnRanged",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFarcaneskeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Mega Fern",
+  "tier": 3,
+  "level": 83,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 175,
+    "damage": 3
+  },
+  "groups": [
+    "DEFENSIVE",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 600,
+      "maximum": 900
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 50,
+      "maximum": 75
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 60,
+      "maximum": 95
+    },
+    "HEALTHREGENRAW": {
+      "minimum": 55,
+      "maximum": 80
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -100000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "CorkusGigaBushBoar",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

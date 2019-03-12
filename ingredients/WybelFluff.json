@@ -1,0 +1,273 @@
+{
+  "name": "Wybel Fluff",
+  "tier": 0,
+  "level": 90,
+  "skills": [
+     "TAILORING"
+  ],
+  "sprite": {
+    "id": 287,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -28000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutSkyIslandsWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel5",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel6",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel7",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel8",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsWybel9",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsScaredWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsScaredWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsScaredWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsScaredWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsAffectionateWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsAffectionateWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsAffectionateWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsAffectionateWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutSkyIslandsAffectionateWybel5",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	{
+      "name": "SelvutWybelSpooky",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelNibbles",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelScotch",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelRocky",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelSandy",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel8",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel7",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel9",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel9",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel6",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel5",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsScaredWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsScaredWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsScaredWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsScaredWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelSeafoam",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsAffectionateWybel1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsAffectionateWybel2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsAffectionateWybel3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsAffectionateWybel4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutSkyIslandsAffectionateWybel5",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelBluebell",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelHoneydew",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+	 {
+      "name": "SelvutWybelFluffy",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

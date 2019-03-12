@@ -1,0 +1,72 @@
+{
+  "name": "Glowing Scales",
+  "tier": 1,
+  "level": 72,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 5,
+      "maximum": 12
+    },
+    "REFLECTION": {
+      "minimum": 5,
+      "maximum": 12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -17000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFshanjugin",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFnixie",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFKappadumda",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFKappadumdy",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFKappapoppa",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

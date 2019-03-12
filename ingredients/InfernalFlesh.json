@@ -1,0 +1,101 @@
+{
+  "name": "Infernal Flesh",
+  "tier": 2,
+  "level": 94,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 363,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 460,
+      "maximum": 600
+    },
+    "FIREDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 9
+    },
+    "FIREDEFENSE": {
+      "minimum": 8,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -184,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-MHTroglodyteMauler",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHTroglodyteRunt",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHTroglodyteChampion",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHTroglodyteScourge",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHHoundWild",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHHoundSavage",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcharringminotaur",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHMinotaur",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHCarrion",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeHydraRAREMOB",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

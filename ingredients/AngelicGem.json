@@ -1,0 +1,75 @@
+{
+  "name": "Angelic Gem",
+  "tier": 2,
+  "level": 98,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "RAINBOW",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "AIRDEFENSE": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "WATERDEFENSE": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "FIREDEFENSE": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "EARTHDEFENSE": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "THUNDERDEFENSE": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -59000,
+    "strengthRequirement": 12,
+    "dexterityRequirement": 12,
+    "intelligenceRequirement": 12,
+    "defenceRequirement": 12,
+    "agilityRequirement": 12
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DFangelofwar",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyAngelofWind",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyAngelofNature",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

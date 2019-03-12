@@ -1,0 +1,89 @@
+{
+  "name": "Gold Tooth",
+  "displayName": "Fake Tooth",
+  "tier": 0,
+  "level": 25,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 371,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LOOTBONUS": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "PirateBayMutineer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Hamscursedmutineer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "piratebay",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "AK-TavernBandit1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "AK-TavernBandit2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2DeadProspector",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2RymekCitizen1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2RymekCitizen2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2RymekCitizen3",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

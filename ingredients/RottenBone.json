@@ -1,0 +1,59 @@
+{
+  "name": "Rotten Bone",
+  "tier": 0,
+  "level": 8,
+  "skills": [
+    "WEAPONSMITHING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 352,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "SLOW"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "SPEED": {
+      "minimum": -2,
+      "maximum": -1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -12000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "suburbresident",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "burnedsuburbresident",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

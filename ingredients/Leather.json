@@ -1,0 +1,109 @@
+{
+  "name": "Leather",
+  "tier": 0,
+  "level": 2,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "cow",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+   {
+      "name": "SelvutDurumCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "DFArmoredrebelcow2",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "DFArmoredrebelcow1",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "DFrebelcow2",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "DFrebelcow1",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "Salt-RebelCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "ALEXEnragedBull",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "Salt-ArmouredCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "ALEXCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "LeoCapturedCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "LeoCapturedCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+   {
+      "name": "Moodle-CinfrasCow",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

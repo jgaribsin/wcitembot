@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-module.exports.run = async (client, message, args) => { return; }
+module.exports.run = async (client, prefix, ingredients, message, args) => { return; }
 
 exports.prefix = ".";
 

@@ -1,0 +1,61 @@
+{
+  "name": "Mixed Mineral Deposit",
+  "tier": 2,
+  "level": 95,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 15,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "FIRE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 7,
+      "maximum": 11
+    },
+    "HEALTHBONUS": {
+      "minimum": 750,
+      "maximum": 950
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": -85,
+      "maximum": -65
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -55000,
+    "strengthRequirement": 18,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossTERA4M2",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

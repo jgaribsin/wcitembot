@@ -1,0 +1,48 @@
+{
+  "name": "Forgotten Axe",
+  "tier": 1,
+  "level": 13,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 271,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 7,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -17000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "ImaxeDeadLumberjack",
+      "rarity": 4,
+      "rarityOffset": 50
+    }
+  ]
+}

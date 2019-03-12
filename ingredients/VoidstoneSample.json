@@ -1,0 +1,59 @@
+{
+  "name": "Voidstone Sample",
+  "tier": 1,
+  "level": 96,
+  "skills": [
+     "ALCHEMISM",
+     "JEWELING"
+  ],
+  "sprite": {
+    "id": 433,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "QUICK"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 30,
+      "maximum": 45
+    },
+    "MANASTEAL": {
+      "minimum": -1,
+      "maximum": -1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -41000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -23,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SkyStormscarredMiner",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyStormscarredMinerProj",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

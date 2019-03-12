@@ -1,0 +1,58 @@
+{
+  "name": "Torn Skin",
+  "tier": 0,
+  "level": 50,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "POISON": {
+      "minimum": 85,
+      "maximum": 120
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -22,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DFstirge",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcursedsilkspider",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcursedsilkspiderling",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

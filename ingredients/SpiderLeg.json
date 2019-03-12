@@ -1,0 +1,52 @@
+{
+  "name": "Spider Leg",
+  "tier": 0,
+  "level": 43,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 318,
+    "damage": 0
+  },
+  "groups": [
+    "QUICK"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": -60,
+      "maximum": -30
+    },
+    "SPEED": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -18000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 5
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "filiTawantula",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Cursed Ashes",
+  "tier": 2,
+  "level": 65,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 289,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -60,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-TribeShaman",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TribeWarrior",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpCormage",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpTeaka",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpLich",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFCursednpc",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFfinalstageadventurer",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFCursedadventurer",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

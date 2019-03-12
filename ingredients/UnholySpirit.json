@@ -1,0 +1,54 @@
+{
+  "name": "Unholy Spirit",
+  "tier": 0,
+  "level": 62,
+  "skills": [
+    "ALCHEMISM",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 353,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "SOULPOINTS": {
+      "minimum": -5,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 16,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFwraith",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFbanshee",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

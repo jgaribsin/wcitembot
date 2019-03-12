@@ -1,0 +1,57 @@
+{
+  "name": "Bottled Decay",
+  "tier": 2,
+  "level": 57,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 437,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "THUNDER"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 12,
+      "maximum": 18
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 12,
+      "maximum": 18
+    },
+    "HEALTHREGENRAW": {
+      "minimum": -60,
+      "maximum": -40
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -46,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "MalevolentMist",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

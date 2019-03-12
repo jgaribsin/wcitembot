@@ -1,0 +1,53 @@
+{
+  "name": "Marrow Dust",
+  "tier": 1,
+  "level": 92,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 15,
+      "maximum": 25
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -43,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-MHBones",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHCarrion",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Red Crystal Dust",
+  "tier": 3,
+  "level": 55,
+  "dropsFromLootChest": false,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 331,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -60,
+    "charges": 2
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanVulcini",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanCrystallizedFlareRARE",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

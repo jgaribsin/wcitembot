@@ -1,0 +1,54 @@
+{
+  "name": "Farcor's Trust",
+  "tier": 3,
+  "level": 99,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 378,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 25,
+      "maximum": 40
+    },
+    "HEALTHBONUS": {
+      "minimum": 2200,
+      "maximum": 2480
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -95,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "ImaxeSIRAREMOB1",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Ghostly Membrane",
+  "tier": 0,
+  "level": 70,
+  "skills": [
+    "TAILORING",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 378,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 1,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -24000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 8
+  },
+  "consumableOnlyIDs": {
+    "duration": -40,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFshade",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Revenant",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

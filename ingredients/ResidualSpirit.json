@@ -1,0 +1,68 @@
+{
+  "name": "Residual Spirit",
+  "tier": 2,
+  "level": 24,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 341,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "THUNDER"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 8,
+      "maximum": 16
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 10,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -33,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutTimeValleyLakeDarkCultist1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTimeValleyHighDarkCultist2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTimeValleyLakeVexation1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTimeValleyLakeVexation2",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

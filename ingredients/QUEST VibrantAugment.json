@@ -1,0 +1,68 @@
+{
+  "name": "Vibrant Augment",
+  "tier": 3,
+  "level": 7,
+  "dropsFromLootChest": false,
+  "untradeable": true,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM5OWU0N2U1NWMxNWQzZTI2NTI1YzVhNDcwZjI0OGUzMzVkMmZhYTNhNjM0MTBjNGRkZjQyZGEzNmFkMmYifX19",
+  "skills": [
+    "WEAPONSMITHING",
+	"WOODWORKING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+	"THUNDERDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+	"WATERDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+	"FIREDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+	"AIRDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -34000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "IngredientDummy",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

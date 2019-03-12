@@ -1,0 +1,59 @@
+{
+  "name": "Tanned Flesh",
+  "tier": 0,
+  "level": 35,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 367,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -17000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 4,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "2x2ScorchedZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Ranger",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RAREDiurnalCanyonSwooper",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

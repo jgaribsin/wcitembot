@@ -1,0 +1,58 @@
+{
+  "name": "Sandy Bonemeal",
+  "tier": 0,
+  "level": 34,
+  "skills": [
+    "JEWELING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 3
+    },
+    "AIRDEFENSE": {
+      "minimum": -3,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 6,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SandpileSkeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SandpileSaltySkeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

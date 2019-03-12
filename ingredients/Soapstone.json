@@ -1,0 +1,129 @@
+{
+  "name": "Soapstone",
+  "tier": 1,
+  "level": 59,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 1,
+    "damage": 5
+  },
+  "groups": [
+    "AIR",
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 23,
+      "maximum": 30
+    },
+    "HEALTHBONUS": {
+      "minimum": -230,
+      "maximum": -180
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -36000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 10
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+{
+      "name": "SelvutMaroRam1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRam2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRam3",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroScavenger1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroScavenger2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroScavenger3",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroScavenger4",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRamheadCharger1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRamheadCharger2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRamheadWorshipper1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRamheadWorshipper2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroBedrockBuster",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroAltitudeWalker",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroFerrousCrushbeast",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroAriesPriestRARE",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMaroRamRARE",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

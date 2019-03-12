@@ -1,0 +1,56 @@
+{
+  "name": "Major's Badge",
+  "tier": 3,
+  "level": 80,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+	"TAILORING",
+	"WEAPONSMITHING",
+	"WOODWORKING",
+	"JEWELING",
+	"ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 175,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -100000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -100,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": -15,
+    "right": -180,
+    "above": -110,
+    "under": -20,
+    "touching": 35,
+    "notTouching": -30
+  },
+"droppedBy": [
+    {
+      "name": "Tanti-FortCitizen4",
+      "rarity": 6,
+      "rarityOffset": 25
+    },
+    {
+      "name": "Moodle-TheseadMarshal",
+      "rarity": 6,
+      "rarityOffset": 25
+    }
+  ]
+}

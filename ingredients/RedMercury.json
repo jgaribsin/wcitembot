@@ -1,0 +1,52 @@
+{
+  "name": "Red Mercury",
+  "tier": 1,
+  "level": 98,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 377,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 800,
+      "maximum": 1100
+    },
+    "HEALTHREGENRAW": {
+      "minimum": -90,
+      "maximum": -70
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -132,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DFangelofwar",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

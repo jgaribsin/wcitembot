@@ -1,0 +1,88 @@
+{
+  "name": "Watery Aura",
+  "tier": 1,
+  "level": 86,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 4
+  },
+  "groups": [
+    "WATER",
+    "MAGIC"
+  ],
+  "identifications": {
+    "INTELLIGENCEPOINTS": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -45,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutHiveRefundShimmerstalk",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutHiveRefundShimmerMoth2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-WATERJelly2",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Moodle-WATERBelua",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Dako-Water",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Moodle-WATERSiren",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutMindsMajesticCaveSquid",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "PaBMagicEssence",
+      "rarity": 4,
+      "rarityOffset": 0  
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "7-Yottabyte Storage Component",
+  "tier": 2,
+  "level": 90,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 356,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "FIRE",
+    "AIR"
+  ],
+  "identifications": {
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -56000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": -12,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": -12,
+    "agilityRequirement": -12
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "CorkusMajorT55ElusiveSecurityCamera",
+      "rarity": 1,
+      "rarityOffset": -60
+    }
+  ]
+}

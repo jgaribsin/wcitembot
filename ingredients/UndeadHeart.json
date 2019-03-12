@@ -1,0 +1,54 @@
+{
+  "name": "Undead Heart",
+  "tier": 1,
+  "level": 15,
+  "skills": [
+    "ARMOURING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 434,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "FIRE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 10,
+      "maximum": 30
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 1,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -18000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "7zombie",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

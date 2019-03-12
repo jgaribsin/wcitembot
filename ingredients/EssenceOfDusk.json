@@ -1,0 +1,90 @@
+{
+  "name": "Essence Of Dusk",
+  "displayName": "Essence of Dusk",
+  "tier": 1,
+  "level": 64,
+  "skills": [
+    "ALCHEMISM",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "THUNDER",
+    "WATER"
+  ],
+  "identifications": {
+    "SPELLDAMAGERAW": {
+      "minimum": 45,
+      "maximum": 65
+    },
+    "SPELLDAMAGE": {
+      "minimum": 6,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -34,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFNightlurker",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFshadowarcher",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDarkInfantry",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDarkexecutioner",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdarkknight",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpConsumedSpirit",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpConsumedSpirit2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpAbyssKnight",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Decaying Heart",
+  "tier": 3,
+  "level": 66,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjODQ0N2E4YjZiMGUwYzdlNzYyOWM2ODk4ZWM5Yzc0OWE3YTBhMmI0NTJiOWMzODUyYzc4NDdiYjRkYzUifX19",
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "STEALING",
+    "RANGED"
+  ],
+  "identifications": {
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -100000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": -100,
+    "notTouching": 75
+  },
+  "droppedBy": [
+    {
+      "name": "DFdarkknight",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRottingLuxroot",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFshadowarcher",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFNightlurker",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDarkexecutioner",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpAbyssKnight",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDullahanGargoyle",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDarkInfantry",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

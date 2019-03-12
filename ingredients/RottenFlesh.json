@@ -1,0 +1,519 @@
+{
+  "name": "Rotten Flesh",
+  "tier": 0,
+  "level": 1,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 367,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -10000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "1zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Zombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "3zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "4zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "5zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "6zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "7zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "8zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexZombieSoldier6",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexZombieBerserker",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RoamingZombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroCatapultOperator",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFZombieMiner",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroConfusedZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-BRCryptWalker",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFminerzombie3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "swarmplaceholder2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFminerzombie4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "swarmplaceholder3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFminerzombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFminerzombie2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmafiazombie4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmafiazombie3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmafiazombie2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmafiazombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFabnormalminer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutCropFailureCorpse",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SC-OvergrownZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeGroundCrawler",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "zombiefisher",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeCorruptFisherman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-WATERCorpse",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-Emerald",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFancientVIPmember",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhungrywendigo",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2OniShaman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-EarthZombie12",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-GreedyZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "swarmplaceholder",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexCorruptionVictim",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "mineZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-Water",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutCropFailureSludge",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientchild",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Hams15Zombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFFrozenNesaak2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFundeadwithyetiskin",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexInfernalSoldier",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukCorruptSentRanged",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTromsJungleCorruptedWatcher",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-BRCorruptedKnight",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "abiswasDefiledExplorer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2DeathOni",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFminerchef",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2OniZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "btg_trigger",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-MamaZomble24",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexFallenKnight",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-MamaZomble12",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "lionmaster",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "abiswasCorruptedMiner",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2YahyasDisciple",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptSent",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-MamaZomble48",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-MamaZomble36",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-MamaZomble60",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexZombieWarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroSoakedZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DexGenZombie10",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "sungod",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeReincarnatedman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "IceZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-Sludge",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFFrozenNesaak",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-SHermit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdongeonzombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "zombiecow",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-DSDeadMerchant",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Mountain",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "liontrainer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-WaterZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-PotatoProj",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutCropFailureBones",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "HCSlimedSpider1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFzhightvillager",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-Flame",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFangrynomade",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFijiraqwalker",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dako-PotatoImp24",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "HCStringySlime",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "zombietest",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "zombiebushes",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientzombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RoamingZombie1",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

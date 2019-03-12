@@ -1,0 +1,52 @@
+{
+  "name": "Stolen Seeds",
+  "tier": 0,
+  "level": 92,
+  "skills": [
+     "COOKING"
+  ],
+  "sprite": {
+    "id": 295,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 8, 
+      "maximum": 13
+    },
+    "EMERALDSTEALING": {
+      "minimum": 3,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -30,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "Moodle-HarvestImp",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

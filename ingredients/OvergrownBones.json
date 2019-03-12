@@ -1,0 +1,59 @@
+{
+  "name": "Overgrown Bones",
+  "tier": 0,
+  "level": 61,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 352,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 9,
+      "maximum": 13
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -24,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-Wandering",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-LostAdv",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Sacrifice",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

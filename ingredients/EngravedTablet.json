@@ -1,0 +1,54 @@
+{
+  "name": "Engraved Tablet",
+  "tier": 2,
+  "level": 83,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 340,
+    "damage": 0
+  },
+  "groups": [
+    "WATER",
+    "MAGIC"
+  ],
+  "identifications": {
+    "INTELLIGENCEPOINTS": {
+      "minimum": 5,
+      "maximum": 10
+    },
+    "SPEED": {
+      "minimum": -10,
+      "maximum": -5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 20,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoColossusSpawn",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

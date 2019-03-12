@@ -1,0 +1,58 @@
+{
+  "name": "Sylphid Tears",
+  "tier": 1,
+  "level": 98,
+  "skills": [
+     "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE",
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGEBONUS":{
+      "minimum": 8,
+      "maximum": 16
+    },
+    "AIRDEFENSE":{
+      "minimum": 10,
+      "maximum": 18
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 15
+  },
+  "consumableOnlyIDs": {
+    "duration": -45,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "Flare-SylphidServant",
+      "rarity": 4,
+      "rarityOffset": 0  
+    },
+   {
+     "name": "Flare-SylphidGatekeeperForm2",
+     "rarity": 3,
+     "rarityOffset": 0
+   }
+  ]
+}

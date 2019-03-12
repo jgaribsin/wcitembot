@@ -1,0 +1,89 @@
+{
+  "name": "Myconid Spores",
+  "tier": 0,
+  "level": 71,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 372,
+    "damage": 0
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+    "FIREDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 6
+    },
+    "WATERDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 6
+    },
+    "EARTHDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 6
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 6
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -40,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SnerpEarthMyco",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpWaterMyco",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpFireMyco",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpAirMyco1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDecayMyco",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDecayMyco2",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Demonic Blood",
+  "tier": 1,
+  "level": 99,
+  "skills": [
+    "COOKING",
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 331,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "MELEE"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 50,
+      "maximum": 75
+    },
+    "POISON": {
+      "minimum": 160,
+      "maximum": 220
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -42000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -132,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "SkyDepthMonster",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyDepthMonster",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

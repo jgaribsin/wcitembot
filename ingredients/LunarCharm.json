@@ -1,0 +1,50 @@
+{
+  "name": "Lunar Charm",
+  "tier": 3,
+  "level": 38,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 160,
+    "damage": 1
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -45,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 33,
+    "notTouching": 33
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanLunaticInterloper",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanLunarDarksider2",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

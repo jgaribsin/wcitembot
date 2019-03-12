@@ -1,0 +1,53 @@
+{
+  "name": "Penguin Egg",
+  "tier": 1,
+  "level": 46,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 383,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "WATERDEFENSE": {
+      "minimum": 3,
+      "maximum": 5
+    },
+    "AIRDEFENSE": {
+      "minimum": 3,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -29,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFgentlemanpenguin",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ] 
+}

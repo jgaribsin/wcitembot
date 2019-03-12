@@ -1,0 +1,62 @@
+{
+  "name": "Fancy Pelt",
+  "tier": 1,
+  "level": 85,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 8,
+      "maximum": 12
+    },
+    "EARTHDEFENSE": {
+      "minimum": 8,
+      "maximum": 12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucLyranVeteran",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucLyranSoldier",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucLyranCub",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

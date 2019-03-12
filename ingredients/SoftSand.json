@@ -1,0 +1,103 @@
+{
+  "name": "Soft Sand",
+  "tier": 0,
+  "level": 30,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 12,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE",
+    "SLOW"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "SPEED": {
+      "minimum": -3,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -14000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SandpileSandyScarab",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile1",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile2",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile3",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile4",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile5",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile6",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile7",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile8",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile9",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile10",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

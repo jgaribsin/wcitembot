@@ -1,0 +1,58 @@
+{
+  "name": "Fish Scales",
+  "tier": 0,
+  "level": 75,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "WATER"
+  ],
+  "identifications": {
+    "WATERDEFENSE": {
+      "minimum": 2,
+      "maximum": 6
+    },
+    "THUNDERDEFENSE": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -23000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFmermaid",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFsharkwarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

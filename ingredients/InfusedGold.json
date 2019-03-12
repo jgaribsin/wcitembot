@@ -1,0 +1,48 @@
+{
+  "name": "Infused Gold",
+  "tier": 1,
+  "level": 18,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 371,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LOOTBONUS": {
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -19000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoAncientGuardian",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

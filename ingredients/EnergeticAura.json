@@ -1,0 +1,58 @@
+{
+  "name": "Energetic Aura",
+  "tier": 1,
+  "level": 80,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 348,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "STEALING"
+  ],
+  "identifications": {
+    "DEXTERITYPOINTS": {
+      "minimum": 5,
+      "maximum": 9
+    },
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -35,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutHiveRefundVoltaicAnimant1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutHiveRefundVoltaicAnimant2",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

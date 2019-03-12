@@ -1,0 +1,49 @@
+{
+  "name": "Aqua Vitae",
+  "tier": 3,
+  "level": 60,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 374,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "WATERDAMAGEBONUS": {
+      "minimum": 18,
+      "maximum": 24
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -49,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossPlagueDoctor",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

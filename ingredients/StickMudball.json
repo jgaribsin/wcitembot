@@ -1,0 +1,54 @@
+{
+  "name": "Sticky Mudball",
+  "tier": 2,
+  "level": 21,
+  "skills": [
+    "WOODWORKING",
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 378,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED",
+    "SLOW"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 8
+    },
+    "SPEED": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -28000,
+    "strengthRequirement": 3,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -28,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeSlimySwampZombie",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

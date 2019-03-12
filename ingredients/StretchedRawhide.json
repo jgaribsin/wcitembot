@@ -1,0 +1,57 @@
+{
+  "name": "Stretched Rawhide",
+  "tier": 1,
+  "level": 40,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "STRENGTHPOINTS": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -25000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 5,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFWarg",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcraider",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

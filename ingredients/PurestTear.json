@@ -1,0 +1,63 @@
+{
+  "name": "Purest Tear",
+  "tier": 2,
+  "level": 73,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 370,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGEN": {
+      "minimum": 4,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 53,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFFairy",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFNymph",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFscaredunicorn",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFsylph",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

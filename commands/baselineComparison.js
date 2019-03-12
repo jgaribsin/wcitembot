@@ -1,50 +1,44 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-module.exports.run = async (client, message, args) => {
-
-var userQuery = "";
+module.exports.run = async (client, prefix, ingredients, message, args) => {
 
 // Picks out the users query and attaches it to the API request URL then sends it
-for (i = 0; i < args.length; i++) {
-  userQuery += args[i];
-  if (i < args.length - 1) userQuery += " ";
-}
+var userQuery = message.content.substring(prefix.length + 2, message.length);
 var apiPing = "https://api.wynncraft.com/public_api.php?action=itemDB&search=";
 
 var request = new XMLHttpRequest();
 request.open("GET", apiPing + userQuery, false);
 request.send();
 
-  var parsedReturn;
-      // Parses the response text to JSON format (this means each individual line of the JSON variable is the index of the item as an array)
-          parsedReturn = JSON.parse(request.responseText);
+// Parses the response text to JSON format (this means each individual line of the JSON variable is the index of the item as an array)
+var parsedReturn = JSON.parse(request.responseText);
 
-          // Sets the item to use as the first query returned by default
-          var itemRequested = parsedReturn.items[0];
+// Sets the item to use as the first query returned by default
+var itemRequested = parsedReturn.items[0];
 
-          var current;
-          // Checks through all the item names for a return that is exactly what the user typed. If found, that item is used, if not then the default first return is used
-          for (i = 0; i < parsedReturn.items.length; i++) {
-              current = parsedReturn.items[i];
-              if (userQuery === current.name || userQuery === current.name.toLowerCase())
-                  itemRequested = parsedReturn.items[i];
-          }
+var current;
+// Checks through all the item names for a return that is exactly what the user typed. If found, that item is used, if not then the default first return is used
+for (i = 0; i < parsedReturn.items.length; i++) {
+    current = parsedReturn.items[i];
+    if (userQuery === current.name || userQuery === current.name.toLowerCase())
+        itemRequested = parsedReturn.items[i];
+}
 
-          if (parsedReturn.items.length === 0) {
-              message.channel.send("No matching items.");
-          }
-          else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && userQuery !== itemRequested.name.toLowerCase()) {
-              var botResponse = "Multiple items found: ";
+if (parsedReturn.items.length === 0) {
+    message.channel.send("No matching items.");
+}
+else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && userQuery !== itemRequested.name.toLowerCase()) {
+    var botResponse = "Multiple items found: ";
 
-              for (i = 0; i < parsedReturn.items.length; i++) {
-                  botResponse += parsedReturn.items[i].name;
-                  if (i + 1 < parsedReturn.items.length) botResponse += ", ";
-                  else botResponse += ".";
-              }
+    for (i = 0; i < parsedReturn.items.length; i++) {
+        botResponse += parsedReturn.items[i].name;
+        if (i + 1 < parsedReturn.items.length) botResponse += ", ";
+        else botResponse += ".";
+    }
 
-              message.channel.send(botResponse);
-          }
+    message.channel.send(botResponse);
+}
           else {
 
               var botResponse;
@@ -139,7 +133,7 @@ request.send();
                       }
                       itemDamages += "\n" + "Attack Speed: " + attackSpeed;
 
-                      var baselineDamage = calcBaseDam(itemLevel, itemRarity, itemType, attackSpeed);
+                      var baselineDamage = fnc.calcBaseDam(itemLevel, itemRarity, itemType, attackSpeed);
 
                       BaselineComp += "Base Damage: " + totalBaseDamage + " [" + baselineDamage.toFixed(2) + " | " + ((totalBaseDamage / baselineDamage) * 100).toFixed(2) + "%]" + "\n";
                       if (healthBonus !== 0 && healthBonus !== undefined)

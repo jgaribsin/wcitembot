@@ -1,0 +1,68 @@
+{
+  "name": "Hybrid Skin",
+  "tier": 0,
+  "level": 87,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 18,
+      "maximum": 36
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 12,
+      "maximum": 28
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -27000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 7,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "DFdestrachan",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdevouringdestranchan",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFpyret",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHSmokeSerpent",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

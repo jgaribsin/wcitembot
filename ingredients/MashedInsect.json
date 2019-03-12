@@ -1,0 +1,162 @@
+{
+  "name": "Mashed Insect",
+  "tier": 0,
+  "level": 30,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 376,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGEN": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "HEALTHREGENRAW": {
+      "minimum": 1,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -54,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "scarab",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRiverLocustSwarm",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SandpileSpeedScarab",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SandpileScarab",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgiantantlarva",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFgiantspearermantis",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpyrolarvaant",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFgiantantworker",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "ImaxeCaveCrawler",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbeachhopper",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFstirge",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Tanti-TreeCicada",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpyroantsoldier",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutMindsMushroomMite",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpyroantworker",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFGiantantsoldier",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFGiantantqueen",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFgiantprayermantis",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutCropFailureBeetle",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFroper",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "HamsSandcrawler",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "JbipDesertCrawler",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "JbipCrystallizedScarab",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "River Clay",
+  "tier": 0,
+  "level": 23,
+  "skills": [
+    "JEWELING",
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 337,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+        "minimum": -4,
+        "maximum": -2
+    },
+    "WATERDAMAGEBONUS": {
+        "minimum": 3,
+        "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -10000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "cookedTurtle",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

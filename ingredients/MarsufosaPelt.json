@@ -1,0 +1,48 @@
+{
+  "name": "Marsufosa Pelt",
+  "tier": 0,
+  "level": 90,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -28000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFwildmarsufosa",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

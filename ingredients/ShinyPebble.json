@@ -1,0 +1,52 @@
+{
+  "name": "Shiny Pebble",
+  "tier": 1,
+  "level": 83,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 77,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "XPBONUS": {
+      "minimum": 3,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -37000,
+    "strengthRequirement": 20,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoHarpyRockthrower",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Snow Heart",
+  "tier": 0,
+  "level": 43,
+  "skills": [
+    "ALCHEMISM",
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 332,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "WATERDAMAGEBONUS": {
+      "minimum": 1,
+      "maximum": 4
+    },
+    "SPELLDAMAGE": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -25,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "snowman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowball",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-IceEle",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ] 
+}

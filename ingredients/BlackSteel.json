@@ -1,0 +1,74 @@
+{
+  "name": "Black Steel",
+  "tier": 0,
+  "level": 62,
+  "skills": [
+    "ARMOURING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 405,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 8,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 16,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFdarkknight",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFNightlurker",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFshadowarcher",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDarkexecutioner",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpDullahanGargoyle",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpAbyssKnight",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

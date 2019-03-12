@@ -1,0 +1,59 @@
+{
+  "name": "The Grootslang's Heart",
+  "tier": 3,
+  "level": 56,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 372,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "EARTH",
+    "FIRE"
+  ],
+  "identifications": {
+    "EARTHDEFENSE": {
+      "minimum": 16,
+      "maximum": 24
+    },
+    "HEALTHBONUS": {
+      "minimum": 320,
+      "maximum": 400
+    },
+    "SPEED": {
+      "minimum": -12,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 15,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 15,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "Swamp-GrootslangYoung",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

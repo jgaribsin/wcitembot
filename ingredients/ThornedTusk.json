@@ -1,0 +1,53 @@
+{
+  "name": "Thorned Tusk",
+  "tier": 2,
+  "level": 85,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 30,
+      "maximum": 50
+    },
+    "DAMAGEBONUS": {
+      "minimum": 12,
+      "maximum": 25
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -58,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "CorkusGigaBushBoar",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

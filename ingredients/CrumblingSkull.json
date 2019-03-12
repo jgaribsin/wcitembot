@@ -1,0 +1,46 @@
+{
+  "name": "Crumbling Skull",
+  "tier": 2,
+  "level": 10,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk1M2I2YzY4NDQ4ZTdlNmI2YmY4ZmIyNzNkNzIwM2FjZDhlMWJlMTllODE0ODFlYWQ1MWY0NWRlNTlhOCJ9fX0=",
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "DEFAULT"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": -5,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": -5,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "suburbresident",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

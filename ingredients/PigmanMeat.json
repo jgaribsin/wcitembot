@@ -1,0 +1,139 @@
+{
+  "name": "Pigman Meat",
+  "tier": 0,
+  "level": 11,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 319,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -16,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "pigman",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "pigman2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "Dako-ZombiePig8",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "Dako-PigZombie8",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "PigmanRaider",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "Dako-PigZomblaze8",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanRunner",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanRunner2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanRaider",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanRaider2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanStriker",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "SelvutPigmanStriker2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "pigoverlord",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "PFVolcanic2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "Moodle-MHPigman",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "PFDeadPirateGuard",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "TunnelPigman",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "spawnzombie2",
+      "rarity": 3,
+      "rarityOffset": 40
+    },
+    {
+      "name": "Dako-Flame",
+      "rarity": 3,
+      "rarityOffset": 40
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Gold Bar",
+  "tier": 0,
+  "level": 31,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 266,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LOOTBONUS": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "DAMAGEBONUS": {
+      "minimum": -4,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "bandit",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "richbandit",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CanyonDeadMiner",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2DeadProspector",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Ranger",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutMesaTribalExile2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RARETumbleweed",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRAREWaywardVagabond",
+      "rarity": 1,
+      "rarityOffset": -40
+    }
+  ]
+}

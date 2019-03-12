@@ -1,0 +1,51 @@
+{
+  "name": "Obelisk Core",
+  "tier": 3,
+  "level": 76,
+  "dropsFromLootChest": false,
+"skin": "eyJ0aW1lc3RhbXAiOjE1NDQ1MTA3MjE5NDYsInByb2ZpbGVJZCI6IjQ5ODU2NTcwYWUwODRlYWY5OTg4MDQwY2VhZGI5ZGQxIiwicHJvZmlsZU5hbWUiOiJTbmVycCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYwZDczMTUwZGY0ZjVkMDc3NWI1NTQ4OWEyOGE5Nzc2NGFmNWE3NzUxYTAwZTQwNDA0OTVlOTdmZmU5NzcyZiJ9fX0=",
+  "skills": [
+    "WOODWORKING",
+	"WEAPONSMITHING",
+	"ARMOURING",
+	"TAILORING",
+	"JEWELING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": -200,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SnerpRAREMOBKANDER2",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

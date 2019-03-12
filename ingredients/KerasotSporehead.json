@@ -1,0 +1,63 @@
+{
+  "name": "Kerasot Sporehead",
+  "tier": 3,
+  "level": 66,
+  "dropsFromLootChest": false,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 200,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "SLOW"
+  ],
+  "identifications": {
+    "ATTACKSPEED": {
+      "minimum": -1,
+      "maximum": -1
+    },
+    "POISON": {
+      "minimum": 500,
+      "maximum": 750
+    },
+    "LIFESTEAL": {
+      "minimum": 60,
+      "maximum": 75
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -200,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SnerpRAREMOBDF",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDoppelganger",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

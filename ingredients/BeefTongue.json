@@ -1,0 +1,53 @@
+{
+  "name": "Beef Tongue",
+  "tier": 1,
+  "level": 25,
+  "dropsFromLootChest": false,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 376,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 50,
+      "maximum": 75
+    },
+    "HEALTHREGEN": {
+      "minimum": 5,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -25,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossDurumProtector",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Werewolf Tail",
+  "tier": 0,
+  "level": 72,
+  "skills": [
+    "TAILORING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 0
+  },
+  "groups": [
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 5,
+      "maximum": 8
+    },
+    "DEFENSEPOINTS": {
+      "minimum": -3,
+      "maximum": -1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -24000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -26,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFWerewolf",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFalphawerewolf",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFvenerablewerewolf",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFvyrwolf",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFBIGBADWOLF",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

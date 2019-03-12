@@ -1,0 +1,63 @@
+{
+  "name": "Archaic Medallion",
+  "tier": 3,
+  "level": 45,
+  "dropsFromLootChest": false,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 368,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGEN": {
+      "minimum": 10,
+      "maximum": 12
+    },
+  "SPELLDAMAGE": {
+      "minimum": -9,
+      "maximum": -7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "PepoAncientOrc",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpOrcShaman",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcwarrior",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

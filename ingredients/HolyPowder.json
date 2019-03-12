@@ -1,0 +1,68 @@
+{
+  "name": "Holy Powder",
+  "tier": 0,
+  "level": 98,
+  "skills": [
+     "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 348,
+    "damage": 0
+  },
+  "groups": [
+    "WATER",
+    "AIR"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 70,
+      "maximum": 95
+    },
+    "SOULPOINTS": {
+      "minimum": 8,
+      "maximum": 18
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -31,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SkyAngelofNature",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyAngelofWind",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFangelofwar",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyDyingAngel",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

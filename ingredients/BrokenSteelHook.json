@@ -1,0 +1,82 @@
+{
+  "name": "Broken Steel Hook",
+  "tier": 1,
+  "level": 55,
+  "skills": [
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 20,
+      "maximum": 27
+    },
+    "DEXTERITYPOINTS": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 10,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutSkienBowman2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienJailkeeper",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienBomber",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienBomber2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienElite",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienElite2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutSkienMarksman",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

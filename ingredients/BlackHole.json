@@ -1,0 +1,54 @@
+{
+  "name": "Black Hole",
+  "tier": 3,
+  "level": 100,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 173,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "ATTACKSPEED": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "DAMAGEBONUS": {
+      "minimum": -18,
+      "maximum": -12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 75,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "VoidSquidRAREMOB",
+      "rarity": 3,
+      "rarityOffset": -33
+    }
+  ]
+}

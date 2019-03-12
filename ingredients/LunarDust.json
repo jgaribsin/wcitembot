@@ -1,0 +1,68 @@
+{
+  "name": "Lunar Dust",
+  "tier": 0,
+  "level": 32,
+  "skills": [
+    "SCRIBING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 4,
+      "maximum": 7
+    },
+    "HEALTHBONUS": {
+      "minimum": -70,
+      "maximum": -50
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -19,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanLunaticDevote1Split",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanLunaticDevote2Split",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanLunaticRemnant",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanLunarParasite",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

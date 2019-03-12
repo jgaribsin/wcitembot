@@ -1,0 +1,54 @@
+{
+  "name": "Metal Scraps",
+  "tier": 0,
+  "level": 56,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 402,
+    "damage": 0
+  },
+  "groups": [
+    "SLOW",
+    "RANGED"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 3000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFswampogre",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "IngredientDummy",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

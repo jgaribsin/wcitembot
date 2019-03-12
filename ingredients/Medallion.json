@@ -1,0 +1,54 @@
+{
+  "name": "Aged Medallion",
+  "tier": 2,
+  "level": 25,
+  "skills": [
+    "JEWELING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 175,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "MAGIC"
+  ],
+  "identifications": {
+    "XPBONUS": {
+      "minimum": 3,
+      "maximum": 4
+    },
+    "SPELLDAMAGE": {
+      "minimum": 3,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -29000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 8,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "cookedUndeadCommander",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

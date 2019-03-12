@@ -1,0 +1,48 @@
+{
+  "name": "Tender Pork Fillet",
+  "tier": 1,
+  "level": 85,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 319,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -121,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFBushpig",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

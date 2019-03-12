@@ -1,0 +1,58 @@
+{
+  "name": "Kaian Scroll",
+  "tier": 1,
+  "level": 94,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 339,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+      "DEXTERITYPOINTS": {
+      "minimum": 10,
+      "maximum": 15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -43,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Flare-KaianObserver",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Flare-KaianWatcher",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Flare-KaianSorcerer",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

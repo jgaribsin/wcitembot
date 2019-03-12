@@ -1,0 +1,59 @@
+{
+  "name": "Incremental Mapping Module",
+  "tier": 3,
+  "level": 90,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 356,
+    "damage": 0
+  },
+  "groups": [
+    "AIR",
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 16,
+      "maximum": 20
+    },
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "HEALTHBONUS": {
+      "minimum": -650,
+      "maximum": -500
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -85000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 60
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "CorkusMajorT55ElusiveSecurityCamera",
+      "rarity": 1,
+      "rarityOffset": -90
+    }
+  ]
+}

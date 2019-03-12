@@ -1,0 +1,54 @@
+{
+  "name": "Durable Skin",
+  "tier": 1,
+  "level": 77,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 70,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "FIRE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "EARTHDEFENSE": {
+      "minimum": 4,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -35000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 8,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoObsidianSentinel",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

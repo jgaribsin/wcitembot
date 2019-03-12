@@ -1,0 +1,59 @@
+{
+  "name": "Razor-Sharp Tooth",
+  "tier": 2,
+  "level": 86,
+  "skills": [
+    "WEAPONSMITHING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 409,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE",
+    "THUNDER"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 25,
+      "maximum": 75
+    },
+    "DEXTERITYPOINTS": {
+      "minimum": 1,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -54000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 25,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucJinkoShanker",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucLyranVeteran",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

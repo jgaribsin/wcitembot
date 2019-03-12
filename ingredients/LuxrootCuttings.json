@@ -1,0 +1,63 @@
+{
+  "name": "Luxroot Cuttings",
+  "tier": 2,
+  "level": 64,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 6,
+    "damage": 4
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "EARTHDEFENSE": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "FIREDEFENSE": {
+      "minimum": -8,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 32000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFtreantsapling",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpLuxroot",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpGoldRoot",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Terra Steel",
+  "tier": 1,
+  "level": 88,
+  "skills": [
+    "WEAPONSMITHING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 265,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "FIRE"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 8
+    },
+    "FIREDAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -38000,
+    "strengthRequirement": 12,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 12,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "DFmoltenmadoshi",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmoltenknight",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdarkmoltenknight",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmoltenarcher",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

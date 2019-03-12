@@ -1,0 +1,49 @@
+{
+  "name": "Rat Hair",
+  "tier": 0,
+  "level": 3,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 287,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -12000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "Rat",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Torn Rawhide",
+  "tier": 1,
+  "level": 43,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 367,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "DEFENSEPOINTS": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -26000,
+    "strengthRequirement": 5,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFOrcberserker",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgoblinhexer",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgoblinskullcleaver",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

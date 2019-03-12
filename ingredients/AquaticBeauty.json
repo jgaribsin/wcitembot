@@ -1,0 +1,75 @@
+{
+  "name": "Aquatic Beauty",
+  "tier": 3,
+  "level": 60,
+  "dropsFromLootChest": false,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 38,
+    "damage": 3
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 5,
+      "maximum": 6
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 5,
+      "maximum": 6
+    },
+    "INTELLIGENCEPOINTS": {
+      "minimum": 4,
+      "maximum": 7
+    },
+    "DEXTERITYPOINTS": {
+      "minimum": 3,
+      "maximum": 8
+    },
+    "AGILITYPOINTS": {
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -70,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "PirateTownCitizen",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2OceanZombieBTD",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Hurricane",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

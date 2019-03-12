@@ -1,0 +1,68 @@
+{
+  "name": "Strange Geode",
+  "tier": 1,
+  "level": 28,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 337,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "SLOW"
+  ],
+  "identifications": {
+    "EARTHDEFENSE": {
+      "minimum": 5,
+      "maximum": 6
+    },
+    "SPEED": {
+      "minimum": -4,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 5,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "corruptedminer",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "moving",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "moving2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "tntminecart",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

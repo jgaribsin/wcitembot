@@ -1,0 +1,54 @@
+{
+  "name": "Router's Shield",
+  "tier": 2,
+  "level": 30,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 415,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "SLOW"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "HEALTHBONUS": {
+      "minimum": 55,
+      "maximum": 75
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 7,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossHaros",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Native Jadeite",
+  "tier": 1,
+  "level": 63,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U2NThjZTdjNDI5MWVmZTUwYjIxZDEzZjk3MmU5M2MzNzJkMjcyMWVkN2Q2NTI2NjA2MGE0OTE2YTM1YiJ9fX0=",
+  "skills": [
+    "JEWELING",
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "MAGIC",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 4,
+      "maximum": 5
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -32000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 8,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SnerpRaindancer",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroMagicalFlux",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-NatureSpirit",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpGemParasite",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TribeShaman",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TribeWarrior",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

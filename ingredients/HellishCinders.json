@@ -1,0 +1,88 @@
+{
+  "name": "Hellish Cinders",
+  "tier": 2,
+  "level": 63,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 377,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "WATERDEFENSE": {
+      "minimum": -35,
+      "maximum": -20
+    },
+    "SPELLDAMAGE": {
+      "minimum": 8,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 25,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFFlamingskull",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanPoltergeist1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanPoltergeist2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpOelnethite",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpOelnethite2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOBKANDER",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOBDF2",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

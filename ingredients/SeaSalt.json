@@ -1,0 +1,51 @@
+{
+  "name": "Sea Salt",
+  "tier": 1,
+  "level": 32,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 353,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 30,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanSturdyCrab",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanIslandCrab",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

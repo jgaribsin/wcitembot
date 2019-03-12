@@ -1,0 +1,54 @@
+{
+  "name": "Crawler Sludge",
+  "tier": 0,
+  "level": 25,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 341,
+    "damage": 0
+  },
+  "groups": [
+    "SLOW",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -4,
+      "maximum": -2
+    },
+    "DAMAGEBONUS": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "BlackRoadMineCaveSnake",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

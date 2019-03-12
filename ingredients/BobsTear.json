@@ -1,0 +1,146 @@
+{
+  "name": "Bob's Tear",
+  "tier": 2,
+  "level": 4,
+  "skills": [
+    "SCRIBING",
+    "JEWELING",
+    "ALCHEMISM",
+    "COOKING",
+    "TAILORING",
+    "ARMOURING",
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 370,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -100,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 35,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "BobZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowwolf1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowman",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowwolf2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Tanti-Bookshelf",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "wood",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhungrywendigo",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "icecutter",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "woodcutter",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "IceZombie",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowball",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf3",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf4",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf5",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf6",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf7",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolf8",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFWolfTamer",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

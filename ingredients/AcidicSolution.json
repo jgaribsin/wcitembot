@@ -1,0 +1,50 @@
+{
+  "name": "Acidic Solution",
+  "tier": 2,
+  "level": 60,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 341,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "POISON": {
+      "minimum": 240,
+      "maximum": 290
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -52000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossPlagueDoctor",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

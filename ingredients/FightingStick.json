@@ -1,0 +1,68 @@
+{
+  "name": "Fighting Stick",
+  "tier": 2,
+  "level": 89,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 338,
+    "damage": 0
+  },
+  "groups": [
+    "QUICK",
+    "MELEE"
+  ],
+  "identifications": {
+    "ATTACKSPEED": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "DAMAGEBONUS": {
+      "minimum": -18,
+      "maximum": -18
+    },
+    "SPEED": {
+      "minimum": 5,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -62000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucAiluropodaShaman",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucAiluropodaWarrior",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucGiantPandaKing",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

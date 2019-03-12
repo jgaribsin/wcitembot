@@ -1,0 +1,68 @@
+{
+  "name": "Glacial Anomaly",
+  "tier": 3,
+  "level": 92,
+  "skills": [
+    "WOODWORKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 373,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 100,
+      "maximum": 115
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -85000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 35,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -91,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "SelvutFreezingHeightsIceSentry",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutFreezingHeightsPermafrostGolem1",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutFreezingHeightsPermafrostGolem2",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFpyret",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

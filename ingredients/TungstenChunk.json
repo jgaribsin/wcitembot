@@ -1,0 +1,52 @@
+{
+  "name": "Tungsten Chunk",
+  "tier": 3,
+  "level": 63,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+     "FIRE"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 12,
+      "maximum": 15
+    },
+    "THORNS": {
+      "minimum": 8,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 30,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SnerpRAREMOBDERNEL",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

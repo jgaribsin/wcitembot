@@ -1,0 +1,62 @@
+{
+  "name": "Seagrass",
+  "tier": 0,
+  "level": 23,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 31,
+    "damage": 2
+  },
+  "groups": [
+    "SLOW"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 1,
+      "maximum": 4
+    },
+    "SPEED": {
+      "minimum": -4,
+      "maximum": -1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -15,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "DFundeadcursedpirate",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanIslandCrab",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanSturdyCrab",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

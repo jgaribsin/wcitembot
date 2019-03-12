@@ -1,0 +1,54 @@
+{
+  "name": "Zhight Coral Piece",
+  "tier": 1,
+  "level": 57,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 377,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "WATERDEFENSE": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "FIREDEFENSE": {
+      "minimum": 1,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 12,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "IngredientDummy",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

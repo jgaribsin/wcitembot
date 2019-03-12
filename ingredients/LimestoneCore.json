@@ -1,0 +1,53 @@
+{
+  "name": "Limestone Core",
+  "tier": 3,
+  "level": 37,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 6,
+    "damage": 4
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "WATERDEFENSE": {
+      "minimum": -12,
+      "maximum": -8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -52000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 18,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutRARELimestoneMachination",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

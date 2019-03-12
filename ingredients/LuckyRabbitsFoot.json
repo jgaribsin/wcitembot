@@ -1,0 +1,65 @@
+{
+  "name": "Lucky Rabbit's Foot",
+  "tier": 2,
+  "level": 37,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 392,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LOOTBONUS": {
+      "minimum": 2,
+      "maximum": 8
+    },
+    "XPBONUS": {
+      "minimum": 3,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "2x2Reggie",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RARETumbleweed",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RAREDiurnalCanyonSwooper",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Soulbound Cinders",
+  "tier": 2,
+  "level": 93,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 377,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "MAGIC"
+  ],
+  "identifications": {
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "FIREDAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 8
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 40,
+      "maximum": 60
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -61,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-MHDraconic1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHDraconic2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFsmeltedangeredsoul",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFflamingwisp",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeLavaLimusRAREMOB",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

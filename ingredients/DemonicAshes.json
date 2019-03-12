@@ -1,0 +1,92 @@
+{
+  "name": "Demonic Ashes",
+  "tier": 0,
+  "level": 95,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 289,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "FIREDAMAGEBONUS": {
+      "minimum": 2,
+      "maximum": 9
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 1,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -31,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-MHIfrit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeLavaLimusRAREMOB",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHHellhound",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-InfernalImp",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Naragath3",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Hellhound",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Obelisk",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AbyssalM",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AbyssalH",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

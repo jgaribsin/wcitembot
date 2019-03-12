@@ -1,0 +1,73 @@
+{
+  "name": "Soft Silk",
+  "tier": 2,
+  "level": 62,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 287,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 2,
+      "maximum": 7
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 6,
+    "agilityRequirement": 14
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-TreeSpider",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRotBorer",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOB60",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpBoneSpider",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpThunderGrub",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

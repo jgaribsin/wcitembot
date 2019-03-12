@@ -1,0 +1,62 @@
+{
+  "name": "Phrumkin Seeds",
+  "tier": 1,
+  "level": 67,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 361,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 8
+    },
+    "HEALTHBONUS": {
+      "minimum": 220,
+      "maximum": 300
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -108,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFPhrumkinGangster",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFPhrumkinPrankster",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFPhrumshkinstain",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

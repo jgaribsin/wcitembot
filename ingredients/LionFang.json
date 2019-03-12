@@ -1,0 +1,54 @@
+{
+  "name": "Lion Fang",
+  "tier": 1,
+  "level": 28,
+  "skills": [
+    "JEWELING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE",
+    "MAGIC"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 5,
+      "maximum": 7
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 6,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "trainedlion",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

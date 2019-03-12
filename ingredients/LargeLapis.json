@@ -1,0 +1,207 @@
+{
+  "name": "Large Lapis",
+  "tier": 3,
+  "level": 49,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 4
+  },
+  "groups": [
+	"MAGIC"
+  ],
+  "identifications": {
+    "INTELLIGENCEPOINTS": {
+      "minimum": -12,
+      "maximum": -10
+    },
+    "SPELLDAMAGE": {
+      "minimum": 10,
+      "maximum": 12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -80000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "IceZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnowZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukThawingIceZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukThawingSnowZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ConBobTree",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ConBobTree2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ConBobTree3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowwolf1",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BobIcyWolf",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-DireWolf",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "snowman",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "phantom",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "howlingPhantom",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDisembodiedHead",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukFroo",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFrestlessarmor",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "woodcutter",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "icecutter",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukYeti",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Dfbabyyeti",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhungrywendigo",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BobSnowOwl",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgentlemanpenguin",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-ColdShadow",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BobPolarbear",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BobEnragedPolarBear",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-IceEle",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FrozenBerserker",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BobFrostbite",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptSent",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukCorruptSentRanged",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Mountain",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

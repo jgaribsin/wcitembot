@@ -1,0 +1,58 @@
+{
+  "name": "Weakening Catalyst",
+  "tier": 2,
+  "level": 11,
+  "dropsFromLootChest": false,
+  "untradeable": true,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 368,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": -8,
+      "maximum": -8
+    },
+	"SPELLDAMAGE": {
+      "minimum": -8,
+      "maximum": -8
+    },
+	"XPBONUS": {
+      "minimum": 20,
+      "maximum": 25
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 28,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "IngredientDummy",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

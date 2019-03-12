@@ -1,0 +1,68 @@
+{
+  "name": "Unmeltable Ice",
+  "tier": 0,
+  "level": 92,
+  "skills": [
+    "JEWELING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 174,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "WATERDEFENSE": {
+      "minimum": 2,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -29000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 8,
+    "defenceRequirement": 0,
+    "agilityRequirement": 8
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutFreezingHeightsIceSentry",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutFreezingHeightsPermafrostGolem1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutFreezingHeightsPermafrostGolem2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutNesaakBorderFrozenNetherHulk",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

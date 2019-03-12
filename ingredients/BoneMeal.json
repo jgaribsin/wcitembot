@@ -1,0 +1,379 @@
+{
+  "name": "Bone Meal",
+  "tier": 0,
+  "level": 21,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -14000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DarkDescentCorrScoutNPC",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientfather",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientskeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientskeleton2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientmother",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ancientsoldier",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "meleeskeleton2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "cookedUndeadCommander",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcmarzbanmb4",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2OniSkeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "corruptedDFCrumbledskeleton",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFVolcanic1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhowlingskull",
+      "rarity": 3,
+      "rarityOffset": 0    
+    },
+    {
+      "name": "GoblinScout",
+      "rarity": 3,
+      "rarityOffset": 0    
+    },
+    {
+      "name": "DFcbutcher",
+      "rarity": 3,
+      "rarityOffset": 0 
+    },
+    {
+      "name": "DFcdahbasi",
+      "rarity": 3,
+      "rarityOffset": 0 
+    },
+    {
+      "name": "DFcenturion",
+      "rarity": 3,
+      "rarityOffset": 0   
+    },
+    {
+      "name": "corruptedDFBlazingskeleton",
+      "rarity": 3,
+      "rarityOffset": 0 
+    },
+    {
+      "name": "corruptedDFTormentingghost",
+      "rarity": 3,
+      "rarityOffset": 0   
+    },
+    {
+      "name": "DFcvenkus",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFccenturion",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcorruptedbarbarossamates1",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcorruptedbarbarossamates3",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcorruptedbarbarossamates2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcastellan",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFBlazingskeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "LeoReanimatingBones",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "corruptedDFskeletalguardian",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutMolterCaveHuskSpawn",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFTormentingghost",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Moodle-EARTHBoar",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbarbarossasailingmaster",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpeasant",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcorruptedbarbarossasailingmaster",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbarbarossamates1",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbarbarossamates3",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbarbarossamates2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFmarzbanmb4",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFskeletalguardian",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpikemen",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Salt-FlamingSkeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcpikemen",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFdahbasi",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "archerskeleton2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "archerskeleton1",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "2x2OceanSkeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFbutcher",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutMolterCaveHusk2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutMolterCaveHusk1",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFpikemen2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DexUndeadNobleWarrior",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFhighpriest",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Dako-ArrowProj",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFchighpriest",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "corruptedDFwailingskeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Moodle-EARTHMammoth",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFwailingskeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "corruptedDFhowlingskull",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "SelvutCropFailureBones",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "PFDeadPirate",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcpikemen2",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Moodle-EARTHBones",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFSkeletonminer",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFcpeasant",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFccastellan",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "Salt-CorrFlamingSkeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    },
+    {
+      "name": "DFCrumbledskeleton",
+      "rarity": 3,
+      "rarityOffset": 0  
+    }
+  ]
+}

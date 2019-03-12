@@ -1,0 +1,85 @@
+{
+  "name": "Ancient Metal",
+  "tier": 0,
+  "level": 64,
+  "skills": [
+    "WEAPONSMITHING",
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 452,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 8,
+      "maximum": 14
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -23000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SnerpIdolGuard",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpLostIdol",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpIgneousPaladin",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDernelSoldier",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDernelPaladin",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptBlade",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptIdol",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AncientIdol",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

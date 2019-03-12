@@ -1,0 +1,63 @@
+{
+  "name": "Defiled Luxroot",
+  "tier": 2,
+  "level": 64,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 32,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "THUNDERDEFENSE": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "AIRDEFENSE": {
+      "minimum": -8,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 32000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SnerpRottingLuxroot",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDevourer",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFEscapeddevourer",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

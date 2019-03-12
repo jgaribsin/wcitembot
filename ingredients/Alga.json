@@ -1,0 +1,82 @@
+{
+  "name": "Alga",
+  "tier": 1,
+  "level": 60,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 106,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 24,
+      "maximum": 38
+    },
+    "STRENGTHPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFKappadumda",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFKappadumdy",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFKappapoppa",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFNymph",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFnixie",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFkuklops",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFfeligemberfrog",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

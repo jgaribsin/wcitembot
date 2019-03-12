@@ -1,0 +1,58 @@
+{
+  "name": "Lizard Scale",
+  "tier": 0,
+  "level": 53,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 318,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDEFENSE": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "HEALTHBONUS": {
+      "minimum": 80,
+      "maximum": 100
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -20000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DFlizardmandarter",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFlizardmanbruiser",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

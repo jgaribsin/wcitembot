@@ -1,0 +1,54 @@
+{
+  "name": "Bone Ash",
+  "tier": 0,
+  "level": 14,
+  "skills": [
+    "SCRIBING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "EXPLODING": {
+      "minimum": 1,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -15,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "TV-ValleyWanderer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "LeoAncientGuardian",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

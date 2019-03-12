@@ -1,0 +1,54 @@
+{
+  "name": "Corn Husk",
+  "tier": 1,
+  "level": 23,
+  "skills": [
+    "COOKING",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 296,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 3,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -20,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-Scarecrow",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutBonusBossDurumProtector",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

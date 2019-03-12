@@ -1,0 +1,50 @@
+{
+  "name": "Beak of the Nivlan Beauty",
+  "tier": 1,
+  "level": 8,
+  "skills": [
+    "WEAPONSMITHING",
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 409,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 10,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -16000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "ImaxeNivlanBeauty",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

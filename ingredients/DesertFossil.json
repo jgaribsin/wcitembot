@@ -1,0 +1,98 @@
+{
+  "name": "Desert Fossil",
+  "tier": 2,
+  "level": 30,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "AIR"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "AGILITYPOINTS": {
+      "minimum": 2,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -33000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 10,
+    "agilityRequirement": 10
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "Sandpile1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile5",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile4",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile5",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile6",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile7",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile8",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile9",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Sandpile10",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

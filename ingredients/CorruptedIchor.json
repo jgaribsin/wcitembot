@@ -1,0 +1,67 @@
+{
+  "name": "Corrupted Ichor",
+  "tier": 2,
+  "level": 10,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 376,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 6,
+      "maximum": 10
+    },
+    "SPEED": {
+      "minimum": 1,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -28,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutNivlaSawtoothSpider",
+      "rarity": 5,
+      "rarityOffset": 100
+    },
+    {
+      "name": "SelvutNivlaStalkerSpider",
+      "rarity": 5,
+      "rarityOffset": 100
+    },
+    {
+      "name": "SelvutNivlaSpinwarpSpider",
+      "rarity": 5,
+      "rarityOffset": 100
+    },
+    {
+      "name": "nivlaspider",
+      "rarity": 5,
+      "rarityOffset": 100
+    }
+  ]
+}

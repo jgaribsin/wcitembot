@@ -1,0 +1,52 @@
+{
+  "name": "Sentient Water",
+  "tier": 2,
+  "level": 75,
+  "skills": [
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 437,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "INTELLIGENCEPOINTS": {
+      "minimum": 3,
+      "maximum": 6
+    },
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 18,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFlivingwater",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

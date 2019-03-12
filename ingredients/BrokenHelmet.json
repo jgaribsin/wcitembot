@@ -1,0 +1,67 @@
+{
+  "name": "Broken Helmet",
+  "tier": 0,
+  "level": 92,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 450,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": -3,
+      "maximum": -1
+    },
+    "DAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -28000,
+    "strengthRequirement": 20,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-MHAzerFootsoldier",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHAzerIronmage",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHAzerVanquisher",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHAzerTaskmaster",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

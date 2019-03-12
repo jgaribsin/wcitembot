@@ -1,0 +1,48 @@
+{
+  "name": "Severed Leg",
+  "tier": 0,
+  "level": 56,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 18,
+      "maximum": 28
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -21000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "Swamp-WannabeAssassin",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

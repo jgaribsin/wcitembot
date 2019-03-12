@@ -1,0 +1,65 @@
+{
+  "name": "Shiny Mineral Deposit",
+  "tier": 1,
+  "level": 95,
+  "dropsFromLootChest": false,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 14,
+    "damage": 0
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "INTELLIGENCEPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "DEXTERITYPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "AGILITYPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 8,
+    "dexterityRequirement": 8,
+    "intelligenceRequirement": 8,
+    "defenceRequirement": 8,
+    "agilityRequirement": 8
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossTERA4M2",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

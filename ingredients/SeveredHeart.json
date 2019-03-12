@@ -1,0 +1,63 @@
+{
+  "name": "Severed Heart",
+  "tier": 0,
+  "level": 69,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 434,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE",
+    "STEALING"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": -15,
+      "maximum": -10
+    },
+    "LIFESTEAL": {
+      "minimum": 10,
+      "maximum": 15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -75,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "2x2DeadVillager",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeTestProjectile",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DeadIslandBovemist",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

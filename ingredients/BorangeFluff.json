@@ -1,0 +1,54 @@
+{
+  "name": "Borange Fluff",
+  "tier": 3,
+  "level": 100,
+  "dropsFromLootChest": false,
+  "skin": "eyJ0aW1lc3RhbXAiOjE0Mzc2OTU2MTU4NTMsInByb2ZpbGVJZCI6IjUwNzk4YjJhN2QxYjQxYTRiNmFlYzRiNWUwOWJjMTcxIiwicHJvZmlsZU5hbWUiOiJFbHN3ZXlyIiwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EwZmI0ZTZhNjEzMjJhNDE4NWU3YjQxYTY0M2Y2YTRjYjY5YTMxN2ViZTM5Mzk2ZmIyNzYyN2UzNjE0YzY5In19fQ==",
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "ARMOURING",
+    "TAILORING",
+    "JEWELING",
+    "COOKING",
+    "ALCHEMISM",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 12,
+    "notTouching": 12
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossFobbyiyg5",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

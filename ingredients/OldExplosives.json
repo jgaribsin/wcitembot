@@ -1,0 +1,53 @@
+{
+  "name": "Old Explosives",
+  "tier": 2,
+  "level": 85,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 46,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "EXPLODING": {
+      "minimum": 15,
+      "maximum": 35
+    },
+    "HEALTHBONUS": {
+      "minimum": -630,
+      "maximum": -480
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -25000,
+    "strengthRequirement": -10,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": -10,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoBanditTrickster",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

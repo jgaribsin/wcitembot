@@ -1,0 +1,53 @@
+{
+  "name": "Rusty Axe Head",
+  "tier": 1,
+  "level": 60,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 452,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": -8,
+      "maximum": -5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 12000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFswampogre",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "IngredientDummy",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

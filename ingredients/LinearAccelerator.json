@@ -1,0 +1,55 @@
+{
+  "name": "Linear Accelerator",
+  "tier": 3,
+  "level": 95,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 198,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": -735,
+      "maximum": -725
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 105,
+      "maximum": 115
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 13,
+      "maximum": 18
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -86000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 30,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "CorkusNeburMM105TacticalUnit",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

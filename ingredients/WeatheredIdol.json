@@ -1,0 +1,58 @@
+{
+  "name": "Weathered Idol",
+  "tier": 3,
+  "level": 36,
+  "dropsFromLootChest": false,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 449,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC",
+    "AIR"
+  ],
+  "identifications": {
+    "SPELLDAMAGERAW": {
+      "minimum": 30,
+      "maximum": 36
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 10,
+      "maximum": 14
+    },
+    "SPEED": {
+      "minimum": 6,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -57,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutRAREWitheredQuasinobility",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Leafy Stalk",
+  "tier": 0,
+  "level": 68,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING",
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 338,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "WATER"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 4,
+      "maximum": 16
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -23000,
+    "strengthRequirement": 5,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 5,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -75,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFMandragore",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFPhrumkinGangster",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFPhrumkinPrankster",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpLuxroot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFtreantsapling",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

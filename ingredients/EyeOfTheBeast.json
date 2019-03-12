@@ -1,0 +1,53 @@
+{
+  "name": "Eye of The Beast",
+  "tier": 3,
+  "level": 50,
+  "dropsFromLootChest": false,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 381,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    },
+  "SPELLDAMAGE": {
+      "minimum": -15,
+      "maximum": -15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -100000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": -100,
+    "under": -100,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossTheUnfettered",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

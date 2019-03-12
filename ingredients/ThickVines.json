@@ -1,0 +1,83 @@
+{
+  "name": "Thick Vines",
+  "tier": 0,
+  "level": 53,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 106,
+    "damage": 0
+  },
+  "groups": [
+    "SLOW"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -5,
+      "maximum": -3
+    },
+    "EARTHDEFENSE": {
+      "minimum": 4,
+      "maximum": 6
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -18000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "AcerherbSpawn",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "AcerherbSpawn2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SpringMossyGolem",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpFrog",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "fetish1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "fetish2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOB50",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

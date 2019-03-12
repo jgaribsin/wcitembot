@@ -1,0 +1,63 @@
+{
+  "name": "Eternal Flame",
+  "tier": 2,
+  "level": 37,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 385,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC",
+    "FIRE",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 7,
+      "maximum": 13
+    },
+    "DAMAGEBONUS": {
+      "minimum": -8,
+      "maximum": -5
+    },
+    "SPELLDAMAGE": {
+      "minimum": -8,
+      "maximum": -5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -42,
+    "charges": 1
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "2x2LavaMonster",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PepoLavaGeyser",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

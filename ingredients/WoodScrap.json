@@ -1,0 +1,49 @@
+{
+  "name": "Wood Scrap",
+  "tier": 0,
+  "level": 75,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 435,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 14,
+      "maximum": 24
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 6,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "JamWoodSprite",
+      "rarity": 3,
+      "rarityOffset": 33
+    }
+  ]
+}

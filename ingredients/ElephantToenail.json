@@ -1,0 +1,58 @@
+{
+  "name": "Elephant Toenail",
+  "tier": 2,
+  "level": 85,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 337,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 1100,
+      "maximum": 1500
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -44,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucElefolkHunter",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucElefolkWarrior",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+        {
+      "name": "aucElephelk",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

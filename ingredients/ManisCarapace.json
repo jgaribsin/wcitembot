@@ -1,0 +1,48 @@
+{
+  "name": "Manis Carapace",
+  "tier": 0,
+  "level": 95,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 281,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -29000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFAstrochelysmanis",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

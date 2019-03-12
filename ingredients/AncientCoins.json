@@ -1,0 +1,218 @@
+{
+  "name": "Ancient Coins",
+  "tier": 3,
+  "level": 59,
+  "skills": [
+    "JEWELING",
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 361,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -8,
+      "maximum": -7
+    },
+    "LOOTBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "XPBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+{
+      "name": "SnerpRAREMOB50",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "AcerherbSpawn",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "AcerherbSpawn2",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SpringMossyGolem",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-LostAdv",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Sacrifice",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2TribeZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpCorTribe",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroRottenZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2RottenZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTromsJungleAncientIbojuUndead1",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutTromsJungleAncientIbojuUndead2",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+{
+      "name": "SnerpIdolGuard",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpLostIdol",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptBlade",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AncientIdol",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CorruptIdol",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpThunderGrub",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime1",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime2",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime3",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Qslime",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukCarnagator",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "fetish1",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "fetish2",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TribeShaman",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TribeWarrior",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-VampBat",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpFruitBat",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TreeSpider",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Leopard",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-CanopyCat",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-JungleViper",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

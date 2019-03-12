@@ -1,0 +1,55 @@
+{
+  "name": "Wriggling Darkness",
+  "tier": 1,
+  "level": 70,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "STEALING"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 25,
+      "maximum": 60
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -33000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 14,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossBladeOfShade5",
+      "rarity": 2,
+      "rarityOffset": -94
+    }
+  ]
+}

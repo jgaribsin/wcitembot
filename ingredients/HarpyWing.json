@@ -1,0 +1,59 @@
+{
+  "name": "Harpy Wing",
+  "tier": 2,
+  "level": 84,
+  "skills": [
+    "JEWELING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 406,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "SPEED": {
+      "minimum": 4,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -68000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 20
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucSoulSingerHarpy",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHarpyRanger",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}
+

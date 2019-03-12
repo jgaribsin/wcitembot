@@ -1,0 +1,62 @@
+{
+  "name": "Chain Loop",
+  "tier": 1,
+  "level": 35,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 101,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 50,
+      "maximum": 70
+    },
+    "WATERDEFENSE": {
+      "minimum": -6,
+      "maximum": -4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 15,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutDireSubaltern",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutPossessiveMilitarist",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRAREWaywardVagabond",
+      "rarity": 1,
+      "rarityOffset": 40
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Unsettling Soul",
+  "tier": 3,
+  "level": 25,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 25,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutTimeValleyLakeVexation2",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

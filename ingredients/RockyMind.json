@@ -1,0 +1,54 @@
+{
+  "name": "Rocky Mind",
+  "tier": 3,
+  "level": 88,
+  "dropsFromLootChest": false,
+  "skills": [
+      "ARMOURING"
+  ],
+  "sprite": {
+    "id": 98,
+    "damage": 1
+  },
+  "groups": [
+    "EARTH",
+    "SLOW"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -14,
+      "maximum": -10
+    },
+     "STRENGTHPOINTS": {
+      "minimum": 15,
+      "maximum": 19
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -83000,
+    "strengthRequirement": 25,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoCrystallineBehemoth",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

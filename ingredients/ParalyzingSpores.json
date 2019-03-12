@@ -1,0 +1,66 @@
+{
+  "name": "Paralyzing Spores",
+  "tier": 2,
+  "level": 7,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 362,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE",
+    "MAGIC",
+    "SLOW"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -8,
+      "maximum": -6
+    },
+    "DAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "SPELLDAMAGE": {
+      "minimum": 6,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -12000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "ImaxeFungusParasiteRed",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeFungusParasiteBrown",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

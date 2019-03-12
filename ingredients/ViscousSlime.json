@@ -1,0 +1,74 @@
+{
+  "name": "Viscous Slime",
+  "tier": 0,
+  "level": 51,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 341,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "POISON": {
+      "minimum": 30,
+      "maximum": 85
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SnerpThunderGrub",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "jungleslime3",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Qslime",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOB50",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Hunter's Disguise",
+  "tier": 1,
+  "level": 78,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 31,
+    "damage": 1
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -36000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 12
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoGertenHunter",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

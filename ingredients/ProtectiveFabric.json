@@ -1,0 +1,75 @@
+{
+  "name": "Protective Fabric",
+  "tier": 0,
+  "level": 85,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 171,
+    "damage": 7
+  },
+  "groups": [
+    "DEFENSIVE",
+    "RAINBOW"
+  ],
+  "identifications": {
+    "FIREDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "WATERDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "AIRDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "EARTHDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "THUNDERDEFENSE": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFcorkusbandit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcorkusbandit2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcorkusbandit3",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

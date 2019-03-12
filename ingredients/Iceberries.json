@@ -1,0 +1,49 @@
+{
+  "name": "Iceberries",
+  "tier": 1,
+  "level": 75,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 38,
+    "damage": 1
+  },
+  "groups": [
+    "MAGIC",
+    "WATER"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -20,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFmermaid",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

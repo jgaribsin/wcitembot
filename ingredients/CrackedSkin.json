@@ -1,0 +1,78 @@
+{
+  "name": "Cracked Skin",
+  "tier": 0,
+  "level": 30,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 320,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "AIRDEFENSE": {
+      "minimum": -8,
+      "maximum": -4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -16000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "dryzombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFRattlesnake",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Ranger",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2ScorchedZombie",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2DeadProspector",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRAREWaywardVagabond",
+      "rarity": 1,
+      "rarityOffset": 60
+    }
+  ]
+}

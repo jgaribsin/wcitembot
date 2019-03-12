@@ -1,0 +1,93 @@
+{
+  "name": "Void Essence",
+  "tier": 0,
+  "level": 95,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 5
+  },
+  "groups": [
+    "AIR",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "AGILITYPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -30,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "ImaxeDarkRukh3",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEyeOfEmptiness",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEyeofRegret",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEaterOfLight",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEyeofRegretHard",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEyeofEmptinessHard",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "VoidSquidRAREMOB",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeCrystalGuardian",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeVoidIncarnate",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

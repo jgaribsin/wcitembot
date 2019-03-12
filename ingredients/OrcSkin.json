@@ -1,0 +1,64 @@
+{
+  "name": "Orc Skin",
+  "tier": 0,
+  "level": 63,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "FIRE"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 1,
+      "maximum": 3
+    },
+    "FIREDEFENSE": {
+      "minimum": 3,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -23000,
+    "strengthRequirement": 5,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 5,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "ALEXOrcConqueror",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ALEXCampOrcLeader",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpOrcCustodian",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Portal Emanation",
+  "tier": 2,
+  "level": 29,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 378,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 6,
+      "maximum": 10
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 20,
+      "maximum": 35
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -31000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 20,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutNetherCorrupter",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutNetherWight",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Pykrete",
+  "tier": 2,
+  "level": 47,
+  "skills": [
+    "WOODWORKING",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 168,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "WATERDEFENSE": {
+      "minimum": 3,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 27000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 30,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "ConBobTree",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ConBobTree2",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ConBobTree3",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "name": "Orc Eye",
+  "tier": 0,
+  "level": 44,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 375,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "SLOW"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -5,
+      "maximum": -3
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 7,
+      "maximum": 13
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -19000,
+    "strengthRequirement": 8,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "BankOrc",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcdrudge",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcraider",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcbloodrager",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcwarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcberserker",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcshaman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpOrcShaman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "GSTGuardianTrollEast",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DForcblademaster",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ALEXHungryOrcPig",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+   {
+      "name": "Moodle-MutantOrc",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+   {
+      "name": "ALEXOrcGuardFriendly",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+   {
+      "name": "GSTGreggrBoss",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+   {
+      "name": "ALEXGorgu",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

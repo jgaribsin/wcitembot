@@ -1,0 +1,137 @@
+{
+  "name": "Snake Skin",
+  "tier": 1,
+  "level": 66,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "AIR",
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 6,
+      "maximum": 12
+    },
+    "HEALTHBONUS": {
+      "minimum": -350,
+      "maximum": -240
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 8,
+      "maximum": 10
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -39,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-JungleViper",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpBoa",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFMesquis",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFGanhir",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFratel",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFechidna",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-SnakeCharmer",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFmeskis",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeMudSerpent",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhanjabroodguard",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhanjawarrior",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFHanjaabomination",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFMedusa",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeEarthBasilisk",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFhanjaguardian",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-TempleSnake",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgorgon",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

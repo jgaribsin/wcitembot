@@ -1,0 +1,53 @@
+{
+  "name": "Flameheart",
+  "tier": 2,
+  "level": 84,
+  "skills": [
+    "ARMOURING",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 376,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 80,
+      "maximum": 95
+    },
+    "HEALTHBONUS": {
+      "minimum": 600,
+      "maximum": 900
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -80000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 50,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -86,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutGavelCanyonFleris",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

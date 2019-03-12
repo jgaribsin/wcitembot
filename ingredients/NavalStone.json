@@ -1,0 +1,59 @@
+{
+  "name": "Naval Stone",
+  "tier": 3,
+  "level": 63,
+  "dropsFromLootChest": false,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 169,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC",
+    "WATER"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "DAMAGEBONUS": {
+      "minimum": -8,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 25,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "2x2OceanZombieBTD",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Hurricane",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

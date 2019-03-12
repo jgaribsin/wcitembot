@@ -1,0 +1,67 @@
+{
+  "name": "Goblin Tooth",
+  "tier": 0,
+  "level": 83,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 452,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "EMERALDSTEALING": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -5000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucHobgoblinCaster",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinCommander",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinFarmer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinWarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

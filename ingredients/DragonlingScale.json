@@ -1,0 +1,118 @@
+{
+  "name": "Dragonling Scale",
+  "tier": 0,
+  "level": 98,
+  "skills": [
+     "ARMOURING"
+  ],
+  "sprite": {
+    "id": 318,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "WATER",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "WATERDEFENSE": {
+      "minimum": 3,
+      "maximum": 7
+    },
+    "THUNDERDEFENSE": {
+      "minimum": -8,
+      "maximum": -6
+    },
+    "EARTHDEFENSE": {
+      "minimum": 5,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SkyGaleDragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkyEmeraldDragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SkySkyDragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFshadowdragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFsapphiredragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFblackdragoling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFamethystdragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFwhitedragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdragonlingofthedepth",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFreddragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFcrystaldragoling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgoldendragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "H2ZEarthDragonling",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

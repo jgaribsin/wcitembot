@@ -1,0 +1,79 @@
+{
+  "name": "Stone Plating",
+  "tier": 1,
+  "level": 82,
+  "skills": [
+    "ARMOURING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 402,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "SLOW"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 300,
+      "maximum": 480
+    },
+    "SPEED": {
+      "minimum": -10,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -20000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucCyclops1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucCyclops2",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+        {
+      "name": "aucGargoyle",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+        {
+      "name": "aucElefolkHunter",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+        {
+      "name": "aucElefolkWarrior",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+        {
+      "name": "aucElephelk",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

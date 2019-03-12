@@ -1,0 +1,48 @@
+{
+  "name": "Corbys Innards",
+  "tier": 0,
+  "level": 81,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 372,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 13,
+      "maximum": 26
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -84,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFcorbys",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

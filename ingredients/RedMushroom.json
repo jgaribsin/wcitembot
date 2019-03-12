@@ -1,0 +1,108 @@
+{
+  "name": "Red Mushroom",
+  "tier": 0,
+  "level": 1,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 40,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHREGENRAW": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -13,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "wild",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "SelvutMindsRamblingMushroom",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "mushroom2",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "SelvutMindsSporeShooter",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "SelvutMindsSuperSporeShooter",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "Salt-TheAssistant",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "DFMatango",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "Salt-EssrenMonster",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "2x2YahyasDisciple",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "H2ZRedMycolite",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "yahyaapprentice",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "SelvutMindsYahyaTheFinalForm",
+      "rarity": 3,
+      "rarityOffset": 100
+    },
+   {
+      "name": "mushroom",
+      "rarity": 3,
+      "rarityOffset": 100
+    }
+  ]
+}

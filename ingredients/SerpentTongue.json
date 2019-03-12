@@ -1,0 +1,72 @@
+{
+  "name": "Serpent Tongue",
+  "tier": 2,
+  "level": 89,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 396,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 14,
+      "maximum": 21
+    },
+    "SPELLDAMAGE": {
+      "minimum": 14,
+      "maximum": 21
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -77,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "DFhowlinglavasalamander",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdestrachan",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFdevouringdestranchan",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-MHSmokeSerpent",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFlavasalamanderpainbringer",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

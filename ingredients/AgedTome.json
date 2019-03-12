@@ -1,0 +1,54 @@
+{
+  "name": "Aged Tome",
+  "tier": 2,
+  "level": 82,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 340,
+    "damage": 0
+  },
+  "groups": [
+    "WATER",
+    "MAGIC"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": -12,
+      "maximum": -9
+    },
+    "SPELLDAMAGE": {
+      "minimum": 10,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 20,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoPlainsGuardian",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

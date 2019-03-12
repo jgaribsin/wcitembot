@@ -1,0 +1,68 @@
+{
+  "name": "Ancient Heart",
+  "tier": 3,
+  "level": 45,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 376,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": -6,
+      "maximum": -4
+    },
+    "SPELLDAMAGE": {
+      "minimum": -8,
+      "maximum": -6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 124,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "PepoAncientOrc",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcraider",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFOrcberserker",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "BankOrc",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

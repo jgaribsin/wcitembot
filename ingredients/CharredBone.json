@@ -1,0 +1,49 @@
+{
+  "name": "Charred Bone",
+  "tier": 1,
+  "level": 9,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "FIREDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -14000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "burnedsuburbresident",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

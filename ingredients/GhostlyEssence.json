@@ -1,0 +1,144 @@
+{
+  "name": "Ghostly Essence",
+  "tier": 0,
+  "level": 48,
+  "skills": [
+    "JEWELING",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "THUNDER",
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 0,
+      "maximum": 3
+    }
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -19400,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Moodle-ColdShadow",
+      "rarity": 2,
+      "rarityOffset": 0
+    },
+    {
+      "name": "phantom",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "howlingPhantom",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFrestlessarmor",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFriderlesshorse",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFDisembodiedHead",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukFroo",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AIRGhastShadow",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFheadlesshorseman",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanHantergeist",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanPassiveSpirit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-HollowShade",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AIRGhastGibbering",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanChainedSpirit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanJailkeeper",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanVengefulSpirit",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-SRemains",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-HorselessHead",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-AIRChilledSpirit",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

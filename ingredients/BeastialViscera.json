@@ -1,0 +1,58 @@
+{
+  "name": "Beastial Viscera",
+  "tier": 2,
+  "level": 72,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 153,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 300,
+      "maximum": 550
+    },
+    "DAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -57,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "2x2CorruptedMinion",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2CorruptedBeast",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

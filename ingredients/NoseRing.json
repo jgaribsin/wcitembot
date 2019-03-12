@@ -1,0 +1,83 @@
+{
+  "name": "Nose Ring",
+  "tier": 2,
+  "level": 83,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 95,
+    "damage": 1
+  },
+  "groups": [
+    "SLOW",
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "SPEED": {
+      "minimum": -5,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 37000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucCyclops1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucCyclops2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucChargingMinotaur",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucEnragedMinotaur",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinCaster",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinCommander",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucHobgoblinWarrior",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

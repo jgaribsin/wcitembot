@@ -1,0 +1,67 @@
+{
+  "name": "Stack of Coins",
+  "tier": 0,
+  "level": 73,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 361,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING"
+  ],
+  "identifications": {
+    "XPBONUS": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "LOOTBONUS": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -48000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoBanditHunter",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "LeoBanditAlchemist",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "LeoBanditJuggler",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "LeoBanditTracker",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

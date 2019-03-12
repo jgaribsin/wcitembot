@@ -1,0 +1,65 @@
+{
+  "name": "Iridescent Elytra",
+  "tier": 3,
+  "level": 68,
+  "dropsFromLootChest": false,
+  "skills": [
+    "TAILORING",
+    "COOKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 409,
+    "damage": 0
+  },
+  "groups": [
+    "QUICK",
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDEFENSE": {
+      "minimum": 8,
+      "maximum": 12
+    },
+    "SPEED": {
+      "minimum": 6,
+      "maximum": 9
+    },
+    "EARTHDAMAGEBONUS": {
+      "minimum": -8,
+      "maximum": -5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 30
+  },
+  "consumableOnlyIDs": {
+    "duration": -76,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SnerpRAREMOB60",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpMudBeetle",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

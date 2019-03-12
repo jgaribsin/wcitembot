@@ -1,0 +1,46 @@
+{
+  "name": "Golden Avia Feather",
+  "tier": 2,
+  "level": 86,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 296,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -90,
+    "charges": 1
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 25,
+    "notTouching": -20
+  },
+ "droppedBy": [
+    {
+      "name": "Salt-GoldenAvia",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

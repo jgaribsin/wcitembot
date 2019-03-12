@@ -1,0 +1,73 @@
+{
+  "name": "Ice Fragment",
+  "tier": 1,
+  "level": 42,
+  "skills": [
+    "WOODWORKING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 174,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "LOOTBONUS": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -26000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 7
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "FiroFrozenWarrior",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroIcyRanger",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroFrostedShaman",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroCatapultOperator",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "FiroGelidCommander",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

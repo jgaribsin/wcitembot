@@ -1,0 +1,69 @@
+{
+  "name": "Gunpowder",
+  "tier": 1,
+  "level": 37,
+  "skills": [
+    "ALCHEMISM",
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 402,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "EXPLODING": {
+      "minimum": 15,
+      "maximum": 20
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -27,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "2x2DeadProspector",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CorkusGigaU05MinerBot",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "2x2Reggie",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "RARETumbleweed",
+      "rarity": 1,
+      "rarityOffset": 0
+    },
+    {
+      "name": "HaxGunpowderImp",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

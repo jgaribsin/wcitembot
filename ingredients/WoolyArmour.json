@@ -1,0 +1,52 @@
+{
+  "name": "Wooly Armour",
+  "tier": 1,
+  "level": 10,
+  "skills": [
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 171,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "AIRDEFENSE": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "WATERDEFENSE": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -15000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "sheep",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

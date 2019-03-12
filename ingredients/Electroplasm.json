@@ -1,0 +1,51 @@
+{
+  "name": "Electroplasm",
+  "tier": 3,
+  "level": 26,
+  "skills": [
+    "SCRIBING",
+    "WOODWORKING",
+    "WEAPONSMITHING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "DEXTERITYPOINTS": {
+        "minimum": 8,
+        "maximum": 12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 15,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -37,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukWailingWraith",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

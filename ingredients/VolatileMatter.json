@@ -1,0 +1,58 @@
+{
+  "name": "Volatile Matter",
+  "tier": 3,
+  "level": 20,
+  "skills": [
+    "ALCHEMISM",
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "EXPLODING": {
+      "minimum": 8,
+      "maximum": 13
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 14,
+      "maximum": 22
+    },
+    "DEFENSEPOINTS": {
+      "minimum": -4,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -40000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -71,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SelvutTimeValleyHighTemporalRift",
+      "rarity": 6,
+      "rarityOffset": 0
+    }
+  ]
+}

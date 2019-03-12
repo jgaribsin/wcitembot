@@ -1,0 +1,54 @@
+{
+  "name": "Agullo Beak",
+  "tier": 1,
+  "level": 81,
+  "skills": [
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 318,
+    "damage": 0
+  },
+  "groups": [
+    "AIR",
+    "OFFENSIVE",
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 3,
+      "maximum": 7
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 11
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -36000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 16
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFagullos",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

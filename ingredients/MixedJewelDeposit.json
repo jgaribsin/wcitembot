@@ -1,0 +1,54 @@
+{
+  "name": "Mixed Jewel Deposit",
+  "tier": 1,
+  "level": 95,
+  "dropsFromLootChest": false,
+  "skills": [
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 21,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "WATER"
+  ],
+  "identifications": {
+    "SPELLDAMAGE": {
+      "minimum": 3,
+      "maximum": 5
+    },
+    "DAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -40000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossTERA4M2",
+      "rarity": 2,
+      "rarityOffset": 0
+    }
+  ]
+}

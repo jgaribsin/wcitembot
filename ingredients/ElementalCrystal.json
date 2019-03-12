@@ -1,0 +1,93 @@
+{
+  "name": "Elemental Crystal",
+  "tier": 1,
+  "level": 70,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3OTliZmFhM2EyYzYzYWQ4NWRkMzc4ZTY2ZDU3ZDlhOTdhM2Y4NmQwZDlmNjgzYzQ5ODYzMmY0ZjVjIn19fQ==",
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 18,
+      "maximum": 20
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 23,
+      "maximum": 25
+    },
+    "REFLECTION": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "HEALTHBONUS": {
+      "minimum": 280,
+      "maximum": 300
+    },
+    "THORNS": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -58000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFnixie",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpEarthMyco",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpWaterMyco",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpFireMyco",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpAirMyco1",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpElementMiasma",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

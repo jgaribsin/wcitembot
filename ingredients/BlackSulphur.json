@@ -1,0 +1,54 @@
+{
+  "name": "Black Sulphur",
+  "tier": 2,
+  "level": 45,
+  "dropsFromLootChest": false,
+  "skills": [
+    "COOKING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 289,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "EXPLODING": {
+      "minimum": 12,
+      "maximum": 24
+    },
+    "FIREDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 12
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -55,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutBonusBossRymekLuke2",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

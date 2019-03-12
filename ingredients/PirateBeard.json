@@ -1,0 +1,69 @@
+{
+  "name": "Pirate Beard",
+  "tier": 1,
+  "level": 90,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 287,
+    "damage": 0
+  },
+  "groups": [
+    "WATER",
+    "EARTH",
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 50,
+      "maximum": 90
+    },
+    "WATERDAMAGEBONUS": {
+      "minimum": 8,
+      "maximum": 15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 5,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -45,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "GigaPirateGuard",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "GigaMeleePirate",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "NeburStormCallerPirate",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CorkusGigaPirateCaptain",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

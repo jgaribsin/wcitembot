@@ -1,0 +1,46 @@
+{
+  "name": "Primordial Soul",
+  "tier": 3,
+  "level": 78,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+  ],
+  "sprite": {
+    "id": 377,
+    "damage": 0
+  },
+  "groups": [
+    "RAINBOW"
+  ],
+  "identifications": {
+},
+  "itemOnlyIDs": {
+    "durabilityModifier": -76000,
+    "strengthRequirement": -12,
+    "dexterityRequirement": -12,
+    "intelligenceRequirement": -12,
+    "defenceRequirement": -12,
+    "agilityRequirement": -12
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoPlainsGuardian",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

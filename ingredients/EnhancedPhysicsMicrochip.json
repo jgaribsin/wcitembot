@@ -1,0 +1,54 @@
+{
+  "name": "Enhanced Physics Microchip",
+  "tier": 2,
+  "level": 90,
+  "skills": [
+    "ARMOURING",
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 356,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "REFLECTION": {
+      "minimum": 20,
+      "maximum": 30
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 9,
+      "maximum": 16
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -56000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 35
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+"droppedBy": [
+    {
+      "name": "DFS38stealthbot",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

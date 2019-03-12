@@ -1,0 +1,82 @@
+{
+  "name": "Tenebrous Plasma",
+  "tier": 2,
+  "level": 65,
+  "skills": [
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 252,
+    "damage": 15
+  },
+  "groups": [
+    "QUICK",
+    "MAGIC"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 6,
+      "maximum": 10
+    },
+    "DAMAGEBONUS": {
+      "minimum": -20,
+      "maximum": -12
+    },
+    "SPELLDAMAGE": {
+      "minimum": 10,
+      "maximum": 16
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -50,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFcorruptedorc",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Moodle-Revenant",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFshade",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanPoltergeist1",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutDullahanPoltergeist2",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpRAREMOBKANDER",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Pig's Skull",
+  "tier": 1,
+  "level": 78,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTUyN2M0ZGE4OTIyZDM5NDVjNzFkMzFkMGFhYTY3NjE0ODlkMmU3YzVlZTJhNzFjYmJjYmMwODA2ODczZjAifX19",
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 2,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -36000,
+    "strengthRequirement": 12,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "LeoGert",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "LeoGertenHunter",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-TerrifiedPig",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-TerrifiedPig2",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

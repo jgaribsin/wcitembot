@@ -1,0 +1,60 @@
+{
+  "name": "Fuming Lava Rock",
+  "tier": 1,
+  "level": 23,
+  "skills": [
+    "WEAPONSMITHING",
+    "ARMOURING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "OFFENSIVE",
+    "FIRE"
+  ],
+  "identifications": {
+    "FIREDAMAGEBONUS": {
+      "minimum": 3,
+      "maximum": 4
+    },
+    "EXPLODING": {
+      "minimum": 3,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -20000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 15,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "SpringLavaInfMiner",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpFerrite",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

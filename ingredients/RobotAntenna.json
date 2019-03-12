@@ -1,0 +1,143 @@
+{
+  "name": "Robot Antenna",
+  "tier": 0,
+  "level": 85,
+  "skills": [
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 356,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "DEXTERITYPOINTS": {
+      "minimum": 1,
+      "maximum": 2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -27000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 5,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+ "droppedBy": [
+    {
+      "name": "DFL21repairedbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFL22repairedbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFU45repairedbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFS38stealthbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFU04clockbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFu03minerbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFPu02minerpatroller",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFu08servantbot",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFH101warmachine",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFH208warmachine",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFH212warmachine",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFHp16warmachine",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFavosmodifiedwarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeFireInfusedMech",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeRogueMech",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeRCC-17",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeRCC-18",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeRCC-16",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "ImaxeAirInfusedMech",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CorkusJbipStabot",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

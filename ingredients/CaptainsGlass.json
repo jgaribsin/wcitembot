@@ -1,0 +1,55 @@
+{
+  "name": "Captain's Glass",
+  "tier": 1,
+  "level": 28,
+  "skills": [
+    "WEAPONSMITHING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 390,
+    "damage": 0
+  },
+  "groups": [
+    "SLOW",
+    "MELEE",
+    "EARTH"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": -6,
+      "maximum": -3
+    },
+    "DAMAGEBONUS": {
+      "minimum": 7,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -22000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "drunkcaptain",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

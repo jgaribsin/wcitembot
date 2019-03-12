@@ -1,0 +1,49 @@
+{
+  "name": "Defishious",
+  "tier": 3,
+  "level": 42,
+  "dropsFromLootChest": false,
+  "skills": [
+    "COOKING"
+  ],
+  "sprite": {
+    "id": 349,
+    "damage": 1
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 40,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanDefishiousRARE",
+      "rarity": 3,
+      "rarityOffset": 233
+    }
+  ]
+}

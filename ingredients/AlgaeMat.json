@@ -1,0 +1,68 @@
+{
+  "name": "Algae Mat",
+  "tier": 1,
+  "level": 36,
+  "skills": [
+    "SCRIBING"
+  ],
+  "sprite": {
+    "id": 106,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "WATER"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 12,
+      "maximum": 18
+    },
+    "REFLECTION": {
+      "minimum": 9,
+      "maximum": 15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -26,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanTideriderSquid",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanLunaticSquid",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanSquidVicious",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutOceanDarkenedSquid",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

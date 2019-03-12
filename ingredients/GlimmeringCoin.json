@@ -1,0 +1,76 @@
+{
+  "name": "Glimmering Coin",
+  "tier": 3,
+  "level": 26,
+  "dropsFromLootChest": false,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 175,
+    "damage": 0
+  },
+  "groups": [
+    "STEALING",
+    "QUICK"
+  ],
+  "identifications": {
+    "SPEED": {
+      "minimum": 3,
+      "maximum": 5
+    },
+    "LOOTBONUS": {
+      "minimum": 7,
+      "maximum": 9
+    },
+    "HEALTHREGENRAW": {
+      "minimum": -22,
+      "maximum": -18
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SnerpSavannahZombie",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SnerpSavannahBandit",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFUndeadBandit",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "PFHighwayman",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

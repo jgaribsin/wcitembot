@@ -1,0 +1,84 @@
+{
+  "name": "Tough Skin",
+  "tier": 0,
+  "level": 84,
+  "skills": [
+    "TAILORING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "HEALTHBONUS": {
+      "minimum": 200,
+      "maximum": 330
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -30000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 10,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "aucCyclops1",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucCyclops2",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucChargingMinotaur",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucEnragedMinotaur",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucElefolkHunter",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucElefolkWarrior",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "aucElephelk",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}
+
