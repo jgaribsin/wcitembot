@@ -142,26 +142,9 @@ message.channel.send(botResponse);
 
 
               var baseStats = "";
-              if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
-                  var iDamage = item.damage;
-                  var iFireDamage = item.fireDamage;
-                  var iWaterDamage = item.waterDamage;
-                  var iAirDamage = item.airDamage;
-                  var iThunderDamage = item.thunderDamage;
-                  var iEarthDamage = item.earthDamage;
-                  var iAtkSpeed = item.attackSpeed;
+              if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger")
+                message.channel.send("Please request an armour or accessory.");
 
-                  var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
-                  var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
-
-                  for (i = 0; i < baseStatsStats.length; i++) {
-                      if (baseStatsStats[i] !== undefined) {
-                          if (baseStatsStats[i].toString() !== "0-0")
-                              baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-                      }
-                  }
-
-              } // End if type weapon
               else {
                   var iHealth = item.health;
                   var iFireDefense = item.fireDefense;
@@ -173,10 +156,10 @@ message.channel.send(botResponse);
                   var baseStatsStats = [iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
                   var baseStatsDisplay = ["fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
 
-                  baseStats += "health: " + iHealth + " --> 0 (";
+                  baseStats += "health: " + iHealth + " --> placeholder (";
                   if (item.accessoryType) baseStats += Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
                   else baseStats += Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
-                  baseStats += ")\n";
+                  baseStats += ") (0.00x)\n";
                   for (i = 0; i < baseStatsStats.length; i++) {
                       if (baseStatsStats[i] !== undefined) {
                           if (baseStatsStats[i] !== 0)
