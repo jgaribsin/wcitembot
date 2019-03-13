@@ -162,18 +162,18 @@ message.channel.send(botResponse);
                   var itemHealth = 0;
                   if (item.accessoryType) {
                     baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
-                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + ((iHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
                     if (iHealthBonus !== 0) {
                       itemHealth = iHealth + iHealthBonus;
-                      baseStats += "health (with health bonus): " + itemHealth + " (" + iHealth + " + " + iHealthBonus + ") --> placeholder (p +p) [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]\n";
+                      baseStats += "health (w/ health bonus): " + itemHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (itemHealth / baselineHealth).toFixed(3) + "x]\n";
                     }
                   }
                   else {
                     baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
-                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + ((iHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
                     if (iHealthBonus !== 0) {
                       itemHealth = iHealth + iHealthBonus;
-                      baseStats += "health (with health bonus): " + itemHealth + " (" + iHealth + " + " + iHealthBonus + ") --> placeholder (p +p) [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]\n";
+                      baseStats += "health (w/ health bonus): " + itemHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (itemHealth / baselineHealth).toFixed(3) + "x]\n";
                     }
                   }
 
