@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, message, args) => {
 
   var votesFive = args[0] - 1;
   var votesFour = args[1] - 1;

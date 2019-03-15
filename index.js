@@ -4,6 +4,7 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const fs = require("fs");
 client.commands = new Discord.Collection();
 client.ingredients = new Discord.Collection();
+client.ingredientNames = new Discord.Collection();
 
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
@@ -35,11 +36,14 @@ fs.readdir("./ingredients", (err, files) => {
     console.log("\nCouldn't find ingredients.");
     return;
   }
-
+var ingredientsSet;
 var ingredientsLoaded = 0;
   jsfile.forEach((f, i) => {
       let props = require(`./ingredients/${f}`);
       ingredientsLoaded++;
+      client.ingredients.set(props);
+      if (props.displayName) client.ingredientNames.set(props.displayName);
+      else client.ingredientNames.set(props.name);
   });
 console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
 });
@@ -70,7 +74,7 @@ client.on('message', message => {
   let args = messageArray.slice(1);
 
   let commandFile = client.commands.get(command);
-  if (commandFile) commandFile.run(client, prefix, client.ingredients, message, args);
+  if (commandFile) commandFile.run(client, prefix, client.ingredients, client.ingredientNames, message, args);
   });
 // process.env.TOKEN
 client.login(process.env.TOKEN);

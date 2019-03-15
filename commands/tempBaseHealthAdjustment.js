@@ -139,31 +139,14 @@ message.channel.send(botResponse);
                   if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
                       identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
               }
-              if (item.addedLore !== null && item.addedLore !== undefined)
-                  identifications += "\n" + item.addedLore;
 
 
               var baseStats = "";
               if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
-                  var iDamage = item.damage;
-                  var iFireDamage = item.fireDamage;
-                  var iWaterDamage = item.waterDamage;
-                  var iAirDamage = item.airDamage;
-                  var iThunderDamage = item.thunderDamage;
-                  var iEarthDamage = item.earthDamage;
-                  var iAtkSpeed = item.attackSpeed;
+                message.channel.send("Please request an armour or accessory.");
+                return;
+              }
 
-                  var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
-                  var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
-
-                  for (i = 0; i < baseStatsStats.length; i++) {
-                      if (baseStatsStats[i] !== undefined) {
-                          if (baseStatsStats[i].toString() !== "0-0")
-                              baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-                      }
-                  }
-
-              } // End if type weapon
               else {
                   var iHealth = item.health;
                   var iFireDefense = item.fireDefense;
@@ -172,8 +155,27 @@ message.channel.send(botResponse);
                   var iThunderDefense = item.thunderDefense;
                   var iEarthDefense = item.earthDefense;
 
-                  var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
-                  var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
+                  var baseStatsStats = [iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
+                  var baseStatsDisplay = ["fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
+
+                  var baselineHealth = 0;
+                  var itemHealth = 0;
+                  if (item.accessoryType) {
+                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
+                    if (iHealthBonus !== 0) {
+                      itemHealth = iHealth + iHealthBonus;
+                      baseStats += "health (w/ health bonus): " + itemHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (itemHealth / baselineHealth).toFixed(3) + "x]\n";
+                    }
+                  }
+                  else {
+                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
+                    baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
+                    if (iHealthBonus !== 0) {
+                      itemHealth = iHealth + iHealthBonus;
+                      baseStats += "health (w/ health bonus): " + itemHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (itemHealth / baselineHealth).toFixed(3) + "x]\n";
+                    }
+                  }
 
                   for (i = 0; i < baseStatsStats.length; i++) {
                       if (baseStatsStats[i] !== undefined) {
@@ -189,5 +191,5 @@ message.channel.send(botResponse);
       }
 
 module.exports.help = {
-  commandName: "it"
+  commandName: "ha"
 }
