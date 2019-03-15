@@ -189,5 +189,5 @@ message.channel.send(botResponse);
       }
 
 module.exports.help = {
-  commandName: "it"
+  commandName: "i"
 }
