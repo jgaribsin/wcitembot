@@ -48,7 +48,8 @@ else {
   if (perfectMatched) foundIngr = ingrArr[perfectMatch][0];
   else foundIngr = ingrArr[matchedIngs[0]][0];
   let keys = Object.keys(foundIngr.identifications);
-  botResponse += `**${foundIngr.name}** ` ;
+  if (foundIngr.displayName) botResponse += `**${foundIngr.displayName}** ` ;
+  else botResponse += `**${foundIngr.name}** ` ;
   switch (foundIngr.tier) {
     case 0:
       botResponse += "☆☆☆\n";
