@@ -95,28 +95,28 @@ else {
   botResponse += "\n**Requirements**\n";
   botResponse += `Level: ${foundIngr.level}\n`;
   if (strengthReq || dexterityReq || intelligenceReq || defenceReq || agilityReq) {
-    if (strengthReq) botResponse += "○ Strength: " + foundIngr.itemOnlyIDs.strengthRequirement + "\n";
-    if (dexterityReq) botResponse += "○ Dexterity: " + foundIngr.itemOnlyIDs.dexterityRequirement + "\n";
-    if (intelligenceReq) botResponse += "○ Intelligence: " + foundIngr.itemOnlyIDs.intelligenceRequirement + "\n";
-    if (defenceReq) botResponse += "○ Defence: " + foundIngr.itemOnlyIDs.defenceRequirement + "\n";
-    if (agilityReq) botResponse += "○ Agility: " + foundIngr.itemOnlyIDs.agilityRequirement + "\n";
+    if (strengthReq) botResponse += "- Strength: " + foundIngr.itemOnlyIDs.strengthRequirement + "\n";
+    if (dexterityReq) botResponse += "- Dexterity: " + foundIngr.itemOnlyIDs.dexterityRequirement + "\n";
+    if (intelligenceReq) botResponse += "- Intelligence: " + foundIngr.itemOnlyIDs.intelligenceRequirement + "\n";
+    if (defenceReq) botResponse += "- Defence: " + foundIngr.itemOnlyIDs.defenceRequirement + "\n";
+    if (agilityReq) botResponse += "- Agility: " + foundIngr.itemOnlyIDs.agilityRequirement + "\n";
   }
 
   if (leftMod || rightMod || aboveMod || underMod || touchingMod || notTouchingMod) {
     botResponse += "\n**Position Modifiers**\n";
-    if (leftMod) botResponse += "○ Left: " + foundIngr.ingredientPositionModifiers.left + "\n";
-    if (rightMod) botResponse += "○ Right: " + foundIngr.ingredientPositionModifiers.right + "\n";
-    if (aboveMod) botResponse += "○ Above: " + foundIngr.ingredientPositionModifiers.above + "\n";
-    if (underMod) botResponse += "○ Under: " + foundIngr.ingredientPositionModifiers.under + "\n";
-    if (touchingMod) botResponse += "○ Touching: " + foundIngr.ingredientPositionModifiers.touching + "\n";
-    if (notTouchingMod) botResponse += "○ Not Touching: " + foundIngr.ingredientPositionModifiers.notTouching + "\n";
+    if (leftMod) botResponse += "- Left: " + foundIngr.ingredientPositionModifiers.left + "\n";
+    if (rightMod) botResponse += "- Right: " + foundIngr.ingredientPositionModifiers.right + "\n";
+    if (aboveMod) botResponse += "- Above: " + foundIngr.ingredientPositionModifiers.above + "\n";
+    if (underMod) botResponse += "- Under: " + foundIngr.ingredientPositionModifiers.under + "\n";
+    if (touchingMod) botResponse += "- Touching: " + foundIngr.ingredientPositionModifiers.touching + "\n";
+    if (notTouchingMod) botResponse += "- Not Touching: " + foundIngr.ingredientPositionModifiers.notTouching + "\n";
   }
 
   if (keys.length > 0) botResponse += "\n**Identifications**\n";
   for (var i = 0; i < ingrStats.length; i++) {
     for (var j = 0; j < keys.length; j++) {
       if (keys[j] == ingrStats[i])
-        botResponse += "○ " + ingrDisplay[i] + ": " +
+        botResponse += "- " + ingrDisplay[i] + ": " +
         foundIngr.identifications[keys[j]].minimum +
         " to " +
         foundIngr.identifications[keys[j]].maximum +
@@ -124,11 +124,11 @@ else {
     }
   }
   if (durability || duration || charges) botResponse += "\n**Effects**\n";
-  if (durability) botResponse += "○ Durability: " + foundIngr.itemOnlyIDs.durabilityModifier + "\n";
-  if (duration) botResponse += "○ Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
-  if (charges) botResponse += "○ Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
-  if (atkSpeedMod) botResponse += "○ Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
-  if (powderSlotMod) botResponse += "○ Powder Slot Modifier: " + foundIngr.itemOnlyIDs.powderSlotModifier + "\n";
+  if (durability) botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier + "\n";
+  if (duration) botResponse += "- Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
+  if (charges) botResponse += "- Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
+  if (atkSpeedMod) botResponse += "- Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
+  if (powderSlotMod) botResponse += "- Powder Slot Modifier: " + foundIngr.itemOnlyIDs.powderSlotModifier + "\n";
 } // end else statement
 
 if (botResponse.length > 0) message.channel.send(botResponse);
