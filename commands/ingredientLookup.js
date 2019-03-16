@@ -124,7 +124,7 @@ else {
     }
   }
   if (durability || duration || charges) botResponse += "\n**Effects**\n";
-  if (durability) botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier + "\n";
+  if (durability) botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier/1000 + "\n";
   if (duration) botResponse += "- Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
   if (charges) botResponse += "- Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
   if (atkSpeedMod) botResponse += "- Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
