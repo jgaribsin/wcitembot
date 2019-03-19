@@ -115,12 +115,13 @@ else {
   if (keys.length > 0) botResponse += "\n**Identifications**\n";
   for (var i = 0; i < ingrStats.length; i++) {
     for (var j = 0; j < keys.length; j++) {
-      if (keys[j] == ingrStats[i])
-        botResponse += "- " + ingrDisplay[i] + ": " +
-        foundIngr.identifications[keys[j]].minimum +
-        " to " +
-        foundIngr.identifications[keys[j]].maximum +
-        "\n";
+      if (keys[j] == ingrStats[i]) {
+        botResponse += "- " + ingrDisplay[i] + ": ";
+        if (foundIngr.identifications[keys[j]].minimum == foundIngr.identifications[keys[j]].maximum)
+        botResponse += foundIngr.identifications[keys[j]].minimum;
+        else botResponse += foundIngr.identifications[keys[j]].minimum + " to " + foundIngr.identifications[keys[j]].maximum;
+        botResponse += "\n";
+      }
     }
   }
   if (durability || duration || charges) botResponse += "\n**Effects**\n";
