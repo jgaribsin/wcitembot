@@ -4,11 +4,10 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
 
   if (args[0]) var level = parseInt(args[0]);
   if (args[1]) var rarity = args[1].toString();
-  if (args[2]) var thirdInput = args[2].toString();
+  if (args[2]) var itemType = args[2].toString();
   if (args[3]) var fourthInput = args[3].toString();
 
   if (args.length > 2) {
-      var itemType = thirdInput.toString();
 
       if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "a" || itemType === "w") {
           typeMultiplier = 1.0;
