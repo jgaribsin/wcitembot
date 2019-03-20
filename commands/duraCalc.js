@@ -17,7 +17,7 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
 
   if (level > 0 && (rarity > -1 && rarity < 4)) {
     message.channel.send("Durability cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + (10000 + (level - 1) * 200) * durabilityMult +
-    "\nDuration cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + (12 + (level - 1) * 0.2) * durabilityMult );
+    "\nDuration cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + Math.round((36 + (level - 1) * 0.6) * durabilityMult * 100)/100 );
 }
 }
 module.exports.help = {
