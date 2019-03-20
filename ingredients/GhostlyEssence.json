@@ -23,7 +23,7 @@
       "minimum": 0,
       "maximum": 3
     }
-},
+  },
   "itemOnlyIDs": {
     "durabilityModifier": -19400,
     "strengthRequirement": 0,

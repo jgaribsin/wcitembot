@@ -6,7 +6,7 @@
   "untradeable": true,
   "skills": [
     "ALCHEMISM",
-	"SCRIBING"
+    "SCRIBING"
   ],
   "sprite": {
     "id": 338,
@@ -14,14 +14,14 @@
   },
   "groups": [
     "QUICK",
-	"DEFENSIVE"
+    "DEFENSIVE"
   ],
   "identifications": {
     "HEALTHREGEN": {
       "minimum": 8,
       "maximum": 10
     },
-	"HEALTHBONUS": {
+    "HEALTHBONUS": {
       "minimum": 30,
       "maximum": 40
     }
@@ -35,7 +35,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -25,
+    "duration": -75,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -46,7 +46,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IngredientDummy",
       "rarity": 1,

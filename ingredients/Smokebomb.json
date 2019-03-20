@@ -36,7 +36,7 @@
     "agilityRequirement": 10
   },
   "consumableOnlyIDs": {
-    "duration": -53,
+    "duration": -159,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -47,7 +47,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "LeoBanditTracker",
       "rarity": 5,

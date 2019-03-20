@@ -28,7 +28,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -28,
+    "duration": -84,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -39,7 +39,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "ConBobTree",
       "rarity": 1,
@@ -60,5 +60,5 @@
       "rarity": 4,
       "rarityOffset": 0
     }
-  ] 
+  ]
 }

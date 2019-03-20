@@ -3,7 +3,7 @@
   "tier": 1,
   "level": 98,
   "skills": [
-     "COOKING"
+    "COOKING"
   ],
   "sprite": {
     "id": 341,
@@ -16,15 +16,15 @@
     "THUNDER"
   ],
   "identifications": {
-    "AIRDEFENSE":{
+    "AIRDEFENSE": {
       "minimum": 6,
       "maximum": 12
     },
-    "EARTHDEFENSE":{
+    "EARTHDEFENSE": {
       "minimum": 8,
       "maximum": 13
     },
-    "THUNDERDEFENSE":{
+    "THUNDERDEFENSE": {
       "minimum": 5,
       "maximum": 11
     }
@@ -38,7 +38,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -45,
+    "duration": -135,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SkyGaleDragonling",
       "rarity": 4,

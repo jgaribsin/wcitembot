@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 124,
+    "duration": 372,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "PepoAncientOrc",
       "rarity": 3,

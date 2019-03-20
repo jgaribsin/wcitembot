@@ -3,7 +3,7 @@
   "tier": 0,
   "level": 92,
   "skills": [
-     "COOKING"
+    "COOKING"
   ],
   "sprite": {
     "id": 295,
@@ -14,7 +14,7 @@
   ],
   "identifications": {
     "THORNS": {
-      "minimum": 8, 
+      "minimum": 8,
       "maximum": 13
     },
     "EMERALDSTEALING": {
@@ -31,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -30,
+    "duration": -90,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "Moodle-HarvestImp",
       "rarity": 3,

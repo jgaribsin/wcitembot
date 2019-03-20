@@ -22,7 +22,7 @@
       "minimum": 1,
       "maximum": 1
     }
-},
+  },
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -45,
+    "duration": -135,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -57,32 +57,32 @@
     {
       "name": "Moodle-WATERJelly2",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
     {
       "name": "Moodle-WATERBelua",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
     {
       "name": "Dako-Water",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
     {
       "name": "Moodle-WATERSiren",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
     {
       "name": "SelvutMindsMajesticCaveSquid",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
     {
       "name": "PaBMagicEssence",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     }
   ]
 }

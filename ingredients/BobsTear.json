@@ -19,8 +19,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": -60000,
     "strengthRequirement": 0,
@@ -30,7 +29,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -100,
+    "duration": -300,
     "charges": 0
   },
   "ingredientPositionModifiers": {

@@ -17,8 +17,8 @@
   ],
   "identifications": {
     "DEXTERITYPOINTS": {
-        "minimum": 8,
-        "maximum": 12
+      "minimum": 8,
+      "maximum": 12
     }
   },
   "itemOnlyIDs": {
@@ -30,7 +30,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -37,
+    "duration": -111,
     "charges": 0
   },
   "ingredientPositionModifiers": {

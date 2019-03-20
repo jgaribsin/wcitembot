@@ -18,7 +18,7 @@
       "minimum": 9,
       "maximum": 13
     }
-},
+  },
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -28,7 +28,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -24,
+    "duration": -72,
     "charges": 0
   },
   "ingredientPositionModifiers": {

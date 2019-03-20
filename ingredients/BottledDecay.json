@@ -36,7 +36,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -46,
+    "duration": -138,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -47,7 +47,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "MalevolentMist",
       "rarity": 5,

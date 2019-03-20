@@ -31,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -18,
+    "duration": -54,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "sandcrawler2",
       "rarity": 3,

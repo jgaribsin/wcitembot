@@ -3,7 +3,7 @@
   "tier": 1,
   "level": 98,
   "skills": [
-     "ALCHEMISM"
+    "ALCHEMISM"
   ],
   "sprite": {
     "id": 410,
@@ -14,11 +14,11 @@
     "AIR"
   ],
   "identifications": {
-    "AIRDAMAGEBONUS":{
+    "AIRDAMAGEBONUS": {
       "minimum": 8,
       "maximum": 16
     },
-    "AIRDEFENSE":{
+    "AIRDEFENSE": {
       "minimum": 10,
       "maximum": 18
     }
@@ -32,7 +32,7 @@
     "agilityRequirement": 15
   },
   "consumableOnlyIDs": {
-    "duration": -45,
+    "duration": -135,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -43,16 +43,16 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "Flare-SylphidServant",
       "rarity": 4,
-      "rarityOffset": 0  
+      "rarityOffset": 0
     },
-   {
-     "name": "Flare-SylphidGatekeeperForm2",
-     "rarity": 3,
-     "rarityOffset": 0
-   }
+    {
+      "name": "Flare-SylphidGatekeeperForm2",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
   ]
 }

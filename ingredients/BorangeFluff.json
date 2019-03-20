@@ -21,9 +21,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,

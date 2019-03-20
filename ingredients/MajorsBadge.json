@@ -5,11 +5,11 @@
   "dropsFromLootChest": false,
   "skills": [
     "ARMOURING",
-	"TAILORING",
-	"WEAPONSMITHING",
-	"WOODWORKING",
-	"JEWELING",
-	"ALCHEMISM"
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING",
+    "ALCHEMISM"
   ],
   "sprite": {
     "id": 175,
@@ -18,9 +18,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": -100000,
     "strengthRequirement": 0,
@@ -30,7 +28,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -100,
+    "duration": -300,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -41,7 +39,7 @@
     "touching": 35,
     "notTouching": -30
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "Tanti-FortCitizen4",
       "rarity": 6,

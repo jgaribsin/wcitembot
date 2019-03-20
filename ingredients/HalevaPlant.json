@@ -14,11 +14,11 @@
     "MAGIC"
   ],
   "identifications": {
-      "MANAREGEN": {
+    "MANAREGEN": {
       "minimum": 1,
       "maximum": 1
     },
-      "MANASTEAL": {
+    "MANASTEAL": {
       "minimum": 0,
       "maximum": 1
     }
@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -40,
+    "duration": -120,
     "charges": 0
   },
   "ingredientPositionModifiers": {

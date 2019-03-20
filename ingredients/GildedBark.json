@@ -38,7 +38,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -160,
+    "duration": -480,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "DFMandragore",
       "rarity": 6,

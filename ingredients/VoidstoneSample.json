@@ -3,8 +3,8 @@
   "tier": 1,
   "level": 96,
   "skills": [
-     "ALCHEMISM",
-     "JEWELING"
+    "ALCHEMISM",
+    "JEWELING"
   ],
   "sprite": {
     "id": 433,
@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -23,
+    "duration": -69,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -44,7 +44,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SkyStormscarredMiner",
       "rarity": 4,

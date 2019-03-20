@@ -14,8 +14,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -25,7 +24,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -90,
+    "duration": -270,
     "charges": 1
   },
   "ingredientPositionModifiers": {
@@ -36,7 +35,7 @@
     "touching": 25,
     "notTouching": -20
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "Salt-GoldenAvia",
       "rarity": 1,

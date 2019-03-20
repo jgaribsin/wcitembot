@@ -12,9 +12,7 @@
   "groups": [
     "MAGIC"
   ],
-  "identifications": {
-
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -24,7 +22,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -45,
+    "duration": -135,
     "charges": 0
   },
   "ingredientPositionModifiers": {

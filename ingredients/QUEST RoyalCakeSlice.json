@@ -15,14 +15,14 @@
   },
   "groups": [
     "QUICK",
-	"DEFENSIVE"
+    "DEFENSIVE"
   ],
   "identifications": {
     "SPEED": {
       "minimum": 8,
       "maximum": 12
     },
-	"HEALTHREGENRAW": {
+    "HEALTHREGENRAW": {
       "minimum": 12,
       "maximum": 16
     }
@@ -36,7 +36,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -30,
+    "duration": -90,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -47,7 +47,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IngredientDummy",
       "rarity": 1,

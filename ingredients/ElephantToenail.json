@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -44,
+    "duration": -132,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -49,7 +49,7 @@
       "rarity": 5,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucElephelk",
       "rarity": 1,
       "rarityOffset": 0

@@ -16,12 +16,12 @@
   ],
   "identifications": {
     "DAMAGEBONUS": {
-        "minimum": 4,
-        "maximum": 8
+      "minimum": 4,
+      "maximum": 8
     },
     "HEALTHBONUS": {
-        "minimum": 30,
-        "maximum": 50
+      "minimum": 30,
+      "maximum": 50
     }
   },
   "itemOnlyIDs": {
@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -22,
+    "duration": -66,
     "charges": 0
   },
   "ingredientPositionModifiers": {

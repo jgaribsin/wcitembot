@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -25,
+    "duration": -75,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -38,18 +38,18 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "chicken",
       "rarity": 3,
       "rarityOffset": 150
     },
-   {
+    {
       "name": "CanyonRooster",
       "rarity": 3,
       "rarityOffset": 150
     },
-   {
+    {
       "name": "nohnowife",
       "rarity": 3,
       "rarityOffset": 150

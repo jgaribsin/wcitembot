@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -13,
+    "duration": -39,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -38,68 +38,68 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "wild",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "SelvutMindsRamblingMushroom",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "mushroom2",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "SelvutMindsSporeShooter",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "SelvutMindsSuperSporeShooter",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "Salt-TheAssistant",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "DFMatango",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "Salt-EssrenMonster",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "2x2YahyasDisciple",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "H2ZRedMycolite",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "yahyaapprentice",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "SelvutMindsYahyaTheFinalForm",
       "rarity": 3,
       "rarityOffset": 100
     },
-   {
+    {
       "name": "mushroom",
       "rarity": 3,
       "rarityOffset": 100

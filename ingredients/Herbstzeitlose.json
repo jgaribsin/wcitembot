@@ -21,7 +21,7 @@
     "WATERDAMAGEBONUS": {
       "minimum": 12,
       "maximum": 16
-    }  
+    }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -42000,
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "Swamp-WannabeAssassin",
       "rarity": 5,

@@ -17,7 +17,7 @@
   "identifications": {
     "SPELLDAMAGE": {
       "minimum": 0,
-      "maximum":10
+      "maximum": 10
     },
     "MANAREGEN": {
       "minimum": 0,
@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -40,
+    "duration": -120,
     "charges": -1
   },
   "ingredientPositionModifiers": {

@@ -12,9 +12,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -24,7 +22,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 40,
+    "duration": 120,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -35,7 +33,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SandpileSaltySkeleton",
       "rarity": 4,

@@ -4,8 +4,8 @@
   "level": 78,
   "dropsFromLootChest": false,
   "skills": [
-      "ARMOURING",
-      "COOKING"
+    "ARMOURING",
+    "COOKING"
   ],
   "sprite": {
     "id": 376,
@@ -34,7 +34,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -214,
+    "duration": -642,
     "charges": 0
   },
   "ingredientPositionModifiers": {
