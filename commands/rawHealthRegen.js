@@ -16,8 +16,8 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
     if (args.length > 3) message.channel.send(`Baseline lifesteal for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngHealthRegen(level, rarity, itemType)}`);
     else message.channel.send("Baseline lifesteal for alchemism is: " + fnc.calcIngHealthRegen(level, rarity, "alchemism") +
                               "\nBaseline lifesteal for armours/weapons/scrolls is: " + fnc.calcIngHealthRegen(level, rarity, "armouring") +
-                              "\nBaseline lifesteal for cooking is: " + fnc.calcIngHealthRegen(level, rarity, "cooking") +
-                              "\nBaseline lifesteal for jeweling is: " + fnc.calcIngHealthRegen(level, rarity, "jeweling"));
+                              "\nBaseline lifesteal for jeweling is: " + fnc.calcIngHealthRegen(level, rarity, "jeweling") +
+                              "\nBaseline lifesteal for cooking is: " + fnc.calcIngHealthRegen(level, rarity, "cooking"));
   }
   else message.channel.send("Please input either `it` or `in` as your first parameter.");
 }

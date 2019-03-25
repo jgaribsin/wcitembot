@@ -20,8 +20,8 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
     else message.channel.send("Baseline poison for weapons is: " + fnc.calcIngPoison(level, rarity, "weaponsmithing") +
                               "\nBaseline poison for alchemism is: " + fnc.calcIngPoison(level, rarity, "alchemism") +
                               "\nBaseline poison for armours/scrolls is: " + fnc.calcIngPoison(level, rarity, "armouring") +
-                              "\nBaseline poison for cooking is: " + fnc.calcIngPoison(level, rarity, "cooking") +
-                              "\nBaseline poison for jeweling is: " + fnc.calcIngPoison(level, rarity, "jeweling"));
+                              "\nBaseline poison for jeweling is: " + fnc.calcIngPoison(level, rarity, "jeweling") +
+                              "\nBaseline poison for cooking is: " + fnc.calcIngPoison(level, rarity, "cooking"));
   }
   else message.channel.send("Please input either `it` or `in` as your first parameter.");
 

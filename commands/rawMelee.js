@@ -18,8 +18,8 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
     if (args.length > 3) message.channel.send(`Baseline raw melee for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngRawMelee(level, rarity, itemType)}`);
     else message.channel.send("Baseline raw melee for alchemism is: " + fnc.calcIngRawMelee(level, rarity, "alchemism") +
                               "\nBaseline raw melee for armours/weapons/scrolls is: " + fnc.calcIngRawMelee(level, rarity, "armouring") +
-                              "\nBaseline raw melee for cooking is: " + fnc.calcIngRawMelee(level, rarity, "cooking") +
-                              "\nBaseline raw melee for jeweling is: " + fnc.calcIngRawMelee(level, rarity, "jeweling"));
+                              "\nBaseline raw melee for jeweling is: " + fnc.calcIngRawMelee(level, rarity, "jeweling") +
+                              "\nBaseline raw melee for cooking is: " + fnc.calcIngRawMelee(level, rarity, "cooking"));
   }
   else message.channel.send("Please input either `it` or `in` as your first parameter.");
 }
