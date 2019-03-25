@@ -50,7 +50,7 @@ console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-    client.user.setActivity("aaaAAAAAAAAAAAAAA", {type: 'PLAYING'});
+    client.user.setActivity(":D", {type: 'PLAYING'});
 });
 
 client.on('message', message => {

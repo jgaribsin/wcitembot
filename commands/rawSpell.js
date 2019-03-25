@@ -2,17 +2,24 @@ const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, prefix, ingredients, ingredientNames, message, args) => {
 
-  if (args[0]) var level = parseInt(args[0]);
-  if (args[1]) var rarity = args[1].toString();
-  if (args[2]) var itemType = args[2].toString();
-  if (args[3]) var atkSpeed = args[3].toString();
+  if (args[0]) var itemOrIngr = args[0].toLowerCase();
+  if (args[1]) var level = parseInt(args[1]);
+  if (args[2]) var rarity = args[2];
+  if (args[3]) var itemType = args[3].toString();
 
-  if (args.length > 2) {
-      message.channel.send("Baseline raw spell for a(n) `" + itemType + "` is: " + fnc.calcRawSpell(level, rarity, itemType));
+  if (itemOrIngr == "it") {
+    if (args.length > 3) message.channel.send("Baseline raw spell for a `" + itemType + "` is: " + fnc.calcRawSpell(level, rarity, itemType));
+    else message.channel.send("Baseline raw spell for an armour/weapon is: " + fnc.calcRawSpell(level, rarity, "armour") +
+                              "\nBaseline raw spell for an accessory is: " + fnc.calcRawSpell(level, rarity, "necklace"));
   }
-  else
-      message.channel.send("Baseline raw spell for an armour/weapon is: " + fnc.calcRawSpell(level, rarity, "armour") +
-          "\nBaseline raw spell for a necklace/bracelet/ring is: " + fnc.calcRawSpell(level, rarity, "necklace"));
+  else if (itemOrIngr == "in") {
+    if (args.length > 3) message.channel.send(`Baseline raw spell for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngRawSpell(level, rarity, itemType)}`);
+    else message.channel.send("Baseline raw spell for alchemism is: " + fnc.calcIngRawSpell(level, rarity, "alchemism") +
+                              "\nBaseline raw spell for armours/weapons/scrolls is: " + fnc.calcIngRawSpell(level, rarity, "armouring") +
+                              "\nBaseline raw spell for cooking is: " + fnc.calcIngRawSpell(level, rarity, "cooking") +
+                              "\nBaseline raw spell for jeweling is: " + fnc.calcIngRawSpell(level, rarity, "jeweling"));
+  }
+  else message.channel.send("Please input either `it` or `in` as your first parameter.");
 }
 
 module.exports.help = {

@@ -94,7 +94,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
               var rawHealthRegenBaseline = fnc.calcHealthRegen(itemLevel, itemRarity, functionType);
               var lifestealBaseline = fnc.calcLifeSteal(itemLevel, itemRarity, functionType);
 
-              var healthBonusBaseline = fnc.calcBaseHealth(itemLevel, itemRarity);
+              var healthBonusBaseline = fnc.calcHealth(itemLevel, itemRarity, functionType);
               if (itemType !== undefined) {
                   if (itemType.toLowerCase() === "dagger" || itemType.toLowerCase() === "spear" || itemType.toLowerCase() === "wand" || itemType.toLowerCase() === "bow") {
 
@@ -154,7 +154,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
 
                   else if (itemType.toLowerCase() === "boots" || itemType.toLowerCase() === "leggings" || itemType.toLowerCase() === "chestplate" || itemType.toLowerCase() === "helmet") {
                       var itemHealth = itemRequested.health + healthBonus;
-                      var baselineHealth = fnc.calcBaseHealth(itemLevel, itemRarity);
+                      var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
 
                       if (healthBonus !== 0 && healthBonus !== undefined) {
                           BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
@@ -179,7 +179,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
               } // end itemType check undefined
               else if (itemRequested.accessoryType.toLowerCase() === "ring") {
                   var itemHealth = itemRequested.health + healthBonus;
-                  var baselineHealth = fnc.calcBaseHealth(itemLevel, itemRarity) * 0.15;
+                  var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
                       BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
@@ -203,7 +203,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
               }
               else if (itemRequested.accessoryType.toLowerCase() === "bracelet") {
                   var itemHealth = itemRequested.health + healthBonus;
-                  var baselineHealth = fnc.calcBaseHealth(itemLevel, itemRarity) * 0.15;
+                  var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
                       BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
@@ -227,7 +227,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
               }
               else if (itemRequested.accessoryType.toLowerCase() === "necklace") {
                   var itemHealth = itemRequested.health + healthBonus;
-                  var baselineHealth = fnc.calcBaseHealth(itemLevel, itemRarity) * 0.15;
+                  var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
                       BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";

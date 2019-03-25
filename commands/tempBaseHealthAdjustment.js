@@ -161,7 +161,7 @@ message.channel.send(botResponse);
                   var baselineHealth = 0;
                   var itemHealth = 0;
                   if (item.accessoryType) {
-                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * .15 * 1000) / 1000;
+                    baselineHealth = Math.round(fnc.calcHealth(iLevel, iRarity) * .15 * 1000) / 1000;
                     baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
                     if (iHealthBonus !== 0) {
                       itemHealth = iHealth + iHealthBonus;
@@ -169,7 +169,7 @@ message.channel.send(botResponse);
                     }
                   }
                   else {
-                    baselineHealth = Math.round(fnc.calcBaseHealth(iLevel, iRarity) * 1000) / 1000;
+                    baselineHealth = Math.round(fnc.calcHealth(iLevel, iRarity) * 1000) / 1000;
                     baseStats += "health: " + iHealth + " --> placeholder [" + baselineHealth.toFixed(2) + " | " + (iHealth / baselineHealth).toFixed(3) + "x]" + "\n";
                     if (iHealthBonus !== 0) {
                       itemHealth = iHealth + iHealthBonus;
