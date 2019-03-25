@@ -386,7 +386,7 @@ exports.durability = function (level, tier) {
     break;
   }
   let returnValue =  Math.round((1000 + (level - 1) * 20) * durabilityMult)/100;
-  return returnValue;
+  return returnValue * -1;
 }
 exports.duration = function (level, tier) {
   tier = parseInt(tier);
@@ -406,7 +406,7 @@ exports.duration = function (level, tier) {
     break;
   }
   let returnValue = Math.round((36 + (level - 1) * 0.6) * durabilityMult * 100)/100
-  return returnValue;
+  return returnValue * -1;
 }
 
 exports.sortJobs = function (jobsObject) {

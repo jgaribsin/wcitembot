@@ -6,7 +6,7 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
   if (args[1]) var level = parseInt(args[1]);
   if (args[2]) var rarity = args[2];
   if (args[3]) var itemType = args[3].toString();
-  if (args[3]) var atkSpeed = args[4].toString();
+  if (args[4]) var atkSpeed = args[4].toString();
 
   if (itemOrIngr == "it") {
     if (args.length > 4) message.channel.send("Baseline raw melee for a `" + itemType + "` is: " + fnc.calcRawMelee(level, rarity, itemType, atkSpeed));

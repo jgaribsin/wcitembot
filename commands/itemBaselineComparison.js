@@ -252,5 +252,5 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
           }
 }
 module.exports.help = {
-  commandName: "b"
+  commandName: "itb"
 }
