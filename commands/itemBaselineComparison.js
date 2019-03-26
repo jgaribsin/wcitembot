@@ -43,7 +43,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
 
               var botResponse;
               var baseDamages;
-              var BaselineComp = "";
+              var baselineComp = "";
 
               var itemName = "";
               if (itemRequested.displayName !== undefined)
@@ -135,21 +135,21 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
 
                       var baselineDamage = fnc.calcBaseDam(itemLevel, itemRarity, itemType, attackSpeed);
 
-                      BaselineComp += "Base Damage: " + totalBaseDamage + " [" + baselineDamage.toFixed(2) + " | " + ((totalBaseDamage / baselineDamage) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Base Damage: " + totalBaseDamage + " [" + baselineDamage.toFixed(2) + " | " + ((totalBaseDamage / baselineDamage) * 100).toFixed(2) + "%]" + "\n";
                       if (healthBonus !== 0 && healthBonus !== undefined)
-                          BaselineComp += "Health Bonus: " + healthBonus + " [" + healthBonusBaseline.toFixed(2) + " | " + ((healthBonus / healthBonusBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Health Bonus: " + healthBonus + " [" + healthBonusBaseline.toFixed(2) + " | " + ((healthBonus / healthBonusBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (rawHealthRegen !== 0 && rawHealthRegen !== undefined)
-                          BaselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (rawSpell !== 0 && rawSpell !== undefined)
-                          BaselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (rawMelee !== 0 && rawMelee !== undefined)
-                          BaselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (lifesteal !== 0 && lifesteal !== undefined)
-                          BaselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (poison !== 0 && poison !== undefined)
-                          BaselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                      message.channel.send(itemDamages + "\n\n" + BaselineComp);
+                      message.channel.send(itemDamages + "\n\n" + baselineComp);
                   } // End bracket 'if bow/dagger/spear/wand'
 
                   else if (itemType.toLowerCase() === "boots" || itemType.toLowerCase() === "leggings" || itemType.toLowerCase() === "chestplate" || itemType.toLowerCase() === "helmet") {
@@ -157,24 +157,24 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
                       var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
 
                       if (healthBonus !== 0 && healthBonus !== undefined) {
-                          BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
-                          BaselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                          baselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
                       }
                       else
-                          BaselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                          baselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
 
                       if (rawHealthRegen !== 0 && rawHealthRegen !== undefined)
-                          BaselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (rawSpell !== 0 && rawSpell !== undefined)
-                          BaselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (rawMelee !== 0 && rawMelee !== undefined)
-                          BaselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (lifesteal !== 0 && lifesteal !== undefined)
-                          BaselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
                       if (poison !== 0 && poison !== undefined)
-                          BaselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
+                          baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                      message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemType + ")" + "\n\n" + itemRequested.sockets + " slots\n" + "\n" + BaselineComp);
+                      message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemType + ")" + "\n\n" + itemRequested.sockets + " slots\n" + "\n" + baselineComp);
                   } // End bracket 'if helmet/chestplate/leggings/boots'
               } // end itemType check undefined
               else if (itemRequested.accessoryType.toLowerCase() === "ring") {
@@ -182,72 +182,72 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
                   var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
-                      BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
-                      BaselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
                   }
                   else
-                      BaselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
 
                   if (rawHealthRegen !== 0 && rawHealthRegen !== undefined)
-                      BaselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawSpell !== 0 && rawSpell !== undefined)
-                      BaselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawMelee !== 0 && rawMelee !== undefined)
-                      BaselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (lifesteal !== 0 && lifesteal !== undefined)
-                      BaselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (poison !== 0 && poison !== undefined)
-                      BaselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + BaselineComp);
+                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + baselineComp);
               }
               else if (itemRequested.accessoryType.toLowerCase() === "bracelet") {
                   var itemHealth = itemRequested.health + healthBonus;
                   var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
-                      BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
-                      BaselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
                   }
                   else
-                      BaselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
 
                   if (rawHealthRegen !== 0 && rawHealthRegen !== undefined)
-                      BaselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawSpell !== 0 && rawSpell !== undefined)
-                      BaselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawMelee !== 0 && rawMelee !== undefined)
-                      BaselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (lifesteal !== 0 && lifesteal !== undefined)
-                      BaselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (poison !== 0 && poison !== undefined)
-                      BaselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + BaselineComp);
+                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + baselineComp);
               }
               else if (itemRequested.accessoryType.toLowerCase() === "necklace") {
                   var itemHealth = itemRequested.health + healthBonus;
                   var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
 
                   if (healthBonus !== 0 && healthBonus !== undefined) {
-                      BaselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
-                      BaselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemRequested.health + " [" + baselineHealth.toFixed(2) + " | " + ((itemRequested.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health (with health bonus): " + itemHealth + " (" + itemRequested.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
                   }
                   else
-                      BaselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
+                      baselineComp += "Health: " + itemHealth + " [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
 
                   if (rawHealthRegen !== 0 && rawHealthRegen !== undefined)
-                      BaselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Health Regen: " + rawHealthRegen + " [" + rawHealthRegenBaseline.toFixed(2) + " | " + ((rawHealthRegen / rawHealthRegenBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawSpell !== 0 && rawSpell !== undefined)
-                      BaselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Spell: " + rawSpell + " [" + rawSpellBaseline.toFixed(2) + " | " + ((rawSpell / rawSpellBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (rawMelee !== 0 && rawMelee !== undefined)
-                      BaselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Raw Melee: " + rawMelee + " [" + rawMeleeBaseline.toFixed(2) + " | " + ((rawMelee / rawMeleeBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (lifesteal !== 0 && lifesteal !== undefined)
-                      BaselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Lifesteal: " + lifesteal + " [" + lifestealBaseline.toFixed(2) + " | " + ((lifesteal / lifestealBaseline) * 100).toFixed(2) + "%]" + "\n";
                   if (poison !== 0 && poison !== undefined)
-                      BaselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
+                      baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + BaselineComp);
+                  message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemRequested.accessoryType + ")" + "\n\n" + baselineComp);
               }
           }
 }

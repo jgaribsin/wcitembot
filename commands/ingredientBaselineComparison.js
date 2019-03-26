@@ -136,7 +136,13 @@ else {
      let durabilityComparison = ((durability/baselineDurability) * 100).toFixed(2);
      botResponse += `\n- Durability: ${durability} \[${baselineDurability} | ${durabilityComparison}%\]`;
   }
-  if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("COOKING") || foundIngr.skills.includes("SCRIBING")) {
+  if (foundIngr.skills.includes("COOKING")) {
+    let baselineDuration = Math.round(fnc.duration(foundIngr.level, foundIngr.tier) * 30)/10;
+    let duration = foundIngr.consumableOnlyIDs.duration;
+    let durationComparison = ((duration/baselineDuration) * 100).toFixed(2);
+    botResponse += `\n- Duration: ${duration} \[${baselineDuration} | ${durationComparison}%\]`;
+  }
+  else if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("SCRIBING")) {
      let baselineDuration = fnc.duration(foundIngr.level, foundIngr.tier);
      let duration = foundIngr.consumableOnlyIDs.duration;
      let durationComparison = ((duration/baselineDuration) * 100).toFixed(2);
