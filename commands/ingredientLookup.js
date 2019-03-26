@@ -124,9 +124,12 @@ else {
       }
     }
   }
-  if (durability || duration || charges) botResponse += "\n**Effects**\n";
-  if (durability) botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier/1000 + "\n";
-  if (duration) botResponse += "- Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
+  botResponse += "\n**Effects**\n";
+  if (foundIngr.skills.includes("ARMOURING") || foundIngr.skills.includes("TAILORING") || foundIngr.skills.includes("WOODWORKING")
+   || foundIngr.skills.includes("WEAPONSMITHING")  || foundIngr.skills.includes("JEWELING") || foundIngr.skills.includes("TAILORING"))
+    botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier/1000 + "\n";
+  if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("SCRIBING") || foundIngr.skills.includes("COOKING")) 
+    botResponse += "- Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
   if (charges) botResponse += "- Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
   if (atkSpeedMod) botResponse += "- Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
   if (powderSlotMod) botResponse += "- Powder Slot Modifier: " + foundIngr.itemOnlyIDs.powderSlotModifier + "\n";
