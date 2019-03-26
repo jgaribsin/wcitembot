@@ -90,7 +90,8 @@ exports.calcHealth = function (level, rarity, itemType) {
     var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
     var typeMultiplier;
 
-    if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "a" || itemType === "w")
+    if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate"
+    || itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
         typeMultiplier = 1.0;
     else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "n" || itemType === "b" || itemType === "ring" || itemType === "r")
         typeMultiplier = 0.15;
@@ -219,8 +220,8 @@ exports.calcIngRawMelee = function (level, tier, job) {
 exports.calcHealthRegen = function (level, rarity, itemType) {
     var typeMultiplier;
 
-    if (itemType === "armour" || itemType === "armor" || itemType === "weapon" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings"
-     || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate"
+    || itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
         typeMultiplier = 1.0;
     else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
         typeMultiplier = 0.5;

@@ -139,7 +139,7 @@ else {
   if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("COOKING") || foundIngr.skills.includes("SCRIBING")) {
      let baselineDuration = fnc.duration(foundIngr.level, foundIngr.tier);
      let duration = foundIngr.consumableOnlyIDs.duration;
-     let durationComparison = ((durability/baselineDuration) * 100).toFixed(2);
+     let durationComparison = ((duration/baselineDuration) * 100).toFixed(2);
      botResponse += `\n- Duration: ${duration} \[${baselineDuration} | ${durationComparison}%\]`;
   }
 
