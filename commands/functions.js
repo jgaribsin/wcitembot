@@ -414,8 +414,12 @@ exports.sortJobs = function (jobsObject) {
   let topJob = "";
   if (jobsObject.includes("ALCHEMISM"))
     topjob = "ALCHEMISM";
-  if (jobsObject.includes("ARMOURING") || jobsObject.includes("TAILORING") || jobsObject.includes("WEAPONSMITHING") || jobsObject.includes("WOODWORKING") || jobsObject.includes("SCRIBING"))
+    if (jobsObject.includes("WEAPONSMITHING") || jobsObject.includes("WOODWORKING"))
+      topJob = "WEAPONSMITHING";
+  if (jobsObject.includes("ARMOURING") || jobsObject.includes("TAILORING"))
     topJob = "ARMOURING";
+  if (jobsObject.includes("SCRIBING"))
+    topJob = "SCRIBING";
   if (jobsObject.includes("COOKING"))
     topJob = "COOKING";
   if (jobsObject.includes("JEWELING"))
