@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -105,
+    "duration": -100,
     "charges": 0
   },
   "ingredientPositionModifiers": {
