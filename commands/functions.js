@@ -383,7 +383,7 @@ exports.durability = function (level, tier) {
     durabilityMult = 1.4;
     break;
     case 0:
-    durabilityMult = 0;
+    durabilityMult = 1;
     break;
   }
   let returnValue =  Math.round((1000 + (level - 1) * 20) * durabilityMult)/100;
@@ -403,7 +403,7 @@ exports.duration = function (level, tier) {
     durabilityMult = 1.4;
     break;
     case 0:
-    durabilityMult = 0;
+    durabilityMult = 1;
     break;
   }
   let returnValue = Math.round((36 + (level - 1) * 0.6) * durabilityMult * 100)/100
@@ -414,7 +414,7 @@ exports.sortJobs = function (jobsObject) {
   let topJob = "";
   if (jobsObject.includes("ALCHEMISM"))
     topjob = "ALCHEMISM";
-    if (jobsObject.includes("WEAPONSMITHING") || jobsObject.includes("WOODWORKING"))
+  if (jobsObject.includes("WEAPONSMITHING") || jobsObject.includes("WOODWORKING"))
       topJob = "WEAPONSMITHING";
   if (jobsObject.includes("ARMOURING") || jobsObject.includes("TAILORING"))
     topJob = "ARMOURING";
