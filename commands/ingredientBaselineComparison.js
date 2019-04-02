@@ -51,7 +51,10 @@ else {
   else foundIngr = ingrArr[matchedIngs[0]][0];
 
   let identifications = Object.keys(foundIngr.identifications);
-  let priorityJob = fnc.sortJobs(foundIngr.skills);
+  let priorityJob = "";
+  let jobsKeys = Object.keys(foundIngr.skills);
+  if (jobsKeys.length = 1) priorityJob = foundIngr.skills[0];
+  else priorityJob = fnc.sortJobs(foundIngr.skills);
 
   if (foundIngr.displayName) botResponse += `**${foundIngr.displayName}** ` ;
   else botResponse += `**${foundIngr.name}** ` ;
