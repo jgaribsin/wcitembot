@@ -2,6 +2,7 @@
   "name": "Tungsten Chunk",
   "tier": 3,
   "level": 63,
+  "dropsFromLootChest": false,
   "skills": [
     "JEWELING"
   ],
@@ -14,12 +15,12 @@
   ],
   "identifications": {
     "FIREDEFENSE": {
-      "minimum": 12,
-      "maximum": 15
-    },
-    "THORNS": {
       "minimum": 8,
       "maximum": 10
+    },
+    "HEALTHBONUS": {
+      "minimum": 80,
+      "maximum": 100
     }
   },
   "itemOnlyIDs": {

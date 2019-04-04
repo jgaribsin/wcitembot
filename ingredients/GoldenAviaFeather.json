@@ -3,7 +3,6 @@
   "tier": 2,
   "level": 86,
   "skills": [
-    "COOKING",
     "ALCHEMISM",
     "SCRIBING"
   ],
@@ -24,16 +23,16 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -270,
+    "duration": -170,
     "charges": 1
   },
   "ingredientPositionModifiers": {
     "left": 0,
     "right": 0,
-    "above": 0,
+    "above": 30,
     "under": 0,
-    "touching": 25,
-    "notTouching": -20
+    "touching": 0,
+    "notTouching": 0
   },
   "droppedBy": [
     {

@@ -16,24 +16,24 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 600,
-      "maximum": 900
-    },
-    "DAMAGEBONUSRAW": {
-      "minimum": 50,
-      "maximum": 75
-    },
-    "SPELLDAMAGERAW": {
-      "minimum": 60,
-      "maximum": 95
+      "minimum": 500,
+      "maximum": 600
     },
     "HEALTHREGENRAW": {
-      "minimum": 55,
-      "maximum": 80
+      "minimum": 40,
+      "maximum": 50
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 50,
+      "maximum": 60
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 40,
+      "maximum": 50
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -100000,
+    "durabilityModifier": -80000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

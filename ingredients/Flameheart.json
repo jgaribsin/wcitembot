@@ -15,24 +15,24 @@
   ],
   "identifications": {
     "HEALTHREGENRAW": {
-      "minimum": 80,
-      "maximum": 95
+      "minimum": 54,
+      "maximum": 72
     },
     "HEALTHBONUS": {
       "minimum": 600,
-      "maximum": 900
+      "maximum": 800
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -80000,
+    "durabilityModifier": -53000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 50,
+    "defenceRequirement": 35,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -260,
+    "duration": -170,
     "charges": 0
   },
   "ingredientPositionModifiers": {

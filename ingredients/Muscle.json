@@ -20,8 +20,8 @@
       "maximum": 8
     },
     "HEALTHBONUS": {
-      "minimum": 30,
-      "maximum": 50
+      "minimum": 20,
+      "maximum": 30
     }
   },
   "itemOnlyIDs": {
@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -66,
+    "duration": -200,
     "charges": 0
   },
   "ingredientPositionModifiers": {

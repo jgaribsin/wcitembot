@@ -17,12 +17,12 @@
   "identifications": {
 },
   "itemOnlyIDs": {
-    "durabilityModifier": -76000,
-    "strengthRequirement": -12,
-    "dexterityRequirement": -12,
-    "intelligenceRequirement": -12,
-    "defenceRequirement": -12,
-    "agilityRequirement": -12
+    "durabilityModifier": 0,
+    "strengthRequirement": -10,
+    "dexterityRequirement": -10,
+    "intelligenceRequirement": -10,
+    "defenceRequirement": -10,
+    "agilityRequirement": -10
   },
   "consumableOnlyIDs": {
     "duration": 0,

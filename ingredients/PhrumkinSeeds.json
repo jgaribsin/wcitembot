@@ -14,12 +14,12 @@
   ],
   "identifications": {
     "DAMAGEBONUS": {
-      "minimum": 3,
+      "minimum": 5,
       "maximum": 8
     },
     "HEALTHBONUS": {
-      "minimum": 220,
-      "maximum": 300
+      "minimum": 130,
+      "maximum": 170
     }
   },
   "itemOnlyIDs": {

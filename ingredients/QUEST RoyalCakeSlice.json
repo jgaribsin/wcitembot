@@ -20,11 +20,11 @@
   "identifications": {
     "SPEED": {
       "minimum": 8,
-      "maximum": 12
+      "maximum": 10
     },
     "HEALTHREGENRAW": {
-      "minimum": 12,
-      "maximum": 16
+      "minimum": 6,
+      "maximum": 8
     }
   },
   "itemOnlyIDs": {
@@ -36,7 +36,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -90,
+    "duration": -110,
     "charges": 0
   },
   "ingredientPositionModifiers": {

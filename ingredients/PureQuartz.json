@@ -18,7 +18,7 @@
   "identifications": {
     "SPELLDAMAGE": {
       "minimum": 6,
-      "maximum": 9
+      "maximum": 10
     },
     "SPELLDAMAGERAW": {
       "minimum": 24,

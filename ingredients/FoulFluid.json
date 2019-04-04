@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 180,
-      "maximum": 260
+      "minimum": 240,
+      "maximum": 280
     },
     "HEALTHREGENRAW": {
       "minimum": -30,
-      "maximum": -15
+      "maximum": -20
     }
   },
   "itemOnlyIDs": {

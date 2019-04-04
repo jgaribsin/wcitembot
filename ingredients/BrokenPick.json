@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 20,
-      "maximum": 45
+      "minimum": 30,
+      "maximum": 40
     },
     "EARTHDAMAGEBONUS": {
       "minimum": 1,

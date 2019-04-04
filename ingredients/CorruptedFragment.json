@@ -18,12 +18,12 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 8,
-      "maximum": 12
+      "minimum": 12,
+      "maximum": 16
     },
     "SPEED": {
-      "minimum": 6,
-      "maximum": 8
+      "minimum": 4,
+      "maximum": 6
     },
     "INTELLIGENCEPOINTS": {
       "minimum": -4,

@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 2,
-      "maximum": 3
+      "minimum": 3,
+      "maximum": 5
     }
   },
   "itemOnlyIDs": {
@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -39,
+    "duration": -36,
     "charges": 0
   },
   "ingredientPositionModifiers": {

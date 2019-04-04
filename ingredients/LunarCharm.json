@@ -3,7 +3,9 @@
   "tier": 3,
   "level": 38,
   "skills": [
-    "SCRIBING"
+    "SCRIBING",
+    "ALCHEMISM",
+    "JEWELING"
   ],
   "sprite": {
     "id": 160,
@@ -14,7 +16,7 @@
   ],
   "identifications": {},
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
+    "durabilityModifier": -50000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -22,7 +24,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -130,
+    "duration": -170,
     "charges": 0
   },
   "ingredientPositionModifiers": {

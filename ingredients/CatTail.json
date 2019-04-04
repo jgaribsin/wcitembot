@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "SPEED": {
-      "minimum": 5,
-      "maximum": 8
+      "minimum": 3,
+      "maximum": 5
     }
   },
   "itemOnlyIDs": {

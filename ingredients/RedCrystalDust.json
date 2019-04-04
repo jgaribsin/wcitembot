@@ -13,7 +13,16 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {},
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 3,
+      "maximum": 7
+    },
+    "LIFESTEAL": {
+      "minimum": 20,
+      "maximum": 30
+    }
+  },
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": 0,
@@ -23,8 +32,8 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -180,
-    "charges": 2
+    "duration": -200,
+    "charges": 1
   },
   "ingredientPositionModifiers": {
     "left": 0,

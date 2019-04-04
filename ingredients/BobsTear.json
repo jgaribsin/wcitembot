@@ -3,10 +3,7 @@
   "tier": 2,
   "level": 4,
   "skills": [
-    "SCRIBING",
     "JEWELING",
-    "ALCHEMISM",
-    "COOKING",
     "TAILORING",
     "ARMOURING",
     "WOODWORKING",
@@ -21,7 +18,7 @@
   ],
   "identifications": {},
   "itemOnlyIDs": {
-    "durabilityModifier": -60000,
+    "durabilityModifier": -40000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -29,14 +26,14 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -300,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
     "left": 0,
     "right": 0,
     "above": 0,
-    "under": 35,
+    "under": 25,
     "touching": 0,
     "notTouching": 0
   },

@@ -14,12 +14,12 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 800,
-      "maximum": 1100
+      "minimum": 600,
+      "maximum": 800
     },
     "HEALTHREGENRAW": {
-      "minimum": -90,
-      "maximum": -70
+      "minimum": -96,
+      "maximum": -72
     }
   },
   "itemOnlyIDs": {

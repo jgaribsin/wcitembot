@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "EARTHDEFENSE": {
-      "minimum": 2,
-      "maximum": 4
+      "minimum": 3,
+      "maximum": 5
     },
     "HEALTHBONUS": {
-      "minimum": 80,
-      "maximum": 100
+      "minimum": 110,
+      "maximum": 130
     }
   },
   "itemOnlyIDs": {

@@ -17,17 +17,25 @@
   ],
   "identifications": {
     "AIRDEFENSE": {
-      "minimum": 20,
+      "minimum": 25,
       "maximum": 30
+    },
+    "HEALTHBONUS": {
+      "minimum": 750,
+      "maximum": 900
+    },
+    "EARTHDEFENSE": {
+      "minimum": -20,
+      "maximum": -15
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -76000,
+    "durabilityModifier": -90000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 20
+    "agilityRequirement": -10
   },
   "consumableOnlyIDs": {
     "duration": 0,

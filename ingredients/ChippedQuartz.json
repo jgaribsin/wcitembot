@@ -16,11 +16,11 @@
   "identifications": {
     "SPELLDAMAGE": {
       "minimum": 3,
-      "maximum": 6
+      "maximum": 5
     },
     "SPELLDAMAGERAW": {
       "minimum": 15,
-      "maximum": 25
+      "maximum": 20
     }
   },
   "itemOnlyIDs": {

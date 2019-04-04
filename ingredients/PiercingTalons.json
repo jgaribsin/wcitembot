@@ -20,14 +20,14 @@
       "maximum": 1
     },
     "DAMAGEBONUSRAW": {
-      "minimum": 25,
-      "maximum": 35
+      "minimum": 20,
+      "maximum": 23
     }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -40000,
     "strengthRequirement": 0,
-    "dexterityRequirement": 30,
+    "dexterityRequirement": 16,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
     "agilityRequirement": 0

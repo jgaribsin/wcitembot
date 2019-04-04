@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 30,
-      "maximum": 85
+      "minimum": 90,
+      "maximum": 105
     }
 },
   "itemOnlyIDs": {
-    "durabilityModifier": -15000,
+    "durabilityModifier": -20000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

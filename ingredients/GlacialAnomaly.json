@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "MANAREGEN": {
-      "minimum": 1,
+      "minimum": 2,
       "maximum": 2
     },
     "SPELLDAMAGERAW": {
-      "minimum": 100,
-      "maximum": 115
+      "minimum": 120,
+      "maximum": 140
     }
   },
   "itemOnlyIDs": {

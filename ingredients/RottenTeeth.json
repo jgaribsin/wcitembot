@@ -15,11 +15,11 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": -60,
-      "maximum": -40
+      "minimum": -50,
+      "maximum": -45
     },
     "DAMAGEBONUS": {
-      "minimum": 9,
+      "minimum": 10,
       "maximum": 15
     }
   },

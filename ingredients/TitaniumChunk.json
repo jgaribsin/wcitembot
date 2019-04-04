@@ -17,12 +17,12 @@
   ],
   "identifications": {
     "THORNS": {
-      "minimum": 8,
+      "minimum": 10,
       "maximum": 12
     },
     "HEALTHBONUS": {
-      "minimum": 320,
-      "maximum": 350
+      "minimum": 350,
+      "maximum": 400
     }
   },
   "itemOnlyIDs": {
@@ -30,7 +30,7 @@
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 14,
+    "defenceRequirement": 18,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

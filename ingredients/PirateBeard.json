@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 50,
-      "maximum": 90
+      "minimum": 60,
+      "maximum": 75
     },
     "WATERDAMAGEBONUS": {
       "minimum": 8,

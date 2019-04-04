@@ -18,13 +18,13 @@
       "maximum": 6
     },
     "HEALTHREGENRAW": {
-      "minimum": 60,
-      "maximum": 80
+      "minimum": 50,
+      "maximum": 55
     }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -60000,
-    "strengthRequirement": 20,
+    "strengthRequirement": 12,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,

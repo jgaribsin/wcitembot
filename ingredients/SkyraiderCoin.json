@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 20, 
-      "maximum": 26
+      "minimum": 12, 
+      "maximum": 15
     },
     "EMERALDSTEALING": {
       "minimum": 3,
-      "maximum": 4 
+      "maximum": 4
     }
   },
   "itemOnlyIDs": {

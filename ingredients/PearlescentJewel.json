@@ -16,15 +16,19 @@
   ],
   "identifications": {
     "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 40
+      "minimum": 10,
+      "maximum": 15
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 2,
+      "maximum": 4
     }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -33000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": 15,
+    "intelligenceRequirement": 16,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },

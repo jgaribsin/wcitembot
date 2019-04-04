@@ -15,11 +15,11 @@
   "identifications": {
     "XPBONUS": {
       "minimum": 8,
-      "maximum": 15
+      "maximum": 10
     },
     "LOOTBONUS": {
       "minimum": 5,
-      "maximum": 12
+      "maximum": 8
     }
   },
   "itemOnlyIDs": {
@@ -31,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -180,
+    "duration": -270,
     "charges": 0
   },
   "ingredientPositionModifiers": {

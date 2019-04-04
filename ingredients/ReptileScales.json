@@ -19,8 +19,8 @@
       "maximum": 2
     },
     "LIFESTEAL": {
-      "minimum": 4,
-      "maximum": 10
+      "minimum": 7,
+      "maximum": 13
     }
   },
   "itemOnlyIDs": {

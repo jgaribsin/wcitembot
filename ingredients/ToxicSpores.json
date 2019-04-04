@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 5,
-      "maximum": 12
+      "minimum": 4,
+      "maximum": 8
     },
     "DAMAGEBONUS": {
       "minimum": 4,
@@ -25,14 +25,14 @@
   },
   "itemOnlyIDs": {
     "durabilityModifier": 0,
-    "strengthRequirement": 5,
+    "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -87,
+    "duration": -63,
     "charges": 0
   },
   "ingredientPositionModifiers": {

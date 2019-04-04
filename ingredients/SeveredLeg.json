@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 18,
-      "maximum": 28
+      "minimum": 12,
+      "maximum": 16
     }
   },
   "itemOnlyIDs": {

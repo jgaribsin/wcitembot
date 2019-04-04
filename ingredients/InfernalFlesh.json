@@ -14,16 +14,16 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 460,
-      "maximum": 600
+      "minimum": 400,
+      "maximum": 500
     },
     "FIREDAMAGEBONUS": {
       "minimum": 6,
-      "maximum": 9
+      "maximum": 8
     },
     "FIREDEFENSE": {
       "minimum": 8,
-      "maximum": 14
+      "maximum": 10
     }
   },
   "itemOnlyIDs": {

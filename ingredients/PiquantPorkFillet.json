@@ -13,9 +13,9 @@
     "FIRE"
   ],
   "identifications": {
-    "HEALTHREGENRAW": {
-      "minimum": 52,
-      "maximum": 70
+    "HEALTHREGEN": {
+      "minimum": 15,
+      "maximum": 15
     }
   },
   "itemOnlyIDs": {

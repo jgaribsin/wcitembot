@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 20,
-      "maximum": 27
+      "minimum": 18,
+      "maximum": 22
     },
     "DEXTERITYPOINTS": {
       "minimum": 2,

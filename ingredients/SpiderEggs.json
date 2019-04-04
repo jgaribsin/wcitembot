@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 10,
-      "maximum": 13
+      "minimum": 8,
+      "maximum": 10
     }
   },
   "itemOnlyIDs": {

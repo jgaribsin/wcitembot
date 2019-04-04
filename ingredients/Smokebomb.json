@@ -19,12 +19,12 @@
       "maximum": 8
     },
     "SPEED": {
-      "minimum": 8,
-      "maximum": 12
+      "minimum": 12,
+      "maximum": 14
     },
     "HEALTHBONUS": {
       "minimum": -450,
-      "maximum": -250
+      "maximum": -400
     }
   },
   "itemOnlyIDs": {

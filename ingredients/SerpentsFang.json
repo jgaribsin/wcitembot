@@ -17,12 +17,12 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 700,
-      "maximum": 900
+      "minimum": 650,
+      "maximum": 920
     },
     "DAMAGEBONUSRAW": {
-      "minimum": 70,
-      "maximum": 90
+      "minimum": 80,
+      "maximum": 115
     }
   },
   "itemOnlyIDs": {

@@ -3,8 +3,6 @@
   "tier": 1,
   "level": 86,
   "skills": [
-    "ALCHEMISM",
-    "SCRIBING",
     "JEWELING"
   ],
   "sprite": {
@@ -16,12 +14,12 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": -180,
-      "maximum": -150
+      "minimum": -100,
+      "maximum": -80
     },
     "HEALTHREGENRAW": {
-      "minimum": 40,
-      "maximum": 50
+      "minimum": 20,
+      "maximum": 30
     }
   },
   "itemOnlyIDs": {

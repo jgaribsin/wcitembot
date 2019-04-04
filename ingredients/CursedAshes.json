@@ -15,7 +15,7 @@
   "identifications": {
     "MANASTEAL": {
       "minimum": 1,
-      "maximum": 2
+      "maximum": 1
     }
   },
   "itemOnlyIDs": {
@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -180,
+    "duration": -150,
     "charges": 0
   },
   "ingredientPositionModifiers": {

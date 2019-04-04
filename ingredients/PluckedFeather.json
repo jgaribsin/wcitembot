@@ -16,11 +16,11 @@
   "identifications": {
     "SPEED": {
       "minimum": 2,
-      "maximum": 7
+      "maximum": 3
     },
     "HEALTHBONUS": {
-      "minimum": -450,
-      "maximum": -240
+      "minimum": -320,
+      "maximum": -200
     }
   },
   "itemOnlyIDs": {

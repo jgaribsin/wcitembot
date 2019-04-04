@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 300,
-      "maximum": 480
+      "minimum": 480,
+      "maximum": 550
     },
     "SPEED": {
       "minimum": -10,

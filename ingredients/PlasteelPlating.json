@@ -1,0 +1,45 @@
+{
+  "name": "Plasteel Plating",
+  "tier": 3,
+  "level": 97,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 160,
+    "damage": 15
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {},
+  "itemOnlyIDs": {
+    "durabilityModifier": -88000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": -180,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CorkusJbipStabot",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

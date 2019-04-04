@@ -18,12 +18,12 @@
       "maximum": 5
     },
     "LIFESTEAL": {
-      "minimum": -17,
-      "maximum": -13
+      "minimum": -12,
+      "maximum": -8
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
+    "durabilityModifier": -30000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -31,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -32,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {

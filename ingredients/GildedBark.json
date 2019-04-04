@@ -4,7 +4,6 @@
   "level": 74,
   "dropsFromLootChest": false,
   "skills": [
-    "ALCHEMISM",
     "COOKING"
   ],
   "sprite": {
@@ -25,8 +24,8 @@
       "maximum": 10
     },
     "HEALTHREGENRAW": {
-      "minimum": 25,
-      "maximum": 45
+      "minimum": 24,
+      "maximum": 42
     }
   },
   "itemOnlyIDs": {
@@ -38,7 +37,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -480,
+    "duration": -720,
     "charges": 0
   },
   "ingredientPositionModifiers": {

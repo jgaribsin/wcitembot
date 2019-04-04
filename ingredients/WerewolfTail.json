@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "SPEED": {
-      "minimum": 5,
-      "maximum": 8
+      "minimum": 2,
+      "maximum": 3
     },
     "DEFENSEPOINTS": {
       "minimum": -3,

@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "HEALTHREGEN": {
-      "minimum": 10,
-      "maximum": 12
+      "minimum": 12,
+      "maximum": 15
     },
   "SPELLDAMAGE": {
-      "minimum": -9,
-      "maximum": -7
+      "minimum": -7,
+      "maximum": -5
     }
   },
   "itemOnlyIDs": {

@@ -14,7 +14,7 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 5,
+      "minimum": 6,
       "maximum": 6
     }
   },

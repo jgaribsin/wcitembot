@@ -42,7 +42,7 @@
     "above": 0,
     "under": 0,
     "touching": 0,
-    "notTouching": -80
+    "notTouching": -40
   },
  "droppedBy": [
     {

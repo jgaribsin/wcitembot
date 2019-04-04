@@ -20,12 +20,12 @@
       "maximum": -1
     },
     "POISON": {
-      "minimum": 500,
-      "maximum": 750
+      "minimum": 150,
+      "maximum": 180
     },
     "LIFESTEAL": {
-      "minimum": 60,
-      "maximum": 75
+      "minimum": 30,
+      "maximum": 40
     }
   },
   "itemOnlyIDs": {
@@ -37,7 +37,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -600,
+    "duration": -670,
     "charges": 0
   },
   "ingredientPositionModifiers": {

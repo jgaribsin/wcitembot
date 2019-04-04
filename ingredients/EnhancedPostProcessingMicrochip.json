@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 90,
-      "maximum": 120
+      "minimum": 80,
+      "maximum": 90
     },
     "HEALTHREGEN": {
       "minimum": 9,

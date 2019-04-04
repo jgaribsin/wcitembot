@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 75,
-      "maximum": 105
+      "minimum": 60,
+      "maximum": 72
     },
     "MANASTEAL": {
       "minimum": 1,

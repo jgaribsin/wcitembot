@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 5,
-      "maximum": 7
+      "minimum": 4,
+      "maximum": 6
     },
     "SPELLDAMAGERAW": {
       "minimum": 6,

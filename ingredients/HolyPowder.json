@@ -16,10 +16,10 @@
   "identifications": {
     "HEALTHREGENRAW": {
       "minimum": 70,
-      "maximum": 95
+      "maximum": 75
     },
     "SOULPOINTS": {
-      "minimum": 8,
+      "minimum": 14,
       "maximum": 18
     }
   },

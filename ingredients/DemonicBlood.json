@@ -17,12 +17,12 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 50,
-      "maximum": 75
+      "minimum": 30,
+      "maximum": 40
     },
     "POISON": {
-      "minimum": 160,
-      "maximum": 220
+      "minimum": 60,
+      "maximum": 80
     }
   },
   "itemOnlyIDs": {

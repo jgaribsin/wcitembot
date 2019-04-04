@@ -23,8 +23,8 @@
       "maximum": 18
     },
     "HEALTHREGENRAW": {
-      "minimum": -60,
-      "maximum": -40
+      "minimum": -40,
+      "maximum": -30
     }
   },
   "itemOnlyIDs": {

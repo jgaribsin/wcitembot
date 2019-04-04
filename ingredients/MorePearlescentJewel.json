@@ -17,12 +17,12 @@
   ],
   "identifications": {
     "SPELLDAMAGERAW": {
-      "minimum": 50,
-      "maximum": 60
+      "minimum": 35,
+      "maximum": 40
     },
-    "REFLECTION": {
-      "minimum": 4,
-      "maximum": 5
+    "THUNDERDEFENSE": {
+      "minimum": -4,
+      "maximum": -2
     }
   },
   "itemOnlyIDs": {

@@ -16,12 +16,12 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 240,
+      "minimum": 260,
       "maximum": 290
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -52000,
+    "durabilityModifier": -44000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

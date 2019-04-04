@@ -20,8 +20,8 @@
       "maximum": 8
     },
     "HEALTHBONUS": {
-      "minimum": 55,
-      "maximum": 75
+      "minimum": 65,
+      "maximum": 80
     }
   },
   "itemOnlyIDs": {

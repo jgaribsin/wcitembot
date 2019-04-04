@@ -3,7 +3,6 @@
   "tier": 1,
   "level": 25,
   "skills": [
-    "COOKING",
     "ALCHEMISM",
     "SCRIBING"
   ],
@@ -17,8 +16,8 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 15,
-      "maximum": 17
+      "minimum": 5,
+      "maximum": 8
     }
   },
   "itemOnlyIDs": {
@@ -30,7 +29,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -130,
+    "duration": -70,
     "charges": 0
   },
   "ingredientPositionModifiers": {

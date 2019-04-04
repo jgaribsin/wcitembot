@@ -22,8 +22,8 @@
       "maximum": 28
     },
     "HEALTHBONUS":{
-      "minimum": -800,
-      "maximum": -600
+      "minimum": -1000,
+      "maximum": -800
     }
   },
   "itemOnlyIDs": {
@@ -31,7 +31,7 @@
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 45,
+    "defenceRequirement": 30,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

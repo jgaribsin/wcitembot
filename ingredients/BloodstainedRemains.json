@@ -14,11 +14,11 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 40,
-      "maximum": 50
+      "minimum": 20,
+      "maximum": 30
     },
     "HEALTHREGENRAW": {
-      "minimum": -27,
+      "minimum": -20,
       "maximum": -15
     }
   },

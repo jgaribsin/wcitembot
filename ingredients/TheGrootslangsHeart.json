@@ -25,16 +25,16 @@
       "maximum": 400
     },
     "SPEED": {
-      "minimum": -12,
+      "minimum": -8,
       "maximum": -6
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -70000,
-    "strengthRequirement": 15,
+    "durabilityModifier": -63000,
+    "strengthRequirement": 10,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 15,
+    "defenceRequirement": 10,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

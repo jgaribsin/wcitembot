@@ -6,9 +6,8 @@
   "dropsFromLootChest": false,
   "skills": [
     "TAILORING",
-    "ARMOURING",
-    "WEAPONSMITHING",
-    "WOODWORKING"
+    "WOODWORKING",
+    "ALCHEMISM"
   ],
   "sprite": {
     "id": 397,
@@ -17,8 +16,7 @@
   "groups": [
     "RANGED"
   ],
-  "identifications": {
-  },
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": -90000,
     "strengthRequirement": 0,
@@ -28,18 +26,18 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 0,
+    "duration": -280,
     "charges": 0
   },
   "ingredientPositionModifiers": {
-    "left": 0,
-    "right": 130,
+    "left": 130,
+    "right": 0,
     "above": 0,
     "under": 0,
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "ImaxeIngredient",
       "rarity": 1,

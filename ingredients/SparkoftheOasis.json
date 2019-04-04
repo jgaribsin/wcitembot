@@ -17,12 +17,12 @@
   ],
   "identifications": {
     "SPELLDAMAGERAW": {
-      "minimum": 20,
-      "maximum": 35
+      "minimum": 40,
+      "maximum": 40
     },
     "DAMAGEBONUSRAW": {
-      "minimum": 20,
-      "maximum": 35
+      "minimum": 32,
+      "maximum": 32
     }
   },
   "itemOnlyIDs": {
@@ -34,7 +34,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -110,
+    "duration": -160,
     "charges": 0
   },
   "ingredientPositionModifiers": {

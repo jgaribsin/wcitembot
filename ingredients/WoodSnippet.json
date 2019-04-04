@@ -15,7 +15,7 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 5,
+      "minimum": 10,
       "maximum": 20
     }
   },

@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 15,
-      "maximum": 18
+      "minimum": 6,
+      "maximum": 8
     },
     "STRENGTHPOINTS": {
       "minimum": 1,

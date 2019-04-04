@@ -15,8 +15,12 @@
   ],
   "identifications": {
     "SPEED": {
-      "minimum": 3,
-      "maximum": 6
+      "minimum": 2,
+      "maximum": 4
+    },
+    "AGILITYPOINTS": {
+      "minimum": 1,
+      "maximum": 1
     }
   },
   "itemOnlyIDs": {

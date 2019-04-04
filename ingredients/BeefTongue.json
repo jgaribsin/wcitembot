@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 50,
-      "maximum": 75
+      "minimum": 24,
+      "maximum": 36
     },
     "HEALTHREGEN": {
       "minimum": 5,
@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -75,
+    "duration": -210,
     "charges": 0
   },
   "ingredientPositionModifiers": {

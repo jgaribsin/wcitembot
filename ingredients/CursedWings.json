@@ -17,15 +17,15 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": -900,
-      "maximum": -700
+      "minimum": -950,
+      "maximum": -780
     },
     "EARTHDAMAGEBONUS": {
-      "minimum": 13,
+      "minimum": 16,
       "maximum": 21
     },
     "THUNDERDAMAGEBONUS": {
-      "minimum": 15,
+      "minimum": 17,
       "maximum": 23
     }
   },

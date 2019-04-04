@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 200,
-      "maximum": 330
+      "minimum": 300,
+      "maximum": 400
     },
     "DEFENSEPOINTS": {
       "minimum": 2,
@@ -81,4 +81,3 @@
     }
   ]
 }
-

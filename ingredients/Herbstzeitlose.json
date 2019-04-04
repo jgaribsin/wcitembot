@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 280,
-      "maximum": 375
+      "minimum": 100,
+      "maximum": 130
     },
     "WATERDAMAGEBONUS": {
       "minimum": 12,
@@ -24,15 +24,15 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -42000,
+    "durabilityModifier": 0,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": 10,
+    "intelligenceRequirement": 0,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 0,
+    "duration": -140,
     "charges": 0
   },
   "ingredientPositionModifiers": {

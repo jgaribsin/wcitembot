@@ -4,7 +4,6 @@
   "level": 96,
   "dropsFromLootChest": false,
   "skills": [
-    "COOKING",
     "ALCHEMISM",
     "SCRIBING"
   ],
@@ -25,12 +24,12 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -140,
+    "duration": -300,
     "charges": 2
   },
   "ingredientPositionModifiers": {
-    "left": 20,
-    "right": 20,
+    "left": 30,
+    "right": 30,
     "above": 0,
     "under": 0,
     "touching": 0,

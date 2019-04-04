@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 35,
-      "maximum": 65
+      "minimum": 60,
+      "maximum": 70
     }
   },
   "itemOnlyIDs": {

@@ -16,7 +16,7 @@
   "identifications": {
     "LIFESTEAL": {
       "minimum": 8,
-      "maximum": 16
+      "maximum": 10
     },
     "THUNDERDAMAGEBONUS": {
       "minimum": 6,

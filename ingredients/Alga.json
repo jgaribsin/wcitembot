@@ -15,7 +15,7 @@
   "identifications": {
     "DAMAGEBONUSRAW": {
       "minimum": 24,
-      "maximum": 38
+      "maximum": 26
     },
     "STRENGTHPOINTS": {
       "minimum": 2,

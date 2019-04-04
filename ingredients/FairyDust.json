@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "SPELLDAMAGERAW": {
-      "minimum": 15,
-      "maximum": 25
+      "minimum": 30,
+      "maximum": 33
     }
   },
   "itemOnlyIDs": {
@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 0,
+    "duration": -80,
     "charges": 0
   },
   "ingredientPositionModifiers": {

@@ -15,7 +15,7 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 300,
+      "minimum": 400,
       "maximum": 550
     },
     "DAMAGEBONUS": {
@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": -160,
     "charges": 0
   },
   "ingredientPositionModifiers": {

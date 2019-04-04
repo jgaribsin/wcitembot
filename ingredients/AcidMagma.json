@@ -16,8 +16,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 70,
-      "maximum": 90
+      "minimum": 90,
+      "maximum": 100
     },
     "WATERDEFENSE": {
       "minimum": -10,
@@ -29,7 +29,7 @@
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 12,
+    "defenceRequirement": 8,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

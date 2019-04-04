@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "HEALTHREGENRAW": {
-      "minimum": 10,
-      "maximum": 13
+      "minimum": 5,
+      "maximum": 6
     }
   },
   "itemOnlyIDs": {

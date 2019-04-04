@@ -17,8 +17,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 60,
-      "maximum": 80
+      "minimum": 54,
+      "maximum": 65
     },
     "STRENGTHPOINTS": {
       "minimum": 2,
@@ -26,7 +26,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -34000,
+    "durabilityModifier": -30000,
     "strengthRequirement": 6,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

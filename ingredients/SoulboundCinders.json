@@ -19,12 +19,12 @@
       "maximum": 1
     },
     "FIREDAMAGEBONUS": {
-      "minimum": 5,
+      "minimum": 6,
       "maximum": 8
     },
     "SPELLDAMAGERAW": {
-      "minimum": 40,
-      "maximum": 60
+      "minimum": 64,
+      "maximum": 72
     }
   },
   "itemOnlyIDs": {

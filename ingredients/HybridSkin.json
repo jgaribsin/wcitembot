@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 18,
-      "maximum": 36
+      "minimum": 22,
+      "maximum": 45
     },
     "DAMAGEBONUSRAW": {
-      "minimum": 12,
-      "maximum": 28
+      "minimum": 15,
+      "maximum": 30
     }
   },
   "itemOnlyIDs": {

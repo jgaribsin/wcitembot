@@ -17,18 +17,18 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 25,
-      "maximum": 60
+      "minimum": 30,
+      "maximum": 40
     },
     "THUNDERDAMAGEBONUS": {
-      "minimum": 3,
-      "maximum": 10
+      "minimum": 4,
+      "maximum": 8
     }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -33000,
     "strengthRequirement": 0,
-    "dexterityRequirement": 14,
+    "dexterityRequirement": 20,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
     "agilityRequirement": 0

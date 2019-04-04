@@ -17,12 +17,16 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 640,
-      "maximum": 680
+      "minimum": 850,
+      "maximum": 900
+    },
+    "REFLECTION": {
+      "minimum": -12,
+      "maximum": -10
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -60000,
+    "durabilityModifier": -64000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

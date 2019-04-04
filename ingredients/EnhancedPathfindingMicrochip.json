@@ -16,12 +16,12 @@
   ],
   "identifications": {
     "DAMAGEBONUS": {
-      "minimum": 9,
+      "minimum": 12,
       "maximum": 16
     },
     "POISON": {
-      "minimum": 320,
-      "maximum": 580
+      "minimum": 160,
+      "maximum": 200
     }
   },
   "itemOnlyIDs": {

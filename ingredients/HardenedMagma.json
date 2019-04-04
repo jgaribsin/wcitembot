@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": 220,
-      "maximum": 360
+      "minimum": 400,
+      "maximum": 440
     }
   },
   "itemOnlyIDs": {

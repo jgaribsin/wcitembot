@@ -16,16 +16,20 @@
   ],
   "identifications": {
     "HEALTHREGENRAW": {
-      "minimum": 7,
-      "maximum": 13
+      "minimum": 16,
+      "maximum": 20
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 5,
+      "maximum": 6
     },
     "DAMAGEBONUS": {
-      "minimum": -8,
-      "maximum": -5
+      "minimum": -10,
+      "maximum": -8
     },
     "SPELLDAMAGE": {
-      "minimum": -8,
-      "maximum": -5
+      "minimum": -10,
+      "maximum": -8
     }
   },
   "itemOnlyIDs": {
@@ -37,8 +41,8 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -130,
-    "charges": 1
+    "duration": -120,
+    "charges": 0
   },
   "ingredientPositionModifiers": {
     "left": 0,

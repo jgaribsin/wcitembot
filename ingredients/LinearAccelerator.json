@@ -17,15 +17,15 @@
   ],
   "identifications": {
     "HEALTHBONUS": {
-      "minimum": -735,
-      "maximum": -725
+      "minimum": -820,
+      "maximum": -780
     },
     "SPELLDAMAGERAW": {
-      "minimum": 105,
-      "maximum": 115
+      "minimum": 100,
+      "maximum": 150
     },
     "THUNDERDAMAGEBONUS": {
-      "minimum": 13,
+      "minimum": 12,
       "maximum": 18
     }
   },

@@ -15,12 +15,12 @@
   ],
   "identifications": {
     "SPEED": {
-      "minimum": 6,
+      "minimum": 8,
       "maximum": 12
     },
     "HEALTHBONUS": {
-      "minimum": -350,
-      "maximum": -240
+      "minimum": -300,
+      "maximum": -250
     },
     "AIRDAMAGEBONUS": {
       "minimum": 8,
@@ -36,7 +36,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -120,
+    "duration": -100,
     "charges": 0
   },
   "ingredientPositionModifiers": {

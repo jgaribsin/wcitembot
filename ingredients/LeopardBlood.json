@@ -18,8 +18,8 @@
       "maximum": 1
     },
     "SPELLDAMAGERAW": {
-      "minimum": -230,
-      "maximum": -175
+      "minimum": -200,
+      "maximum": -170
     }
   },
   "itemOnlyIDs": {
@@ -31,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -300,
+    "duration": -200,
     "charges": 0
   },
   "ingredientPositionModifiers": {

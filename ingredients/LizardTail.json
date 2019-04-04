@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "HEALTHREGENRAW": {
-      "minimum": 9,
-      "maximum": 12
+      "minimum": 5,
+      "maximum": 7
     },
     "HEALTHREGEN": {
       "minimum": 2,
@@ -51,16 +51,6 @@
     },
     {
       "name": "DFlizardmanbruiser",
-      "rarity": 3,
-      "rarityOffset": 0
-    },
-    {
-      "name": "Dfswampsahuagin",
-      "rarity": 3,
-      "rarityOffset": 0
-    },
-    {
-      "name": "Dfnagacommander",
       "rarity": 3,
       "rarityOffset": 0
     }

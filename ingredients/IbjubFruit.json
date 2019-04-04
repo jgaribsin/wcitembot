@@ -3,8 +3,7 @@
   "tier": 1,
   "level": 60,
   "skills": [
-    "COOKING",
-    "ALCHEMISM"
+    "COOKING"
   ],
   "sprite": {
     "id": 432,
@@ -16,12 +15,12 @@
   ],
   "identifications": {
     "LIFESTEAL": {
-      "minimum": 20,
-      "maximum": 30
+      "minimum": 10,
+      "maximum": 12
     },
     "DEFENSEPOINTS": {
-      "minimum": 4,
-      "maximum": 9
+      "minimum": 2,
+      "maximum": 3
     }
   },
   "itemOnlyIDs": {
@@ -33,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -99,
+    "duration": -300,
     "charges": 0
   },
   "ingredientPositionModifiers": {

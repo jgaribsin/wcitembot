@@ -16,12 +16,12 @@
   ],
   "identifications": {
     "SPEED": {
-      "minimum": 1,
+      "minimum": 3,
       "maximum": 4
     },
     "POISON": {
-      "minimum": 14,
-      "maximum": 23
+      "minimum": 28,
+      "maximum": 33
     }
   },
   "itemOnlyIDs": {

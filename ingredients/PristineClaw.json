@@ -14,12 +14,12 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 20,
-      "maximum": 25
+      "minimum": 10,
+      "maximum": 12
     },
     "SPELLDAMAGERAW": {
-      "minimum": -25,
-      "maximum": -20
+      "minimum": -15,
+      "maximum": -12
     }
   },
   "itemOnlyIDs": {

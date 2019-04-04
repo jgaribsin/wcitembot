@@ -3,7 +3,6 @@
   "tier": 2,
   "level": 8,
   "skills": [
-    "COOKING",
     "ALCHEMISM"
   ],
   "sprite": {
@@ -15,12 +14,12 @@
   ],
   "identifications": {
     "XPBONUS": {
-      "minimum": 2,
-      "maximum": 10
+      "minimum": 10,
+      "maximum": 12
     },
     "LOOTBONUS": {
-      "minimum": 2,
-      "maximum": 10
+      "minimum": 10,
+      "maximum": 12
     }
   },
   "itemOnlyIDs": {
@@ -32,7 +31,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -81,
+    "duration": -80,
     "charges": 0
   },
   "ingredientPositionModifiers": {

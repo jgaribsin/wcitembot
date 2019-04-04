@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "POISON": {
-      "minimum": 180,
-      "maximum": 300
+      "minimum": 100,
+      "maximum": 115
     }
   },
   "itemOnlyIDs": {
@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -90,
+    "duration": -100,
     "charges": 0
   },
   "ingredientPositionModifiers": {

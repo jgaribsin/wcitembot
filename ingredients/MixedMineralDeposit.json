@@ -20,15 +20,15 @@
   "identifications": {
     "DAMAGEBONUS": {
       "minimum": 7,
-      "maximum": 11
+      "maximum": 10
     },
     "HEALTHBONUS": {
-      "minimum": 750,
-      "maximum": 950
+      "minimum": 940,
+      "maximum": 1040
     },
     "SPELLDAMAGERAW": {
-      "minimum": -85,
-      "maximum": -65
+      "minimum": -100,
+      "maximum": -80
     }
   },
   "itemOnlyIDs": {

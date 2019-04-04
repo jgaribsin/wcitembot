@@ -17,8 +17,8 @@
   ],
   "identifications": {
     "HEALTHREGENRAW": {
-      "minimum": 50,
-      "maximum": 80
+      "minimum": 40,
+      "maximum": 45
     },
     "HEALTHREGEN": {
       "minimum": 16,
@@ -34,7 +34,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -640,
+    "duration": -740,
     "charges": 0
   },
   "ingredientPositionModifiers": {
