@@ -292,8 +292,10 @@ exports.calcIngLifeSteal = function (level, tier, job) {
 
   if (job.toLowerCase() === "alchemism")
     returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000)/1000;
-  if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
+  if (job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking")
     returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
+  if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "scribing")
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "armour") * 1.0 * tierMultiplier * 1000)/1000;
   if (job.toLowerCase() === "cooking")
     returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000)/1000;
   if (job.toLowerCase() === "jeweling")
@@ -339,20 +341,20 @@ exports.calcIngPoison = function (level, tier, job) {
     }
   }
   else {
-  switch (parseInt(tier)) {
-    case 0:
-    tierMultiplier = 0.5;
-    break;
-    case 1:
-    tierMultiplier = 0.7;
-    break;
-    case 2:
-    tierMultiplier = 1;
-    break;
-    case 3:
-    tierMultiplier = 1.5;
-    break;
-  }
+    switch (parseInt(tier)) {
+      case 0:
+      tierMultiplier = 0.5;
+      break;
+      case 1:
+      tierMultiplier = 0.7;
+      break;
+      case 2:
+      tierMultiplier = 1;
+      break;
+      case 3:
+      tierMultiplier = 1.5;
+      break;
+    }
   }
 
   if (job.toLowerCase() === "alchemism")

@@ -16,7 +16,8 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, messag
   else if (itemOrIngr == "in") {
     if (args.length > 3) message.channel.send(`Baseline lifesteal for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngLifeSteal(level, rarity, itemType)}`);
     else message.channel.send("Baseline lifesteal for alchemism is: " + fnc.calcIngLifeSteal(level, rarity, "alchemism") +
-                              "\nBaseline lifesteal for armours/weapons/scrolls is: " + fnc.calcIngLifeSteal(level, rarity, "armouring") +
+                              "\nBaseline lifesteal for weapons is: " + fnc.calcIngLifeSteal(level, rarity, "weaponsmithing") +
+                              "\nBaseline lifesteal for armours/scrolls is: " + fnc.calcIngLifeSteal(level, rarity, "armouring") +
                               "\nBaseline lifesteal for jeweling is: " + fnc.calcIngLifeSteal(level, rarity, "jeweling") +
                               "\nBaseline lifesteal for cooking is: " + fnc.calcIngLifeSteal(level, rarity, "cooking"));
   }
