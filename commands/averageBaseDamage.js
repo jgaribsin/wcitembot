@@ -5,16 +5,17 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, comman
 var userNumbers = args;
 
 if ( (userNumbers.length % 2) == 1) message.channel.send("Please input an even number of numbers.");
+else {
+  var average = 0;
+  var total = 0;
 
-var evenCheck = args.length % 2;
-var average = 0;
-var total = 0;
+  userNumbers.forEach(x => {
+    total += parseInt(x);
+  });
 
-for (i = 0; i < args.length; i++) {
-  total += parseInt(userNumbers[i]);
+    average = total / 2.0;
+    message.channel.send("Total average of these pairs is: " + average);
 }
-  average = total / 2.0;
-  message.channel.send("Average of these numbers is: " + average);
 
 }
 module.exports.help = {

@@ -6,9 +6,9 @@ var userNumbers = args;
 var average = 0;
 var total = 0;
 
-for (i = 0; i < userNumbers.length; i++) {
-  total += parseInt(userNumbers[i]);
-} // end for loop
+userNumbers.forEach(x => {
+  total += parseInt(x);
+});
 
 average = total / userNumbers.length;
 
