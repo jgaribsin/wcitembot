@@ -78,7 +78,49 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
         return returnValue;
     else
         return Math.round(returnValue / 1.2 * 1000) / 1000;
-};
+}
+exports.calcAccBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
+    var baseSpeed; // Multiplier based off the item's attack speed
+    // Checks user input for the full
+    if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
+        baseSpeed = 0.53;
+    else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
+        baseSpeed = 0.83;
+    else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
+        baseSpeed = 1.5;
+    else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
+        baseSpeed = 2.05;
+    else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
+        baseSpeed = 2.5;
+    else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
+        baseSpeed = 3.1;
+    else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
+        baseSpeed = 4.3;
+
+    let atkSpeedMultiplier = 1/(baseSpeed/2.05);
+    let returnValue = 0;
+    var baseLevelDamage;
+    if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
+        baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
+        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+    }
+    else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
+        baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
+        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+    }
+    else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
+        baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
+        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+    }
+    else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
+        baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
+        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+    }
+    if (level > 1)
+        return returnValue;
+    else
+        return Math.round(returnValue / 1.2 * 1000) / 1000;
+}
 
 exports.calcTotalBaseHealth = function (level, rarity) {
     var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
