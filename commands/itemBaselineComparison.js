@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-module.exports.run = async (client, prefix, ingredients, ingredientNames, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
 
 // Picks out the users query and attaches it to the API request URL then sends it
 var userQuery = message.content.substring(prefix.length + module.exports.help.commandName.length + 1, message.length);

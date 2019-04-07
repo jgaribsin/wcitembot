@@ -74,7 +74,7 @@ client.on('message', message => {
   let args = messageArray.slice(1);
 
   let commandFile = client.commands.get(command);
-  if (commandFile) commandFile.run(client, prefix, client.ingredients, client.ingredientNames, message, args);
+  if (commandFile) commandFile.run(client, prefix, client.ingredients, client.ingredientNames, client.commands, message, args);
   });
 // process.env.TOKEN
 client.login(process.env.TOKEN);

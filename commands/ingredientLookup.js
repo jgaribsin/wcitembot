@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
 
   var ingrStats = [ "HEALTHREGEN", "KNOCKBACK", "MANAREGEN", "DAMAGEBONUS", "SPELLDAMAGE", "LIFESTEAL", "MANASTEAL", "XPBONUS", "LOOTBONUS",
   "REFLECTION", "THORNS", "EXPLODING", "SPEED", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",
@@ -128,7 +128,7 @@ else {
   if (foundIngr.skills.includes("ARMOURING") || foundIngr.skills.includes("TAILORING") || foundIngr.skills.includes("WOODWORKING")
    || foundIngr.skills.includes("WEAPONSMITHING")  || foundIngr.skills.includes("JEWELING") || foundIngr.skills.includes("TAILORING"))
     botResponse += "- Durability: " + foundIngr.itemOnlyIDs.durabilityModifier/1000 + "\n";
-  if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("SCRIBING") || foundIngr.skills.includes("COOKING")) 
+  if (foundIngr.skills.includes("ALCHEMISM") || foundIngr.skills.includes("SCRIBING") || foundIngr.skills.includes("COOKING"))
     botResponse += "- Duration: " + foundIngr.consumableOnlyIDs.duration + "\n"
   if (charges) botResponse += "- Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
   if (atkSpeedMod) botResponse += "- Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
