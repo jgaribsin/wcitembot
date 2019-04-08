@@ -229,6 +229,24 @@ exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
 
     return returnValue;
 }
+exports.calcAccRawMelee = function (level, rarity, itemType, atkSpeed) {
+    var typeMultiplier;
+	  let returnValue = 0;
+    if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
+      typeMultiplier = 1.0;
+		    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+	  }
+    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
+      typeMultiplier = 1/3;
+  		returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  	}
+	else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
+  		var weaponDamage = exports.calcAccBaseDam(level, rarity, itemType, atkSpeed);
+  		returnValue = weaponDamage/2;
+  	}
+
+    return returnValue;
+}
 exports.calcIngRawMelee = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;

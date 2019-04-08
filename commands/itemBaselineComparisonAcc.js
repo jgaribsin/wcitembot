@@ -84,7 +84,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
               var lifesteal = itemRequested.lifeSteal;
               var rawHealthRegen = itemRequested.healthRegenRaw;
               var attackSpeed = ""; // setting a blank so \/ doesn't break. is reassigned if it's a weapon later
-              var rawMeleeBaseline = fnc.calcRawMelee(itemLevel, itemRarity, functionType, attackSpeed);
+              var rawMeleeBaseline = fnc.calcAccRawMelee(itemLevel, itemRarity, functionType, attackSpeed);
               var healthBonus = itemRequested.healthBonus;
 
               // Creating variables to the baseline value for the current item
@@ -99,7 +99,7 @@ else if (parsedReturn.items.length > 1 && userQuery !== itemRequested.name && us
                   if (itemType.toLowerCase() === "dagger" || itemType.toLowerCase() === "spear" || itemType.toLowerCase() === "wand" || itemType.toLowerCase() === "bow") {
 
                       attackSpeed = itemRequested.attackSpeed;
-                      rawMeleeBaseline = fnc.calcRawMelee(itemLevel, itemRarity, functionType, attackSpeed);
+                      rawMeleeBaseline = fnc.calcAccRawMelee(itemLevel, itemRarity, functionType, attackSpeed);
 
                       var neutralDamage = itemRequested.damage;
                       var earthDamage = itemRequested.earthDamage;
