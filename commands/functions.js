@@ -79,25 +79,25 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
     else
         return Math.round(returnValue / 1.2 * 1000) / 1000;
 }
+
 exports.calcAccBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
-    var baseSpeed; // Multiplier based off the item's attack speed
+    var atkSpeedMultiplier; // Multiplier based off the item's attack speed
     // Checks user input for the full
     if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
-        baseSpeed = 0.53;
+        atkSpeedMultiplier = 4;
     else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
-        baseSpeed = 0.83;
+        atkSpeedMultiplier = 2.5;
     else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
-        baseSpeed = 1.5;
+        atkSpeedMultiplier = 1.4;
     else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
-        baseSpeed = 2.05;
+        atkSpeedMultiplier = 1.0;
     else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
-        baseSpeed = 2.5;
+        atkSpeedMultiplier = 0.8;
     else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
-        baseSpeed = 3.1;
+        atkSpeedMultiplier = 0.65;
     else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
-        baseSpeed = 4.3;
+        atkSpeedMultiplier = 0.475;
 
-    let atkSpeedMultiplier = 1/(baseSpeed/2.05);
     let returnValue = 0;
     var baseLevelDamage;
     if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
