@@ -9,8 +9,6 @@ const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
 let items = require('./items.json');
-fs.writeFileSync(`./items.json`, JSON.stringify(items, null, 2));
-console.log(`Successfully loaded ${items.items.length} items!`);
 
 fs.readdir("./commands", (err, files) => {
 
@@ -49,6 +47,7 @@ var ingredientsLoaded = 0;
       else client.ingredientNames.set(props.name);
   });
 console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
+console.log(`Successfully loaded ${items.items.length} items!`);
 });
 
 client.on('ready', () => {
