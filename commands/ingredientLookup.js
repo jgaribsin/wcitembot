@@ -18,14 +18,14 @@ var userQuery = message.content.substring(prefix.length + module.exports.help.co
 let ingrArr = Array.from(ingredients);
 let ingNames = Array.from(ingredientNames);
 let matchedIngs = new Array(ingrArr.length);
-let count = 0;
+let matches = 0;
 let botResponse = "";
 let perfectMatched = false;
 let perfectMatch;
 for (var i = 0; i < ingNames.length; i++) {
   if (ingNames[i].toString().toLowerCase().includes(userQuery.toLowerCase()) ) {
-    matchedIngs[count] = i;
-    count++;
+    matchedIngs[matches] = i;
+    matches++;
   }
     if (ingNames[i].toString().toLowerCase().slice(0, ingNames[i][0].length) == userQuery.toLowerCase() ) {
       perfectMatched = true;
@@ -33,16 +33,20 @@ for (var i = 0; i < ingNames.length; i++) {
     }
 }
 
-if (count > 1 && !perfectMatched) {
-  botResponse = `${count} ingredients found: `;
-
-  for (i = 0; i < count; i++) {
-    botResponse += ingNames[matchedIngs[i]].slice(0, ingNames[matchedIngs[i]].length-1);
-    if (i + 1 < count) botResponse += ", ";
-    else botResponse += ".";
+if (matches <= 0) botResponse = "No ingredients found.";
+else if (matches > 1 && !perfectMatched) {
+  botResponse = `**${matches} ingredients found**: `;
+  let i = 0;
+    while (botResponse.length < 1900 && i < matches) {
+      botResponse += ingNames[matchedIngs[i]].slice(0, ingNames[matchedIngs[i]].length-1);
+      if (i + 1 < matches) botResponse += ", ";
+      else botResponse += ".";
+      i++;
     }
+    if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length-2)} **and ${matches - i} more.**`);
+    else message.channel.send(botResponse);
 }
-else if (count <= 0) botResponse = "No ingredients found.";
+
 else {
   let foundIngr;
   if (perfectMatched) foundIngr = ingrArr[perfectMatch][0];
@@ -133,9 +137,10 @@ else {
   if (charges) botResponse += "- Charges: " + foundIngr.consumableOnlyIDs.charges + "\n";
   if (atkSpeedMod) botResponse += "- Attack Speed Modifier: " + foundIngr.itemOnlyIDs.attackSpeedModifier + "\n";
   if (powderSlotMod) botResponse += "- Powder Slot Modifier: " + foundIngr.itemOnlyIDs.powderSlotModifier + "\n";
+
+  message.channel.send(botResponse);
 } // end else statement
 
-if (botResponse.length > 0) message.channel.send(botResponse);
 }
 module.exports.help = {
   commandName: "in"

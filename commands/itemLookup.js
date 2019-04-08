@@ -29,16 +29,17 @@ if (matches > 0) {
   });
 }
 
-if (matches === 0) message.channel.send("No matching items.")
+if (matches === 0) message.channel.send("No items found.");
 else if (matches > 1 && !match) {
-  botResponse = `${matches} items found: `;
-
-  matchedItems.forEach( (individualItem, i) => {
-    botResponse += individualItem.name;
+  botResponse = `**${matches} items found**: `;
+  let i = 0;
+  while (botResponse.length < 1900 && i < matches) {
+    botResponse += matchedItems[i].name;
     if (i + 1 < matches) botResponse += ", ";
     else botResponse += ".";
-  });
-  if (botResponse.length > 2000) message.channel.send(`${matches} items found. List cannot be displayed due to length.`);
+    i++;
+  }
+  if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length-2)} **and ${matches - i} more.**`);
   else message.channel.send(botResponse);
 }
 
