@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
 
   if (args[0]) var itemOrIngr = args[0].toLowerCase();
   if (args[1]) var level = parseInt(args[1]);

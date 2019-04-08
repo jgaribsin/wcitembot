@@ -1,193 +1,193 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
 
-// Picks out the users query and attaches ot to the API request URL then sends it
+// Picks out the users query
 var userQuery = message.content.substring(prefix.length + module.exports.help.commandName.length + 1, message.length);
-var apiPing = "https://api.wynncraft.com/public_api.php?action=itemDB&search=";
+userQuery = userQuery.toLowerCase();
+let botResponse = "";
+let matches = 0;
+let matchedItems = new Array(items.length);
+let foundItem;
+let match = false;
 
-var request = new XMLHttpRequest();
-request.open("GET", apiPing + userQuery, false);
-request.send();
+items.forEach(item => {
+   if (item.name.toLowerCase().includes(userQuery)) {
+    matchedItems[matches] = item;
+    matches++;
+  }
+});
 
-// Parses the response text to JSON format (this means each individual line of the JSON variable is the index of the item as an array)
-var parsedReturn = JSON.parse(request.responseText);
-
-// Sets the item to use as the first query returned by default
-var item = parsedReturn.items[0];
-
-// Checks through all the item names for a return that is exactly what the user typed. If found, that item is used, if not then the default first return is used
-for (i = 0; i < parsedReturn.items.length; i++) {
-  var current = parsedReturn.items[i];
-
-  if (userQuery === current.name || userQuery === current.name.toLowerCase())
-    item = parsedReturn.items[i];
+// Checks if there was any matches. If som sets the item as the first by default but checks for exact matches
+if (matches > 0) {
+  foundItem = matchedItems[0];
+  matchedItems.forEach(item => {
+    if (item.name.toLowerCase() === userQuery) {
+      foundItem = item;
+      match = true;
+    }
+  });
 }
 
-if (parsedReturn.items.length === 0) {
-  message.channel.send("No matching items.");
-}
-else if (parsedReturn.items.length > 1 && userQuery !== item.name && userQuery !== item.name.toLowerCase()) {
-  var botResponse = "Multiple items found: ";
+if (matches === 0) message.channel.send("No matching items.")
+else if (matches > 1 && !match) {
+  botResponse = `${matches} items found: `;
 
-for (i = 0; i < parsedReturn.items.length; i++) {
-  botResponse += parsedReturn.items[i].name;
-  if (i + 1 < parsedReturn.items.length) botResponse += ", ";
-  else botResponse += ".";
-}
-
-message.channel.send(botResponse);
+  matchedItems.forEach( (individualItem, i) => {
+    botResponse += individualItem.name;
+    if (i + 1 < matches) botResponse += ", ";
+    else botResponse += ".";
+  });
+  if (botResponse.length > 2000) message.channel.send(`${matches} items found. List cannot be displayed due to length.`);
+  else message.channel.send(botResponse);
 }
 
-          else {
+else {
+    // Header stats. These will be included in the first line of the response text
+    var iName = "";
+    if (foundItem.displayName !== undefined)
+        iName = foundItem.displayName;
+    else
+        iName = foundItem.name;
+
+    var iType;
+    var iRarity = foundItem.tier;
+    var iSlots = foundItem.sockets;
+
+    var headerStats = [iName, iType, iRarity, iSlots];
+    var header = "";
+    if (foundItem.type !== undefined) {
+        // if (foundItem.type.toLowerCase() === "helmet" || foundItem.type.toLowerCase() === "chestplate" || foundItem.type.toLowerCase() === "leggings" || foundItem.type.toLowerCase() === "boots" || foundItem.type.toLowerCase() === "bow" || foundItem.type.toLowerCase() === "spear" || foundItem.type.toLowerCase() === "wand" || foundItem.type.toLowerCase() === "dagger") {
+        iType = foundItem.type;
+        header += iName + " (" + iRarity + " " + iType + ")";
+        header += "\n\n" + iSlots + " slots\n";
+    }
+    else if (foundItem.accessoryType !== undefined) {
+        // else if (foundItem.accessoryType.toLowerCase() === "ring" || foundItem.accessoryType.toLowerCase() === "bracelet" || foundItem.accessoryType.toLowerCase() === "necklace") {
+        header += iName + " (" + iRarity + " " + foundItem.accessoryType + ")\n";
+        iType = "";
+    }
+    // Requirements
+    var iLevel = foundItem.level;
+    var iStrength = foundItem.strength;
+    var iDexterity = foundItem.dexterity;
+    var iIntelligence = foundItem.intelligence;
+    var iAgility = foundItem.agility;
+    var iDefense = foundItem.defense;
+
+    var requirementStats = [iLevel, iStrength, iDexterity, iIntelligence, iAgility, iDefense];
+    var requirementDisplay = ["level", "strength", "dexterity", "intelligence", "agility", "defense"];
+
+    var requirements = "";
+    for (i = 0; i < requirementStats.length; i++) {
+        if (requirementStats[i] !== 0 && requirementStats[i] !== undefined)
+            requirements += requirementDisplay[i] + ": " + requirementStats[i] + "\n";
+    }
+    if (foundItem.classRequirement !== null && foundItem.classRequirement !== undefined)
+        requirements += "classRequirement" + ": " + foundItem.classRequirement + "\n";
 
 
-              // Header stats. These will be included in the first line of the response text
-              var iName = "";
-              if (item.displayName !== undefined)
-                  iName = item.displayName;
-              else
-                  iName = item.name;
+    // Identifications. These are manipulated regardless of foundItem type (weapon/armour/accessory)
+    var iHealthRegen = foundItem.healthRegen;
+    var iManaRegen = foundItem.manaRegen;
+    var iSpellDamage = foundItem.spellDamage;
+    var iDamageBonus = foundItem.damageBonus;
+    var iLifeSteal = foundItem.lifeSteal;
+    var iManaSteal = foundItem.manaSteal;
+    var iXp = foundItem.xpBonus;
+    var iLoot = foundItem.lootBonus;
+    var iReflection = foundItem.reflection;
+    var iStrengthPoints = foundItem.strengthPoints;
+    var iDexterityPoints = foundItem.dexterityPoints;
+    var iIntelligencePoints = foundItem.intelligencePoints;
+    var iAgilityPoints = foundItem.agilityPoints;
+    var iDefensePoints = foundItem.defensePoints;
+    var iThorns = foundItem.thorns;
+    var iExploding = foundItem.exploding;
+    var iSpeed = foundItem.speed;
+    var iAttackSpeedBonus = foundItem.attackSpeedBonus;
+    var iPoison = foundItem.poison;
+    var iHealthBonus = foundItem.healthBonus;
+    var iSoulPoints = foundItem.soulPoints;
+    var iKnockback = foundItem.knockback;
+    var iEmeraldStealing = foundItem.emeraldStealing;
+    var iHealthRegenRaw = foundItem.healthRegenRaw;
+    var iSpellDamageRaw = foundItem.spellDamageRaw;
+    var iDamageBonusRaw = foundItem.damageBonusRaw;
+    var iBonusFireDamage = foundItem.bonusFireDamage;
+    var iBonusWaterDamage = foundItem.bonusWaterDamage;
+    var iBonusAirDamage = foundItem.bonusAirDamage;
+    var iBonusThunderDamage = foundItem.bonusThunderDamage;
+    var iBonusEarthDamage = foundItem.bonusEarthDamage;
+    var iBonusFireDefense = foundItem.bonusFireDefense;
+    var iBonusWaterDefense = foundItem.bonusWaterDefense;
+    var iBonusAirDefense = foundItem.bonusAirDefense;
+    var iBonusThunderDefense = foundItem.bonusThunderDefense;
+    var iBonusEarthDefense = foundItem.bonusEarthDefense;
 
-              var iType;
-              var iRarity = item.tier;
-              var iSlots = item.sockets;
+    var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iStrengthPoints, iDexterityPoints, iIntelligencePoints,
+        iAgilityPoints, iDefensePoints, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
+        iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
 
-              var headerStats = [iName, iType, iRarity, iSlots];
-              var header = "";
-              if (item.type !== undefined) {
-                  // if (item.type.toLowerCase() === "helmet" || item.type.toLowerCase() === "chestplate" || item.type.toLowerCase() === "leggings" || item.type.toLowerCase() === "boots" || item.type.toLowerCase() === "bow" || item.type.toLowerCase() === "spear" || item.type.toLowerCase() === "wand" || item.type.toLowerCase() === "dagger") {
-                  iType = item.type;
-                  header += iName + " (" + iRarity + " " + iType + ")";
-                  header += "\n\n" + iSlots + " slots\n";
-              }
-              else if (item.accessoryType !== undefined) {
-                  // else if (item.accessoryType.toLowerCase() === "ring" || item.accessoryType.toLowerCase() === "bracelet" || item.accessoryType.toLowerCase() === "necklace") {
-                  header += iName + " (" + iRarity + " " + item.accessoryType + ")\n";
-                  iType = "";
-              }
-              // Requirements
-              var iLevel = item.level;
-              var iStrength = item.strength;
-              var iDexterity = item.dexterity;
-              var iIntelligence = item.intelligence;
-              var iAgility = item.agility;
-              var iDefense = item.defense;
+    var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "strengthPoints",
+        "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints", "thorns", "exploding", "speed", "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
+        "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
+        "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
 
-              var requirementStats = [iLevel, iStrength, iDexterity, iIntelligence, iAgility, iDefense];
-              var requirementDisplay = ["level", "strength", "dexterity", "intelligence", "agility", "defense"];
-
-              var requirements = "";
-              for (i = 0; i < requirementStats.length; i++) {
-                  if (requirementStats[i] !== 0 && requirementStats[i] !== undefined)
-                      requirements += requirementDisplay[i] + ": " + requirementStats[i] + "\n";
-              }
-              if (item.classRequirement !== null && item.classRequirement !== undefined)
-                  requirements += "classRequirement" + ": " + item.classRequirement + "\n";
-
-
-              // Identifications. These are manipulated regardless of item type (weapon/armour/accessory)
-              var iHealthRegen = item.healthRegen;
-              var iManaRegen = item.manaRegen;
-              var iSpellDamage = item.spellDamage;
-              var iDamageBonus = item.damageBonus;
-              var iLifeSteal = item.lifeSteal;
-              var iManaSteal = item.manaSteal;
-              var iXp = item.xpBonus;
-              var iLoot = item.lootBonus;
-              var iReflection = item.reflection;
-              var iStrengthPoints = item.strengthPoints;
-              var iDexterityPoints = item.dexterityPoints;
-              var iIntelligencePoints = item.intelligencePoints;
-              var iAgilityPoints = item.agilityPoints;
-              var iDefensePoints = item.defensePoints;
-              var iThorns = item.thorns;
-              var iExploding = item.exploding;
-              var iSpeed = item.speed;
-              var iAttackSpeedBonus = item.attackSpeedBonus;
-              var iPoison = item.poison;
-              var iHealthBonus = item.healthBonus;
-              var iSoulPoints = item.soulPoints;
-              var iKnockback = item.knockback;
-              var iEmeraldStealing = item.emeraldStealing;
-              var iHealthRegenRaw = item.healthRegenRaw;
-              var iSpellDamageRaw = item.spellDamageRaw;
-              var iDamageBonusRaw = item.damageBonusRaw;
-              var iBonusFireDamage = item.bonusFireDamage;
-              var iBonusWaterDamage = item.bonusWaterDamage;
-              var iBonusAirDamage = item.bonusAirDamage;
-              var iBonusThunderDamage = item.bonusThunderDamage;
-              var iBonusEarthDamage = item.bonusEarthDamage;
-              var iBonusFireDefense = item.bonusFireDefense;
-              var iBonusWaterDefense = item.bonusWaterDefense;
-              var iBonusAirDefense = item.bonusAirDefense;
-              var iBonusThunderDefense = item.bonusThunderDefense;
-              var iBonusEarthDefense = item.bonusEarthDefense;
-
-              var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iStrengthPoints, iDexterityPoints, iIntelligencePoints,
-                  iAgilityPoints, iDefensePoints, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
-                  iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
-
-              var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "strengthPoints",
-                  "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints", "thorns", "exploding", "speed", "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
-                  "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
-                  "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
-
-              var identifications = "";
-              for (i = 0; i < identificationStats.length; i++) {
-                  if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
-                      identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
-              }
-              if (item.addedLore !== null && item.addedLore !== undefined)
-                  identifications += "\n" + item.addedLore;
+    var identifications = "";
+    for (i = 0; i < identificationStats.length; i++) {
+        if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
+            identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
+    }
+    if (foundItem.addedLore !== null && foundItem.addedLore !== undefined)
+        identifications += "\n" + foundItem.addedLore;
 
 
-              var baseStats = "";
-              if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
-                  var iDamage = item.damage;
-                  var iFireDamage = item.fireDamage;
-                  var iWaterDamage = item.waterDamage;
-                  var iAirDamage = item.airDamage;
-                  var iThunderDamage = item.thunderDamage;
-                  var iEarthDamage = item.earthDamage;
-                  var iAtkSpeed = item.attackSpeed;
+    var baseStats = "";
+    if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
+        var iDamage = foundItem.damage;
+        var iFireDamage = foundItem.fireDamage;
+        var iWaterDamage = foundItem.waterDamage;
+        var iAirDamage = foundItem.airDamage;
+        var iThunderDamage = foundItem.thunderDamage;
+        var iEarthDamage = foundItem.earthDamage;
+        var iAtkSpeed = foundItem.attackSpeed;
 
-                  var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
-                  var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
+        var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
+        var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
 
-                  for (i = 0; i < baseStatsStats.length; i++) {
-                      if (baseStatsStats[i] !== undefined) {
-                          if (baseStatsStats[i].toString() !== "0-0")
-                              baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-                      }
-                  }
+        for (i = 0; i < baseStatsStats.length; i++) {
+            if (baseStatsStats[i] !== undefined) {
+                if (baseStatsStats[i].toString() !== "0-0")
+                    baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
+            }
+        }
 
-              } // End if type weapon
-              else {
-                  var iHealth = item.health;
-                  var iFireDefense = item.fireDefense;
-                  var iWaterDefense = item.waterDefense;
-                  var iAirDefense = item.airDefense;
-                  var iThunderDefense = item.thunderDefense;
-                  var iEarthDefense = item.earthDefense;
+    } // End if type weapon
+    else {
+        var iHealth = foundItem.health;
+        var iFireDefense = foundItem.fireDefense;
+        var iWaterDefense = foundItem.waterDefense;
+        var iAirDefense = foundItem.airDefense;
+        var iThunderDefense = foundItem.thunderDefense;
+        var iEarthDefense = foundItem.earthDefense;
 
-                  var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
-                  var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
+        var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
+        var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
 
-                  for (i = 0; i < baseStatsStats.length; i++) {
-                      if (baseStatsStats[i] !== undefined) {
-                          if (baseStatsStats[i] !== 0)
-                              baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-                      }
-                  }
+        for (i = 0; i < baseStatsStats.length; i++) {
+            if (baseStatsStats[i] !== undefined) {
+                if (baseStatsStats[i] !== 0)
+                    baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
+            }
+        }
 
-              } // End if else not weapon
+    } // End if else not weapon
 
-              message.channel.send(header + "\n" + baseStats + "\n" + requirements + "\n" + identifications);
-          } // end else no items found
-      }
+    message.channel.send(header + "\n" + baseStats + "\n" + requirements + "\n" + identifications);
+}
 
+}
 module.exports.help = {
   commandName: "it"
 }

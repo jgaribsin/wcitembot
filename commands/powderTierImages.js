@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const { Client, Attachment } = require('discord.js');
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
 
   if (args[0]) var level = parseInt(args[0]);
   if (args[1]) var rarity = args[1].toString();

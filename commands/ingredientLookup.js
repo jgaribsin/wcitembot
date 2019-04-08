@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => {
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
 
   var ingrStats = [ "HEALTHREGEN", "KNOCKBACK", "MANAREGEN", "DAMAGEBONUS", "SPELLDAMAGE", "LIFESTEAL", "MANASTEAL", "XPBONUS", "LOOTBONUS",
   "REFLECTION", "THORNS", "EXPLODING", "SPEED", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",

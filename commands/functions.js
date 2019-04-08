@@ -19,7 +19,7 @@ var archerDamage = [6.8, 10.2, 17, 22.1, 28.56, 36.72, 48.96, 61.2, 73.44, 89.76
 var baseTotalHealth = [24, 53, 115, 196, 299, 442, 646, 901, 1246, 1690, 2224, 2958, 3868, 4619, 5464, 6410, 7465, 8637, 9935, 11368, 12946];
 var baseHealth = [3, 11, 26, 46, 72, 108, 159, 223, 309, 420, 554, 737, 964, 1152, 1363, 1600, 1864, 2157, 2481, 2839, 3234];
 
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, message, args) => { return; }
+module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => { return; }
 
 exports.prefix = ".";
 
