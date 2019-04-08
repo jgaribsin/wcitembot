@@ -5,9 +5,12 @@ const fs = require("fs");
 client.commands = new Discord.Collection();
 client.ingredients = new Discord.Collection();
 client.ingredientNames = new Discord.Collection();
-
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
+
+let items = require('./items.json');
+fs.writeFileSync(`./items.json`, JSON.stringify(items, null, 2));
+console.log(`Successfully loaded ${items.items.length} items!`);
 
 fs.readdir("./commands", (err, files) => {
 
@@ -55,6 +58,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   // set the bot's prefix here. No need to update elsewhere. then checks the first character of the message against the prefix(es)
+  // var prefix = ",";
   var prefix = ".";
   var usedProperPrefix = prefix == message.content.substring(0, 1);
   if (!usedProperPrefix) return;
@@ -76,5 +80,6 @@ client.on('message', message => {
   let commandFile = client.commands.get(command);
   if (commandFile) commandFile.run(client, prefix, client.ingredients, client.ingredientNames, client.commands, items.items, message, args);
   });
-// process.env.TOKEN
+
+// client.login('NTQ2NTk1MTk4NzY4MjUwODgy.D0qjrg.Jqq8o68uSQmU1dtuWRv4HNp6pJw');
 client.login(process.env.TOKEN);
