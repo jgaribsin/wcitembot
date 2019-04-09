@@ -12,7 +12,13 @@ let foundItem;
 let match = false;
 
 items.forEach(item => {
-   if (item.name.toLowerCase().includes(userQuery)) {
+   if (item.displayName) {
+     if (item.displayName.toLowerCase().includes(userQuery)) {
+      matchedItems[matches] = item;
+      matches++;
+     }
+   }
+   else if (item.name.toLowerCase().includes(userQuery)) {
     matchedItems[matches] = item;
     matches++;
   }
@@ -22,7 +28,13 @@ items.forEach(item => {
 if (matches > 0) {
   foundItem = matchedItems[0];
   matchedItems.forEach(item => {
-    if (item.name.toLowerCase() === userQuery) {
+    if (item.displayName) {
+      if (item.displayName.toLowerCase() === userQuery) {
+        foundItem = item;
+        match = true;
+      }
+    }
+    else if (item.name.toLowerCase() === userQuery) {
       foundItem = item;
       match = true;
     }
@@ -34,7 +46,8 @@ else if (matches > 1 && !match) {
   botResponse = `**${matches} items found**: `;
   let i = 0;
   while (botResponse.length < 1900 && i < matches) {
-    botResponse += matchedItems[i].name;
+    if (matchedItems[i].displayName) botResponse += matchedItems[i].displayName;
+    else botResponse += matchedItems[i].name;
     if (i + 1 < matches) botResponse += ", ";
     else botResponse += ".";
     i++;
