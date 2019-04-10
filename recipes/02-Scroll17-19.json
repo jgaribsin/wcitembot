@@ -1,0 +1,110 @@
+{
+  "level": {
+    "minimum": 17,
+    "maximum": 19
+  },
+  "type": "SCROLL",
+  "skill": "SCRIBING",
+  "materials": [
+    {
+      "item": "Refined Trout Oil",
+      "amount": 2
+    },
+    {
+      "item": "Refined Birch Paper",
+      "amount": 2
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 279,
+      "damage": 42
+    },
+    "STEALING": {
+      "id": 279,
+      "damage": 42
+    },
+    "SLOW": {
+      "id": 279,
+      "damage": 42
+    },
+    "MAGIC": {
+      "id": 279,
+      "damage": 42
+    },
+    "OFFENSIVE": {
+      "id": 279,
+      "damage": 42
+    },
+    "MELEE": {
+      "id": 279,
+      "damage": 42
+    },
+    "DEFAULT": {
+      "id": 279,
+      "damage": 42
+    },
+    "DEFENSIVE": {
+      "id": 279,
+      "damage": 42
+    },
+    "FIRE": {
+      "id": 279,
+      "damage": 42
+    },
+    "AIR": {
+      "id": 279,
+      "damage": 42
+    },
+    "EARTH": {
+      "id": 279,
+      "damage": 42
+    },
+    "WATER": {
+      "id": 279,
+      "damage": 42
+    },
+    "THUNDER": {
+      "id": 279,
+      "damage": 42
+    },
+    "QUICK": {
+      "id": 279,
+      "damage": 42
+    },
+    "RANGED": {
+      "id": 279,
+      "damage": 42
+    }
+  },
+  "names": {
+    "RAINBOW": "scrollrainbow",
+    "STEALING": "scrollstealing",
+    "SLOW": "scrollslow",
+    "MAGIC": "scrollmagic",
+    "OFFENSIVE": "scrolloffensive",
+    "MELEE": "scrollmelee",
+    "DEFAULT": "scrolldefault",
+    "DEFENSIVE": "scrolldefensive",
+    "FIRE": "scrollfire",
+    "AIR": "scrollair",
+    "EARTH": "scrollearth",
+    "WATER": "scrollwater",
+    "THUNDER": "scrollthunder",
+    "QUICK": "scrollquick",
+    "RANGED": "scrollranged"
+  },
+  "healthOrDamage": {
+    "minimum": 84,
+    "maximum": 92
+  },
+  "duration": {
+    "minimum": 456,
+    "maximum": 468
+  },
+  "basicDuration": {
+    "minimum": 3,
+    "maximum": 3
+  },
+  "xp": 36
+}

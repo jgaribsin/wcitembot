@@ -1,0 +1,110 @@
+{
+  "level": {
+    "minimum": 80,
+    "maximum": 83
+  },
+  "type": "POTION",
+  "skill": "ALCHEMISM",
+  "materials": [
+    {
+      "item": "Refined Bass Oil",
+      "amount": 5
+    },
+    {
+      "item": "Refined Rice Grains",
+      "amount": 10
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 373,
+      "damage": 8204
+    },
+    "STEALING": {
+      "id": 373,
+      "damage": 16396
+    },
+    "SLOW": {
+      "id": 373,
+      "damage": 8204
+    },
+    "MAGIC": {
+      "id": 373,
+      "damage": 16
+    },
+    "OFFENSIVE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "MELEE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "DEFAULT": {
+      "id": 373,
+      "damage": 8197
+    },
+    "DEFENSIVE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "FIRE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "AIR": {
+      "id": 373,
+      "damage": 8204
+    },
+    "EARTH": {
+      "id": 373,
+      "damage": 8204
+    },
+    "WATER": {
+      "id": 373,
+      "damage": 8204
+    },
+    "THUNDER": {
+      "id": 373,
+      "damage": 8204
+    },
+    "QUICK": {
+      "id": 373,
+      "damage": 8204
+    },
+    "RANGED": {
+      "id": 373,
+      "damage": 8204
+    }
+  },
+  "names": {
+    "RAINBOW": "potionrainbow",
+    "STEALING": "potionstealing",
+    "SLOW": "potionslow",
+    "MAGIC": "potionmagic",
+    "OFFENSIVE": "potionoffensive",
+    "MELEE": "potionmelee",
+    "DEFAULT": "potiondefault",
+    "DEFENSIVE": "potiondefensive",
+    "FIRE": "potionfire",
+    "AIR": "potionair",
+    "EARTH": "potionearth",
+    "WATER": "potionwater",
+    "THUNDER": "potionthunder",
+    "QUICK": "potionquick",
+    "RANGED": "potionranged"
+  },
+  "healthOrDamage": {
+    "minimum": 2762,
+    "maximum": 2927
+  },
+  "duration": {
+    "minimum": 834,
+    "maximum": 852
+  },
+  "basicDuration": {
+    "minimum": 3,
+    "maximum": 3
+  },
+  "xp": 2128
+}

@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 27,
+    "maximum": 29
+  },
+  "type": "PANTS",
+  "skill": "TAILORING",
+  "materials": [
+    {
+      "item": "Refined Gold Ingot",
+      "amount": 4
+    },
+    {
+      "item": "Refined Oat String",
+      "amount": 2
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 316,
+      "damage": 0
+    },
+    "STEALING": {
+      "id": 316,
+      "damage": 0
+    },
+    "SLOW": {
+      "id": 316,
+      "damage": 0
+    },
+    "MAGIC": {
+      "id": 316,
+      "damage": 0
+    },
+    "OFFENSIVE": {
+      "id": 316,
+      "damage": 0
+    },
+    "MELEE": {
+      "id": 316,
+      "damage": 0
+    },
+    "DEFAULT": {
+      "id": 316,
+      "damage": 0
+    },
+    "DEFENSIVE": {
+      "id": 316,
+      "damage": 0
+    },
+    "FIRE": {
+      "id": 316,
+      "damage": 0
+    },
+    "AIR": {
+      "id": 316,
+      "damage": 0
+    },
+    "EARTH": {
+      "id": 316,
+      "damage": 0
+    },
+    "WATER": {
+      "id": 316,
+      "damage": 0
+    },
+    "THUNDER": {
+      "id": 316,
+      "damage": 0
+    },
+    "QUICK": {
+      "id": 316,
+      "damage": 0
+    },
+    "RANGED": {
+      "id": 316,
+      "damage": 0
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 148,
+    "maximum": 176
+  },
+  "durability": {
+    "minimum": 152000,
+    "maximum": 156000
+  },
+  "xp": 104
+}

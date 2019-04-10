@@ -1,0 +1,110 @@
+{
+  "level": {
+    "minimum": 27,
+    "maximum": 29
+  },
+  "type": "FOOD",
+  "skill": "COOKING",
+  "materials": [
+    {
+      "item": "Refined Salmon Meat",
+      "amount": 4
+    },
+    {
+      "item": "Refined Oat Grains",
+      "amount": 2
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 279,
+      "damage": 69
+    },
+    "STEALING": {
+      "id": 279,
+      "damage": 69
+    },
+    "SLOW": {
+      "id": 279,
+      "damage": 72
+    },
+    "MAGIC": {
+      "id": 279,
+      "damage": 72
+    },
+    "OFFENSIVE": {
+      "id": 279,
+      "damage": 74
+    },
+    "MELEE": {
+      "id": 279,
+      "damage": 71
+    },
+    "DEFAULT": {
+      "id": 279,
+      "damage": 69
+    },
+    "DEFENSIVE": {
+      "id": 279,
+      "damage": 70
+    },
+    "FIRE": {
+      "id": 279,
+      "damage": 70
+    },
+    "AIR": {
+      "id": 279,
+      "damage": 73
+    },
+    "EARTH": {
+      "id": 279,
+      "damage": 71
+    },
+    "WATER": {
+      "id": 279,
+      "damage": 72
+    },
+    "THUNDER": {
+      "id": 279,
+      "damage": 74
+    },
+    "QUICK": {
+      "id": 279,
+      "damage": 73
+    },
+    "RANGED": {
+      "id": 279,
+      "damage": 74
+    }
+  },
+  "names": {
+    "RAINBOW": "foodrainbow",
+    "STEALING": "foodstealing",
+    "SLOW": "foodslow",
+    "MAGIC": "foodmagic",
+    "OFFENSIVE": "foodoffensive",
+    "MELEE": "foodmelee",
+    "DEFAULT": "fooddefault",
+    "DEFENSIVE": "fooddefensive",
+    "FIRE": "foodfire",
+    "AIR": "foodair",
+    "EARTH": "foodearth",
+    "WATER": "foodwater",
+    "THUNDER": "foodthunder",
+    "QUICK": "foodquick",
+    "RANGED": "foodranged"
+  },
+  "healthOrDamage": {
+    "minimum": 210,
+    "maximum": 243
+  },
+  "duration": {
+    "minimum": 1548,
+    "maximum": 1584
+  },
+  "basicDuration": {
+    "minimum": 60,
+    "maximum": 60
+  },
+  "xp": 104
+}

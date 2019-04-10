@@ -1,0 +1,110 @@
+{
+  "level": {
+    "minimum": 35,
+    "maximum": 37
+  },
+  "type": "POTION",
+  "skill": "ALCHEMISM",
+  "materials": [
+    {
+      "item": "Refined Carp Oil",
+      "amount": 3
+    },
+    {
+      "item": "Refined Malt Grains",
+      "amount": 6
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 373,
+      "damage": 8204
+    },
+    "STEALING": {
+      "id": 373,
+      "damage": 16396
+    },
+    "SLOW": {
+      "id": 373,
+      "damage": 8204
+    },
+    "MAGIC": {
+      "id": 373,
+      "damage": 16
+    },
+    "OFFENSIVE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "MELEE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "DEFAULT": {
+      "id": 373,
+      "damage": 8197
+    },
+    "DEFENSIVE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "FIRE": {
+      "id": 373,
+      "damage": 8204
+    },
+    "AIR": {
+      "id": 373,
+      "damage": 8204
+    },
+    "EARTH": {
+      "id": 373,
+      "damage": 8204
+    },
+    "WATER": {
+      "id": 373,
+      "damage": 8204
+    },
+    "THUNDER": {
+      "id": 373,
+      "damage": 8204
+    },
+    "QUICK": {
+      "id": 373,
+      "damage": 8204
+    },
+    "RANGED": {
+      "id": 373,
+      "damage": 8204
+    }
+  },
+  "names": {
+    "RAINBOW": "potionrainbow",
+    "STEALING": "potionstealing",
+    "SLOW": "potionslow",
+    "MAGIC": "potionmagic",
+    "OFFENSIVE": "potionoffensive",
+    "MELEE": "potionmelee",
+    "DEFAULT": "potiondefault",
+    "DEFENSIVE": "potiondefensive",
+    "FIRE": "potionfire",
+    "AIR": "potionair",
+    "EARTH": "potionearth",
+    "WATER": "potionwater",
+    "THUNDER": "potionthunder",
+    "QUICK": "potionquick",
+    "RANGED": "potionranged"
+  },
+  "healthOrDamage": {
+    "minimum": 342,
+    "maximum": 403
+  },
+  "duration": {
+    "minimum": 564,
+    "maximum": 576
+  },
+  "basicDuration": {
+    "minimum": 3,
+    "maximum": 3
+  },
+  "xp": 188
+}

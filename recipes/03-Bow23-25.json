@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 23,
+    "maximum": 25
+  },
+  "type": "BOW",
+  "skill": "WOODWORKING",
+  "materials": [
+    {
+      "item": "Refined Oat String",
+      "amount": 4
+    },
+    {
+      "item": "Refined Willow Wood",
+      "amount": 2
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 7,
+      "damage": 0
+    },
+    "STEALING": {
+      "id": 7,
+      "damage": 0
+    },
+    "SLOW": {
+      "id": 7,
+      "damage": 0
+    },
+    "MAGIC": {
+      "id": 7,
+      "damage": 0
+    },
+    "OFFENSIVE": {
+      "id": 7,
+      "damage": 0
+    },
+    "MELEE": {
+      "id": 7,
+      "damage": 0
+    },
+    "DEFAULT": {
+      "id": 261,
+      "damage": 0
+    },
+    "DEFENSIVE": {
+      "id": 7,
+      "damage": 0
+    },
+    "FIRE": {
+      "id": 159,
+      "damage": 6
+    },
+    "AIR": {
+      "id": 182,
+      "damage": 0
+    },
+    "EARTH": {
+      "id": 136,
+      "damage": 0
+    },
+    "WATER": {
+      "id": 22,
+      "damage": 0
+    },
+    "THUNDER": {
+      "id": 109,
+      "damage": 0
+    },
+    "QUICK": {
+      "id": 7,
+      "damage": 0
+    },
+    "RANGED": {
+      "id": 7,
+      "damage": 0
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 39,
+    "maximum": 42
+  },
+  "durability": {
+    "minimum": 144000,
+    "maximum": 148000
+  },
+  "xp": 102
+}

@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 75,
+    "maximum": 77
+  },
+  "type": "PANTS",
+  "skill": "TAILORING",
+  "materials": [
+    {
+      "item": "Refined Kanderstone Ingot",
+      "amount": 10
+    },
+    {
+      "item": "Refined Decay String",
+      "amount": 5
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 308,
+      "damage": 0
+    },
+    "STEALING": {
+      "id": 308,
+      "damage": 0
+    },
+    "SLOW": {
+      "id": 308,
+      "damage": 0
+    },
+    "MAGIC": {
+      "id": 308,
+      "damage": 0
+    },
+    "OFFENSIVE": {
+      "id": 308,
+      "damage": 0
+    },
+    "MELEE": {
+      "id": 308,
+      "damage": 0
+    },
+    "DEFAULT": {
+      "id": 308,
+      "damage": 0
+    },
+    "DEFENSIVE": {
+      "id": 308,
+      "damage": 0
+    },
+    "FIRE": {
+      "id": 308,
+      "damage": 0
+    },
+    "AIR": {
+      "id": 308,
+      "damage": 0
+    },
+    "EARTH": {
+      "id": 308,
+      "damage": 0
+    },
+    "WATER": {
+      "id": 308,
+      "damage": 0
+    },
+    "THUNDER": {
+      "id": 308,
+      "damage": 0
+    },
+    "QUICK": {
+      "id": 308,
+      "damage": 0
+    },
+    "RANGED": {
+      "id": 308,
+      "damage": 0
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 1600,
+    "maximum": 1730
+  },
+  "durability": {
+    "minimum": 248000,
+    "maximum": 252000
+  },
+  "xp": 1361
+}
