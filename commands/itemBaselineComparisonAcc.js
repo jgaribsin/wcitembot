@@ -1,12 +1,13 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
+module.exports.run = async (client, message, args, botFiles) => {
 
 // Picks out the users query
-var userQuery = message.content.substring(prefix.length + module.exports.help.commandName.length + 1, message.length);
+var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
 userQuery = userQuery.toLowerCase();
 let botResponse = "";
 let matches = 0;
+let items = botFiles.items;
 let matchedItems = new Array(items.length);
 let foundItem;
 let match = false;

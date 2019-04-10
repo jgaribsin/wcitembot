@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
-module.exports.run = async (client, prefix, ingredients, ingredientNames, commands, items, message, args) => {
+module.exports.run = async (client, message, args, botFiles) => {
 
   var ingrStats = [ "HEALTHREGEN", "KNOCKBACK", "MANAREGEN", "DAMAGEBONUS", "SPELLDAMAGE", "LIFESTEAL", "MANASTEAL", "XPBONUS", "LOOTBONUS",
   "REFLECTION", "THORNS", "EXPLODING", "SPEED", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",
@@ -14,9 +14,9 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, comman
   "Raw Spell Damage", "Raw Melee Damage", "Fire Damage %", "Water Damage %", "Air Damage %", "Thunder Damage %",
   "Earth Damage %", "Fire Defense %", "Water Defense %", "Air Defense %", "Thunder Defense %", "Earth Defense %"];
 
-var userQuery = message.content.substring(prefix.length + module.exports.help.commandName.length + 1, message.length);
-let ingrArr = Array.from(ingredients);
-let ingNames = Array.from(ingredientNames);
+var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
+let ingrArr = Array.from(botFiles.ingredients);
+let ingNames = Array.from(botFiles.ingredientNames);
 let matchedIngs = new Array(ingrArr.length);
 let matches = 0;
 let botResponse = "";

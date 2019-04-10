@@ -5,10 +5,14 @@ const fs = require("fs");
 client.commands = new Discord.Collection();
 client.ingredients = new Discord.Collection();
 client.ingredientNames = new Discord.Collection();
+client.recipes = new Discord.Collection();
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
 let items = require('./items.json');
+
+var ingredientsLoaded = 0;
+var recipesLoaded = 0;
 
 fs.readdir("./commands", (err, files) => {
 
@@ -28,6 +32,24 @@ fs.readdir("./commands", (err, files) => {
 
 });
 
+fs.readdir("./recipes", (err, files) => {
+
+  if (err) console.log(err);
+
+  let jsfile = files.filter(f => f.split(".").pop() === "json")
+  if (jsfile.length <= 0) {
+    console.log("Couldn't find recipes.");
+    return;
+  }
+
+  jsfile.forEach((f, i) => {
+      let props = require(`./recipes/${f}`);
+      client.recipes.set(props);
+      recipesLoaded++;
+  });
+
+});
+
 fs.readdir("./ingredients", (err, files) => {
 
   if (err) console.log(err);
@@ -37,22 +59,23 @@ fs.readdir("./ingredients", (err, files) => {
     console.log("\nCouldn't find ingredients.");
     return;
   }
-var ingredientsSet;
-var ingredientsLoaded = 0;
+
   jsfile.forEach((f, i) => {
       let props = require(`./ingredients/${f}`);
       ingredientsLoaded++;
       client.ingredients.set(props);
       if (props.displayName) client.ingredientNames.set(props.displayName);
       else client.ingredientNames.set(props.name);
+    });
   });
-console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
-console.log(`Successfully loaded ${items.items.length} items!`);
-});
+
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(":D", {type: 'PLAYING'});
+    console.log(`Successfully loaded ${recipesLoaded} recipes!`);
+    console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
+    console.log(`Successfully loaded ${items.items.length} items!`);
 });
 
 client.on('message', message => {
@@ -76,8 +99,16 @@ client.on('message', message => {
   // sets an array of arguements as the message array excluding the first index, so excluding the prefix+command
   let args = messageArray.slice(1);
 
+  var botFiles = new Object();
+    botFiles.ingredients = client.ingredients;
+    botFiles.ingredientNames = client.ingredientNames;
+    botFiles.commands = client.commands;
+    botFiles.items = items.items;
+    botFiles.recipes = client.recipes;
+    botFiles.prefix = prefix;
+
   let commandFile = client.commands.get(command);
-  if (commandFile) commandFile.run(client, prefix, client.ingredients, client.ingredientNames, client.commands, items.items, message, args);
+  if (commandFile) commandFile.run(client, message, args, botFiles);
   });
 
 // client.login('NTQ2NTk1MTk4NzY4MjUwODgy.D0qjrg.Jqq8o68uSQmU1dtuWRv4HNp6pJw');
