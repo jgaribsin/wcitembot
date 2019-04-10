@@ -10,7 +10,7 @@ module.exports.run = async (client, prefix, ingredients, ingredientNames, comman
   if (args[2]) var weaponType = args[2].toString();
   else botResponse += "Please enter a weapon type.\n";
   if (args[3]) var atkSpeed = args[3].toString();
-  else botResponse += "Please enter a attack speed.\n";
+  else botResponse += "Please enter an attack speed.\n";
 
   if (args[0] && args[1] && args[2] && args[3])
   message.channel.send("Baseline damage is: " + fnc.calcBaseDam(level, rarity, weaponType, atkSpeed));
