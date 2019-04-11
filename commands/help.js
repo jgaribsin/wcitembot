@@ -24,6 +24,7 @@ const embed = new Discord.RichEmbed()
 .addField("Item Lookup", "`.it <itemName>`", false)
 .addField("Tier Multiplier", "`.mult <level> <rarity>`", false)
 .addField("Powder Stats", "`.powder <tier>`", false)
+.addField("Recipe Stats", "`.recipe <level> <tier> <itemType>`", false)
 
 // .addBlankField(true)
 
