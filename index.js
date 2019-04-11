@@ -10,6 +10,7 @@ const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
 let items = require('./items.json');
+let recipes = require('./recipes.json');
 
 var ingredientsLoaded = 0;
 var recipesLoaded = 0;
@@ -32,24 +33,6 @@ fs.readdir("./commands", (err, files) => {
 
 });
 
-fs.readdir("./recipes", (err, files) => {
-
-  if (err) console.log(err);
-
-  let jsfile = files.filter(f => f.split(".").pop() === "json")
-  if (jsfile.length <= 0) {
-    console.log("Couldn't find recipes.");
-    return;
-  }
-
-  jsfile.forEach((f, i) => {
-      let props = require(`./recipes/${f}`);
-      client.recipes.set(props);
-      recipesLoaded++;
-  });
-
-});
-
 fs.readdir("./ingredients", (err, files) => {
 
   if (err) console.log(err);
@@ -68,7 +51,6 @@ fs.readdir("./ingredients", (err, files) => {
       else client.ingredientNames.set(props.name);
     });
   });
-
 
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
@@ -104,7 +86,7 @@ client.on('message', message => {
     botFiles.ingredientNames = client.ingredientNames;
     botFiles.commands = client.commands;
     botFiles.items = items.items;
-    botFiles.recipes = client.recipes;
+    botFiles.recipes = recipes.recipes;
     botFiles.prefix = prefix;
 
   let commandFile = client.commands.get(command);
