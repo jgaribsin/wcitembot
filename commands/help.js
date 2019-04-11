@@ -7,7 +7,7 @@ const embed = new Discord.RichEmbed()
 .setColor(5451185)
 .setThumbnail("https://cdn.discordapp.com/avatars/483420548156620804/cd145c8296494d1dd75d64a80bfdb123.png")
 
-.setDescription(`\nInformation\n- Prefix: \`${prefix}\`\n- Mandatory Params: \`<>\`\n- Optional Params: \`[]\`\n\n__**Full Command List**__ `)
+.setDescription(`\nInformation\n- Prefix: \`${botFiles.prefix}\`\n- Mandatory Params: \`<>\`\n- Optional Params: \`[]\`\n\n__**Full Command List**__ `)
 
 .addField("Damage Baseline", "`.damage <level> <rarity> <itemType> <attackSpeed>`", false)
 .addField("Health Baseline", "`Items: .health <it> <level> <tier> [itemType]`\n`Ingredients: .health <in> <level> <tier> [profession]`", false)
