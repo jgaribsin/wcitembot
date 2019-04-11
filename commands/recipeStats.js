@@ -52,7 +52,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       botResponse += `\nDuration: ${duraMin}s to ${duraMax}s.`;
 
       botResponse += `\n\n**Without Ingredients**`;
-      botResponse += `\nHealth Healed: ${healthMin} HP/${basicDuration.minimum}s to ${healthMax} HP/${basicDuration.minimum}s.`;
+      botResponse += `\nHealing: ${healthMin} HP/${basicDuration.minimum}s to ${healthMax} HP/${basicDuration.minimum}s.`;
     }
     // if it's a gear
     else {
