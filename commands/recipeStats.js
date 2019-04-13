@@ -62,7 +62,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       let duraMin = Math.round(durability.minimum * tierMult);
       let duraMax = Math.round(durability.maximum * tierMult);
 
-      let healthOrDamageMin = Math.round(healthOrDamage.maximum * tierMult);
+      let healthOrDamageMin = Math.round(healthOrDamage.minimum * tierMult);
       let healthOrDamageMax = Math.round(healthOrDamage.maximum * tierMult);
       if (!isAccessory) botResponse += `\n**Slots**: ${socketsOrCharges}`;
       botResponse += `\n**Durability**: ${duraMin} to ${duraMax}.`;
