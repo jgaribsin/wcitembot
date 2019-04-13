@@ -32,6 +32,7 @@ const embed = new Discord.RichEmbed()
 .addField("Average Calculation", "`.av <n1> <n2> [n3] [n4] ...`", false)
 .addField("Division Calculation", "`.d <n1> <n2>`", false)
 .addField("Multiplication Calculation", "`.m <n1> <n2> [n3] [n4] ...`", false)
+.addField("Percentage Calculation", "`.% <n1> <n2>`", false)
 .addField("Submission Score Calculation", "`.score <fives> <fours> <threes> <twos> <ones>`", false)
 
 .setFooter(`made by Major#1005`)
