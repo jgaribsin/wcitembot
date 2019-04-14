@@ -463,7 +463,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     let recipeIngredients = [' ', ' ', ' ', ' ', ' ', ' '];
     // iterating through each ID of each ingredient and applying effectiveness
     ingredientArray.forEach((ingredient, i) => {
-      if (ingredient.name == "\\") recipeIngredients[i] = " ";
+      if (ingredient.name == "blank") recipeIngredients[i] = " ";
       else if (ingredient.displayName) recipeIngredients[i] = ingredient.displayName;
       else if (ingredient.name) recipeIngredients[i] = ingredient.name;
       let idKeys = Object.keys(ingredient.identifications);
@@ -538,7 +538,6 @@ module.exports.run = async (client, message, args, botFiles) => {
         durationCost += x.consumableOnlyIDs.duration;
       });
       charges = `Charges: ${charges}`;
-      // charges = (charges > 1) ? `${charges} charges` : `${charges} charge`;
     }
 
     if (isWeapon) {

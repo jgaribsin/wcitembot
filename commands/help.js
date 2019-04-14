@@ -17,7 +17,7 @@ const embed = new Discord.RichEmbed()
 .addField("Raw Melee Baseline", "`Weapons: .rm <it> <level> <tier>  <weaponType> <attackSpeed>`\n`Armours/Accessories: .rm <it> <level> <tier>  [itemType]`\n`Ingredients: .rm <in> <level> <tier> [profession]`", false)
 .addField("Raw Spell Baseline", "`Items: .rs <it> <level> <tier>  [itemType]`\n`Ingredients: .rs <in> <level> <tier> [profession]`\n___", false)
 
-.addField("Craft", "`Non-Weapons: .craft <itemType> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n`Weapons: .craft <itemType> <attackSpeed> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n\n`Note: You can enter \"\\\" for a blank ingredient in that slot.`", false)
+.addField("Craft", "`Non-Weapons: .craft <itemType> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n`Weapons: .craft <itemType> <attackSpeed> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n\n`Note: You can enter \"blank\" for a blank ingredient in that slot.`", false)
 .addField("Durability & Duration Baseline", "`.dura <level> <tier>`", false)
 .addField("Ingredient Baseline", "`.inb <ingredientName>`", false)
 .addField("Ingredient Lookup", "`.in <ingredientName>`", false)
