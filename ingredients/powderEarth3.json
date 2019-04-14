@@ -1,0 +1,57 @@
+{
+  "name": "Earth 3",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGERAW": {
+      "minimum": 8,
+      "maximum": 14
+    },
+    "EARTHDAMAGECONVERT": {
+      "minimum": 25,
+      "maximum": 25
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": 8,
+      "maximum": 8
+    },
+    "AIRDEFENSERAW": {
+      "minimum": -3,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -40000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

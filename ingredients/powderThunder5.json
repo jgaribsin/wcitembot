@@ -1,0 +1,57 @@
+{
+  "name": "Thunder 5",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "THUNDERDAMAGERAW": {
+      "minimum": 3,
+      "maximum": 32
+    },
+    "THUNDERDAMAGECONVERT": {
+      "minimum": 22,
+      "maximum": 22
+    },
+    "THUNDERDEFENSERAW": {
+      "minimum": 20,
+      "maximum": 20
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": -7,
+      "maximum": -7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 30,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

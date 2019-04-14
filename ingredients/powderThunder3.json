@@ -1,0 +1,57 @@
+{
+  "name": "Thunder 3",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "THUNDERDAMAGERAW": {
+      "minimum": 2,
+      "maximum": 18
+    },
+    "THUNDERDAMAGECONVERT": {
+      "minimum": 13,
+      "maximum": 13
+    },
+    "THUNDERDEFENSERAW": {
+      "minimum": 9,
+      "maximum": 9
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": -2,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -40000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 10,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

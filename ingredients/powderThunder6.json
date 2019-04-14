@@ -1,0 +1,57 @@
+{
+  "name": "Thunder 6",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "THUNDERDAMAGERAW": {
+      "minimum": 5,
+      "maximum": 40
+    },
+    "THUNDERDAMAGECONVERT": {
+      "minimum": 28,
+      "maximum": 28
+    },
+    "THUNDERDEFENSERAW": {
+      "minimum": 28,
+      "maximum": 28
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": -10,
+      "maximum": -10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 40,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

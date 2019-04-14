@@ -1,0 +1,57 @@
+{
+  "name": "Air 6",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGERAW": {
+      "minimum": 16,
+      "maximum": 18
+    },
+    "AIRDAMAGECONVERT": {
+      "minimum": 35,
+      "maximum": 35
+    },
+    "AIRDEFENSERAW": {
+      "minimum": 34,
+      "maximum": 34
+    },
+    "FIREDEFENSERAW": {
+      "minimum": -13,
+      "maximum": -13
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 40
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

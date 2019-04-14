@@ -1,0 +1,57 @@
+{
+  "name": "Earth 6",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGERAW": {
+      "minimum": 18,
+      "maximum": 22
+    },
+    "EARTHDAMAGECONVERT": {
+      "minimum": 46,
+      "maximum": 46
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": 30,
+      "maximum": 30
+    },
+    "AIRDEFENSERAW": {
+      "minimum": -13,
+      "maximum": -13
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 40,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Air 3",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGERAW": {
+      "minimum": 7,
+      "maximum": 10
+    },
+    "AIRDAMAGECONVERT": {
+      "minimum": 17,
+      "maximum": 17
+    },
+    "AIRDEFENSERAW": {
+      "minimum": 10,
+      "maximum": 10
+    },
+    "FIREDEFENSERAW": {
+      "minimum": -3,
+      "maximum": -3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -40000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 10
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Fire 1",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE"
+  ],
+  "identifications": {
+    "FIREDAMAGERAW": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "FIREDAMAGECONVERT": {
+      "minimum": 14,
+      "maximum": 14
+    },
+    "FIREDEFENSERAW": {
+      "minimum": 3,
+      "maximum": 3
+    },
+    "WATERDEFENSERAW": {
+      "minimum": -1,
+      "maximum": -1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

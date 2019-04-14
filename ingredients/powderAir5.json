@@ -1,0 +1,57 @@
+{
+  "name": "Air 5",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGERAW": {
+      "minimum": 13,
+      "maximum": 17
+    },
+    "AIRDAMAGECONVERT": {
+      "minimum": 28,
+      "maximum": 28
+    },
+    "AIRDEFENSERAW": {
+      "minimum": 24,
+      "maximum": 24
+    },
+    "FIREDEFENSERAW": {
+      "minimum": -9,
+      "maximum": -9
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 30
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

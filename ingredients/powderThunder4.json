@@ -1,0 +1,57 @@
+{
+  "name": "Thunder 4",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER"
+  ],
+  "identifications": {
+    "THUNDERDAMAGERAW": {
+      "minimum": 3,
+      "maximum": 24
+    },
+    "THUNDERDAMAGECONVERT": {
+      "minimum": 17,
+      "maximum": 17
+    },
+    "THUNDERDEFENSERAW": {
+      "minimum": 14,
+      "maximum": 14
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": -4,
+      "maximum": -4
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 20,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

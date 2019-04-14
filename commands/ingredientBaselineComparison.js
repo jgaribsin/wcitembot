@@ -6,13 +6,17 @@ module.exports.run = async (client, message, args, botFiles) => {
   "REFLECTION", "THORNS", "EXPLODING", "SPEED", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",
   "STRENGTHPOINTS", "DEXTERITYPOINTS", "INTELLIGENCEPOINTS", "AGILITYPOINTS", "DEFENSEPOINTS", "HEALTHREGENRAW",
   "SPELLDAMAGERAW", "DAMAGEBONUSRAW", "FIREDAMAGEBONUS", "WATERDAMAGEBONUS", "AIRDAMAGEBONUS", "THUNDERDAMAGEBONUS",
-  "EARTHDAMAGEBONUS", "FIREDEFENSE", "WATERDEFENSE", "AIRDEFENSE", "THUNDERDEFENSE", "EARTHDEFENSE"];
+  "EARTHDAMAGEBONUS", "FIREDEFENSE", "WATERDEFENSE", "AIRDEFENSE", "THUNDERDEFENSE", "EARTHDEFENSE", "FIREDAMAGERAW",
+  "WATERDAMAGERAW", "AIRDAMAGERAW", "THUNDERDAMAGERAW", "EARTHDAMAGERAW", "FIREDAMAGECONVERT", "WATERDAMAGECONVERT", "AIRDAMAGECONVERT",
+  "THUNDERDAMAGECONVERT", "EARTHDAMAGECONVERT", "FIREDEFENSERAW", "WATERDEFENSERAW", "AIRDEFENSERAW", "THUNDERDEFENSERAW", "EARTHDEFENSERAW"];
 
   var ingrDisplay = [ "Health Regen %", "Knockback %", "Mana Regen", "Melee Damage %", "Spell Damage %", "Lifesteal", "Mana Steal",
   "XP Bonus", "Loot Bonus", "Reflection", "Thorns", "Exploding", "Speed", "Attack Speed", "Poison", "Health Bonus", "Soul Point Regen",
   "Stealing", "Strength Points", "Dexterity Points", "Intelligence Points", "Agility Points", "Defense Points", "Raw Health Regen",
   "Raw Spell Damage", "Raw Melee Damage", "Fire Damage %", "Water Damage %", "Air Damage %", "Thunder Damage %",
-  "Earth Damage %", "Fire Defense %", "Water Defense %", "Air Defense %", "Thunder Defense %", "Earth Defense %"];
+  "Earth Damage %", "Fire Defense %", "Water Defense %", "Air Defense %", "Thunder Defense %", "Earth Defense %", "Raw Fire Damage",
+  "Raw Water Damage", "Raw Air Damage", "Raw Thunder Damage", "Raw Earth Damage", "Fire Damage % Convert", "Water Damage % Convert", "Air Damage % Convert",
+  "Thunder Damage % Convert", "Earth Damage % Convert", "Raw Fire Defense", "Raw Water Defense", "Raw Air Defense", "Raw Thunder Defense", "Raw Earth Defense"];
 
 var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
 let ingrArr = Array.from(botFiles.ingredients);

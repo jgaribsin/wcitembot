@@ -1,0 +1,57 @@
+{
+  "name": "Air 4",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGERAW": {
+      "minimum": 9,
+      "maximum": 13
+    },
+    "AIRDAMAGECONVERT": {
+      "minimum": 22,
+      "maximum": 22
+    },
+    "AIRDEFENSERAW": {
+      "minimum": 16,
+      "maximum": 16
+    },
+    "FIREDEFENSERAW": {
+      "minimum": -5,
+      "maximum": -5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -50000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 20
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

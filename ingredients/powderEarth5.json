@@ -1,0 +1,57 @@
+{
+  "name": "Earth 5",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH"
+  ],
+  "identifications": {
+    "EARTHDAMAGERAW": {
+      "minimum": 15,
+      "maximum": 18
+    },
+    "EARTHDAMAGECONVERT": {
+      "minimum": 38,
+      "maximum": 38
+    },
+    "EARTHDEFENSERAW": {
+      "minimum": 22,
+      "maximum": 22
+    },
+    "AIRDEFENSERAW": {
+      "minimum": -9,
+      "maximum": -9
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 30,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}

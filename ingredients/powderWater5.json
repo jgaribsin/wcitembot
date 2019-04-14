@@ -1,0 +1,57 @@
+{
+  "name": "Water 5",
+  "tier": 3,
+  "level": 1,
+  "skills": [
+    "ARMOURING",
+    "TAILORING",
+    "WEAPONSMITHING",
+    "WOODWORKING",
+    "JEWELING"
+  ],
+  "sprite": {
+    "id": 0,
+    "damage": 0
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "WATERDAMAGERAW": {
+      "minimum": 11,
+      "maximum": 14
+    },
+    "WATERDAMAGECONVERT": {
+      "minimum": 26,
+      "maximum": 26
+    },
+    "WATERDEFENSERAW": {
+      "minimum": 28,
+      "maximum": 28
+    },
+    "THUNDERDEFENSERAW": {
+      "minimum": -7,
+      "maximum": -7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 30,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  }
+}
