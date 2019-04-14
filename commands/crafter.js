@@ -617,6 +617,7 @@ module.exports.run = async (client, message, args, botFiles) => {
         .addField("Requirements: ", `${requirements}\n___`, false)
         .addField("Identifications: ", `${identificationsDisplay}\n___`, false)
         .addField("Durability: ", `${durabilityDisplay}`, false)
+        .addField("Recipe: ", `${recipeIngredients}`, false)
         ;
       message.channel.send(embed);
     }
