@@ -16,10 +16,10 @@ module.exports.run = async (client, message, args, botFiles) => {
     tierMult = 1;
     break;
     case 2:
-    tierMult = 1.2;
+    tierMult = 1.25;
     break;
     case 3:
-    tierMult = 1.45;
+    tierMult = 1.4;
     break;
   }
   let recipes = botFiles.recipes;
