@@ -448,9 +448,7 @@ module.exports.run = async (client, message, args, botFiles) => {
         totalIdentifications[key].maximum += currMax;
       });
     });
-    recipeIngredients = `[${recipeIngredients[0]}] [${recipeIngredients[1]}]
-                         [${recipeIngredients[2]}] [${recipeIngredients[3]}]
-                         [${recipeIngredients[4]}] [${recipeIngredients[5]}]`;
+    recipeIngredients = `[${recipeIngredients[0]}] [${recipeIngredients[1]}]\n[${recipeIngredients[2]}] [${recipeIngredients[3]}]\n[${recipeIngredients[4]}] [${recipeIngredients[5]}]`;
     let dontDisplay = ['FIREDAMAGERAW', 'FIREDEFENSERAW', 'FIREDAMAGECONVERT', 'WATERDAMAGERAW', 'WATERDEFENSERAW', 'WATERDAMAGECONVERT', 'AIRDAMAGERAW',
       'AIRDEFENSERAW', 'AIRDAMAGECONVERT', 'THUNDERDAMAGERAW', 'THUNDERDEFENSERAW', 'THUNDERDAMAGECONVERT', 'EARTHDAMAGERAW', 'EARTHDEFENSERAW', 'EARTHDAMAGECONVERT'];
     let identificationsDisplay = "";
