@@ -697,8 +697,21 @@ module.exports.run = async (client, message, args, botFiles) => {
 
       if (durationMin < 10) durabilityMin = 10;
       if (durationMin < 10) durabilityMin = 10;
+      if (durationMin > 60) {
+        let minutesMin = Math.floor(durationMin/60);
+        let minutesMax = Math.floor(durationMax/60);
 
-      var durationDisplay = (durationMin == durationMax) ? `10` : `Duration: ${durationMin}s to ${durationMax}s `;
+        let secondsMin = durationMin % 60;
+        let secondsMax = durationMax % 60;
+
+        durationMin = `${minutesMin} mins, ${secondsMin} secs`;
+        durationMax = `${minutesMax} mins, ${secondsMax} secs`;
+      }
+      else {
+        durationMin = `${durationMin}s`;
+        durationMax = `${durationMax}s`;
+      }
+      var durationDisplay = (durationMin == durationMax) ? `10` : `Duration: \`${durationMin}\` to \`${durationMax}\` `;
       const embed = new Discord.RichEmbed().setColor(5451185)
         .setThumbnail("https://cdn.discordapp.com/avatars/483420548156620804/cd145c8296494d1dd75d64a80bfdb123.png")
         .setTitle(`Crafted ${foundRecipe.type.charAt(0)}${foundRecipe.type.substring(1).toLowerCase()}`)
