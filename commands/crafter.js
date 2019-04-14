@@ -456,7 +456,10 @@ module.exports.run = async (client, message, args, botFiles) => {
     let identificationsDisplay = "";
     Object.keys(totalIdentifications).forEach(id => {
       if (totalIdentifications[id].minimum != 0 && totalIdentifications[id].maximum != 0 && !dontDisplay.includes(id)) {
-        identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum} to ${totalIdentifications[id].maximum}`;
+        if (totalIdentifications[id].minimum == totalIdentifications[id].maximum)
+          identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum}`;
+        else
+          identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum} to ${totalIdentifications[id].maximum}`;
       }
     });
     // making the display values look nicer
