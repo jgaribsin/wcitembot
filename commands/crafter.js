@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, message, args, botFiles) => {
-
   // setting inputs to relevant variables
   if (args[0]) var itemType = args[0].toString().toUpperCase();
   else {
@@ -51,6 +50,39 @@ module.exports.run = async (client, message, args, botFiles) => {
   }
   userIngreds = userIngreds.split(", ");
 
+  /* ----------------------------------------------------------------------------------- */
+  //                                                                                     //
+  //                                     Configs                                         //
+  //                                                                                     //
+  /* ----------------------------------------------------------------------------------- */
+
+  // base stat multipliers per tier
+  var tierOneMatMult = 1;
+  var tierTwoMatMult = 1.25;
+  var tierThreeMatMult = 1.4;
+
+  // damage range of weapons
+  var lowerRange = 0.9;
+  var higherRange = 1.1;
+
+  var charges = 1;
+  if (uLevel >= 30) charges = 2;
+  if (uLevel >= 70) charges = 3;
+
+  var slots = 1;
+  if (uLevel >= 30) slots = 2;
+  if (uLevel >= 70) slots = 3;
+
+  // assigning correct amount of slots able to be used
+  var ingredientSlots = 6;
+  // if (uLevel >= 10) ingredientSlots = 2;
+  // if (uLevel >= 30) ingredientSlots = 3;
+  // if (uLevel >= 50) ingredientSlots = 4;
+  // if (uLevel >= 70) ingredientSlots = 5;
+  // if (uLevel >= 90) ingredientSlots = 6;
+
+  /* ----------------------------------------------------------------------------------- */
+
   var recipes = botFiles.recipes;
   var ingrArr = new Array(botFiles.ingredients.length);
   ingrArr = Array.from(botFiles.ingredients);
@@ -69,11 +101,15 @@ module.exports.run = async (client, message, args, botFiles) => {
     });
   }
   else {
-    message.channel.send("No recipes found.");
+    message.channel.send(`No recipes found for \`T${tier}\` Lv. \`${uLevel}\`.`);
     err = true;
     return;
   }
-
+  if (!foundRecipe) {
+    message.channel.send(`No recipes found for \`T${tier}\` Lv. \`${uLevel}\`.`);
+    err = true;
+    return;
+  }
   var isWeapon = foundRecipe.skill == "WOODWORKING" || foundRecipe.skill == "WEAPONSMITHING";
   var isArmour = foundRecipe.skill == "TAILORING" || foundRecipe.skill == "ARMOURING";
   var isAccessory = foundRecipe.skill == "JEWELING";
@@ -84,23 +120,16 @@ module.exports.run = async (client, message, args, botFiles) => {
     var tierMult = 1;
     switch (tier) {
       case 1:
-        tierMult = 1;
+        tierMult = tierOneMatMult;
         break;
       case 2:
-        tierMult = 1.25;
+        tierMult = tierTwoMatMult;
         break;
       case 3:
-        tierMult = 1.4;
+        tierMult = tierThreeMatMult;
         break;
     }
   }
-  // assigning correct amount of slots able to be used
-  var ingredientSlots = 1;
-  if (uLevel >= 10) ingredientSlots = 2;
-  if (uLevel >= 30) ingredientSlots = 3;
-  if (uLevel >= 50) ingredientSlots = 4;
-  if (uLevel >= 70) ingredientSlots = 5;
-  if (uLevel >= 90) ingredientSlots = 6;
 
   var maxLevel = uLevel;
   if (userIngreds.length > ingredientSlots) {
@@ -128,10 +157,9 @@ module.exports.run = async (client, message, args, botFiles) => {
       return currentName.toLowerCase().includes(currentIngredient.toLowerCase());
     });
     // message if no ingredients found
-    if (ingredientArray[i].length == 0) {
-      message.channel.send(`No ingredients found for slot ${i}.`);
+    if (ingredientArray[i].length == 0 || ingredientArray[i] == "") {
+      message.channel.send(`No ingredients found for slot ${i + 1}.`);
       err = true;
-      return;
     }
     // printing list if multiple ingredients found
     else if (ingredientArray[i].length > 1 && !perfectMatch) {
@@ -148,8 +176,6 @@ module.exports.run = async (client, message, args, botFiles) => {
         k++;
       }
       if (botResponse.length > 1900) botResponse = `${botResponse.substring(0, botResponse.length - 2)} **and ${matches - k} more.**`;
-      // else message.channel.send(botResponse);
-      return;
     }
     // if user query is that ingredients name it'll use that
     else if (perfectMatch) ingredientArray[i] = perfectMatch;
@@ -485,10 +511,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       var intReq = 0;
       var defReq = 0;
       var agiReq = 0;
-      var slots = 1;
 
-      if (uLevel >= 30) slots = 2;
-      if (uLevel >= 70) slots = 3;
       slots = (slots > 1) ? `${slots} slots` : `${slots} slot`;
 
       ingredientArray.forEach((x, i) => {
@@ -509,10 +532,6 @@ module.exports.run = async (client, message, args, botFiles) => {
     }
     else if (isConsumable) {
       var durationCost = 0;
-      var charges = 1;
-
-      if (uLevel >= 30) charges = 2;
-      if (uLevel >= 70) charges = 3;
 
       ingredientArray.forEach((x, i) => {
         charges += x.consumableOnlyIDs.charges;
@@ -572,8 +591,6 @@ module.exports.run = async (client, message, args, botFiles) => {
       baseDamage.Thunder.damage = (totalIdentifications.THUNDERDAMAGERAW.minimum + totalIdentifications.THUNDERDAMAGERAW.maximum) / 2;
       baseDamage.Earth.damage = (totalIdentifications.EARTHDAMAGERAW.minimum + totalIdentifications.EARTHDAMAGERAW.maximum) / 2;
 
-      let lowerRange = 0.9;
-      let higherRange = 1.1;
       fireConv.forEach((val, i) => {
         if (fireConv[i] != 0) {
           baseDamage.Fire.damage += baseDamage.Neutral.damage * fireConv[i];
@@ -698,8 +715,8 @@ module.exports.run = async (client, message, args, botFiles) => {
       if (durationMin < 10) durabilityMin = 10;
       if (durationMin < 10) durabilityMin = 10;
       if (durationMin > 60) {
-        let minutesMin = Math.floor(durationMin/60);
-        let minutesMax = Math.floor(durationMax/60);
+        let minutesMin = Math.floor(durationMin / 60);
+        let minutesMax = Math.floor(durationMax / 60);
 
         let secondsMin = durationMin % 60;
         let secondsMax = durationMax % 60;
