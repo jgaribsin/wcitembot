@@ -144,8 +144,12 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   userIngreds.forEach((currentIngredient, i) => {
     perfectMatch = undefined;
+
+    // filtering out ingredients that aren't applicable for the recipe's job
+    ingredientArray[i] = ingrArr.filter(x => x.skills.includes(foundRecipe.skill));
+
     // filtering for ingredient name and setting current index to the ingredients found
-    ingredientArray[i] = ingrArr.filter(x => {
+    ingredientArray[i] = ingredientArray[i].filter(x => {
       let currentName;
       if (x.displayName) currentName = x.displayName;
       else currentName = x.name;
@@ -183,15 +187,9 @@ module.exports.run = async (client, message, args, botFiles) => {
     else ingredientArray[i] = ingredientArray[i][0];
   });
 
-  // checking to make sure each ingredient is applicable for that recipes
+  // checking each ingredient and setting the max level
   ingredientArray.forEach((x, i) => {
     if (x.level > maxLevel) maxLevel = x.level;
-    if (x.level && !x.skills.includes(foundRecipe.skill)) {
-      botResponse += (x.displayName) ? `\n\n${x.displayName}` : `\n\n${x.name}`;
-      botResponse += ` at slot ${i + 1} is not applicable for a ${foundRecipe.type.toLowerCase()}.`;
-      err = true;
-      // console.log(x);
-    }
     if (x.level > foundRecipe.level.maximum) {
       botResponse += (x.displayName) ? `\n\n${x.displayName}` : `\n\n${x.name}`;
       botResponse += ` at slot ${i + 1} is too high level. Max level is ${foundRecipe.level.maximum}.`;
@@ -461,6 +459,10 @@ module.exports.run = async (client, message, args, botFiles) => {
       }
     };
     let recipeIngredients = [' ', ' ', ' ', ' ', ' ', ' '];
+
+    // key names to exclude during display/calculations
+    let dontDisplay = ['FIREDAMAGERAW', 'FIREDEFENSERAW', 'FIREDAMAGECONVERT', 'WATERDAMAGERAW', 'WATERDEFENSERAW', 'WATERDAMAGECONVERT', 'AIRDAMAGERAW',
+      'AIRDEFENSERAW', 'AIRDAMAGECONVERT', 'THUNDERDAMAGERAW', 'THUNDERDEFENSERAW', 'THUNDERDAMAGECONVERT', 'EARTHDAMAGERAW', 'EARTHDEFENSERAW', 'EARTHDAMAGECONVERT'];
     // iterating through each ID of each ingredient and applying effectiveness
     ingredientArray.forEach((ingredient, i) => {
       if (ingredient.name == "blank") recipeIngredients[i] = " ";
@@ -468,22 +470,23 @@ module.exports.run = async (client, message, args, botFiles) => {
       else if (ingredient.name) recipeIngredients[i] = ingredient.name;
       let idKeys = Object.keys(ingredient.identifications);
       idKeys.forEach(key => {
-        var currMin = Math.round(ingredient.identifications[key].minimum * effectiveness[i]);
-        var currMax = Math.round(ingredient.identifications[key].maximum * effectiveness[i]);
+        // makes sure it's not working with powders
+        if (!dontDisplay.includes(key)) {
+          var currMin = Math.round(ingredient.identifications[key].minimum * effectiveness[i]);
+          var currMax = Math.round(ingredient.identifications[key].maximum * effectiveness[i]);
+        }
         totalIdentifications[key].minimum += currMin;
         totalIdentifications[key].maximum += currMax;
       });
     });
     recipeIngredients = `[${recipeIngredients[0]}] [${recipeIngredients[1]}]\n[${recipeIngredients[2]}] [${recipeIngredients[3]}]\n[${recipeIngredients[4]}] [${recipeIngredients[5]}]`;
-    let dontDisplay = ['FIREDAMAGERAW', 'FIREDEFENSERAW', 'FIREDAMAGECONVERT', 'WATERDAMAGERAW', 'WATERDEFENSERAW', 'WATERDAMAGECONVERT', 'AIRDAMAGERAW',
-      'AIRDEFENSERAW', 'AIRDAMAGECONVERT', 'THUNDERDAMAGERAW', 'THUNDERDEFENSERAW', 'THUNDERDAMAGECONVERT', 'EARTHDAMAGERAW', 'EARTHDEFENSERAW', 'EARTHDAMAGECONVERT'];
     let identificationsDisplay = "";
     Object.keys(totalIdentifications).forEach(id => {
       if (totalIdentifications[id].minimum != 0 && totalIdentifications[id].maximum != 0 && !dontDisplay.includes(id)) {
         if (totalIdentifications[id].minimum == totalIdentifications[id].maximum)
           identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum}`;
         else
-          identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum} to ${totalIdentifications[id].maximum}`;
+          identificationsDisplay += (totalIdentifications[id].maximum > totalIdentifications[id].minimum) ? `\n${id}: ${totalIdentifications[id].minimum} to ${totalIdentifications[id].maximum}` : `\n${id}: ${totalIdentifications[id].maximum} to ${totalIdentifications[id].minimum}`;
       }
     });
     // making the display values look nicer
@@ -623,7 +626,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       var durabilityMin = Math.round(foundRecipe.durability.minimum * tierMult) + durabilityCost;
       var durabilityMax = Math.round(foundRecipe.durability.maximum * tierMult) + durabilityCost;
       if (durabilityMin < 1) durabilityMin = 1;
-      if (durabilityMax < 1) durabilityMin = 1;
+      if (durabilityMax < 1) durabilityMax = 1;
 
       var durabilityDisplay = (durabilityMin == durabilityMax) ? `1` : `${durabilityMin} to ${durabilityMax}`;
       const embed = new Discord.RichEmbed().setColor(5451185)
@@ -659,7 +662,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       var durabilityMin = Math.round(foundRecipe.durability.minimum * tierMult) + durabilityCost;
       var durabilityMax = Math.round(foundRecipe.durability.maximum * tierMult) + durabilityCost;
       if (durabilityMin < 1) durabilityMin = 1;
-      if (durabilityMax < 1) durabilityMin = 1;
+      if (durabilityMax < 1) durabilityMax = 1;
 
       var durabilityDisplay = (durabilityMin == durabilityMax) ? `1` : `${durabilityMin} to ${durabilityMax}`;
 
@@ -693,7 +696,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       var durabilityMin = Math.round(foundRecipe.durability.minimum * tierMult) + durabilityCost;
       var durabilityMax = Math.round(foundRecipe.durability.maximum * tierMult) + durabilityCost;
       if (durabilityMin < 1) durabilityMin = 1;
-      if (durabilityMax < 1) durabilityMin = 1;
+      if (durabilityMax < 1) durabilityMax = 1;
 
       var durabilityDisplay = (durabilityMin == durabilityMax) ? `1` : `${durabilityMin} to ${durabilityMax}`;
       const embed = new Discord.RichEmbed().setColor(5451185)
