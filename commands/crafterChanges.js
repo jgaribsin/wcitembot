@@ -58,8 +58,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   // base stat multipliers per tier
   var tierOneMatMult = 1;
-  var tierTwoMatMult = 1.25;
-  var tierThreeMatMult = 1.4;
+  var tierTwoMatMult = 1.20;
+  var tierThreeMatMult = 1.3;
 
   // ele def multipliers for armour
   var accessoryEleDefMult = 1.5;
@@ -480,8 +480,8 @@ module.exports.run = async (client, message, args, botFiles) => {
         // makes sure it's not working with powders
         if (!dontDisplay.includes(key)) {
           // if it's not a powder stat then applies effectiveness to that slot
-          currMin = Math.round(currMin * effectiveness[i]);
-          currMax = Math.round(currMax * effectiveness[i]);
+          currMin = Math.floor(currMin * effectiveness[i]);
+          currMax = Math.floor(currMax * effectiveness[i]);
         }
         
         totalIdentifications[key].minimum += currMin;
@@ -749,5 +749,5 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (botResponse.length > 0) message.channel.send(botResponse);
 }
 module.exports.help = {
-  commandName: "craft"
+  commandName: "expcraft"
 }
