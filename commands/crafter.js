@@ -61,6 +61,10 @@ module.exports.run = async (client, message, args, botFiles) => {
   var tierTwoMatMult = 1.25;
   var tierThreeMatMult = 1.4;
 
+  // ele def multipliers for armour
+  var accessoryEleDefMult = 1.5;
+  var armourEleDefMult = 3;
+
   // damage range of weapons
   var lowerRange = 0.9;
   var higherRange = 1.1;
@@ -470,11 +474,16 @@ module.exports.run = async (client, message, args, botFiles) => {
       else if (ingredient.name) recipeIngredients[i] = ingredient.name;
       let idKeys = Object.keys(ingredient.identifications);
       idKeys.forEach(key => {
+        var currMin = Math.round(ingredient.identifications[key].minimum);
+        var currMax = Math.round(ingredient.identifications[key].maximum);
+
         // makes sure it's not working with powders
         if (!dontDisplay.includes(key)) {
-          var currMin = Math.round(ingredient.identifications[key].minimum * effectiveness[i]);
-          var currMax = Math.round(ingredient.identifications[key].maximum * effectiveness[i]);
+          // if it's not a powder stat then applies effectiveness to that slot
+          currMin *= effectiveness[i];
+          currMax *= effectiveness[i];
         }
+
         totalIdentifications[key].minimum += currMin;
         totalIdentifications[key].maximum += currMax;
       });
@@ -644,8 +653,6 @@ module.exports.run = async (client, message, args, botFiles) => {
       var baseHealth = (foundRecipe.healthOrDamage.minimum * tierMult) + (foundRecipe.healthOrDamage.maximum * tierMult);
       baseHealth = Math.round(baseHealth / 2);
 
-      var armourEleDefMult = 3;
-
       var baseStats = `Health: ${baseHealth}`;
       let fireDefense = Math.round(totalIdentifications.FIREDEFENSERAW.minimum * armourEleDefMult);
       let waterDefense = Math.round(totalIdentifications.WATERDEFENSERAW.minimum * armourEleDefMult);
@@ -678,8 +685,6 @@ module.exports.run = async (client, message, args, botFiles) => {
       message.channel.send(embed);
     }
     else if (isAccessory) {
-      var accessoryEleDefMult = 1.5;
-
       var baseStats = ``;
       let fireDefense = Math.round(totalIdentifications.FIREDEFENSERAW.minimum * accessoryEleDefMult);
       let waterDefense = Math.round(totalIdentifications.WATERDEFENSERAW.minimum * accessoryEleDefMult);
