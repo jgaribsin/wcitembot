@@ -172,6 +172,8 @@ module.exports.run = async (client, message, args, botFiles) => {
                 if (healthBonus) var itemHealth = foundItem.health + healthBonus;
                 else var itemHealth = foundItem.health;
 
+                var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
+
                 if (healthBonus !== 0 && healthBonus !== undefined) {
                     baselineComp += "Health: " + foundItem.health + " [" + baselineHealth.toFixed(2) + " | " + ((foundItem.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
                     baselineComp += "Health (with health bonus): " + itemHealth + " (" + foundItem.health + " + " + healthBonus + ") [" + baselineHealth.toFixed(2) + " | " + ((itemHealth / baselineHealth) * 100).toFixed(2) + "%]" + "\n\n";
@@ -197,7 +199,7 @@ module.exports.run = async (client, message, args, botFiles) => {
             if (healthBonus) var itemHealth = foundItem.health + healthBonus;
             else var itemHealth = foundItem.health;
 
-            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
+            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
 
             if (healthBonus !== 0 && healthBonus !== undefined) {
                 baselineComp += "Health: " + foundItem.health + " [" + baselineHealth.toFixed(2) + " | " + ((foundItem.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
@@ -220,8 +222,10 @@ module.exports.run = async (client, message, args, botFiles) => {
             message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ")" + "\n\n" + baselineComp);
         }
         else if (foundItem.accessoryType.toLowerCase() === "bracelet") {
-            var itemHealth = foundItem.health + healthBonus;
-            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
+            if (healthBonus) var itemHealth = foundItem.health + healthBonus;
+            else var itemHealth = foundItem.health;
+
+            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
 
             if (healthBonus !== 0 && healthBonus !== undefined) {
                 baselineComp += "Health: " + foundItem.health + " [" + baselineHealth.toFixed(2) + " | " + ((foundItem.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
@@ -244,8 +248,10 @@ module.exports.run = async (client, message, args, botFiles) => {
             message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ")" + "\n\n" + baselineComp);
         }
         else if (foundItem.accessoryType.toLowerCase() === "necklace") {
-            var itemHealth = foundItem.health + healthBonus;
-            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType) * 0.15;
+            if (healthBonus) var itemHealth = foundItem.health + healthBonus;
+            else var itemHealth = foundItem.health;
+
+            var baselineHealth = fnc.calcHealth(itemLevel, itemRarity, functionType);
 
             if (healthBonus !== 0 && healthBonus !== undefined) {
                 baselineComp += "Health: " + foundItem.health + " [" + baselineHealth.toFixed(2) + " | " + ((foundItem.health / baselineHealth) * 100).toFixed(2) + "%]" + "\n";
