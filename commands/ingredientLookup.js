@@ -37,7 +37,7 @@ for (var i = 0; i < ingNames.length; i++) {
     }
 }
 
-if (matches <= 0) botResponse = "No ingredients found.";
+if (matches <= 0) message.channel.send("No ingredients found.");
 else if (matches > 1 && !perfectMatched) {
   botResponse = `**${matches} ingredients found**: `;
   let i = 0;

@@ -491,7 +491,8 @@ module.exports.run = async (client, message, args, botFiles) => {
     recipeIngredients = `[${recipeIngredients[0]}] [${recipeIngredients[1]}]\n[${recipeIngredients[2]}] [${recipeIngredients[3]}]\n[${recipeIngredients[4]}] [${recipeIngredients[5]}]`;
     let identificationsDisplay = "";
     Object.keys(totalIdentifications).forEach(id => {
-      if (totalIdentifications[id].minimum != 0 || totalIdentifications[id].maximum != 0 && !dontDisplay.includes(id)) {
+      if (dontDisplay.includes(id)) return;
+      if (totalIdentifications[id].minimum != 0 || totalIdentifications[id].maximum != 0) {
         if (totalIdentifications[id].minimum == totalIdentifications[id].maximum)
           identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum}`;
         else
