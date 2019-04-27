@@ -166,7 +166,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     });
     // message if no ingredients found
     if (ingredientArray[i].length == 0 || ingredientArray[i] == "") {
-      message.channel.send(`No ingredients found for slot ${i + 1}.`);
+      botResponse += `\nNo ingredients found for slot ${i + 1}: \`${currentIngredient}\``;
       err = true;
     }
     // printing list if multiple ingredients found
