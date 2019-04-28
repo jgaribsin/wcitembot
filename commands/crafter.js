@@ -560,17 +560,7 @@ module.exports.run = async (client, message, args, botFiles) => {
           "min": 0,
           "max": 0
         },
-        "Fire": {
-          "damage": 0,
-          "min": 0,
-          "max": 0
-        },
-        "Water": {
-          "damage": 0,
-          "min": 0,
-          "max": 0
-        },
-        "Air": {
+        "Earth": {
           "damage": 0,
           "min": 0,
           "max": 0
@@ -580,7 +570,17 @@ module.exports.run = async (client, message, args, botFiles) => {
           "min": 0,
           "max": 0
         },
-        "Earth": {
+        "Water": {
+          "damage": 0,
+          "min": 0,
+          "max": 0
+        },
+        "Fire": {
+          "damage": 0,
+          "min": 0,
+          "max": 0
+        },
+        "Air": {
           "damage": 0,
           "min": 0,
           "max": 0
