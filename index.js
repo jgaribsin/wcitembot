@@ -55,12 +55,14 @@ fs.readdir("./ingredients", (err, files) => {
 client.on('ready', () => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(":D", {type: 'PLAYING'});
-    console.log(`Successfully loaded ${recipesLoaded} recipes!`);
+    console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
     console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
     console.log(`Successfully loaded ${items.items.length} items!`);
 });
 
 client.on('message', message => {
+  if (message.content.includes("_ _")) reactNumbers(message);
+
   // set the bot's prefix here. No need to update elsewhere. then checks the first character of the message against the prefix(es)
   // var prefix = ",";
   var prefix = ".";
@@ -81,6 +83,7 @@ client.on('message', message => {
   // sets an array of arguements as the message array excluding the first index, so excluding the prefix+command
   let args = messageArray.slice(1);
 
+
   var botFiles = new Object();
     botFiles.ingredients = client.ingredients;
     botFiles.ingredientNames = client.ingredientNames;
@@ -95,3 +98,11 @@ client.on('message', message => {
 
 // client.login('NTQ2NTk1MTk4NzY4MjUwODgy.D0qjrg.Jqq8o68uSQmU1dtuWRv4HNp6pJw');
 client.login(process.env.TOKEN);
+
+const reactNumbers = async function (message) {
+  await message.react('5⃣');
+  await message.react('4⃣');
+  await message.react('3⃣');
+  await message.react('2⃣');
+  await message.react('1⃣');
+}
