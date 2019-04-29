@@ -58,8 +58,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   // base stat multipliers per tier
   var tierOneMatMult = 1;
-  var tierTwoMatMult = 1.20;
-  var tierThreeMatMult = 1.3;
+  var tierTwoMatMult = 1.25;
+  var tierThreeMatMult = 1.4;
 
   // ele def multipliers for armour
   var accessoryEleDefMult = 1.5;
@@ -166,7 +166,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     });
     // message if no ingredients found
     if (ingredientArray[i].length == 0 || ingredientArray[i] == "") {
-      message.channel.send(`No ingredients found for slot ${i + 1}.`);
+      botResponse += `\nNo ingredients found for slot ${i + 1}: \`${currentIngredient}\``;
       err = true;
     }
     // printing list if multiple ingredients found
@@ -202,7 +202,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (!err) {
     // intializing the effectiveness values for each slot
 
-    var effectiveness = new Array(6).fill(100);
+    var effectiveness = new Array(6).fill(0);
     var leftMod = new Array(6).fill(0);
     var rightMod = new Array(6).fill(0);
     var aboveMod = new Array(6).fill(0);
@@ -236,25 +236,42 @@ module.exports.run = async (client, message, args, botFiles) => {
     // top row
     // 1 - 1 left, 2/4 above, 3/4/5 not touching, 1/2 touching
     // 2 - 0 right, 3/5 above, 2/4/5 not touching, 0/3 touching
-    effectiveness[0] += leftMod[1] + aboveMod[2] + aboveMod[4] + notTouchingMod[3] + notTouchingMod[4] + notTouchingMod[5] + touchingMod[1] + touchingMod[2];
-    effectiveness[1] += rightMod[0] + aboveMod[3] + aboveMod[5] + notTouchingMod[2] + notTouchingMod[4] + notTouchingMod[5] + touchingMod[0] + touchingMod[3];
+    let effectivenessOne = [leftMod[1], aboveMod[2], aboveMod[4], notTouchingMod[3], notTouchingMod[4], notTouchingMod[5], touchingMod[1], touchingMod[2]];
+    let effectivenessTwo = [rightMod[0], aboveMod[3], aboveMod[5], notTouchingMod[2], notTouchingMod[4], notTouchingMod[5], touchingMod[0], touchingMod[3]];
+
     // middle row
     // 3 - 3 left, 0 below, 4 above, 1/5 not touching, 0/3/4 touching
     // 4 - 2 right, 1 below, 5 above, 0/4 not touching, 1/2/5 touching
-    effectiveness[2] += leftMod[3] + belowMod[0] + aboveMod[4] + notTouchingMod[1] + notTouchingMod[5] + touchingMod[0] + touchingMod[3] + touchingMod[4];
-    effectiveness[3] += rightMod[2] + belowMod[1] + aboveMod[5] + notTouchingMod[0] + notTouchingMod[4] + touchingMod[1] + touchingMod[2] + touchingMod[5];
+    let effectivenessThree = [leftMod[3], belowMod[0], aboveMod[4], notTouchingMod[1], notTouchingMod[5], touchingMod[0], touchingMod[3], touchingMod[4]];
+    let effectivenessFour = [rightMod[2], belowMod[1], aboveMod[5], notTouchingMod[0], notTouchingMod[4], touchingMod[1], touchingMod[2], touchingMod[5]];
     // bottom row
     // 5 - 5 left, 0/2 below, 0/1/3 not touching, 2/5 touching
     // 6 - 4 right, 1/3 below, 0/1/2 not touching, 3/4 touching
-    effectiveness[4] += leftMod[5] + belowMod[0] + belowMod[2] + notTouchingMod[0] + notTouchingMod[1] + notTouchingMod[3] + touchingMod[2] + touchingMod[5];
-    effectiveness[5] += rightMod[4] + belowMod[1] + belowMod[3] + notTouchingMod[0] + notTouchingMod[1] + notTouchingMod[2] + touchingMod[3] + touchingMod[4];
+    let effectivenessFive = [leftMod[5], belowMod[0], belowMod[2], notTouchingMod[0], notTouchingMod[1], notTouchingMod[3], touchingMod[2], touchingMod[5]];
+    let effectivenessSix = [rightMod[4], belowMod[1], belowMod[3], notTouchingMod[0], notTouchingMod[1], notTouchingMod[2], touchingMod[3], touchingMod[4]];
 
-    effectiveness[0] /= 100;
-    effectiveness[1] /= 100;
-    effectiveness[2] /= 100;
-    effectiveness[3] /= 100;
-    effectiveness[4] /= 100;
-    effectiveness[5] /= 100;
+    effectivenessOne.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[0])) effectiveness[0] = x;
+    });
+    effectivenessTwo.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[1])) effectiveness[1] = x;
+    });
+    effectivenessThree.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[2])) effectiveness[2] = x;
+    });
+    effectivenessFour.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[3])) effectiveness[3] = x;
+    });
+    effectivenessFive.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[4])) effectiveness[4] = x;
+    });
+    effectivenessSix.forEach(x => {
+      if (Math.abs(x) > Math.abs(effectiveness[5])) effectiveness[5] = x;
+    });
+
+    effectiveness.forEach((x, i) => {
+      effectiveness[i] = (x + 100) / 100;
+    });
 
     var totalIdentifications = {
       "HEALTHREGEN": {
@@ -483,7 +500,7 @@ module.exports.run = async (client, message, args, botFiles) => {
           currMin = Math.floor(currMin * effectiveness[i]);
           currMax = Math.floor(currMax * effectiveness[i]);
         }
-        
+
         totalIdentifications[key].minimum += currMin;
         totalIdentifications[key].maximum += currMax;
       });
@@ -491,7 +508,8 @@ module.exports.run = async (client, message, args, botFiles) => {
     recipeIngredients = `[${recipeIngredients[0]}] [${recipeIngredients[1]}]\n[${recipeIngredients[2]}] [${recipeIngredients[3]}]\n[${recipeIngredients[4]}] [${recipeIngredients[5]}]`;
     let identificationsDisplay = "";
     Object.keys(totalIdentifications).forEach(id => {
-      if (totalIdentifications[id].minimum != 0 && totalIdentifications[id].maximum != 0 && !dontDisplay.includes(id)) {
+      if (dontDisplay.includes(id)) return;
+      if (totalIdentifications[id].minimum != 0 || totalIdentifications[id].maximum != 0) {
         if (totalIdentifications[id].minimum == totalIdentifications[id].maximum)
           identificationsDisplay += `\n${id}: ${totalIdentifications[id].minimum}`;
         else
@@ -527,11 +545,11 @@ module.exports.run = async (client, message, args, botFiles) => {
       slots = (slots > 1) ? `${slots} slots` : `${slots} slot`;
 
       ingredientArray.forEach((x, i) => {
-        strReq += Math.round(x.itemOnlyIDs.strengthRequirement * effectiveness[i]);
-        dexReq += Math.round(x.itemOnlyIDs.dexterityRequirement * effectiveness[i]);
-        intReq += Math.round(x.itemOnlyIDs.intelligenceRequirement * effectiveness[i]);
-        defReq += Math.round(x.itemOnlyIDs.defenceRequirement * effectiveness[i]);
-        agiReq += Math.round(x.itemOnlyIDs.agilityRequirement * effectiveness[i]);
+        strReq += Math.floor(x.itemOnlyIDs.strengthRequirement * effectiveness[i]);
+        dexReq += Math.floor(x.itemOnlyIDs.dexterityRequirement * effectiveness[i]);
+        intReq += Math.floor(x.itemOnlyIDs.intelligenceRequirement * effectiveness[i]);
+        defReq += Math.floor(x.itemOnlyIDs.defenceRequirement * effectiveness[i]);
+        agiReq += Math.floor(x.itemOnlyIDs.agilityRequirement * effectiveness[i]);
         durabilityCost += x.itemOnlyIDs.durabilityModifier / 1000;
       });
 
@@ -559,17 +577,7 @@ module.exports.run = async (client, message, args, botFiles) => {
           "min": 0,
           "max": 0
         },
-        "Fire": {
-          "damage": 0,
-          "min": 0,
-          "max": 0
-        },
-        "Water": {
-          "damage": 0,
-          "min": 0,
-          "max": 0
-        },
-        "Air": {
+        "Earth": {
           "damage": 0,
           "min": 0,
           "max": 0
@@ -579,7 +587,17 @@ module.exports.run = async (client, message, args, botFiles) => {
           "min": 0,
           "max": 0
         },
-        "Earth": {
+        "Water": {
+          "damage": 0,
+          "min": 0,
+          "max": 0
+        },
+        "Fire": {
+          "damage": 0,
+          "min": 0,
+          "max": 0
+        },
+        "Air": {
           "damage": 0,
           "min": 0,
           "max": 0
