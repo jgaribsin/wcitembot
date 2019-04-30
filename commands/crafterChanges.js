@@ -764,7 +764,8 @@ module.exports.run = async (client, message, args, botFiles) => {
       message.channel.send(embed);
     }
   }
-  if (botResponse.length > 0) message.channel.send(botResponse);
+  if (botResponse.length > 0 && botResponse.length < 2000) message.channel.send(botResponse);
+  else if (botResponse.length > 2000) message.channel.send("\`Err\`: Message length greater than 2,000.");
 }
 module.exports.help = {
   commandName: "expcraft"
