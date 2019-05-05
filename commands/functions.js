@@ -19,465 +19,457 @@ var archerDamage = [6.8, 10.2, 17, 22.1, 28.56, 36.72, 48.96, 61.2, 73.44, 89.76
 var baseTotalHealth = [24, 53, 115, 196, 299, 442, 646, 901, 1246, 1690, 2224, 2958, 3868, 4619, 5464, 6410, 7465, 8637, 9935, 11368, 12946];
 var baseHealth = [3, 11, 26, 46, 72, 108, 159, 223, 309, 420, 554, 737, 964, 1152, 1363, 1600, 1864, 2157, 2481, 2839, 3234];
 
-module.exports.run = async (client, message, args, botFiles) => { return; }
+module.exports.run = async (client, message, args, botFiles) => {
+  return;
+}
 
 exports.prefix = ".";
 
-exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
-    if (rarity === "normal" || rarity === "Normal" || rarity === "n")
-        return normalMultipliers[Math.round(level / 5)];
-    else if (rarity === "unique" || rarity === "Unique" || rarity === "u")
-        return uniqueMultipliers[Math.round(level / 5)];
-    else if (rarity === "set" || rarity === "Set" || rarity === "s")
-        return setMultipliers[Math.round(level / 5)];
-    else if (rarity === "rare" || rarity === "Rare" || rarity === "r")
-        return rareMultipliers[Math.round(level / 5)];
-    else if (rarity === "legendary" || rarity === "Legendary" || rarity === "l")
-        return legendaryMultipliers[Math.round(level / 5)];
-    else if (rarity === "mythic" || rarity === "Mythic" || rarity === "m")
-        return mythicMultipliers[Math.round(level / 5)];
+exports.calcMultiplier = function(level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
+  if (rarity === "normal" || rarity === "Normal" || rarity === "n")
+    return normalMultipliers[Math.round(level / 5)];
+  else if (rarity === "unique" || rarity === "Unique" || rarity === "u")
+    return uniqueMultipliers[Math.round(level / 5)];
+  else if (rarity === "set" || rarity === "Set" || rarity === "s")
+    return setMultipliers[Math.round(level / 5)];
+  else if (rarity === "rare" || rarity === "Rare" || rarity === "r")
+    return rareMultipliers[Math.round(level / 5)];
+  else if (rarity === "legendary" || rarity === "Legendary" || rarity === "l")
+    return legendaryMultipliers[Math.round(level / 5)];
+  else if (rarity === "mythic" || rarity === "Mythic" || rarity === "m")
+    return mythicMultipliers[Math.round(level / 5)];
 }
 
-exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
-    var atkSpeedMultiplier; // Multiplier based off the item's attack speed
-    // Checks user input for the full
-    if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
-        atkSpeedMultiplier = 3.5;
-    else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
-        atkSpeedMultiplier = 2.5;
-    else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
-        atkSpeedMultiplier = 1.4;
-    else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
-        atkSpeedMultiplier = 1.0;
-    else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
-        atkSpeedMultiplier = 0.8;
-    else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
-        atkSpeedMultiplier = 0.6;
-    else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
-        atkSpeedMultiplier = 0.45;
+exports.calcBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
+  var atkSpeedMultiplier; // Multiplier based off the item's attack speed
+  // Checks user input for the full
+  if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
+    atkSpeedMultiplier = 3.5;
+  else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
+    atkSpeedMultiplier = 2.5;
+  else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
+    atkSpeedMultiplier = 1.4;
+  else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
+    atkSpeedMultiplier = 1.0;
+  else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
+    atkSpeedMultiplier = 0.8;
+  else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
+    atkSpeedMultiplier = 0.6;
+  else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
+    atkSpeedMultiplier = 0.45;
 
-    let returnValue = 0;
-    var baseLevelDamage;
-    if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
-        baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
-        baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
-        baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
-        baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    if (level > 1)
-        return returnValue;
-    else
-        return Math.round(returnValue / 1.2 * 1000) / 1000;
-}
-
-exports.calcAccBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
-    var atkSpeedMultiplier; // Multiplier based off the item's attack speed
-    // Checks user input for the full
-    if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
-        atkSpeedMultiplier = 4;
-    else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
-        atkSpeedMultiplier = 2.5;
-    else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
-        atkSpeedMultiplier = 1.4;
-    else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
-        atkSpeedMultiplier = 1.0;
-    else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
-        atkSpeedMultiplier = 0.8;
-    else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
-        atkSpeedMultiplier = 0.65;
-    else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
-        atkSpeedMultiplier = 0.475;
-
-    let returnValue = 0;
-    var baseLevelDamage;
-    if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
-        baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
-        baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
-        baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
-        baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
-        returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-    }
-    if (level > 1)
-        return returnValue;
-    else
-        return Math.round(returnValue / 1.2 * 1000) / 1000;
-}
-
-exports.calcTotalBaseHealth = function (level, rarity) {
-    var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
-
-    return Math.round(exports.calcMultiplier(level, rarity) * baseLevelTotalHealth * 1000) / 1000;
-}
-
-exports.calcHealth = function (level, rarity, itemType) {
-    var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
-    var typeMultiplier;
-
-    if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate"
-    || itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
-        typeMultiplier = 1.0;
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "n" || itemType === "b" || itemType === "ring" || itemType === "r")
-        typeMultiplier = 0.15;
-
-    return Math.round(exports.calcMultiplier(level, rarity) * typeMultiplier * baseLevelHealth * 1000) / 1000;
-}
-exports.calcIngHealth = function (level, tier, job) {
   let returnValue = 0;
-  let tierMultiplier = 0;
-  switch (parseInt(tier)) {
-    case 0:
-    tierMultiplier = 1/6; // .1667x
-    break;
-    case 1:
-    tierMultiplier = 0.7/3; //  .233x
-    break;
-    case 2:
-    tierMultiplier = 1/3; // .333x
-    break;
-    case 3:
-    tierMultiplier = 0.5;
-    break;
+  var baseLevelDamage;
+  if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
+    baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
+    baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
+    baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
+    baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
   }
-
-  if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000)/1000;
-  if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
-  if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000)/1000;
-  if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "ring") * 1.0 * tierMultiplier * 1000)/1000;
-
-  return returnValue;
+  if (level > 1)
+    return returnValue;
+  else
+    return Math.round(returnValue / 1.2 * 1000) / 1000;
 }
 
-exports.calcRawSpell = function (level, rarity, itemType) {
+exports.calcAccBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
+  var atkSpeedMultiplier; // Multiplier based off the item's attack speed
+  // Checks user input for the full
+  if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
+    atkSpeedMultiplier = 4;
+  else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
+    atkSpeedMultiplier = 2.5;
+  else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
+    atkSpeedMultiplier = 1.4;
+  else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
+    atkSpeedMultiplier = 1.0;
+  else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
+    atkSpeedMultiplier = 0.8;
+  else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
+    atkSpeedMultiplier = 0.65;
+  else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
+    atkSpeedMultiplier = 0.475;
+
+  let returnValue = 0;
+  var baseLevelDamage;
+  if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
+    baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
+    baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
+    baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
+    baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  }
+  if (level > 1)
+    return returnValue;
+  else
+    return Math.round(returnValue / 1.2 * 1000) / 1000;
+}
+
+exports.calcTotalBaseHealth = function(level, rarity) {
+  var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
+
+  return Math.round(exports.calcMultiplier(level, rarity) * baseLevelTotalHealth * 1000) / 1000;
+}
+
+exports.calcHealth = function(level, rarity, itemType) {
+  var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
   var typeMultiplier;
 
-	if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate"
-  || itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
-      typeMultiplier = 1.0;
+  if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
+    typeMultiplier = 1.0;
+  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    typeMultiplier = 0.4;
+  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "n" || itemType === "b" || itemType === "ring" || itemType === "r")
+    typeMultiplier = 0.15;
+
+  return Math.round(exports.calcMultiplier(level, rarity) * typeMultiplier * baseLevelHealth * 1000) / 1000;
+}
+exports.calcIngHealth = function(level, tier, job) {
+  let returnValue = 0;
+  let tierMultiplier = 0;
+  switch (parseInt(tier)) {
+    case 0:
+      tierMultiplier = 1 / 6; // .1667x
+      break;
+    case 1:
+      tierMultiplier = 0.7 / 3; //  .233x
+      break;
+    case 2:
+      tierMultiplier = 1 / 3; // .333x
+      break;
+    case 3:
+      tierMultiplier = 0.5;
+      break;
+  }
+
+  if (job.toLowerCase() === "alchemism")
+    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000) / 1000;
+  if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
+    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
+  if (job.toLowerCase() === "cooking")
+    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000) / 1000;
+  if (job.toLowerCase() === "jeweling")
+    returnValue = Math.round(exports.calcHealth(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
+
+  return returnValue;
+}
+
+exports.calcRawSpell = function(level, rarity, itemType) {
+  var typeMultiplier;
+
+  if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
+    itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    typeMultiplier = 1.0;
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
-      typeMultiplier = 1/3;
+    typeMultiplier = 1 / 3;
 
-    return Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  return Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
 }
-exports.calcIngRawSpell = function (level, tier, job) {
+exports.calcIngRawSpell = function(level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
     case 0:
-    tierMultiplier = 0.25;
-    break;
+      tierMultiplier = 0.25;
+      break;
     case 1:
-    tierMultiplier = 0.35;
-    break;
+      tierMultiplier = 0.35;
+      break;
     case 2:
-    tierMultiplier = 0.5;
-    break;
+      tierMultiplier = 0.5;
+      break;
     case 3:
-    tierMultiplier = 0.75;
-    break;
+      tierMultiplier = 0.75;
+      break;
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawSpell(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcRawSpell(level, "rare", "ring") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawSpell(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
 
   return returnValue;
 }
 
-exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
-    var typeMultiplier;
-	  let returnValue = 0;
-    if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
-      typeMultiplier = 1.0;
-		    returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-	  }
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
-      typeMultiplier = 1/3;
-  		returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-  	}
-	else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
-  		var weaponDamage = exports.calcBaseDam(level, rarity, itemType, atkSpeed);
-  		returnValue = weaponDamage/2;
-  	}
+exports.calcRawMelee = function(level, rarity, itemType, atkSpeed) {
+  var typeMultiplier;
+  let returnValue = 0;
+  if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
+    typeMultiplier = 1.0;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
+    typeMultiplier = 1 / 3;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
+    var weaponDamage = exports.calcBaseDam(level, rarity, itemType, atkSpeed);
+    returnValue = weaponDamage / 2;
+  }
 
-    return returnValue;
+  return returnValue;
 }
-exports.calcAccRawMelee = function (level, rarity, itemType, atkSpeed) {
-    var typeMultiplier;
-	  let returnValue = 0;
-    if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
-      typeMultiplier = 1.0;
-		    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-	  }
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
-      typeMultiplier = 1/3;
-  		returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-  	}
-	else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
-  		var weaponDamage = exports.calcAccBaseDam(level, rarity, itemType, atkSpeed);
-  		returnValue = weaponDamage/2;
-  	}
+exports.calcAccRawMelee = function(level, rarity, itemType, atkSpeed) {
+  var typeMultiplier;
+  let returnValue = 0;
+  if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
+    typeMultiplier = 1.0;
+    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
+    typeMultiplier = 1 / 3;
+    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+  } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
+    var weaponDamage = exports.calcAccBaseDam(level, rarity, itemType, atkSpeed);
+    returnValue = weaponDamage / 2;
+  }
 
-    return returnValue;
+  return returnValue;
 }
-exports.calcIngRawMelee = function (level, tier, job) {
+exports.calcIngRawMelee = function(level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
     case 0:
-    tierMultiplier = 0.25;
-    break;
+      tierMultiplier = 0.25;
+      break;
     case 1:
-    tierMultiplier = 0.35;
-    break;
+      tierMultiplier = 0.35;
+      break;
     case 2:
-    tierMultiplier = 0.5;
-    break;
+      tierMultiplier = 0.5;
+      break;
     case 3:
-    tierMultiplier = 0.75;
-    break;
+      tierMultiplier = 0.75;
+      break;
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 1.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 0.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawMelee(level, "rare", "armour", "normal") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcRawMelee(level, "rare", "ring", "normal") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcRawMelee(level, "rare", "ring", "normal") * 1.0 * tierMultiplier * 1000) / 1000;
 
   return returnValue;
 }
 
-exports.calcHealthRegen = function (level, rarity, itemType) {
-    var typeMultiplier;
+exports.calcHealthRegen = function(level, rarity, itemType) {
+  var typeMultiplier;
 
-    if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate"
-    || itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
-        typeMultiplier = 1.0;
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
-        typeMultiplier = 0.5;
+  if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
+    itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    typeMultiplier = 1.0;
+  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
+    typeMultiplier = 0.5;
 
-    return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.015 * typeMultiplier * 1000) / 1000;
+  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.015 * typeMultiplier * 1000) / 1000;
 }
-exports.calcIngHealthRegen = function (level, tier, job) {
+exports.calcIngHealthRegen = function(level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
     case 0:
-    tierMultiplier = 0.25;
-    break;
+      tierMultiplier = 0.25;
+      break;
     case 1:
-    tierMultiplier = 0.35;
-    break;
+      tierMultiplier = 0.35;
+      break;
     case 2:
-    tierMultiplier = 0.5;
-    break;
+      tierMultiplier = 0.5;
+      break;
     case 3:
-    tierMultiplier = 0.75;
-    break;
+      tierMultiplier = 0.75;
+      break;
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "ring") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcHealthRegen(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
 
   return returnValue;
 }
 
-exports.calcLifeSteal = function (level, rarity, itemType) {
-	var baseLifeSteal = 0;
-	var X = level;
+exports.calcLifeSteal = function(level, rarity, itemType) {
+  var baseLifeSteal = 0;
+  var X = level;
 
-	// some fancy formula shit poke came up with. set the first input as the level above
-	if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
-        baseLifeSteal = (-9.668517 * 0.0000001) * Math.pow(X, 4) + (2.55299 * 0.0001) * Math.pow(X, 3) + (-0.0014096) * Math.pow(X, 2) + (0.082753855) * Math.pow(X, 1) + 1.491519;
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType == "ring")
-        baseLifeSteal = (-6.5279317694023 * 0.0000001) * Math.pow(X, 4) + (1.6376006529064 * 0.0001) * Math.pow(X, 3) + (-0.0030293516228929) * Math.pow(X, 2) + (0.07433529706782) * Math.pow(X, 1) + 1.4595111575337;
-    else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
-        baseLifeSteal = (-1.64594428 * 0.000001) * Math.pow(X, 4) + (4.2381550782939 * 0.0001) * Math.pow(X, 3) + (-0.0069026686526) * Math.pow(X, 2) + (0.23818150377979) * Math.pow(X, 1) + 1.875175802217;
+  // some fancy formula shit poke came up with. set the first input as the level above
+  if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
+    baseLifeSteal = (-9.668517 * 0.0000001) * Math.pow(X, 4) + (2.55299 * 0.0001) * Math.pow(X, 3) + (-0.0014096) * Math.pow(X, 2) + (0.082753855) * Math.pow(X, 1) + 1.491519;
+  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType == "ring")
+    baseLifeSteal = (-6.5279317694023 * 0.0000001) * Math.pow(X, 4) + (1.6376006529064 * 0.0001) * Math.pow(X, 3) + (-0.0030293516228929) * Math.pow(X, 2) + (0.07433529706782) * Math.pow(X, 1) + 1.4595111575337;
+  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    baseLifeSteal = (-1.64594428 * 0.000001) * Math.pow(X, 4) + (4.2381550782939 * 0.0001) * Math.pow(X, 3) + (-0.0069026686526) * Math.pow(X, 2) + (0.23818150377979) * Math.pow(X, 1) + 1.875175802217;
 
-    return Math.round(baseLifeSteal * exports.calcMultiplier(level, rarity) * 1000) / 1000;
+  return Math.round(baseLifeSteal * exports.calcMultiplier(level, rarity) * 1000) / 1000;
 }
-exports.calcIngLifeSteal = function (level, tier, job) {
+exports.calcIngLifeSteal = function(level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
     case 0:
-    tierMultiplier = 0.25;
-    break;
+      tierMultiplier = 0.25;
+      break;
     case 1:
-    tierMultiplier = 0.35;
-    break;
+      tierMultiplier = 0.35;
+      break;
     case 2:
-    tierMultiplier = 0.5;
-    break;
+      tierMultiplier = 0.5;
+      break;
     case 3:
-    tierMultiplier = 0.75;
-    break;
+      tierMultiplier = 0.75;
+      break;
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking")
-    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "armour") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "armour") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "ring") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcLifeSteal(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
 
   return returnValue;
 }
 // Note: This outputs baseline poison at a multiplier of 1. Higher multipliers may be added depending on an item's reliance on this stat
-exports.calcPoison = function (level, rarity, itemType) {
+exports.calcPoison = function(level, rarity, itemType) {
   var typeMultiplier;
-	var basePoison = 0;
-	var X = level;
+  var basePoison = 0;
+  var X = level;
 
-    if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
-      typeMultiplier = 1.0;
-    else if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
-        typeMultiplier = 0.7;
-    else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
-        typeMultiplier = 0.45;
+  if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+    typeMultiplier = 1.0;
+  else if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
+    typeMultiplier = 0.7;
+  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
+    typeMultiplier = 0.45;
 
-	basePoison = 797.8714 - (797.3510319)/(1 + Math.pow(X/119.1328, 2.507256));
+  basePoison = 797.8714 - (797.3510319) / (1 + Math.pow(X / 119.1328, 2.507256));
 
-    return Math.round(basePoison * typeMultiplier * exports.calcMultiplier(level, rarity) * 1000) / 1000;
+  return Math.round(basePoison * typeMultiplier * exports.calcMultiplier(level, rarity) * 1000) / 1000;
 }
-exports.calcIngPoison = function (level, tier, job) {
+exports.calcIngPoison = function(level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
 
   if (job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking") {
     switch (parseInt(tier)) {
       case 0:
-      tierMultiplier = 1;
-      break;
+        tierMultiplier = 1;
+        break;
       case 1:
-      tierMultiplier = 1.4;
-      break;
+        tierMultiplier = 1.4;
+        break;
       case 2:
-      tierMultiplier = 2;
-      break;
+        tierMultiplier = 2;
+        break;
       case 3:
-      tierMultiplier = 3;
-      break;
+        tierMultiplier = 3;
+        break;
     }
-  }
-  else {
+  } else {
     switch (parseInt(tier)) {
       case 0:
-      tierMultiplier = 0.5;
-      break;
+        tierMultiplier = 0.5;
+        break;
       case 1:
-      tierMultiplier = 0.7;
-      break;
+        tierMultiplier = 0.7;
+        break;
       case 2:
-      tierMultiplier = 1;
-      break;
+        tierMultiplier = 1;
+        break;
       case 3:
-      tierMultiplier = 1.5;
-      break;
+        tierMultiplier = 1.5;
+        break;
     }
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 1.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking")
-    returnValue = Math.round(exports.calcPoison(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcPoison(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "scribing")
-    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 0.5 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcPoison(level, "rare", "armour") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
-    returnValue = Math.round(exports.calcPoison(level, "rare", "ring") * 1.0 * tierMultiplier * 1000)/1000;
+    returnValue = Math.round(exports.calcPoison(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
 
   return returnValue;
 }
 
-exports.durability = function (level, tier) {
+exports.durability = function(level, tier) {
   tier = parseInt(tier);
   let durabilityMult = 1;
   switch (tier) {
     case 3:
-    durabilityMult = 3;
-    break;
+      durabilityMult = 3;
+      break;
     case 2:
-    durabilityMult = 2;
-    break;
+      durabilityMult = 2;
+      break;
     case 1:
-    durabilityMult = 1.4;
-    break;
+      durabilityMult = 1.4;
+      break;
     case 0:
-    durabilityMult = 1;
-    break;
+      durabilityMult = 1;
+      break;
   }
-  let returnValue =  Math.round((1000 + (level - 1) * 20) * durabilityMult)/100;
+  let returnValue = Math.round((1000 + (level - 1) * 20) * durabilityMult) / 100;
   return returnValue * -1;
 }
-exports.duration = function (level, tier) {
+exports.duration = function(level, tier) {
   tier = parseInt(tier);
   let durabilityMult = 1;
   switch (tier) {
     case 3:
-    durabilityMult = 3;
-    break;
+      durabilityMult = 3;
+      break;
     case 2:
-    durabilityMult = 2;
-    break;
+      durabilityMult = 2;
+      break;
     case 1:
-    durabilityMult = 1.4;
-    break;
+      durabilityMult = 1.4;
+      break;
     case 0:
-    durabilityMult = 1;
-    break;
+      durabilityMult = 1;
+      break;
   }
-  let returnValue = Math.round((36 + (level - 1) * 0.6) * durabilityMult * 100)/100
+  let returnValue = Math.round((36 + (level - 1) * 0.6) * durabilityMult * 100) / 100
   return returnValue * -1;
 }
 
-exports.sortJobs = function (jobsObject) {
+exports.sortJobs = function(jobsObject) {
   let topJob = "";
   if (jobsObject.includes("ALCHEMISM"))
     topjob = "ALCHEMISM";
   if (jobsObject.includes("WEAPONSMITHING") || jobsObject.includes("WOODWORKING"))
-      topJob = "WEAPONSMITHING";
+    topJob = "WEAPONSMITHING";
   if (jobsObject.includes("ARMOURING") || jobsObject.includes("TAILORING"))
     topJob = "ARMOURING";
   if (jobsObject.includes("SCRIBING"))

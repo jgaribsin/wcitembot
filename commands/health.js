@@ -9,7 +9,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   if (itemOrIngr == "it") {
     if (args.length > 3) message.channel.send("Baseline health for a `" + itemType + "` is: " + fnc.calcHealth(level, rarity, itemType));
-    else message.channel.send("Baseline health for an armour/weapon is: " + fnc.calcHealth(level, rarity, "armour") +
+    else message.channel.send("Baseline health for an weapon is: " + fnc.calcHealth(level, rarity, "armour") +
+                              "\nBaseline health for an weapon is: " + fnc.calcHealth(level, rarity, "weapon") +
                               "\nBaseline health for an accessory is: " + fnc.calcHealth(level, rarity, "necklace"));
   }
   else if (itemOrIngr == "in") {
