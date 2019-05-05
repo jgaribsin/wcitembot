@@ -7,8 +7,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   if (level > 0 && (rarity > -1 && rarity < 4)) {
     message.channel.send("Durability cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + fnc.durability(level, rarity) +
-    "\nDuration cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + fnc.duration(level, rarity) );
-}
+      "\nDuration cost for a level `" + level + "` `t" + rarity + "` ingredient is: " + fnc.duration(level, rarity));
+  }
 }
 module.exports.help = {
   commandName: "dura"

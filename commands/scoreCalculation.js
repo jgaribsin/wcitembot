@@ -16,24 +16,24 @@ module.exports.run = async (client, message, args, botFiles) => {
   votes += votesTwo;
   votes += votesOne;
 
-  for (i = 0; i < votesFive ; i++) {
+  for (i = 0; i < votesFive; i++) {
     total += 5;
   }
-  for (i = 0; i < votesFour ; i++) {
+  for (i = 0; i < votesFour; i++) {
     total += 4;
   }
-  for (i = 0; i < votesThree ; i++) {
+  for (i = 0; i < votesThree; i++) {
     total += 3;
   }
-  for (i = 0; i < votesTwo ; i++) {
+  for (i = 0; i < votesTwo; i++) {
     total += 2;
   }
-  for (i = 0; i < votesOne ; i++) {
+  for (i = 0; i < votesOne; i++) {
     total += 1;
   }
   var average = total / votes;
-  var roundedAvg = Math.round(average*100)/100;
-  message.channel.send("Average of `" + votesFive + " 5s`, `" + votesFour + " 4s`, `"  + votesThree + " 3s`, `"  + votesTwo + " 2s` and `"  + votesOne + " 1s `"  + " is: " + roundedAvg);
+  var roundedAvg = Math.round(average * 100) / 100;
+  message.channel.send("Average of `" + votesFive + " 5s`, `" + votesFour + " 4s`, `" + votesThree + " 3s`, `" + votesTwo + " 2s` and `" + votesOne + " 1s `" + " is: " + roundedAvg);
 
 }
 

@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args, botFiles) => {
 
 exports.prefix = ".";
 
-exports.calcMultiplier = function(level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
+exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
   if (rarity === "normal" || rarity === "Normal" || rarity === "n")
     return normalMultipliers[Math.round(level / 5)];
   else if (rarity === "unique" || rarity === "Unique" || rarity === "u")
@@ -40,7 +40,7 @@ exports.calcMultiplier = function(level, rarity) { // Calculate the multiplier o
     return mythicMultipliers[Math.round(level / 5)];
 }
 
-exports.calcBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
+exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
   var atkSpeedMultiplier; // Multiplier based off the item's attack speed
   // Checks user input for the full
   if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
@@ -79,7 +79,7 @@ exports.calcBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calcula
     return Math.round(returnValue / 1.2 * 1000) / 1000;
 }
 
-exports.calcAccBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
+exports.calcAccBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
   var atkSpeedMultiplier; // Multiplier based off the item's attack speed
   // Checks user input for the full
   if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
@@ -118,13 +118,13 @@ exports.calcAccBaseDam = function(level, rarity, weaponType, atkSpeed) { // Calc
     return Math.round(returnValue / 1.2 * 1000) / 1000;
 }
 
-exports.calcTotalBaseHealth = function(level, rarity) {
+exports.calcTotalBaseHealth = function (level, rarity) {
   var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
 
   return Math.round(exports.calcMultiplier(level, rarity) * baseLevelTotalHealth * 1000) / 1000;
 }
 
-exports.calcHealth = function(level, rarity, itemType) {
+exports.calcHealth = function (level, rarity, itemType) {
   var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
   var typeMultiplier;
 
@@ -137,7 +137,7 @@ exports.calcHealth = function(level, rarity, itemType) {
 
   return Math.round(exports.calcMultiplier(level, rarity) * typeMultiplier * baseLevelHealth * 1000) / 1000;
 }
-exports.calcIngHealth = function(level, tier, job) {
+exports.calcIngHealth = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
@@ -167,7 +167,7 @@ exports.calcIngHealth = function(level, tier, job) {
   return returnValue;
 }
 
-exports.calcRawSpell = function(level, rarity, itemType) {
+exports.calcRawSpell = function (level, rarity, itemType) {
   var typeMultiplier;
 
   if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
@@ -178,7 +178,7 @@ exports.calcRawSpell = function(level, rarity, itemType) {
 
   return Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
 }
-exports.calcIngRawSpell = function(level, tier, job) {
+exports.calcIngRawSpell = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
@@ -208,7 +208,7 @@ exports.calcIngRawSpell = function(level, tier, job) {
   return returnValue;
 }
 
-exports.calcRawMelee = function(level, rarity, itemType, atkSpeed) {
+exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
   var typeMultiplier;
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
@@ -224,7 +224,7 @@ exports.calcRawMelee = function(level, rarity, itemType, atkSpeed) {
 
   return returnValue;
 }
-exports.calcAccRawMelee = function(level, rarity, itemType, atkSpeed) {
+exports.calcAccRawMelee = function (level, rarity, itemType, atkSpeed) {
   var typeMultiplier;
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
@@ -240,7 +240,7 @@ exports.calcAccRawMelee = function(level, rarity, itemType, atkSpeed) {
 
   return returnValue;
 }
-exports.calcIngRawMelee = function(level, tier, job) {
+exports.calcIngRawMelee = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
@@ -270,7 +270,7 @@ exports.calcIngRawMelee = function(level, tier, job) {
   return returnValue;
 }
 
-exports.calcHealthRegen = function(level, rarity, itemType) {
+exports.calcHealthRegen = function (level, rarity, itemType) {
   var typeMultiplier;
 
   if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
@@ -281,7 +281,7 @@ exports.calcHealthRegen = function(level, rarity, itemType) {
 
   return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.015 * typeMultiplier * 1000) / 1000;
 }
-exports.calcIngHealthRegen = function(level, tier, job) {
+exports.calcIngHealthRegen = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
@@ -311,7 +311,7 @@ exports.calcIngHealthRegen = function(level, tier, job) {
   return returnValue;
 }
 
-exports.calcLifeSteal = function(level, rarity, itemType) {
+exports.calcLifeSteal = function (level, rarity, itemType) {
   var baseLifeSteal = 0;
   var X = level;
 
@@ -325,7 +325,7 @@ exports.calcLifeSteal = function(level, rarity, itemType) {
 
   return Math.round(baseLifeSteal * exports.calcMultiplier(level, rarity) * 1000) / 1000;
 }
-exports.calcIngLifeSteal = function(level, tier, job) {
+exports.calcIngLifeSteal = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
   switch (parseInt(tier)) {
@@ -357,7 +357,7 @@ exports.calcIngLifeSteal = function(level, tier, job) {
   return returnValue;
 }
 // Note: This outputs baseline poison at a multiplier of 1. Higher multipliers may be added depending on an item's reliance on this stat
-exports.calcPoison = function(level, rarity, itemType) {
+exports.calcPoison = function (level, rarity, itemType) {
   var typeMultiplier;
   var basePoison = 0;
   var X = level;
@@ -373,7 +373,7 @@ exports.calcPoison = function(level, rarity, itemType) {
 
   return Math.round(basePoison * typeMultiplier * exports.calcMultiplier(level, rarity) * 1000) / 1000;
 }
-exports.calcIngPoison = function(level, tier, job) {
+exports.calcIngPoison = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
 
@@ -423,7 +423,7 @@ exports.calcIngPoison = function(level, tier, job) {
   return returnValue;
 }
 
-exports.durability = function(level, tier) {
+exports.durability = function (level, tier) {
   tier = parseInt(tier);
   let durabilityMult = 1;
   switch (tier) {
@@ -443,7 +443,7 @@ exports.durability = function(level, tier) {
   let returnValue = Math.round((1000 + (level - 1) * 20) * durabilityMult) / 100;
   return returnValue * -1;
 }
-exports.duration = function(level, tier) {
+exports.duration = function (level, tier) {
   tier = parseInt(tier);
   let durabilityMult = 1;
   switch (tier) {
@@ -464,7 +464,7 @@ exports.duration = function(level, tier) {
   return returnValue * -1;
 }
 
-exports.sortJobs = function(jobsObject) {
+exports.sortJobs = function (jobsObject) {
   let topJob = "";
   if (jobsObject.includes("ALCHEMISM"))
     topjob = "ALCHEMISM";

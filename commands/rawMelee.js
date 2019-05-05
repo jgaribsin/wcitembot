@@ -12,14 +12,14 @@ module.exports.run = async (client, message, args, botFiles) => {
     if (args.length > 4) message.channel.send("Baseline raw melee for a `" + itemType + "` is: " + fnc.calcRawMelee(level, rarity, itemType, atkSpeed));
     else if (args.length > 3) message.channel.send("Baseline raw melee for a `" + itemType + "` is: " + fnc.calcRawMelee(level, rarity, itemType));
     else message.channel.send("Baseline raw melee for an armour is: " + fnc.calcRawMelee(level, rarity, "armour") +
-                              "\nBaseline raw melee for an accessory is: " + fnc.calcRawMelee(level, rarity, "necklace"));
+      "\nBaseline raw melee for an accessory is: " + fnc.calcRawMelee(level, rarity, "necklace"));
   }
   else if (itemOrIngr == "in") {
     if (args.length > 3) message.channel.send(`Baseline raw melee for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngRawMelee(level, rarity, itemType)}`);
     else message.channel.send("Baseline raw melee for alchemism is: " + fnc.calcIngRawMelee(level, rarity, "alchemism") +
-                              "\nBaseline raw melee for armours/weapons/scrolls is: " + fnc.calcIngRawMelee(level, rarity, "armouring") +
-                              "\nBaseline raw melee for jeweling is: " + fnc.calcIngRawMelee(level, rarity, "jeweling") +
-                              "\nBaseline raw melee for cooking is: " + fnc.calcIngRawMelee(level, rarity, "cooking"));
+      "\nBaseline raw melee for armours/weapons/scrolls is: " + fnc.calcIngRawMelee(level, rarity, "armouring") +
+      "\nBaseline raw melee for jeweling is: " + fnc.calcIngRawMelee(level, rarity, "jeweling") +
+      "\nBaseline raw melee for cooking is: " + fnc.calcIngRawMelee(level, rarity, "cooking"));
   }
   else message.channel.send("Please input either `it` or `in` as your first parameter.");
 }

@@ -5,9 +5,9 @@ module.exports.run = async (client, message, args, botFiles) => {
   var userNumbers = args;
 
   if (userNumbers.length !== 2)
-      message.channel.send("Please input two numbers.");
+    message.channel.send("Please input two numbers.");
   else
-      message.channel.send("The percentage of `" + args[0] + "` and `" + args[1] + "` is: " + Math.round((args[0] / args[1])*100000)/1000 + "%");
+    message.channel.send("The percentage of `" + args[0] + "` and `" + args[1] + "` is: " + Math.round((args[0] / args[1]) * 100000) / 1000 + "%");
 
 }
 

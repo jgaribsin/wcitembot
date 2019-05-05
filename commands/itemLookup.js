@@ -2,68 +2,68 @@ const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, message, args, botFiles) => {
 
-// Picks out the users query
-var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
-userQuery = userQuery.toLowerCase();
-let botResponse = "";
-let matches = 0;
-let items = botFiles.items;
-let matchedItems = new Array(items.length);
-let foundItem;
-let match = false;
+  // Picks out the users query
+  var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
+  userQuery = userQuery.toLowerCase();
+  let botResponse = "";
+  let matches = 0;
+  let items = botFiles.items;
+  let matchedItems = new Array(items.length);
+  let foundItem;
+  let match = false;
 
-items.forEach(item => {
-   if (item.displayName) {
-     if (item.displayName.toLowerCase().includes(userQuery)) {
+  items.forEach(item => {
+    if (item.displayName) {
+      if (item.displayName.toLowerCase().includes(userQuery)) {
+        matchedItems[matches] = item;
+        matches++;
+      }
+    }
+    else if (item.name.toLowerCase().includes(userQuery)) {
       matchedItems[matches] = item;
       matches++;
-     }
-   }
-   else if (item.name.toLowerCase().includes(userQuery)) {
-    matchedItems[matches] = item;
-    matches++;
-  }
-});
+    }
+  });
 
-// Checks if there was any matches. If som sets the item as the first by default but checks for exact matches
-if (matches > 0) {
-  foundItem = matchedItems[0];
-  matchedItems.forEach(item => {
-    if (item.displayName) {
-      if (item.displayName.toLowerCase() === userQuery) {
+  // Checks if there was any matches. If som sets the item as the first by default but checks for exact matches
+  if (matches > 0) {
+    foundItem = matchedItems[0];
+    matchedItems.forEach(item => {
+      if (item.displayName) {
+        if (item.displayName.toLowerCase() === userQuery) {
+          foundItem = item;
+          match = true;
+        }
+      }
+      else if (item.name.toLowerCase() === userQuery) {
         foundItem = item;
         match = true;
       }
-    }
-    else if (item.name.toLowerCase() === userQuery) {
-      foundItem = item;
-      match = true;
-    }
-  });
-}
-
-if (matches === 0) message.channel.send("No items found.");
-else if (matches > 1 && !match) {
-  botResponse = `**${matches} items found**: `;
-  let i = 0;
-  while (botResponse.length < 1900 && i < matches) {
-    if (matchedItems[i].displayName) botResponse += matchedItems[i].displayName;
-    else botResponse += matchedItems[i].name;
-    if (i + 1 < matches) botResponse += ", ";
-    else botResponse += ".";
-    i++;
+    });
   }
-  if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length-2)} **and ${matches - i} more.**`);
-  else message.channel.send(botResponse);
-}
 
-else {
+  if (matches === 0) message.channel.send("No items found.");
+  else if (matches > 1 && !match) {
+    botResponse = `**${matches} items found**: `;
+    let i = 0;
+    while (botResponse.length < 1900 && i < matches) {
+      if (matchedItems[i].displayName) botResponse += matchedItems[i].displayName;
+      else botResponse += matchedItems[i].name;
+      if (i + 1 < matches) botResponse += ", ";
+      else botResponse += ".";
+      i++;
+    }
+    if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length - 2)} **and ${matches - i} more.**`);
+    else message.channel.send(botResponse);
+  }
+
+  else {
     // Header stats. These will be included in the first line of the response text
     var iName = "";
     if (foundItem.displayName !== undefined)
-        iName = foundItem.displayName;
+      iName = foundItem.displayName;
     else
-        iName = foundItem.name;
+      iName = foundItem.name;
 
     var iType;
     var iRarity = foundItem.tier;
@@ -72,15 +72,15 @@ else {
     var headerStats = [iName, iType, iRarity, iSlots];
     var header = "";
     if (foundItem.type !== undefined) {
-        // if (foundItem.type.toLowerCase() === "helmet" || foundItem.type.toLowerCase() === "chestplate" || foundItem.type.toLowerCase() === "leggings" || foundItem.type.toLowerCase() === "boots" || foundItem.type.toLowerCase() === "bow" || foundItem.type.toLowerCase() === "spear" || foundItem.type.toLowerCase() === "wand" || foundItem.type.toLowerCase() === "dagger") {
-        iType = foundItem.type;
-        header += iName + " (" + iRarity + " " + iType + ")";
-        header += "\n\n" + iSlots + " slots\n";
+      // if (foundItem.type.toLowerCase() === "helmet" || foundItem.type.toLowerCase() === "chestplate" || foundItem.type.toLowerCase() === "leggings" || foundItem.type.toLowerCase() === "boots" || foundItem.type.toLowerCase() === "bow" || foundItem.type.toLowerCase() === "spear" || foundItem.type.toLowerCase() === "wand" || foundItem.type.toLowerCase() === "dagger") {
+      iType = foundItem.type;
+      header += iName + " (" + iRarity + " " + iType + ")";
+      header += "\n\n" + iSlots + " slots\n";
     }
     else if (foundItem.accessoryType !== undefined) {
-        // else if (foundItem.accessoryType.toLowerCase() === "ring" || foundItem.accessoryType.toLowerCase() === "bracelet" || foundItem.accessoryType.toLowerCase() === "necklace") {
-        header += iName + " (" + iRarity + " " + foundItem.accessoryType + ")\n";
-        iType = "";
+      // else if (foundItem.accessoryType.toLowerCase() === "ring" || foundItem.accessoryType.toLowerCase() === "bracelet" || foundItem.accessoryType.toLowerCase() === "necklace") {
+      header += iName + " (" + iRarity + " " + foundItem.accessoryType + ")\n";
+      iType = "";
     }
     // Requirements
     var iLevel = foundItem.level;
@@ -95,11 +95,11 @@ else {
 
     var requirements = "";
     for (i = 0; i < requirementStats.length; i++) {
-        if (requirementStats[i] !== 0 && requirementStats[i] !== undefined)
-            requirements += requirementDisplay[i] + ": " + requirementStats[i] + "\n";
+      if (requirementStats[i] !== 0 && requirementStats[i] !== undefined)
+        requirements += requirementDisplay[i] + ": " + requirementStats[i] + "\n";
     }
     if (foundItem.classRequirement !== null && foundItem.classRequirement !== undefined)
-        requirements += "classRequirement" + ": " + foundItem.classRequirement + "\n";
+      requirements += "classRequirement" + ": " + foundItem.classRequirement + "\n";
 
 
     // Identifications. These are manipulated regardless of foundItem type (weapon/armour/accessory)
@@ -141,66 +141,66 @@ else {
     var iBonusEarthDefense = foundItem.bonusEarthDefense;
 
     var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iStrengthPoints, iDexterityPoints, iIntelligencePoints,
-        iAgilityPoints, iDefensePoints, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
-        iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
+      iAgilityPoints, iDefensePoints, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
+      iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
 
     var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "strengthPoints",
-        "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints", "thorns", "exploding", "speed", "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
-        "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
-        "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
+      "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints", "thorns", "exploding", "speed", "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
+      "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
+      "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
 
     var identifications = "";
     for (i = 0; i < identificationStats.length; i++) {
-        if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
-            identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
+      if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
+        identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
     }
     if (foundItem.addedLore !== null && foundItem.addedLore !== undefined)
-        identifications += "\n" + foundItem.addedLore;
+      identifications += "\n" + foundItem.addedLore;
 
 
     var baseStats = "";
     if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
-        var iDamage = foundItem.damage;
-        var iFireDamage = foundItem.fireDamage;
-        var iWaterDamage = foundItem.waterDamage;
-        var iAirDamage = foundItem.airDamage;
-        var iThunderDamage = foundItem.thunderDamage;
-        var iEarthDamage = foundItem.earthDamage;
-        var iAtkSpeed = foundItem.attackSpeed;
+      var iDamage = foundItem.damage;
+      var iFireDamage = foundItem.fireDamage;
+      var iWaterDamage = foundItem.waterDamage;
+      var iAirDamage = foundItem.airDamage;
+      var iThunderDamage = foundItem.thunderDamage;
+      var iEarthDamage = foundItem.earthDamage;
+      var iAtkSpeed = foundItem.attackSpeed;
 
-        var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
-        var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
+      var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
+      var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
 
-        for (i = 0; i < baseStatsStats.length; i++) {
-            if (baseStatsStats[i] !== undefined) {
-                if (baseStatsStats[i].toString() !== "0-0")
-                    baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-            }
+      for (i = 0; i < baseStatsStats.length; i++) {
+        if (baseStatsStats[i] !== undefined) {
+          if (baseStatsStats[i].toString() !== "0-0")
+            baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
         }
+      }
 
     } // End if type weapon
     else {
-        var iHealth = foundItem.health;
-        var iFireDefense = foundItem.fireDefense;
-        var iWaterDefense = foundItem.waterDefense;
-        var iAirDefense = foundItem.airDefense;
-        var iThunderDefense = foundItem.thunderDefense;
-        var iEarthDefense = foundItem.earthDefense;
+      var iHealth = foundItem.health;
+      var iFireDefense = foundItem.fireDefense;
+      var iWaterDefense = foundItem.waterDefense;
+      var iAirDefense = foundItem.airDefense;
+      var iThunderDefense = foundItem.thunderDefense;
+      var iEarthDefense = foundItem.earthDefense;
 
-        var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
-        var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
+      var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
+      var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
 
-        for (i = 0; i < baseStatsStats.length; i++) {
-            if (baseStatsStats[i] !== undefined) {
-                if (baseStatsStats[i] !== 0)
-                    baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
-            }
+      for (i = 0; i < baseStatsStats.length; i++) {
+        if (baseStatsStats[i] !== undefined) {
+          if (baseStatsStats[i] !== 0)
+            baseStats += baseStatsDisplay[i] + ": " + baseStatsStats[i] + "\n";
         }
+      }
 
     } // End if else not weapon
 
     message.channel.send(header + "\n" + baseStats + "\n" + requirements + "\n" + identifications);
-}
+  }
 
 }
 module.exports.help = {

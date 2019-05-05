@@ -13,14 +13,14 @@ module.exports.run = async (client, message, args, botFiles) => {
   // proposed: 1, 1.2, 1.3
   switch (tier) {
     case 1:
-    tierMult = 1;
-    break;
+      tierMult = 1;
+      break;
     case 2:
-    tierMult = 1.25;
-    break;
+      tierMult = 1.25;
+      break;
     case 3:
-    tierMult = 1.4;
-    break;
+      tierMult = 1.4;
+      break;
   }
   let recipes = botFiles.recipes;
   var foundRecipe;
@@ -28,10 +28,10 @@ module.exports.run = async (client, message, args, botFiles) => {
   recipes = recipes.filter(recipe => (recipe.type == itemType));
 
   if (recipes.length > 0)
-  recipes.forEach(recipe => {
-    if ((uLevel >= recipe.level.minimum) && (uLevel <= recipe.level.maximum))
-      foundRecipe = recipe;
-  });
+    recipes.forEach(recipe => {
+      if ((uLevel >= recipe.level.minimum) && (uLevel <= recipe.level.maximum))
+        foundRecipe = recipe;
+    });
   else message.channel.send("No recipes found.");
 
   if (foundRecipe) {

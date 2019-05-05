@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   else botResponse += "Please enter an attack speed.\n";
 
   if (args[0] && args[1] && args[2] && args[3])
-  message.channel.send("Baseline damage is: " + fnc.calcBaseDam(level, rarity, weaponType, atkSpeed));
+    message.channel.send("Baseline damage is: " + fnc.calcBaseDam(level, rarity, weaponType, atkSpeed));
   else message.channel.send(botResponse);
 }
 

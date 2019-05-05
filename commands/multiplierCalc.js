@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, message, args, botFiles) => {
-  
+
   if (args[0]) var level = parseInt(args[0]);
   if (args[1]) var rarity = args[1].toString();
   if (args[2]) var weaponType = args[2].toString();

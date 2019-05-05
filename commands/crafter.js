@@ -483,7 +483,7 @@ module.exports.run = async (client, message, args, botFiles) => {
           currMin = Math.round(currMin * effectiveness[i]);
           currMax = Math.round(currMax * effectiveness[i]);
         }
-        
+
         totalIdentifications[key].minimum += currMin;
         totalIdentifications[key].maximum += currMax;
       });
