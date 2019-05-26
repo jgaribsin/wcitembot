@@ -16,7 +16,8 @@ module.exports.run = async (client, message, args, botFiles) => {
   else if (itemOrIngr == "in") {
     if (args.length > 3) message.channel.send(`Baseline health for a \`t${rarity}\`, \`lvl ${level}\` \`${itemType}\` ingredient is: ${fnc.calcIngHealth(level, rarity, itemType)}`);
     else message.channel.send("Baseline health for alchemism is: " + fnc.calcIngHealth(level, rarity, "alchemism") +
-      "\nBaseline health for armours/weapons/scrolls is: " + fnc.calcIngHealth(level, rarity, "armouring") +
+      "\nBaseline health for armours/scrolls is: " + fnc.calcIngHealth(level, rarity, "armouring") +
+      "\nBaseline health for weapons is: " + fnc.calcIngHealth(level, rarity, "weaponsmithing") +
       "\nBaseline health for jeweling is: " + fnc.calcIngHealth(level, rarity, "jeweling") +
       "\nBaseline health for cooking is: " + fnc.calcIngHealth(level, rarity, "cooking"));
   }

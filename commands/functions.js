@@ -156,11 +156,11 @@ exports.calcIngHealth = function (level, tier, job) {
   }
 
   if (job.toLowerCase() === "alchemism")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.5 * tierMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcHealth(level, "rare", "armour") * 1.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "armouring" || job.toLowerCase() === "tailoring" || job.toLowerCase() === "weaponsmithing" || job.toLowerCase() === "woodworking" || job.toLowerCase() === "scribing")
     returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 1.0 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "cooking")
-    returnValue = Math.round(exports.calcHealth(level, "rare", "weapon") * 0.5 * tierMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcHealth(level, "rare", "armour") * 0.5 * tierMultiplier * 1000) / 1000;
   if (job.toLowerCase() === "jeweling")
     returnValue = Math.round(exports.calcHealth(level, "rare", "ring") * 1.0 * tierMultiplier * 1000) / 1000;
 
