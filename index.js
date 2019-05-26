@@ -6,8 +6,13 @@ client.commands = new Discord.Collection();
 client.ingredients = new Discord.Collection();
 client.ingredientNames = new Discord.Collection();
 client.recipes = new Discord.Collection();
-const { Client, Attachment } = require('discord.js');
-const { RichEmbed } = require('discord.js');
+const {
+  Client,
+  Attachment
+} = require('discord.js');
+const {
+  RichEmbed
+} = require('discord.js');
 
 let items = require('./items.json');
 let recipes = require('./recipes.json');
@@ -26,9 +31,9 @@ fs.readdir("./commands", (err, files) => {
   }
 
   jsfile.forEach((f, i) => {
-      let props = require(`./commands/${f}`);
-      console.log(`${f} loaded!`);
-      client.commands.set(props.help.commandName, props);
+    let props = require(`./commands/${f}`);
+    console.log(`${f} loaded!`);
+    client.commands.set(props.help.commandName, props);
   });
 
 });
@@ -44,24 +49,30 @@ fs.readdir("./ingredients", (err, files) => {
   }
 
   jsfile.forEach((f, i) => {
-      let props = require(`./ingredients/${f}`);
-      ingredientsLoaded++;
-      client.ingredients.set(props);
-      if (props.displayName) client.ingredientNames.set(props.displayName);
-      else client.ingredientNames.set(props.name);
-    });
+    let props = require(`./ingredients/${f}`);
+    ingredientsLoaded++;
+    client.ingredients.set(props);
+    if (props.displayName) client.ingredientNames.set(props.displayName);
+    else client.ingredientNames.set(props.name);
   });
+});
 
 client.on('ready', () => {
-    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-    client.user.setActivity(":D", {type: 'PLAYING'});
-    console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
-    console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
-    console.log(`Successfully loaded ${items.items.length} items!`);
+  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+  client.user.setActivity(":D", {
+    type: 'PLAYING'
+  });
+  console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
+  console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
+  console.log(`Successfully loaded ${items.items.length} items!`);
 });
 
 client.on('message', message => {
   if (message.content.includes("_ _")) reactNumbers(message);
+  if (message.content.includes("_vote2_")) reactTwoLetters(message);
+  if (message.content.includes("_vote3_")) reactThreeLetters(message);
+  if (message.content.includes("_vote4_")) reactFourLetters(message);
+  if (message.content.includes("_vote5_")) reactFiveLetters(message);
 
   // set the bot's prefix here. No need to update elsewhere. then checks the first character of the message against the prefix(es)
   // var prefix = ",";
@@ -85,24 +96,50 @@ client.on('message', message => {
 
 
   var botFiles = new Object();
-    botFiles.ingredients = client.ingredients;
-    botFiles.ingredientNames = client.ingredientNames;
-    botFiles.commands = client.commands;
-    botFiles.items = items.items;
-    botFiles.recipes = recipes.recipes;
-    botFiles.prefix = prefix;
+  botFiles.ingredients = client.ingredients;
+  botFiles.ingredientNames = client.ingredientNames;
+  botFiles.commands = client.commands;
+  botFiles.items = items.items;
+  botFiles.recipes = recipes.recipes;
+  botFiles.prefix = prefix;
 
   let commandFile = client.commands.get(command);
   if (commandFile) commandFile.run(client, message, args, botFiles);
-  });
+});
 
 // client.login('NTQ2NTk1MTk4NzY4MjUwODgy.D0qjrg.Jqq8o68uSQmU1dtuWRv4HNp6pJw');
 client.login(process.env.TOKEN);
 
-const reactNumbers = async function (message) {
+const reactNumbers = async function(message) {
   await message.react('5⃣');
   await message.react('4⃣');
   await message.react('3⃣');
   await message.react('2⃣');
   await message.react('1⃣');
+}
+
+const reactTwoLetters = async function(message) {
+  await message.react('🇦');
+  await message.react('🇧');
+}
+
+const reactThreeLetters = async function(message) {
+  await message.react('🇦');
+  await message.react('🇧');
+  await message.react('🇨');
+}
+
+const reactFourLetters = async function(message) {
+  await message.react('🇦');
+  await message.react('🇧');
+  await message.react('🇨');
+  await message.react('🇩');
+}
+
+const reactFiveLetters = async function(message) {
+  await message.react('🇦');
+  await message.react('🇧');
+  await message.react('🇨');
+  await message.react('🇩');
+  await message.react('🇪');
 }
