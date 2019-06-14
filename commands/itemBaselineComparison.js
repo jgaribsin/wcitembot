@@ -67,9 +67,10 @@ module.exports.run = async (client, message, args, botFiles) => {
         else
             itemName = foundItem.name;
 
-        var itemLevel = foundItem.level;
         var itemRarity = foundItem.tier;
-        var itemType = foundItem.type;
+        var itemType = foundItem.type.toLowerCase();
+        var isWeapon = itemType == "wand" || itemType == "spear" || itemType == "bow" || itemType == "dagger";
+        var itemLevel = (itemRarity.toLowerCase() === "mythic" && isWeapon && foundItem.level >= 90) ? 96 : foundItem.level;
 
         // Creating and setting a variable equal to a phrase that can be used by various functions. This is used to calculate baseline values for the stats below these checks
         var functionType;
