@@ -68,9 +68,12 @@ module.exports.run = async (client, message, args, botFiles) => {
             itemName = foundItem.name;
 
         var itemRarity = foundItem.tier;
-        var itemType = foundItem.type.toLowerCase();
+        var itemType = foundItem.type;
         var isWeapon = itemType == "wand" || itemType == "spear" || itemType == "bow" || itemType == "dagger";
         var itemLevel = (itemRarity.toLowerCase() === "mythic" && isWeapon && foundItem.level >= 90) ? 96 : foundItem.level;
+
+        var isIdentified = (foundItem.identified) ? foundItem.identified : false;
+        var identiedText = (isIdentified) ? "Identified" : "Unidentified";
 
         // Creating and setting a variable equal to a phrase that can be used by various functions. This is used to calculate baseline values for the stats below these checks
         var functionType;
@@ -133,7 +136,7 @@ module.exports.run = async (client, message, args, botFiles) => {
                 var max = 0;
                 var damageArray;
 
-                itemDamages = itemName + " (" + itemLevel + " " + itemRarity + " " + itemType + ")\n\n" + foundItem.sockets + " slots" + "\n";
+                itemDamages = itemName + " (" + itemLevel + " " + itemRarity + " " + itemType + ", " + identiedText + ")\n\n" + foundItem.sockets + " slots" + "\n";
 
                 for (var i = 0; i < 6; i++) {
                     if (damages[i] !== undefined) {
@@ -193,7 +196,7 @@ module.exports.run = async (client, message, args, botFiles) => {
                 if (poison !== 0 && poison !== undefined)
                     baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-                message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemType + ")" + "\n\n" + foundItem.sockets + " slots\n" + "\n" + baselineComp);
+                message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + itemType + ", " + identiedText + ")" + "\n\n" + foundItem.sockets + " slots\n" + "\n" + baselineComp);
             } // End bracket 'if helmet/chestplate/leggings/boots'
         } // end itemType check undefined
         else if (foundItem.accessoryType.toLowerCase() === "ring") {
@@ -220,7 +223,7 @@ module.exports.run = async (client, message, args, botFiles) => {
             if (poison !== 0 && poison !== undefined)
                 baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ")" + "\n\n" + baselineComp);
+            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ", " + identiedText + ")" + "\n\n" + baselineComp);
         }
         else if (foundItem.accessoryType.toLowerCase() === "bracelet") {
             if (healthBonus) var itemHealth = foundItem.health + healthBonus;
@@ -246,7 +249,7 @@ module.exports.run = async (client, message, args, botFiles) => {
             if (poison !== 0 && poison !== undefined)
                 baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ")" + "\n\n" + baselineComp);
+            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ", " + identiedText + ")" + "\n\n" + baselineComp);
         }
         else if (foundItem.accessoryType.toLowerCase() === "necklace") {
             if (healthBonus) var itemHealth = foundItem.health + healthBonus;
@@ -272,7 +275,7 @@ module.exports.run = async (client, message, args, botFiles) => {
             if (poison !== 0 && poison !== undefined)
                 baselineComp += "Poison: " + poison + " [" + poisonBaseline.toFixed(2) + " | " + ((poison / poisonBaseline) * 100).toFixed(2) + "%]" + "\n";
 
-            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ")" + "\n\n" + baselineComp);
+            message.channel.send(itemName + " (Lv. " + itemLevel + " " + itemRarity + " " + foundItem.accessoryType + ", " + identiedText + ")" + "\n\n" + baselineComp);
         }
     }
 

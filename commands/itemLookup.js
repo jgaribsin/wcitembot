@@ -65,21 +65,24 @@ module.exports.run = async (client, message, args, botFiles) => {
     else
       iName = foundItem.name;
 
+    var isIdentified = (foundItem.identified) ? foundItem.identified : false;
+    var identiedText = (isIdentified) ? "Identified" : "Unidentified";
+
     var iType;
     var iRarity = foundItem.tier;
     var iSlots = foundItem.sockets;
-
+    
     var headerStats = [iName, iType, iRarity, iSlots];
     var header = "";
     if (foundItem.type !== undefined) {
       // if (foundItem.type.toLowerCase() === "helmet" || foundItem.type.toLowerCase() === "chestplate" || foundItem.type.toLowerCase() === "leggings" || foundItem.type.toLowerCase() === "boots" || foundItem.type.toLowerCase() === "bow" || foundItem.type.toLowerCase() === "spear" || foundItem.type.toLowerCase() === "wand" || foundItem.type.toLowerCase() === "dagger") {
       iType = foundItem.type;
-      header += iName + " (" + iRarity + " " + iType + ")";
+      header += `${iName} (${iRarity} ${iType}, ${identiedText})`;
       header += "\n\n" + iSlots + " slots\n";
     }
     else if (foundItem.accessoryType !== undefined) {
       // else if (foundItem.accessoryType.toLowerCase() === "ring" || foundItem.accessoryType.toLowerCase() === "bracelet" || foundItem.accessoryType.toLowerCase() === "necklace") {
-      header += iName + " (" + iRarity + " " + foundItem.accessoryType + ")\n";
+      header += `${iName} (${iRarity} ${foundItem.accessoryType}, ${identiedText})\n`;
       iType = "";
     }
     // Requirements
