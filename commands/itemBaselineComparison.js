@@ -69,7 +69,7 @@ module.exports.run = async (client, message, args, botFiles) => {
 
         var itemRarity = foundItem.tier;
         var itemType = foundItem.type;
-        var isWeapon = itemType == "wand" || itemType == "spear" || itemType == "bow" || itemType == "dagger";
+        var isWeapon = itemType == "Wand" || itemType == "Spear" || itemType == "Bow" || itemType == "Dagger";
         var itemLevel = (itemRarity.toLowerCase() === "mythic" && isWeapon && foundItem.level >= 90) ? 96 : foundItem.level;
 
         var isIdentified = (foundItem.identified) ? foundItem.identified : false;
