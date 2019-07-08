@@ -279,7 +279,7 @@ exports.calcHealthRegen = function (level, rarity, itemType) {
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
     typeMultiplier = 0.5;
 
-  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.012 * typeMultiplier * 1000) / 1000;
+  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.010 * typeMultiplier * 1000) / 1000;
 }
 exports.calcIngHealthRegen = function (level, tier, job) {
   let returnValue = 0;
