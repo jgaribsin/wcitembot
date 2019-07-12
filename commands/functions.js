@@ -213,10 +213,10 @@ exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
     typeMultiplier = 1.0;
-    returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
     typeMultiplier = 1 / 3;
-    returnValue = Math.round(exports.calcBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
     var weaponDamage = exports.calcBaseDam(level, rarity, itemType, atkSpeed);
     returnValue = weaponDamage / 2;
@@ -229,10 +229,10 @@ exports.calcAccRawMelee = function (level, rarity, itemType, atkSpeed) {
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
     typeMultiplier = 1.0;
-    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
     typeMultiplier = 1 / 3;
-    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "spear", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
     var weaponDamage = exports.calcAccBaseDam(level, rarity, itemType, atkSpeed);
     returnValue = weaponDamage / 2;
