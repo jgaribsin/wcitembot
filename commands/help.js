@@ -10,12 +10,12 @@ module.exports.run = async (client, message, args, botFiles) => {
     .setDescription(`\nInformation\n- Prefix: \`${botFiles.prefix}\`\n- Mandatory Params: \`<>\`\n- Optional Params: \`[]\`\n\n__**Full Command List**__ `)
 
     .addField("Damage Baseline", "`.damage <level> <rarity> <itemType> <attackSpeed>`", false)
-    .addField("Health Baseline", "`Items: .health <it> <level> <tier> [itemType]`\n`Ingredients: .health <in> <level> <tier> [profession]`", false)
-    .addField("Lifesteal Baseline", "`Items: .ls <it> <level> <tier>  [itemType]`\n`Ingredients: .ls <in> <level> <tier> [profession]`", false)
-    .addField("Poison Baseline", "`Items: .poison <it> <level> <tier>  [itemType] [poisonMultiplier]`\n`Ingredients: .poison <in> <level> <tier> [profession]`", false)
-    .addField("Raw Regen Baseline", "`Items: .hr <it> <level> <tier>  [itemType]`\n`Ingredients: .hr <in> <level> <tier> [profession]`", false)
-    .addField("Raw Melee Baseline", "`Weapons: .rm <it> <level> <tier>  <weaponType> <attackSpeed>`\n`Armours/Accessories: .rm <it> <level> <tier>  [itemType]`\n`Ingredients: .rm <in> <level> <tier> [profession]`", false)
-    .addField("Raw Spell Baseline", "`Items: .rs <it> <level> <tier>  [itemType]`\n`Ingredients: .rs <in> <level> <tier> [profession]`\n___", false)
+    .addField("Health Baseline", "`.health <level> <rarity/tier> [itemType/profession]`", false)
+    .addField("Lifesteal Baseline", "`Items: .ls <level> <rarity/tier> [itemType/profession]`", false)
+    .addField("Poison Baseline", "`Items: .poison <level> <rarity/tier> [itemType/profession]` + `[poisonMultiplier]` if an item", false)
+    .addField("Raw Regen Baseline", "`Items: .hr <level> <rarity/tier> [itemType/profession]`", false)
+    .addField("Raw Melee Baseline", "`Weapons: .rm <level> <tier>  <weaponType> <attackSpeed>`\n`Armours/Accessories/Ingredients: .rm <level> <rarity/tier> [itemType/profession]`", false)
+    .addField("Raw Spell Baseline", "`Items: .rs <level> <rarity/tier> [itemType/profession]`\n___", false)
 
     .addField("Craft", "`Non-Weapons: .craft <itemType> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n`Weapons: .craft <itemType> <attackSpeed> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n\n`Note: You can enter \"blank\" for a blank ingredient in that slot.`", false)
     .addField("Durability & Duration Baseline", "`.dura <level> <tier>`", false)

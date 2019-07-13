@@ -79,45 +79,6 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
     return Math.round(returnValue / 1.2 * 1000) / 1000;
 }
 
-exports.calcAccBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
-  var atkSpeedMultiplier; // Multiplier based off the item's attack speed
-  // Checks user input for the full
-  if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
-    atkSpeedMultiplier = 4;
-  else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
-    atkSpeedMultiplier = 2.5;
-  else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
-    atkSpeedMultiplier = 1.4;
-  else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
-    atkSpeedMultiplier = 1.0;
-  else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
-    atkSpeedMultiplier = 0.8;
-  else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
-    atkSpeedMultiplier = 0.65;
-  else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
-    atkSpeedMultiplier = 0.475;
-
-  let returnValue = 0;
-  var baseLevelDamage;
-  if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
-    baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
-    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-  } else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
-    baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
-    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-  } else if (weaponType === "dagger" || weaponType === "Dagger" || weaponType === "d") {
-    baseLevelDamage = (assassinDamage[Math.ceil(level / 5)] - assassinDamage[Math.floor(level / 5)]) * (level % 5) / 5 + assassinDamage[Math.floor(level / 5)];
-    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-  } else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
-    baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
-    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
-  }
-  if (level > 1)
-    return returnValue;
-  else
-    return Math.round(returnValue / 1.2 * 1000) / 1000;
-}
-
 exports.calcTotalBaseHealth = function (level, rarity) {
   var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
 
@@ -224,22 +185,7 @@ exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
 
   return returnValue;
 }
-exports.calcAccRawMelee = function (level, rarity, itemType, atkSpeed) {
-  var typeMultiplier;
-  let returnValue = 0;
-  if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
-    typeMultiplier = 1.0;
-    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-  } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
-    typeMultiplier = 1 / 3;
-    returnValue = Math.round(exports.calcAccBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-  } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
-    var weaponDamage = exports.calcAccBaseDam(level, rarity, itemType, atkSpeed);
-    returnValue = weaponDamage / 2;
-  }
 
-  return returnValue;
-}
 exports.calcIngRawMelee = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
