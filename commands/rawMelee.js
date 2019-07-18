@@ -6,6 +6,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (args[0]) var level = parseInt(args[0]);
   if (args[1]) var rarity = args[1];
   if (args[2]) var itemType = args[2].toString();
+  if (args[3]) var atkSpeed = args[3].toString();
   let itemRarities = ['mythic', 'legendary', 'rare', 'set', 'unique', 'normal'];
   let ingRarities = ['0', '1', '2', '3'];
   ['m', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
@@ -13,7 +14,8 @@ module.exports.run = async (client, message, args, botFiles) => {
   });
 
   if (itemRarities.includes(rarity)) {
-    if (args.length > 2) message.channel.send(`Baseline ${display} for a lv. \`${level}\` \`${rarity}\` \`${itemType}\` is: ${fnc.calcRawMelee(level, rarity, itemType)}`);
+    if (args.length > 3) message.channel.send(`Baseline ${display} for a lv. \`${level}\` \`${rarity}\` \`${atkSpeed}\` \`${itemType}\` is: ${fnc.calcRawMelee(level, rarity, itemType, atkSpeed)}`);
+    else if (args.length > 2) message.channel.send(`Baseline ${display} for a lv. \`${level}\` \`${rarity}\` \`${itemType}\` is: ${fnc.calcRawMelee(level, rarity, itemType)}`);
     else message.channel.send(`Baseline ${display} for a lv. \`${level}\` \`${rarity}\` \`armour\` is: ${fnc.calcRawMelee(level, rarity, "armour")}` +
       `\nBaseline ${display} for a lv. \`${level}\` \`${rarity}\` \`accessory\` is: ${fnc.calcRawMelee(level, rarity, "accessory")}`);
   }
