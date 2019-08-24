@@ -7,14 +7,17 @@ var uniqueMultipliers = [1.4, 1.35, 1.3, 1.25, 1.2, 1.15, 1.1, 1.05, 1, 1, 1, 1,
 var setMultipliers = [1.6, 1.55, 1.5, 1.45, 1.4, 1.325, 1.275, 1.225, 1.15, 1.125, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.075, 1.075, 1.05, 1.05, 1.05]; /* 90 and above is 105% */
 var rareMultipliers = [1.8, 1.75, 1.7, 1.65, 1.6, 1.5, 1.45, 1.4, 1.3, 1.25, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.15, 1.15, 1.1, 1.1, 1.1]; /* 90 and above is 110% */
 var legendaryMultipliers = [2.2, 2.15, 2.1, 2.05, 2, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.4, 1.4, 1.4, 1.4, 1.4, 1.35, 1.35, 1.3, 1.3, 1.3]; /* 90 and above is 130% */
+var epicMultipliers = [2.4, 2.35, 2.3, 2.25, 2.2, 2.1, 2, 1.9, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.55, 1.55, 1.5, 1.5, 1.5]; /* 90 and above is 130% */
 var mythicMultipliers = [2.6, 2.55, 2.5, 2.45, 2.4, 2.3, 2.2, 2.1, 2, 1.9, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.75, 1.75, 1.7, 1.7, 1.7]; /* 90 and above is 170% */
 
 // https://i.imgur.com/bocaBjD.png
 // All arrays have 21 numbers so it factors every 5 levels of 0-100 (there is no 0 in game but it's effectively 1)
 var mageDamage = [1.7, 5.1, 6.8, 10.2, 14.28, 18.36, 24.48, 30.6, 36.72, 44.48, 53.04, 63.24, 75.48, 87.72, 99.96, 112.2, 126.48, 140.76, 157.08, 173.4, 189.72];
+var necromancerDamage = [1.7, 5.1, 6.8, 10.2, 14.28, 18.36, 24.48, 30.6, 36.72, 44.48, 53.04, 63.24, 75.48, 87.72, 99.96, 112.2, 126.48, 140.76, 157.08, 173.4, 189.72];
 var warriorDamage = [3.4, 6.8, 10.2, 13.6, 19.04, 24.48, 32.64, 40.8, 48.96, 59.84, 70.72, 84.32, 100.64, 116.96, 133.28, 149.6, 168.64, 187.68, 209.44, 231.2, 252.96];
 var assassinDamage = [5.1, 8.5, 13.6, 18.7, 23.8, 30.6, 40.8, 51, 61.2, 74.8, 88.4, 105.4, 125.8, 146.2, 166.6, 187, 210.8, 234.6, 261.8, 289, 316.2];
 var archerDamage = [6.8, 10.2, 17, 22.1, 28.56, 36.72, 48.96, 61.2, 73.44, 89.76, 106.08, 126.48, 150.96, 175.44, 199.92, 224.4, 252.96, 281.52, 314.16, 346.8, 379.44];
+var shamanDamage = [6.8, 10.2, 17, 22.1, 28.56, 36.72, 48.96, 61.2, 73.44, 89.76, 106.08, 126.48, 150.96, 175.44, 199.92, 224.4, 252.96, 281.52, 314.16, 346.8, 379.44];
 
 var baseTotalHealth = [24, 53, 115, 196, 299, 442, 646, 901, 1246, 1690, 2224, 2958, 3868, 4619, 5464, 6410, 7465, 8637, 9935, 11368, 12946];
 var baseHealth = [3, 11, 26, 46, 72, 108, 159, 223, 309, 420, 554, 737, 964, 1152, 1363, 1600, 1864, 2157, 2481, 2839, 3234];
@@ -36,6 +39,8 @@ exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier 
     return rareMultipliers[Math.round(level / 5)];
   else if (rarity === "legendary" || rarity === "Legendary" || rarity === "l")
     return legendaryMultipliers[Math.round(level / 5)];
+  else if (rarity === "epic" || rarity === "Epic" || rarity === "e")
+    return epicMultipliers[Math.round(level / 5)];
   else if (rarity === "mythic" || rarity === "Mythic" || rarity === "m")
     return mythicMultipliers[Math.round(level / 5)];
 }
@@ -63,6 +68,9 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
   if (weaponType === "wand" || weaponType === "Wand" || weaponType === "w") {
     baseLevelDamage = (mageDamage[Math.ceil(level / 5)] - mageDamage[Math.floor(level / 5)]) * (level % 5) / 5 + mageDamage[Math.floor(level / 5)];
     returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "flail" || weaponType === "Flail" || weaponType === "f") {
+    baseLevelDamage = (necromancerDamage[Math.ceil(level / 5)] - necromancerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + necromancerDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
   } else if (weaponType === "spear" || weaponType === "Spear" || weaponType === "s") {
     baseLevelDamage = (warriorDamage[Math.ceil(level / 5)] - warriorDamage[Math.floor(level / 5)]) * (level % 5) / 5 + warriorDamage[Math.floor(level / 5)];
     returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
@@ -71,6 +79,9 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
     returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
   } else if (weaponType === "bow" || weaponType === "Bow" || weaponType === "b") {
     baseLevelDamage = (archerDamage[Math.ceil(level / 5)] - archerDamage[Math.floor(level / 5)]) * (level % 5) / 5 + archerDamage[Math.floor(level / 5)];
+    returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
+  } else if (weaponType === "relik" || weaponType === "Relik" || weaponType === "r") {
+    baseLevelDamage = (shamanDamage[Math.ceil(level / 5)] - shamanDamage[Math.floor(level / 5)]) * (level % 5) / 5 + shamanDamage[Math.floor(level / 5)];
     returnValue = Math.round(exports.calcMultiplier(level, rarity) * baseLevelDamage * atkSpeedMultiplier * 1000) / 1000;
   }
   if (level > 1)
