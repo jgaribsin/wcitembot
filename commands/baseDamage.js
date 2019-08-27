@@ -12,8 +12,23 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (args[3]) var atkSpeed = args[3].toString();
   else botResponse += "Please enter an attack speed.\n";
 
+  let itemRarities = ['mythic', 'epic', 'legendary', 'rare', 'set', 'unique', 'normal'];
+  ['m', 'e', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
+    if (rarity == x) rarity = itemRarities[i];
+  });
+
+  let itemTypes = ['bow', 'relik', 'dagger', 'spear', 'flail', 'wand'];
+  ['b', 'r', 'd', 's', 'f', 'w'].forEach((x, i) => {
+    if (weaponType == x) weaponType = itemTypes[i];
+  });
+
+  let itemSpeeds = ['superslow', 'veryslow', 'slow', 'normal', 'fast', 'veryfast', 'superfast'];
+  ['ss', 'vs', 's', 'n', 'f', 'vf', 'sf'].forEach((x, i) => {
+    if (atkSpeed == x) atkSpeed = itemSpeeds[i];
+  });
+
   if (args[0] && args[1] && args[2] && args[3])
-    message.channel.send(`Baseline damage for a ${rarity} Lv. ${level} ${weaponType} at ${atkSpeed} is: ${fnc.calcBaseDam(level, rarity, weaponType, atkSpeed)}`);
+    message.channel.send(`Baseline damage for a \`${rarity}\` Lv. \`${level}\` \`${weaponType}\` at \`${atkSpeed}\` attack speed is: ${fnc.calcBaseDam(level, rarity, weaponType, atkSpeed)}`);
   else message.channel.send(botResponse);
 }
 
