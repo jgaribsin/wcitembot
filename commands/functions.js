@@ -102,7 +102,7 @@ exports.calcHealth = function (level, rarity, itemType) {
 
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
     typeMultiplier = 1.0;
-  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
     typeMultiplier = 0.4;
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "n" || itemType === "b" || itemType === "ring" || itemType === "r")
     typeMultiplier = 0.15;
@@ -142,8 +142,9 @@ exports.calcIngHealth = function (level, tier, job) {
 exports.calcRawSpell = function (level, rarity, itemType) {
   var typeMultiplier;
 
-  if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
-    itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+  if (itemType === "weapon" || itemType === "armour" || itemType === "armor"
+    || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots"
+    || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
     typeMultiplier = 1.0;
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
     typeMultiplier = 1 / 3;
@@ -189,7 +190,7 @@ exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
   } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
     typeMultiplier = 1 / 3;
     returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
-  } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger") {
+  } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "flail" || itemType === "relik") {
     var weaponDamage = exports.calcBaseDam(level, rarity, itemType, atkSpeed);
     returnValue = weaponDamage / 2;
   }
@@ -230,8 +231,9 @@ exports.calcIngRawMelee = function (level, tier, job) {
 exports.calcHealthRegen = function (level, rarity, itemType) {
   var typeMultiplier;
 
-  if (itemType === "weapon" || itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" ||
-    itemType === "leggings" || itemType === "boots" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+  if (itemType === "weapon" || itemType === "armour" || itemType === "armor"
+    || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots"
+    || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
     typeMultiplier = 1.0;
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
     typeMultiplier = 0.5;
@@ -277,7 +279,7 @@ exports.calcLifeSteal = function (level, rarity, itemType) {
     baseLifeSteal = (-9.668517 * 0.0000001) * Math.pow(X, 4) + (2.55299 * 0.0001) * Math.pow(X, 3) + (-0.0014096) * Math.pow(X, 2) + (0.082753855) * Math.pow(X, 1) + 1.491519;
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType == "ring")
     baseLifeSteal = (-6.5279317694023 * 0.0000001) * Math.pow(X, 4) + (1.6376006529064 * 0.0001) * Math.pow(X, 3) + (-0.0030293516228929) * Math.pow(X, 2) + (0.07433529706782) * Math.pow(X, 1) + 1.4595111575337;
-  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+  else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
     baseLifeSteal = (-1.64594428 * 0.000001) * Math.pow(X, 4) + (4.2381550782939 * 0.0001) * Math.pow(X, 3) + (-0.0069026686526) * Math.pow(X, 2) + (0.23818150377979) * Math.pow(X, 1) + 1.875175802217;
 
   return Math.round(baseLifeSteal * exports.calcMultiplier(level, rarity) * 1000) / 1000;
@@ -319,7 +321,7 @@ exports.calcPoison = function (level, rarity, itemType) {
   var basePoison = 0;
   var X = level;
 
-  if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger")
+  if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
     typeMultiplier = 1.0;
   else if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
     typeMultiplier = 0.7;
