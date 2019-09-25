@@ -8,7 +8,7 @@
     "TAILORING"
   ],
   "sprite": {
-    "id": 449,
+    "id": 379,
     "damage": 0
   },
   "groups": [
@@ -24,9 +24,9 @@
       "minimum": 6,
       "maximum": 8
     }
-},
+  },
   "itemOnlyIDs": {
-    "durabilityModifier": -30000,
+    "durabilityModifier": -52000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

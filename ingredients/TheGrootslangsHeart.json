@@ -30,7 +30,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -63000,
+    "durabilityModifier": -110000,
     "strengthRequirement": 10,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "Swamp-GrootslangYoung",
       "rarity": 5,

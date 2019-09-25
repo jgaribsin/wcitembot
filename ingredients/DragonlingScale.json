@@ -3,7 +3,7 @@
   "tier": 0,
   "level": 98,
   "skills": [
-     "ARMOURING"
+    "ARMOURING"
   ],
   "sprite": {
     "id": 318,
@@ -29,7 +29,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -30000,
+    "durabilityModifier": -52000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -48,7 +48,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SkyGaleDragonling",
       "rarity": 3,

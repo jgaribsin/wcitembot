@@ -18,13 +18,13 @@
       "minimum": 1,
       "maximum": 1
     },
-  "SPELLDAMAGE": {
+    "SPELLDAMAGE": {
       "minimum": -15,
       "maximum": -15
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -100000,
+    "durabilityModifier": -175000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

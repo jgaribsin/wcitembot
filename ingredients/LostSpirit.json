@@ -25,7 +25,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -60000,
+    "durabilityModifier": -105000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

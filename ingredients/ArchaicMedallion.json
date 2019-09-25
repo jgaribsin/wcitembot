@@ -18,13 +18,13 @@
       "minimum": 12,
       "maximum": 15
     },
-  "SPELLDAMAGE": {
+    "SPELLDAMAGE": {
       "minimum": -7,
       "maximum": -5
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -45000,
+    "durabilityModifier": -79000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "PepoAncientOrc",
       "rarity": 3,

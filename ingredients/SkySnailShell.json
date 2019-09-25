@@ -3,8 +3,8 @@
   "tier": 1,
   "level": 95,
   "skills": [
-     "ARMOURING",
-     "TAILORING"
+    "ARMOURING",
+    "TAILORING"
   ],
   "sprite": {
     "id": 337,
@@ -15,7 +15,7 @@
   ],
   "identifications": {
     "THORNS": {
-      "minimum": 8, 
+      "minimum": 8,
       "maximum": 15
     },
     "REFLECTION": {
@@ -28,7 +28,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -40000,
+    "durabilityModifier": -70000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -47,7 +47,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "DFsnail",
       "rarity": 4,

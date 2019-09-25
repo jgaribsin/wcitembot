@@ -3,7 +3,7 @@
   "tier": 0,
   "level": 99,
   "skills": [
-     "JEWELING"
+    "JEWELING"
   ],
   "sprite": {
     "id": 371,
@@ -15,7 +15,7 @@
   ],
   "identifications": {
     "DAMAGEBONUSRAW": {
-      "minimum": 12, 
+      "minimum": 12,
       "maximum": 15
     },
     "EMERALDSTEALING": {
@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -30000,
+    "durabilityModifier": -52000,
     "strengthRequirement": 0,
     "dexterityRequirement": 7,
     "intelligenceRequirement": 0,
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SkyAdventuringSkyraider",
       "rarity": 3,

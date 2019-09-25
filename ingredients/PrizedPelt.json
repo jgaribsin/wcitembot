@@ -23,7 +23,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -33000,
+    "durabilityModifier": -58000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "2x2Coyote",
       "rarity": 5,

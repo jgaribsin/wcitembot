@@ -1,33 +1,48 @@
 {
-  "name": "Zhight Weird Magic Rock",
-  "tier": 2,
-  "level": 58,
+  "name": "Panda King's Crown",
+  "tier": 3,
+  "level": 89,
   "dropsFromLootChest": false,
   "skills": [
-    "WEAPONSMITHING",
-    "WOODWORKING",
     "ARMOURING",
     "TAILORING"
   ],
   "sprite": {
-    "id": 433,
+    "id": 314,
     "damage": 0
   },
   "groups": [
-    "MAGIC"
+    "DEFENSIVE",
+    "RAINBOW"
   ],
   "identifications": {
-    "SPELLDAMAGE": {
-      "minimum": 3,
-      "maximum": 6
+    "FIREDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
     },
-    "SOULPOINTS": {
-      "minimum": 5,
-      "maximum": 10
+    "WATERDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
+    },
+    "AIRDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
+    },
+    "THUNDERDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
+    },
+    "EARTHDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
+    },
+    "MANAREGEN": {
+      "minimum": -1,
+      "maximum": -1
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -37000,
+    "durabilityModifier": -105000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -49,8 +64,8 @@
   "droppedBy": [
     {
       "name": "IngredientDummy",
-      "rarity": 6,
-      "rarityOffset": 0
+      "rarity": 1,
+      "rarityOffset": -100
     }
   ]
 }

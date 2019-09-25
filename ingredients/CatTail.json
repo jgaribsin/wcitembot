@@ -19,7 +19,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -40000,
+    "durabilityModifier": -70000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -44,32 +44,32 @@
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucJinkoCub",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucJinkoBandito",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "SelvutFantasticVoyageWildcat",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "SelvutFantasticVoyageSpider2",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "SelvutFantasticVoyageSpider1",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "BankJungleCat",
       "rarity": 4,
       "rarityOffset": 0

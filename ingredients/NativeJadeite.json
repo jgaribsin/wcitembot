@@ -21,9 +21,9 @@
       "minimum": 4,
       "maximum": 5
     }
-},
+  },
   "itemOnlyIDs": {
-    "durabilityModifier": -32000,
+    "durabilityModifier": -56000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 12,

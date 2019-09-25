@@ -43,7 +43,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -60000,
+    "durabilityModifier": -105000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -63,7 +63,7 @@
     "notTouching": 0
   },
   "droppedBy": [
-        {
+    {
       "name": "aucGiantPandaKing",
       "rarity": 3,
       "rarityOffset": 0

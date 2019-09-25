@@ -23,7 +23,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -18000,
+    "durabilityModifier": -31000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "filiTawantula",
       "rarity": 3,

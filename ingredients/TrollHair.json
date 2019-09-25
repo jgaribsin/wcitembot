@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -18000,
+    "durabilityModifier": -31000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -49,27 +49,27 @@
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "BankCaveTroll",
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "Tanti-TrollHunter",
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "Tanti-TrollSavage",
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "Tanti-TrollMinion",
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "Tanti-CaveTroll",
       "rarity": 3,
       "rarityOffset": 0

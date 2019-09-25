@@ -25,7 +25,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -36000,
+    "durabilityModifier": -63000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -45,7 +45,7 @@
     "notTouching": 0
   },
   "droppedBy": [
-{
+    {
       "name": "SelvutMaroRam1",
       "rarity": 4,
       "rarityOffset": 0

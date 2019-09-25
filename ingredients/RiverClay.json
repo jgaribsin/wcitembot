@@ -16,16 +16,16 @@
   ],
   "identifications": {
     "DAMAGEBONUS": {
-        "minimum": -4,
-        "maximum": -2
+      "minimum": -4,
+      "maximum": -2
     },
     "WATERDAMAGEBONUS": {
-        "minimum": 3,
-        "maximum": 4
+      "minimum": 3,
+      "maximum": 4
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -10000,
+    "durabilityModifier": -17000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

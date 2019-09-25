@@ -19,7 +19,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -25000,
+    "durabilityModifier": -44000,
     "strengthRequirement": 10,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -38,13 +38,13 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "LeoGert",
       "rarity": 3,
       "rarityOffset": 0
     },
-	{
+    {
       "name": "LeoGertenHunter",
       "rarity": 3,
       "rarityOffset": 0

@@ -4,7 +4,7 @@
   "level": 22,
   "skills": [
     "JEWELING",
-      "ARMOURING"
+    "ARMOURING"
   ],
   "sprite": {
     "id": 352,
@@ -20,7 +20,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 10000,
+    "durabilityModifier": 18000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

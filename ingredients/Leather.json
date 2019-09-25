@@ -20,7 +20,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -15000,
+    "durabilityModifier": -26000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -39,68 +39,68 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "cow",
       "rarity": 3,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "SelvutDurumCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "DFArmoredrebelcow2",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "DFArmoredrebelcow1",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "DFrebelcow2",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "DFrebelcow1",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "Salt-RebelCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "ALEXEnragedBull",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "Salt-ArmouredCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "ALEXCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "LeoCapturedCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "LeoCapturedCow",
       "rarity": 2,
       "rarityOffset": 0
     },
-   {
+    {
       "name": "Moodle-CinfrasCow",
       "rarity": 2,
       "rarityOffset": 0

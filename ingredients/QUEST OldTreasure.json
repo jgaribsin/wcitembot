@@ -19,13 +19,13 @@
       "minimum": 4,
       "maximum": 6
     },
-	"XPBONUS": {
+    "XPBONUS": {
       "minimum": 3,
       "maximum": 5
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -33000,
+    "durabilityModifier": -58000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -44,7 +44,7 @@
     "touching": 0,
     "notTouching": -40
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IngredientDummy",
       "rarity": 1,

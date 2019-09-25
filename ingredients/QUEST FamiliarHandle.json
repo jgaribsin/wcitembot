@@ -6,7 +6,7 @@
   "untradeable": true,
   "skills": [
     "ARMOURING",
-	"TAILORING"
+    "TAILORING"
   ],
   "sprite": {
     "id": 348,
@@ -22,7 +22,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -30000,
+    "durabilityModifier": -52000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -41,7 +41,7 @@
     "touching": 0,
     "notTouching": -40
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IngredientDummy",
       "rarity": 1,

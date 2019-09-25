@@ -19,7 +19,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -29000,
+    "durabilityModifier": 0,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -27,7 +27,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 0,
+    "duration": -280,
     "charges": 0
   },
   "ingredientPositionModifiers": {

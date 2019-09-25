@@ -26,7 +26,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -27000,
+    "durabilityModifier": -47000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -45,7 +45,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SelvutGavelCanyonMoltenMan",
       "rarity": 3,

@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -29000,
+    "durabilityModifier": -51000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 8,
@@ -56,11 +56,6 @@
     },
     {
       "name": "SelvutFreezingHeightsPermafrostGolem2",
-      "rarity": 3,
-      "rarityOffset": 0
-    },
-    {
-      "name": "SelvutNesaakBorderFrozenNetherHulk",
       "rarity": 3,
       "rarityOffset": 0
     }

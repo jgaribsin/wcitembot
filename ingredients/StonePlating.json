@@ -25,7 +25,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -20000,
+    "durabilityModifier": -35000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -55,22 +55,22 @@
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucGargoyle",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucElefolkHunter",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucElefolkWarrior",
       "rarity": 4,
       "rarityOffset": 0
     },
-        {
+    {
       "name": "aucElephelk",
       "rarity": 2,
       "rarityOffset": 0

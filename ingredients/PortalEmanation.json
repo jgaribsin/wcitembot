@@ -26,7 +26,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -31000,
+    "durabilityModifier": -54000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 20,
@@ -45,7 +45,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SelvutNetherCorrupter",
       "rarity": 1,

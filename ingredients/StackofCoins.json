@@ -23,7 +23,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -48000,
+    "durabilityModifier": -84000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "LeoBanditHunter",
       "rarity": 3,

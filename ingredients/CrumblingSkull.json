@@ -13,11 +13,9 @@
   "groups": [
     "DEFAULT"
   ],
-  "identifications": {
-
-  },
+  "identifications": {},
   "itemOnlyIDs": {
-    "durabilityModifier": -30000,
+    "durabilityModifier": -52000,
     "strengthRequirement": -5,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -36,7 +34,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "suburbresident",
       "rarity": 5,

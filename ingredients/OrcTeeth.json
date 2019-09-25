@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -19000,
+    "durabilityModifier": -33000,
     "strengthRequirement": 6,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "KvOrc",
       "rarity": 3,

@@ -19,7 +19,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -11000,
+    "durabilityModifier": -19000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -38,7 +38,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "BankGoblinSharpshooter",
       "rarity": 3,
@@ -56,6 +56,21 @@
     },
     {
       "name": "DFgoblinhexer",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgoblinskullcleaver",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "DFgoblinunderboss",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Exalgoblin2",
       "rarity": 3,
       "rarityOffset": 0
     }

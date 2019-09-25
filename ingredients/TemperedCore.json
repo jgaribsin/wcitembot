@@ -17,17 +17,17 @@
     "FIRE"
   ],
   "identifications": {
-    "FIREDAMAGEBONUS":{
+    "FIREDAMAGEBONUS": {
       "minimum": 22,
       "maximum": 28
     },
-    "HEALTHBONUS":{
+    "HEALTHBONUS": {
       "minimum": -1000,
       "maximum": -800
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -85000,
+    "durabilityModifier": -149000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -46,7 +46,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "Moodle-MHAzerFootsoldier",
       "rarity": 6,

@@ -30,7 +30,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -90000,
+    "durabilityModifier": -157000,
     "strengthRequirement": 35,
     "dexterityRequirement": 35,
     "intelligenceRequirement": 0,
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "DFangelofwar",
       "rarity": 6,
@@ -65,7 +65,7 @@
       "rarity": 6,
       "rarityOffset": 0
     },
-     {
+    {
       "name": "SkyDyingAngel",
       "rarity": 6,
       "rarityOffset": 0

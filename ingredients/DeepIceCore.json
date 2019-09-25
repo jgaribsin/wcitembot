@@ -31,7 +31,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -89000,
+    "durabilityModifier": -156000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 45,
@@ -50,7 +50,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "Flare-RAREMinokawa",
       "rarity": 3,

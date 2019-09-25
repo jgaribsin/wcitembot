@@ -21,7 +21,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 12000,
+    "durabilityModifier": 21000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -40,7 +40,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SandpileSpeedScarab",
       "rarity": 5,

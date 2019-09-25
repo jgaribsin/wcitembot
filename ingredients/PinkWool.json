@@ -27,7 +27,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -15000,
+    "durabilityModifier": -26000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -46,7 +46,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "sheep",
       "rarity": 4,

@@ -33,7 +33,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -80000,
+    "durabilityModifier": -140000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -52,7 +52,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "CorkusGigaBushBoar",
       "rarity": 3,

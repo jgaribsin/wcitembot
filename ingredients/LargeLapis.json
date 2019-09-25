@@ -10,7 +10,7 @@
     "damage": 4
   },
   "groups": [
-	"MAGIC"
+    "MAGIC"
   ],
   "identifications": {
     "INTELLIGENCEPOINTS": {
@@ -23,7 +23,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -40000,
+    "durabilityModifier": -70000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IceZombie",
       "rarity": 6,

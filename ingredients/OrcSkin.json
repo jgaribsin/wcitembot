@@ -25,7 +25,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -23000,
+    "durabilityModifier": -40000,
     "strengthRequirement": 5,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -44,7 +44,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "ALEXOrcConqueror",
       "rarity": 3,

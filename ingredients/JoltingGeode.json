@@ -23,7 +23,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -17000,
+    "durabilityModifier": -30000,
     "strengthRequirement": 0,
     "dexterityRequirement": 6,
     "intelligenceRequirement": 0,
@@ -42,7 +42,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "SnerpParagon",
       "rarity": 4,

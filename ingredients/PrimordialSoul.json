@@ -14,8 +14,7 @@
   "groups": [
     "RAINBOW"
   ],
-  "identifications": {
-},
+  "identifications": {},
   "itemOnlyIDs": {
     "durabilityModifier": 0,
     "strengthRequirement": -10,

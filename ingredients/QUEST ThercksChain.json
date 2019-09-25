@@ -5,10 +5,10 @@
   "dropsFromLootChest": false,
   "untradeable": true,
   "skills": [
-    	"WOODWORKING",
-	"WEAPONSMITHING",
-	"ARMOURING",
-	"TAILORING"
+    "WOODWORKING",
+    "WEAPONSMITHING",
+    "ARMOURING",
+    "TAILORING"
   ],
   "sprite": {
     "id": 101,
@@ -18,11 +18,11 @@
     "RANGED"
   ],
   "identifications": {
-    	"DAMAGEBONUSRAW": {
+    "DAMAGEBONUSRAW": {
       "minimum": 6,
       "maximum": 8
     },
-	"HEALTHBONUS": {
+    "HEALTHBONUS": {
       "minimum": 14,
       "maximum": 20
     }
@@ -47,7 +47,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "IngredientDummy",
       "rarity": 1,

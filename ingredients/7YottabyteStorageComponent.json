@@ -17,10 +17,9 @@
     "FIRE",
     "AIR"
   ],
-  "identifications": {
-  },
+  "identifications": {},
   "itemOnlyIDs": {
-    "durabilityModifier": -56000,
+    "durabilityModifier": -98000,
     "strengthRequirement": 0,
     "dexterityRequirement": -12,
     "intelligenceRequirement": 0,
@@ -39,7 +38,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "CorkusMajorT55ElusiveSecurityCamera",
       "rarity": 1,

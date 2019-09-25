@@ -20,7 +20,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -22000,
+    "durabilityModifier": -38000,
     "strengthRequirement": 0,
     "dexterityRequirement": 10,
     "intelligenceRequirement": 0,
@@ -39,7 +39,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "DFdarkknight",
       "rarity": 3,

@@ -14,21 +14,21 @@
     "OFFENSIVE"
   ],
   "identifications": {
-      "DEFENSEPOINTS": {
+    "DEFENSEPOINTS": {
       "minimum": 4,
       "maximum": 6
     },
-      "FIREDAMAGEBONUS": {
+    "FIREDAMAGEBONUS": {
       "minimum": 8,
       "maximum": 12
     },
-      "HEALTHREGEN": {
+    "HEALTHREGEN": {
       "minimum": -12,
       "maximum": -8
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -45000,
+    "durabilityModifier": -79000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

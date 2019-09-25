@@ -25,7 +25,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -35000,
+    "durabilityModifier": -61000,
     "strengthRequirement": 10,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -44,7 +44,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "LeoObsidianSentinel",
       "rarity": 4,

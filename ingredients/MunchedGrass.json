@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -18000,
+    "durabilityModifier": -31000,
     "strengthRequirement": 5,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -32,7 +32,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -21,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -43,7 +43,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "nicktreeGrassMuncher",
       "rarity": 4,

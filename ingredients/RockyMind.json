@@ -4,7 +4,7 @@
   "level": 88,
   "dropsFromLootChest": false,
   "skills": [
-      "ARMOURING"
+    "ARMOURING"
   ],
   "sprite": {
     "id": 98,
@@ -19,13 +19,13 @@
       "minimum": -14,
       "maximum": -10
     },
-     "STRENGTHPOINTS": {
+    "STRENGTHPOINTS": {
       "minimum": 15,
       "maximum": 19
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -83000,
+    "durabilityModifier": -145000,
     "strengthRequirement": 25,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

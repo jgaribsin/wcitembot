@@ -30,7 +30,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -83000,
+    "durabilityModifier": -145000,
     "strengthRequirement": 0,
     "dexterityRequirement": 14,
     "intelligenceRequirement": 0,
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
-"droppedBy": [
+  "droppedBy": [
     {
       "name": "CorkusNeburWW105RavagerAutomaton",
       "rarity": 3,

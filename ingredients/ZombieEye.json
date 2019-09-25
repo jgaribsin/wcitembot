@@ -26,7 +26,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -21000,
+    "durabilityModifier": -37000,
     "strengthRequirement": 8,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -45,7 +45,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "MekyrDeadMiner",
       "rarity": 3,

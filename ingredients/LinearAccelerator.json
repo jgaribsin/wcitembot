@@ -30,7 +30,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -86000,
+    "durabilityModifier": -150000,
     "strengthRequirement": 0,
     "dexterityRequirement": 30,
     "intelligenceRequirement": 0,
@@ -49,7 +49,7 @@
     "touching": 0,
     "notTouching": 0
   },
- "droppedBy": [
+  "droppedBy": [
     {
       "name": "CorkusNeburMM105TacticalUnit",
       "rarity": 3,
