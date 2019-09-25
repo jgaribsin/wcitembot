@@ -399,7 +399,7 @@ exports.durability = function (level, tier) {
       durabilityMult = 1;
       break;
   }
-  let returnValue = Math.round((1000 + (level - 1) * 20) * durabilityMult) / 100;
+  let returnValue = Math.round((1750 + (level - 1) * 35) * durabilityMult) / 100;
   return returnValue * -1;
 }
 exports.duration = function (level, tier) {
