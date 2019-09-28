@@ -20,25 +20,29 @@
     "WATER"
   ],
   "identifications": {
-    "EARTHDEFENSE": {
-      "minimum": 24,
-      "maximum": 28
+    "HEALTHREGENRAW": {
+      "minimum": 120,
+      "maximum": 140
     },
     "WATERDEFENSE": {
-      "minimum": 24,
-      "maximum": 28
+      "minimum": 15,
+      "maximum": 20
+    },
+    "EARTHDEFENSE": {
+      "minimum": 15,
+      "maximum": 20
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 70000,
-    "strengthRequirement": 15,
+    "durabilityModifier": -70000,
+    "strengthRequirement": 25,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": 15,
+    "intelligenceRequirement": 25,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": 120,
+    "duration": -130,
     "charges": 0
   },
   "ingredientPositionModifiers": {

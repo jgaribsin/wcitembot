@@ -14,16 +14,16 @@
   ],
   "identifications": {
     "DAMAGEBONUS": {
-      "minimum": -8,
-      "maximum": -5
+      "minimum": -6,
+      "maximum": -4
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 21000,
-    "strengthRequirement": 0,
+    "durabilityModifier": -50000,
+    "strengthRequirement": -8,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 0,
+    "defenceRequirement": -8,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

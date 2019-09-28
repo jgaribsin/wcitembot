@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "XPBONUS": {
-      "minimum": -4,
-      "maximum": -2
+      "minimum": 2,
+      "maximum": 4
     },
     "LOOTBONUS": {
       "minimum": -4,
@@ -24,7 +24,7 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 18000,
+    "durabilityModifier": -38000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

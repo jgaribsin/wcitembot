@@ -11,20 +11,21 @@
     "damage": 4
   },
   "groups": [
-    "RANGED"
+    "EARTH",
+    "FIRE"
   ],
   "identifications": {
     "EARTHDEFENSE": {
-      "minimum": 6,
-      "maximum": 8
+      "minimum": 8,
+      "maximum": 12
     },
     "FIREDEFENSE": {
-      "minimum": -8,
-      "maximum": -6
+      "minimum": 8,
+      "maximum": 12
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 56000,
+    "durabilityModifier": -75000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
