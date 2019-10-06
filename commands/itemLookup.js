@@ -71,7 +71,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iType;
     var iRarity = foundItem.tier;
     var iSlots = foundItem.sockets;
-    
+
     var headerStats = [iName, iType, iRarity, iSlots];
     var header = "";
     if (foundItem.type !== undefined) {
@@ -143,14 +143,21 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iBonusThunderDefense = foundItem.bonusThunderDefense;
     var iBonusEarthDefense = foundItem.bonusEarthDefense;
 
-    var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iStrengthPoints, iDexterityPoints, iIntelligencePoints,
-      iAgilityPoints, iDefensePoints, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
+    var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
       iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
 
-    var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "strengthPoints",
-      "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints", "thorns", "exploding", "speed", "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
+    var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "thorns", "exploding", "speed",
+      "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
       "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
       "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
+
+    var skillPointStats = [iStrengthPoints, iDexterityPoints, iIntelligencePoints, iAgilityPoints, iDefensePoints];
+    var skillPointDisplay = ["strengthPoints", "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints"];
+
+    var skillPoints = "";
+    skillPointStats.forEach((skillPoint, i) => {
+      if (skillPoint !== 0 && skillPoint) skillPoints += skillPointDisplay[i] + ": " + skillPoint + "\n";
+    });
 
     var identifications = "";
     for (i = 0; i < identificationStats.length; i++) {
@@ -202,7 +209,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 
     } // End if else not weapon
 
-    message.channel.send(header + "\n" + baseStats + "\n" + requirements + "\n" + identifications);
+    //message.channel.send(header + "\n" + baseStats + "\n" + requirements + "\n" + skillPoints + "\n" + identifications);
+    message.channel.send(`${header}\n${baseStats}\n${requirements}\n${skillPoints}\n${identifications}`);
   }
 
 }
