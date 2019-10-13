@@ -178,8 +178,8 @@ module.exports.run = async (client, message, args, botFiles) => {
       var iEarthDamage = foundItem.earthDamage;
       var iAtkSpeed = foundItem.attackSpeed;
 
-      var baseStatsStats = [iDamage, iFireDamage, iWaterDamage, iAirDamage, iThunderDamage, iEarthDamage, iAtkSpeed];
-      var baseStatsDisplay = ["damage", "fireDamage", "waterDamage", "airDamage", "thunderDamage", "earthDamage", "attackSpeed"];
+      var baseStatsStats = [iDamage, iEarthDamage, iThunderDamage, iWaterDamage, iAirDamage, iFireDamage, iAtkSpeed];
+      var baseStatsDisplay = ["damage", "earthDamage", "thunderDamage", "waterDamage", "airDamage", "fireDamage", "attackSpeed"];
 
       for (i = 0; i < baseStatsStats.length; i++) {
         if (baseStatsStats[i] !== undefined) {
@@ -197,8 +197,8 @@ module.exports.run = async (client, message, args, botFiles) => {
       var iThunderDefense = foundItem.thunderDefense;
       var iEarthDefense = foundItem.earthDefense;
 
-      var baseStatsStats = [iHealth, iFireDefense, iWaterDefense, iAirDefense, iThunderDefense, iEarthDefense];
-      var baseStatsDisplay = ["health", "fireDefense", "waterDefense", "airDefense", "thunderDefense", "earthDefense"];
+      var baseStatsStats = [iHealth, iEarthDefense, iThunderDefense, iWaterDefense, iAirDefense, iFireDefense];
+      var baseStatsDisplay = ["health", "earthDefense", "thunderDefense", "waterDefense", "airDefense", "fireDefense"];
 
       for (i = 0; i < baseStatsStats.length; i++) {
         if (baseStatsStats[i] !== undefined) {
