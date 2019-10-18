@@ -19,42 +19,44 @@ module.exports.run = async (client, message, args, botFiles) => {
     "Thunder Damage % Convert", "Earth Damage % Convert", "Raw Fire Defense", "Raw Water Defense", "Raw Air Defense", "Raw Thunder Defense", "Raw Earth Defense"];
 
   var userQuery = message.content.substring(botFiles.prefix.length + module.exports.help.commandName.length + 1, message.length);
-  let ingrArr = Array.from(botFiles.ingredients);
-  let ingNames = Array.from(botFiles.ingredientNames);
-  let matchedIngs = new Array(ingrArr.length);
+  let ingrArr = botFiles.ingredients.ingredients;
+  let matchedIngs = new Array(1000);
   let matches = 0;
   let botResponse = "";
   let perfectMatched = false;
   let perfectMatch;
-  for (var i = 0; i < ingNames.length; i++) {
-    if (ingNames[i].toString().toLowerCase().includes(userQuery.toLowerCase())) {
-      matchedIngs[matches] = i;
+
+  ingrArr.forEach((ing, i) => {
+    let name = (ing.displayName) ? ing.displayName : ing.name;
+    name = name.toLowerCase();
+    if (name.includes(userQuery)) {
+      matchedIngs[matches] = ing;
       matches++;
     }
-    if (ingNames[i].toString().toLowerCase().slice(0, ingNames[i][0].length) == userQuery.toLowerCase()) {
+    if (name == userQuery) {
       perfectMatched = true;
       perfectMatch = i;
     }
-  }
+  });
 
   if (matches <= 0) message.channel.send("No ingredients found.");
   else if (matches > 1 && !perfectMatched) {
     botResponse = `**${matches} ingredients found**: `;
     let i = 0;
     while (botResponse.length < 1900 && i < matches) {
-      botResponse += ingNames[matchedIngs[i]].slice(0, ingNames[matchedIngs[i]].length - 1);
+      botResponse += (matchedIngs[i].displayName) ? matchedIngs[i].displayName : matchedIngs[i].name;
       if (i + 1 < matches) botResponse += ", ";
       else botResponse += ".";
       i++;
     }
-    if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length - 2)} **and ${matches - i} more.**`);
+    if (botResponse.length > 1900) message.channel.send(`${botResponse.substring(0, botResponse.length)} **and ${matches - i} more.**`);
     else message.channel.send(botResponse);
   }
 
   else {
     let foundIngr;
-    if (perfectMatched) foundIngr = ingrArr[perfectMatch][0];
-    else foundIngr = ingrArr[matchedIngs[0]][0];
+    if (perfectMatched) foundIngr = ingrArr[perfectMatch];
+    else foundIngr = ingrArr[matchedIngs[0]];
 
     let identifications = Object.keys(foundIngr.identifications);
     let priorityJob = "";

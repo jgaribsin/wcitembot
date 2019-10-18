@@ -3,16 +3,10 @@ const client = new Discord.Client();
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const fs = require("fs");
 client.commands = new Discord.Collection();
-client.ingredients = new Discord.Collection();
-client.ingredientNames = new Discord.Collection();
 client.recipes = new Discord.Collection();
-const {
-  Client,
-  Attachment
-} = require('discord.js');
-const {
-  RichEmbed
-} = require('discord.js');
+var ingredients;
+const { Client, Attachment } = require('discord.js');
+const { RichEmbed } = require('discord.js');
 
 let items = require('./items.json');
 let recipes = require('./recipes.json');
@@ -50,21 +44,22 @@ fs.readdir("./ingredients", (err, files) => {
 
   jsfile.forEach((f, i) => {
     let props = require(`./ingredients/${f}`);
-    ingredientsLoaded++;
-    client.ingredients.set(props);
-    if (props.displayName) client.ingredientNames.set(props.displayName);
-    else client.ingredientNames.set(props.name);
+    ingredients += JSON.stringify(props, null, 2);
+    if (i != jsfile.length-1) ingredients += ",\n";
   });
 });
 
 client.on('ready', () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(":D", {
-    type: 'PLAYING'
-  });
+  client.user.setActivity("D:", { type: 'PLAYING' });
   console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
-  console.log(`Successfully loaded ${ingredientsLoaded} ingredients!`);
   console.log(`Successfully loaded ${items.items.length} items!`);
+
+  ingredients = `{"ingredients":[${ingredients.split("undefined").join("")}]}`;
+  ingredients = JSON.parse(ingredients);
+  fs.writeFileSync(`ingredientsFile.json`, JSON.stringify(ingredients, null, 2));
+
+  console.log(`Successfully loaded ${ingredients.ingredients.length} ingredients!`);
 });
 
 client.on('message', message => {
@@ -73,7 +68,7 @@ client.on('message', message => {
   if (message.content.includes("_vote3_")) reactThreeLetters(message);
   if (message.content.includes("_vote4_")) reactFourLetters(message);
   if (message.content.includes("_vote5_")) reactFiveLetters(message);
-
+  //console.log(ingredients);
   // set the bot's prefix here. No need to update elsewhere. then checks the first character of the message against the prefix(es)
   // var prefix = ",";
   var prefix = ".";
@@ -96,8 +91,7 @@ client.on('message', message => {
 
 
   var botFiles = new Object();
-  botFiles.ingredients = client.ingredients;
-  botFiles.ingredientNames = client.ingredientNames;
+  botFiles.ingredients = require("./ingredientsFile.json");
   botFiles.commands = client.commands;
   botFiles.items = items.items;
   botFiles.recipes = recipes.recipes;
@@ -110,7 +104,7 @@ client.on('message', message => {
 // client.login('NTQ2NTk1MTk4NzY4MjUwODgy.D0qjrg.Jqq8o68uSQmU1dtuWRv4HNp6pJw');
 client.login(process.env.TOKEN);
 
-const reactNumbers = async function(message) {
+const reactNumbers = async function (message) {
   await message.react('5⃣');
   await message.react('4⃣');
   await message.react('3⃣');
@@ -118,25 +112,25 @@ const reactNumbers = async function(message) {
   await message.react('1⃣');
 }
 
-const reactTwoLetters = async function(message) {
+const reactTwoLetters = async function (message) {
   await message.react('🇦');
   await message.react('🇧');
 }
 
-const reactThreeLetters = async function(message) {
+const reactThreeLetters = async function (message) {
   await message.react('🇦');
   await message.react('🇧');
   await message.react('🇨');
 }
 
-const reactFourLetters = async function(message) {
+const reactFourLetters = async function (message) {
   await message.react('🇦');
   await message.react('🇧');
   await message.react('🇨');
   await message.react('🇩');
 }
 
-const reactFiveLetters = async function(message) {
+const reactFiveLetters = async function (message) {
   await message.react('🇦');
   await message.react('🇧');
   await message.react('🇨');
