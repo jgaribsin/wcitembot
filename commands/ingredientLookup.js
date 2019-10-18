@@ -56,7 +56,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   else {
     let foundIngr;
     if (perfectMatched) foundIngr = ingrArr[perfectMatch];
-    else foundIngr = ingrArr[matchedIngs[0]];
+    else foundIngr = matchedIngs[0];
     let keys = Object.keys(foundIngr.identifications);
     if (foundIngr.displayName) botResponse += `**${foundIngr.displayName}** `;
     else botResponse += `**${foundIngr.name}** `;
