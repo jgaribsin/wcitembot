@@ -238,8 +238,9 @@ exports.calcHealthRegen = function (level, rarity, itemType) {
   else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
     typeMultiplier = 0.5;
 
-  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.012 * typeMultiplier * 1000) / 1000;
+  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.035 * typeMultiplier * 1000) / 1000;
 }
+
 exports.calcIngHealthRegen = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
@@ -271,19 +272,18 @@ exports.calcIngHealthRegen = function (level, tier, job) {
 }
 
 exports.calcLifeSteal = function (level, rarity, itemType) {
-  var baseLifeSteal = 0;
-  var X = level;
+  var typeMultiplier;
 
-  // some fancy formula shit poke came up with. set the first input as the level above
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
-    baseLifeSteal = (-9.668517 * 0.0000001) * Math.pow(X, 4) + (2.55299 * 0.0001) * Math.pow(X, 3) + (-0.0014096) * Math.pow(X, 2) + (0.082753855) * Math.pow(X, 1) + 1.491519;
-  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType == "ring")
-    baseLifeSteal = (-6.5279317694023 * 0.0000001) * Math.pow(X, 4) + (1.6376006529064 * 0.0001) * Math.pow(X, 3) + (-0.0030293516228929) * Math.pow(X, 2) + (0.07433529706782) * Math.pow(X, 1) + 1.4595111575337;
+    typeMultiplier = 1.0;
   else if (itemType === "weapon" || itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "relik" || itemType === "flail")
-    baseLifeSteal = (-1.64594428 * 0.000001) * Math.pow(X, 4) + (4.2381550782939 * 0.0001) * Math.pow(X, 3) + (-0.0069026686526) * Math.pow(X, 2) + (0.23818150377979) * Math.pow(X, 1) + 1.875175802217;
+    typeMultiplier = 1.4;
+  else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring")
+    typeMultiplier = 0.5;
 
-  return Math.round(baseLifeSteal * exports.calcMultiplier(level, rarity) * 1000) / 1000;
+  return Math.round(exports.calcTotalBaseHealth(level, rarity) * 0.0175 * typeMultiplier * 1000) / 1000;
 }
+
 exports.calcIngLifeSteal = function (level, tier, job) {
   let returnValue = 0;
   let tierMultiplier = 0;
