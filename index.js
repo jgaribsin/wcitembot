@@ -59,7 +59,7 @@ client.on('ready', () => {
   ingredients = JSON.parse(ingredients);
   fs.writeFileSync(`ingredientsFile.json`, JSON.stringify(ingredients, null, 2));
 
-  console.log(`Successfully loaded ${ingredients.ingredients.length} ingredients!`);
+  console.log(`Successfully loaded ${ingredients.ingredients.length - 31} ingredients!`); // subtracting 31 because 30 powders, 1 blank ingredient for the crafter
 });
 
 client.on('message', message => {
