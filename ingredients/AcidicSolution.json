@@ -43,8 +43,8 @@
   "droppedBy": [
     {
       "name": "SelvutBonusBossPlagueDoctor",
-      "rarity": 3,
-      "rarityOffset": 0
+      "rarity": 1,
+      "rarityOffset": -40
     }
   ]
 }

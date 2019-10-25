@@ -46,8 +46,8 @@
   "droppedBy": [
     {
       "name": "SelvutBonusBossTheUnfettered",
-      "rarity": 4,
-      "rarityOffset": 0
+      "rarity": 1,
+      "rarityOffset": -70
     }
   ]
 }

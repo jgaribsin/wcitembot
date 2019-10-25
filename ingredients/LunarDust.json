@@ -16,11 +16,7 @@
   "identifications": {
     "SPELLDAMAGE": {
       "minimum": 4,
-      "maximum": 7
-    },
-    "HEALTHBONUS": {
-      "minimum": -50,
-      "maximum": -40
+      "maximum": 6
     }
   },
   "itemOnlyIDs": {

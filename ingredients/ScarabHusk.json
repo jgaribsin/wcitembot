@@ -11,24 +11,21 @@
     "damage": 0
   },
   "groups": [
-    "DEFENSIVE"
+    "DEFENSIVE",
+    "RANGED"
   ],
   "identifications": {
     "DEFENSEPOINTS": {
       "minimum": 2,
       "maximum": 3
-    },
-    "HEALTHBONUS": {
-      "minimum": 30,
-      "maximum": 35
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -57000,
+    "durabilityModifier": 21000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 8,
+    "defenceRequirement": 5,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

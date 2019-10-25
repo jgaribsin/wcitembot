@@ -14,16 +14,12 @@
   ],
   "identifications": {
     "EMERALDSTEALING": {
-      "minimum": 3,
-      "maximum": 5
-    },
-    "LOOT_QUALITY": {
-      "minimum": 2,
-      "maximum": 3
+      "minimum": 8,
+      "maximum": 10
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -88000,
+    "durabilityModifier": 60000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,

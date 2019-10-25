@@ -16,11 +16,7 @@
   "identifications": {
     "DAMAGEBONUS": {
       "minimum": 4,
-      "maximum": 6
-    },
-    "DAMAGEBONUSRAW": {
-      "minimum": 15,
-      "maximum": 23
+      "maximum": 5
     },
     "SPEED": {
       "minimum": -5,
@@ -28,8 +24,8 @@
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -92000,
-    "strengthRequirement": 15,
+    "durabilityModifier": 65000,
+    "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,

@@ -1,35 +1,37 @@
 {
-  "name": "Defiled Luxroot",
+  "name": "Shattered Memory Shard",
   "tier": 2,
-  "level": 64,
+  "level": 25,
+  "dropsFromLootChest": false,
+  "untradeable": true,
   "skills": [
-    "WOODWORKING",
+    "ARMOURING",
     "TAILORING"
   ],
   "sprite": {
-    "id": 32,
+    "id": 410,
     "damage": 0
   },
   "groups": [
-    "RANGED"
+    "AIR"
   ],
   "identifications": {
-    "THUNDERDEFENSE": {
-      "minimum": 6,
-      "maximum": 8
-    },
     "AIRDEFENSE": {
-      "minimum": -8,
-      "maximum": -6
+      "minimum": 3,
+      "maximum": 7
+    },
+    "AIRDAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 13
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 56000,
+    "durabilityModifier": -50000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 0
+    "agilityRequirement": 10
   },
   "consumableOnlyIDs": {
     "duration": 0,
@@ -45,18 +47,8 @@
   },
   "droppedBy": [
     {
-      "name": "SnerpRottingLuxroot",
-      "rarity": 5,
-      "rarityOffset": 0
-    },
-    {
-      "name": "DFDevourer",
-      "rarity": 5,
-      "rarityOffset": 0
-    },
-    {
-      "name": "DFEscapeddevourer",
-      "rarity": 5,
+      "name": "IngredientDummy",
+      "rarity": 1,
       "rarityOffset": 0
     }
   ]

@@ -20,8 +20,8 @@
       "maximum": 1
     },
     "LIFESTEAL": {
-      "minimum": -30,
-      "maximum": -25
+      "minimum": 10,
+      "maximum": 15
     }
   },
   "itemOnlyIDs": {
@@ -33,7 +33,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -92,
+    "duration": -101,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -47,12 +47,12 @@
   "droppedBy": [
     {
       "name": "SelvutBonusBossTheUnfettered",
-      "rarity": 2,
+      "rarity": 1,
       "rarityOffset": 0
     },
     {
       "name": "SelvutBonusBossTheUnbound",
-      "rarity": 2,
+      "rarity": 1,
       "rarityOffset": 0
     }
   ]

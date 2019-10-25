@@ -58,8 +58,8 @@
   "droppedBy": [
     {
       "name": "SelvutBonusBossTERA4M2",
-      "rarity": 2,
-      "rarityOffset": 0
+      "rarity": 1,
+      "rarityOffset": -80
     }
   ]
 }

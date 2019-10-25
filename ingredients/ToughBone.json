@@ -15,16 +15,16 @@
   ],
   "identifications": {
     "DEFENSEPOINTS": {
-      "minimum": 1,
+      "minimum": 0,
       "maximum": 2
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -35000,
+    "durabilityModifier": 18000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 5,
+    "defenceRequirement": 0,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {

@@ -47,8 +47,8 @@
   "droppedBy": [
     {
       "name": "SelvutBonusBossHaros",
-      "rarity": 3,
-      "rarityOffset": 0
+      "rarity": 1,
+      "rarityOffset": -40
     }
   ]
 }
