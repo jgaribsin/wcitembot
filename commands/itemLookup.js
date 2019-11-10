@@ -162,8 +162,8 @@ module.exports.run = async (client, message, args, botFiles) => {
       "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
       "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
       "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense",
-      "spellCostPct1", "spellCostRaw1", "spellCostRaw2", "spellCostRaw2", "spellCostRaw3", "spellCostRaw3", "spellCostRaw4", "spellCostRaw4"];
-
+      "spellCostRaw1", "spellCostRaw2", "spellCostRaw3", "spellCostRaw4", "spellCostPct1", "spellCostPct2", "spellCostPct3", "spellCostPct4"];
+      
     var skillPointStats = [iStrengthPoints, iDexterityPoints, iIntelligencePoints, iAgilityPoints, iDefensePoints];
     var skillPointDisplay = ["strengthPoints", "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints"];
 
