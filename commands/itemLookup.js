@@ -143,13 +143,26 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iBonusThunderDefense = foundItem.bonusThunderDefense;
     var iBonusEarthDefense = foundItem.bonusEarthDefense;
 
+    var iSpellRaw1 = foundItem.spellCostRaw1;
+    var iSpellRaw2 = foundItem.spellCostRaw2;
+    var iSpellRaw3 = foundItem.spellCostRaw3;
+    var iSpellRaw4 = foundItem.spellCostRaw4;
+
+    var iSpellPct1 = foundItem.spellCostPct1;
+    var iSpellPct2 = foundItem.spellCostPct2;
+    var iSpellPct3 = foundItem.spellCostPct3;
+    var iSpellPct4 = foundItem.spellCostPct4;
+
     var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
-      iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense];
+      iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, 
+      iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense,
+      iSpellRaw1, iSpellRaw2, iSpellRaw3, iSpellRaw4, iSpellPct1, iSpellPct2, iSpellPct3, iSpellPct4];
 
     var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "thorns", "exploding", "speed",
       "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
       "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
-      "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense"];
+      "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense",
+      "spellCostPct1", "spellCostRaw1", "spellCostRaw2", "spellCostRaw2", "spellCostRaw3", "spellCostRaw3", "spellCostRaw4", "spellCostRaw4"];
 
     var skillPointStats = [iStrengthPoints, iDexterityPoints, iIntelligencePoints, iAgilityPoints, iDefensePoints];
     var skillPointDisplay = ["strengthPoints", "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints"];
@@ -160,10 +173,12 @@ module.exports.run = async (client, message, args, botFiles) => {
     });
 
     var identifications = "";
-    for (i = 0; i < identificationStats.length; i++) {
+    for (i = 0; i < identificationDisplay.length; i++) {
       if (identificationStats[i] !== 0 && identificationStats[i] !== undefined)
         identifications += identificationDisplay[i] + ": " + identificationStats[i] + "\n";
     }
+
+
     if (foundItem.addedLore !== null && foundItem.addedLore !== undefined)
       identifications += "\n" + foundItem.addedLore;
 
