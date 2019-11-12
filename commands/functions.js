@@ -49,19 +49,19 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
   var atkSpeedMultiplier; // Multiplier based off the item's attack speed
   // Checks user input for the full
   if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
-    atkSpeedMultiplier = 3.5;
+    atkSpeedMultiplier = 4.0; // 1.785
   else if (atkSpeed === "veryslow" || atkSpeed === "vs" || atkSpeed === "VERY_SLOW")
-    atkSpeedMultiplier = 2.5;
+    atkSpeedMultiplier = 2.5; // 2.075
   else if (atkSpeed === "slow" || atkSpeed === "s" || atkSpeed === "SLOW")
-    atkSpeedMultiplier = 1.4;
+    atkSpeedMultiplier = 1.4; // 2.1
   else if (atkSpeed === "normal" || atkSpeed === "n" || atkSpeed === "NORMAL")
-    atkSpeedMultiplier = 1.0;
+    atkSpeedMultiplier = 1.0; // 2.05
   else if (atkSpeed === "fast" || atkSpeed === "f" || atkSpeed === "FAST")
-    atkSpeedMultiplier = 0.8;
+    atkSpeedMultiplier = 0.8; // 2.00
   else if (atkSpeed === "veryfast" || atkSpeed === "vf" || atkSpeed === "VERY_FAST")
-    atkSpeedMultiplier = 0.6;
+    atkSpeedMultiplier = 0.66; // 1.86
   else if (atkSpeed === "superfast" || atkSpeed === "sf" || atkSpeed === "SUPER_FAST")
-    atkSpeedMultiplier = 0.45;
+    atkSpeedMultiplier = 0.48; // 1.935
 
   let returnValue = 0;
   var baseLevelDamage;
