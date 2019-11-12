@@ -88,10 +88,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   /* ----------------------------------------------------------------------------------- */
 
   var recipes = botFiles.recipes;
-  var ingrArr = new Array(botFiles.ingredients.length);
-  ingrArr = Array.from(botFiles.ingredients);
-  ingrArr.forEach((x, i) => ingrArr[i] = x[0]);
-  var ingNames = Array.from(botFiles.ingredientNames);
+  let ingrArr = botFiles.ingredients.ingredients;
 
   var botResponse = "";
   var foundRecipe;
@@ -480,8 +477,8 @@ module.exports.run = async (client, message, args, botFiles) => {
         // makes sure it's not working with powders
         if (!dontDisplay.includes(key)) {
           // if it's not a powder stat then applies effectiveness to that slot
-          currMin = Math.round(currMin * effectiveness[i]);
-          currMax = Math.round(currMax * effectiveness[i]);
+          currMin = Math.floor(currMin * effectiveness[i]);
+          currMax = Math.floor(currMax * effectiveness[i]);
         }
 
         totalIdentifications[key].minimum += currMin;
