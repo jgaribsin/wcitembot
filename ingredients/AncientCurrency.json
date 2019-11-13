@@ -1,43 +1,39 @@
 {
-  "name": "Weathered Idol",
-  "tier": 3,
-  "level": 36,
-  "dropsFromLootChest": false,
+  "name": "Ancient Currency",
+  "tier": 2,
+  "level": 102,
   "skills": [
-    "SCRIBING"
+    "TAILORING"
   ],
   "sprite": {
-    "id": 145,
+    "id": 400,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "STEALING"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
+    "LOOT_QUALITY": {
+      "minimum": 5,
+      "maximum": 7
     },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
-    "SPEED": {
-      "minimum": 6,
-      "maximum": 8
+    "LOOTBONUS": {
+      "minimum": 5,
+      "maximum": 7
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
+    "durabilityModifier": -150000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 0
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,8 +46,13 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
-      "rarity": 3,
+      "name": "Salted-ScaredEye",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-Observer2",
+      "rarity": 5,
       "rarityOffset": 0
     }
   ]

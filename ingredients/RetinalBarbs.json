@@ -1,0 +1,56 @@
+{
+  "name": "Retinal Barbs",
+  "tier": 2,
+  "level": 104,
+  "skills": [
+    "WOODWORKING",
+    "WEAPONSMITHING"
+  ],
+  "sprite": {
+    "id": 369,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "THORNS": {
+      "minimum": 15,
+      "maximum": 20
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 12,
+      "maximum": 15
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -107000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 16,
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukRAREFaceOfFear",
+      "rarity": 1,
+      "rarityOffset": 0
+    }
+  ]
+}

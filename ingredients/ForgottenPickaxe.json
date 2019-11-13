@@ -1,0 +1,61 @@
+{
+  "name": "Forgotten Pickaxe",
+  "tier": 1,
+  "level": 96,
+  "skills": [
+    "WEAPONSMITHING",
+    "ARMOURING"
+  ],
+  "sprite": {
+    "id": 257,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "MELEE"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 10
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 50,
+      "maximum": 70
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -71000,
+    "strengthRequirement": 14,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukWilderedMiner",
+      "rarity": 4,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukEmeraldEnthralled",
+      "rarity": 4,
+      "rarityOffset": 0
+    }
+  ]
+}

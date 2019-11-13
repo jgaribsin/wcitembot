@@ -1,0 +1,97 @@
+{
+  "name": "Sludge Parasite",
+  "tier": 0,
+  "level": 102,
+  "skills": [
+    "ARMOURING"
+      ],
+  "sprite": {
+    "id": 111,
+    "damage": 0
+  },
+  "groups": [
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "POISON": {
+      "minimum": 100,
+      "maximum": 120
+    },
+    "DEFENSEPOINTS": {
+      "minimum": -4,
+      "maximum": -2
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -53000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukMutatedLuthoCitizen",
+      "rarity": 3,
+      "rarityOffset": 0
+   },
+   {
+      "name": "CruukAberratedLuthoCitizen",
+      "rarity": 3,
+      "rarityOffset": 0
+   },
+     {
+      "name": "CruukToxxulousRipper2",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukPathogenesis",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukLarbonicCanker2",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukPoisonTendril",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukToxitick",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukSpewer",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "nicktreeGreenFoot",
+      "rarity": 3,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukRAREAtomicGunk",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

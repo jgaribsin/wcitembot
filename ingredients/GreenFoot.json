@@ -1,0 +1,57 @@
+{
+  "name": "Green Foot",
+  "tier": 1,
+  "level": 103,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 111,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE",
+    "SLOW"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 5,
+      "maximum": 8
+     },
+    "HEALTHBONUS": {
+      "minimum": 750,
+      "maximum": 800
+     },
+    "SPEED": {
+      "minimum": -10,
+      "maximum": -7
+     }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -75000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 15,
+    "agilityRequirement": -10
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeGreenFoot",
+      "rarity": 4,
+      "rarityOffset": 0
+     }
+  ]
+}

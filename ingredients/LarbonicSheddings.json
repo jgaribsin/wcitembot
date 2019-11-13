@@ -1,35 +1,34 @@
 {
-  "name": "Weathered Idol",
-  "tier": 3,
-  "level": 36,
-  "dropsFromLootChest": false,
+  "name": "Larbonic Sheddings",
+  "tier": 1,
+  "level": 103,
   "skills": [
-    "SCRIBING"
-  ],
+    "TAILORING"
+      ],
   "sprite": {
-    "id": 145,
+    "id": 337,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "WATER",
+    "DEFENSIVE"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
-    },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
-    "SPEED": {
-      "minimum": 6,
-      "maximum": 8
-    }
+    "WATERDEFENSE": {
+      "minimum": 12,
+      "maximum": 15
+     },
+    "AIRDEFENSE": {
+      "minimum": -8,
+      "maximum": -6
+     },
+    "EARTHDEFENSE": {
+      "minimum": -8,
+      "maximum": -6
+     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
+    "durabilityModifier": -70000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
@@ -37,7 +36,7 @@
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,9 +49,9 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
-      "rarity": 3,
+      "name": "CruukLarbonicCanker1",
+      "rarity": 4,
       "rarityOffset": 0
-    }
+     }
   ]
 }

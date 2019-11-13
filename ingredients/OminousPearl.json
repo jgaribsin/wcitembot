@@ -1,31 +1,21 @@
 {
-  "name": "Weathered Idol",
-  "tier": 3,
-  "level": 36,
-  "dropsFromLootChest": false,
+  "name": "Ominous Pearl",
+  "tier": 0,
+  "level": 97,
   "skills": [
-    "SCRIBING"
+    "ALCHEMISM"
   ],
   "sprite": {
-    "id": 145,
+    "id": 368,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "STEALING"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
-    },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
-    "SPEED": {
-      "minimum": 6,
-      "maximum": 8
+    "XPBONUS": {
+      "minimum": 4,
+      "maximum": 6
     }
   },
   "itemOnlyIDs": {
@@ -34,10 +24,12 @@
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 0
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": -94,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,7 +42,12 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
+      "name": "CruukUmbralSentinel",
+      "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "CruukDernicLurker",
       "rarity": 3,
       "rarityOffset": 0
     }

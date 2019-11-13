@@ -1,0 +1,58 @@
+{
+  "name": "Toxxulous Ripper’s Legs",
+  "tier": 2,
+  "level": 103,
+  "skills": [
+    "TAILORING",
+    "COOKING"
+      ],
+  "sprite": {
+    "id": 6,
+    "damage": 4
+  },
+  "groups": [
+    "OFFENSIVE",
+    "QUICK"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 50,
+      "maximum": 55
+     },
+    "DEFENSEPOINTS": {
+      "minimum": -6,
+      "maximum": -4
+     },
+    "SPEED": {
+      "minimum": 7,
+      "maximum": 10
+     }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -90000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 15
+  },
+  "consumableOnlyIDs": {
+    "duration": -580,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukToxxulousRipper",
+      "rarity": 5,
+      "rarityOffset": 0
+     }
+  ]
+}

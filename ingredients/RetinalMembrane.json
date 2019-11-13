@@ -1,31 +1,21 @@
 {
-  "name": "Weathered Idol",
-  "tier": 3,
-  "level": 36,
-  "dropsFromLootChest": false,
+  "name": "Retinal Membrane",
+  "tier": 0,
+  "level": 100,
   "skills": [
     "SCRIBING"
   ],
   "sprite": {
-    "id": 145,
+    "id": 376,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "RANGED"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
-    },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
-    "SPEED": {
-      "minimum": 6,
-      "maximum": 8
+    "LOOT_QUALITY": {
+      "minimum": 1,
+      "maximum": 2
     }
   },
   "itemOnlyIDs": {
@@ -34,10 +24,12 @@
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 0
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": -95,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,8 +42,13 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
+      "name": "Salted-ScaredEye",
       "rarity": 3,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-RAREBlinders",
+      "rarity": 1,
       "rarityOffset": 0
     }
   ]

@@ -1,43 +1,40 @@
 {
-  "name": "Weathered Idol",
-  "tier": 3,
-  "level": 36,
-  "dropsFromLootChest": false,
+  "name": "Sentient Shadow",
+  "tier": 1,
+  "level": 92,
   "skills": [
-    "SCRIBING"
+    "TAILORING"
   ],
   "sprite": {
-    "id": 145,
+    "id": 263,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "AIR",
+    "DEFENSIVE"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
-    },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
     "SPEED": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "AIRDEFENSE": {
       "minimum": 6,
       "maximum": 8
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
+    "durabilityModifier": -70000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
     "defenceRequirement": 0,
-    "agilityRequirement": 0
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,8 +47,8 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
-      "rarity": 3,
+      "name": "CruukDetachedShadow",
+      "rarity": 4,
       "rarityOffset": 0
     }
   ]

@@ -1,0 +1,84 @@
+{
+  "name": "Condensed Darkness",
+  "tier": 2,
+  "level": 102,
+  "skills": [
+    "JEWELING",
+    "ALCHEMISM"
+  ],
+  "sprite": {
+    "id": 245,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC"
+  ],
+  "identifications": {
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "HEALTHBONUS": {
+      "minimum": -240,
+      "maximum": -160
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": -36,
+      "maximum": -24
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -106000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": -15,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -60,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutRTDDuskKanter",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRTDDuskKantyr",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRTDChalkyKanter",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "SelvutRTDChalkyKantyr",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-Blinder",
+      "rarity": 5,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-Eyebawl",
+      "rarity": 5,
+      "rarityOffset": 0
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Engored Oculus",
+  "tier": 3,
+  "level": 100,
+  "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQzZWNkOGUxN2EzZGFhNjY1ZGIzZGIwODIyNzJjNjI5Nzc5OGViYjUwOTY0MDI2Y2U3Zjg1NDU4YmY1NTY2YyJ9fX0=",
+  "skills": [
+    "WEAPONSMITHING",
+    "TAILORING"
+  ],
+  "sprite": {
+    "id": 397,
+    "damage": 3
+  },
+  "groups": [
+    "EARTH",
+    "QUICK"
+  ],
+  "identifications": {
+    "LIFESTEAL": {
+      "minimum": 120,
+      "maximum": 180
+    },
+    "SPEED": {
+      "minimum": 8,
+      "maximum": 11
+    },
+    "HEALTHREGEN": {
+      "minimum": -24,
+      "maximum": -20
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -150000,
+    "strengthRequirement": 18,
+    "dexterityRequirement": -10,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0,
+    "attackSpeedModifier": 0,
+    "powderSlotModifier": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Salt-LonglegGripperFast",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-Blinder",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salted-ScaredEye",
+      "rarity": 6,
+      "rarityOffset": 0
+    },
+    {
+      "name": "Salt-RAREBlinders",
+      "rarity": 3,
+      "rarityOffset": 0
+    }
+  ]
+}

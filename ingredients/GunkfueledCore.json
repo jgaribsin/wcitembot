@@ -1,43 +1,44 @@
 {
-  "name": "Weathered Idol",
+  "name": "Gunkfueled Core",
   "tier": 3,
-  "level": 36,
+  "level": 103,
   "dropsFromLootChest": false,
   "skills": [
-    "SCRIBING"
-  ],
+    "ARMOURING",
+    "WOODWORKING"
+      ],
   "sprite": {
-    "id": 145,
+    "id": 378,
     "damage": 0
   },
   "groups": [
-    "MAGIC",
-    "AIR"
+    "EARTH",
+    "OFFENSIVE"
   ],
   "identifications": {
-    "SPELLDAMAGERAW": {
-      "minimum": 30,
-      "maximum": 36
-    },
-    "AIRDAMAGEBONUS": {
-      "minimum": 10,
-      "maximum": 14
-    },
-    "SPEED": {
-      "minimum": 6,
-      "maximum": 8
-    }
+    "HEALTHREGENRAW": {
+      "minimum": -125,
+      "maximum": -110
+     },
+    "STRENGTHPOINTS": {
+      "minimum": 14,
+      "maximum": 18
+     },
+    "EXPLODING": {
+      "minimum": 20,
+      "maximum": 25
+     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": 0,
-    "strengthRequirement": 0,
+    "durabilityModifier": -160000,
+    "strengthRequirement": 35,
     "dexterityRequirement": 0,
     "intelligenceRequirement": 0,
-    "defenceRequirement": 0,
+    "defenceRequirement": -35,
     "agilityRequirement": 0
   },
   "consumableOnlyIDs": {
-    "duration": -170,
+    "duration": 0,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -50,9 +51,9 @@
   },
   "droppedBy": [
     {
-      "name": "SelvutRAREWitheredQuasinobility",
+      "name": "CruukRAREAtomicGunk",
       "rarity": 3,
       "rarityOffset": 0
-    }
+     }
   ]
 }

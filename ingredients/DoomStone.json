@@ -1,0 +1,89 @@
+{
+  "name": "Doom Stone",
+  "tier": 3,
+  "level": 103,
+  "skills": [
+    "TAILORING",
+    "JEWELING"
+      ],
+  "sprite": {
+    "id": 129,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {},
+  "itemOnlyIDs": {
+    "durabilityModifier": -160000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": -100,
+    "right": -100,
+    "above": 75,
+    "under": 75,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukMutatedLuthoCitizen",
+      "rarity": 6,
+      "rarityOffset": 0
+   },
+   {
+      "name": "CruukAberratedLuthoCitizen",
+      "rarity": 6,
+      "rarityOffset": 0
+   },
+     {
+      "name": "CruukToxxulousRipper2",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukPathogenesis",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukLarbonicCanker2",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukPoisonTendril",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukToxitick",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukSpewer",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "nicktreeGreenFoot",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+     {
+      "name": "CruukRAREAtomicGunk",
+      "rarity": 3,
+      "rarityOffset": 0
+     }
+  ]
+}
