@@ -86,6 +86,10 @@ module.exports.run = async (client, message, args, botFiles) => {
                 functionType = "wand";
             else if (itemType.toLowerCase() === "bow")
                 functionType = "bow";
+            else if (itemType.toLowerCase() === "flail")
+                functionType = "flail";
+            else if (itemType.toLowerCase() === "relik")
+                functionType = "relik";
             else if (itemType.toLowerCase() === "boots" || itemType.toLowerCase() === "leggings" || itemType.toLowerCase() === "chestplate" || itemType.toLowerCase() === "helmet")
                 functionType = "armour";
         }
@@ -116,7 +120,7 @@ module.exports.run = async (client, message, args, botFiles) => {
 
         var healthBonusBaseline = fnc.calcHealth(itemLevel, itemRarity, functionType);
         if (itemType !== undefined) {
-            if (itemType.toLowerCase() === "dagger" || itemType.toLowerCase() === "spear" || itemType.toLowerCase() === "wand" || itemType.toLowerCase() === "bow") {
+            if (itemType.toLowerCase() === "dagger" || itemType.toLowerCase() === "spear" || itemType.toLowerCase() === "wand" || itemType.toLowerCase() === "bow" || itemType.toLowerCase() === "relik" || itemType.toLowerCase() === "flail") {
 
                 attackSpeed = foundItem.attackSpeed;
                 rawMeleeBaseline = fnc.calcRawMelee(itemLevel, itemRarity, functionType, attackSpeed);

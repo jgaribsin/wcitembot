@@ -154,7 +154,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iSpellPct4 = foundItem.spellCostPct4;
 
     var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
-      iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage, 
+      iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage,
       iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense,
       iSpellRaw1, iSpellRaw2, iSpellRaw3, iSpellRaw4, iSpellPct1, iSpellPct2, iSpellPct3, iSpellPct4];
 
@@ -163,7 +163,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
       "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense",
       "spellCostRaw1", "spellCostRaw2", "spellCostRaw3", "spellCostRaw4", "spellCostPct1", "spellCostPct2", "spellCostPct3", "spellCostPct4"];
-      
+
     var skillPointStats = [iStrengthPoints, iDexterityPoints, iIntelligencePoints, iAgilityPoints, iDefensePoints];
     var skillPointDisplay = ["strengthPoints", "dexterityPoints", "intelligencePoints", "agilityPoints", "defensePoints"];
 
@@ -184,7 +184,7 @@ module.exports.run = async (client, message, args, botFiles) => {
 
 
     var baseStats = "";
-    if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger") {
+    if (iType.toLowerCase() === "bow" || iType.toLowerCase() === "spear" || iType.toLowerCase() === "wand" || iType.toLowerCase() === "dagger" || iType.toLowerCase() === "relik" || iType.toLowerCase() === "flail") {
       var iDamage = foundItem.damage;
       var iFireDamage = foundItem.fireDamage;
       var iWaterDamage = foundItem.waterDamage;
