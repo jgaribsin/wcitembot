@@ -1,0 +1,52 @@
+{
+  "name": "Rigid Fin",
+  "tier": 2,
+  "level": 105,
+  "skills": [
+    "COOKING"
+      ],
+  "sprite": {
+    "id": 168,
+    "damage": 2
+  },
+  "groups": [
+    "WATER"
+  ],
+  "identifications": {
+    "STAMINA_REGEN": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "WATERDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -600,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeRealitySwimmer",
+      "rarity": 5,
+      "rarityOffset": 0
+     }
+  ]
+}

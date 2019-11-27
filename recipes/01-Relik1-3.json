@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 1,
+    "maximum": 3
+  },
+  "type": "RELIK",
+  "skill": "WOODWORKING",
+  "materials": [
+    {
+      "item": "Refined Gudgeon Oil",
+      "amount": 2
+    },
+    {
+      "item": "Refined Oak Wood",
+      "amount": 1
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 273,
+      "damage": 24
+    },
+    "STEALING": {
+      "id": 273,
+      "damage": 8
+    },
+    "SLOW": {
+      "id": 273,
+      "damage": 8
+    },
+    "MAGIC": {
+      "id": 273,
+      "damage": 8
+    },
+    "OFFENSIVE": {
+      "id": 273,
+      "damage": 8
+    },
+    "MELEE": {
+      "id": 273,
+      "damage": 8
+    },
+    "DEFAULT": {
+      "id": 273,
+      "damage": 7
+    },
+    "DEFENSIVE": {
+      "id": 273,
+      "damage": 8
+    },
+    "FIRE": {
+      "id": 273,
+      "damage": 15
+    },
+    "AIR": {
+      "id": 273,
+      "damage": 18
+    },
+    "EARTH": {
+      "id": 273,
+      "damage": 9
+    },
+    "WATER": {
+      "id": 273,
+      "damage": 21
+    },
+    "THUNDER": {
+      "id": 273,
+      "damage": 12
+    },
+    "QUICK": {
+      "id": 273,
+      "damage": 8
+    },
+    "RANGED": {
+      "id": 273,
+      "damage": 8
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 7,
+    "maximum": 10
+  },
+  "durability": {
+    "minimum": 175000,
+    "maximum": 182000
+  },
+  "xp": 20
+}

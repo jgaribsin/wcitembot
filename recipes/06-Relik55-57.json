@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 55,
+    "maximum": 57
+  },
+  "type": "RELIK",
+  "skill": "WOODWORKING",
+  "materials": [
+    {
+      "item": "Refined Piranha Oil",
+      "amount": 8
+    },
+    {
+      "item": "Refined Jungle Wood",
+      "amount": 4
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 273,
+      "damage": 25
+    },
+    "STEALING": {
+      "id": 273,
+      "damage": 13
+    },
+    "SLOW": {
+      "id": 273,
+      "damage": 10
+    },
+    "MAGIC": {
+      "id": 273,
+      "damage": 22
+    },
+    "OFFENSIVE": {
+      "id": 273,
+      "damage": 10
+    },
+    "MELEE": {
+      "id": 273,
+      "damage": 10
+    },
+    "DEFAULT": {
+      "id": 273,
+      "damage": 7
+    },
+    "DEFENSIVE": {
+      "id": 273,
+      "damage": 16
+    },
+    "FIRE": {
+      "id": 273,
+      "damage": 16
+    },
+    "AIR": {
+      "id": 273,
+      "damage": 19
+    },
+    "EARTH": {
+      "id": 273,
+      "damage": 10
+    },
+    "WATER": {
+      "id": 273,
+      "damage": 22
+    },
+    "THUNDER": {
+      "id": 273,
+      "damage": 13
+    },
+    "QUICK": {
+      "id": 273,
+      "damage": 19
+    },
+    "RANGED": {
+      "id": 273,
+      "damage": 13
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 127,
+    "maximum": 138
+  },
+  "durability": {
+    "minimum": 364000,
+    "maximum": 371000
+  },
+  "xp": 529
+}

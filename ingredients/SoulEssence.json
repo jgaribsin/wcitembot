@@ -1,0 +1,52 @@
+{
+  "name": "Soul Essence",
+  "tier": 0,
+  "level": 103,
+  "skills": [
+    "SCRIBING"
+      ],
+  "sprite": {
+    "id": 80,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 5,
+      "maximum": 6
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 35,
+      "maximum": 40
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -97,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeVoidRoamer",
+      "rarity": 3,
+      "rarityOffset": 0
+     }
+  ]
+}

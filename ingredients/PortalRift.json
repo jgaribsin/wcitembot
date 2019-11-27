@@ -1,0 +1,53 @@
+{
+  "name": "Portal Rift",
+  "tier": 2,
+  "level": 105,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 95,
+    "damage": 15
+  },
+  "groups": [
+    "AIR",
+    "MAGIC"
+  ],
+  "identifications": {
+    "AGILITYPOINTS": {
+      "minimum": 8,
+      "maximum": 10
+    },
+    "MANASTEAL": {
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -108000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 20
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CruukRAREVortexianVoidgap",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

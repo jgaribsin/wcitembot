@@ -1,0 +1,93 @@
+{
+  "name": "Glow Bulb Seeds",
+  "tier": 3,
+  "level": 105,
+  "skills": [
+    "TAILORING",
+    "WEAPONSMITHING"
+      ],
+  "sprite": {
+    "id": 410,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC",
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "INTELLIGENCEPOINTS": {
+      "minimum": 10,
+      "maximum": 12
+    },
+    "HEALTHREGENRAW": {
+      "minimum": 130,
+      "maximum": 145
+    },
+    "DAMAGEBONUS": {
+      "minimum": -12,
+      "maximum": -9
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -160000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 35,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeVoidRoamer",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeLegEater",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeRepurposedHost",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeCrystalOfInsanity",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeTenebrousAlnamar",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeRealitySwimmer",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "nicktreeCursedShrieker",
+      "rarity": 6,
+      "rarityOffset": 0
+     },
+    {
+      "name": "CruukRAREVortexianVoidgap",
+      "rarity": 3,
+      "rarityOffset": 0
+     }
+  ]
+}

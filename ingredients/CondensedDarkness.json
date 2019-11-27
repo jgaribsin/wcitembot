@@ -19,19 +19,19 @@
       "maximum": 1
     },
     "HEALTHBONUS": {
-      "minimum": -240,
-      "maximum": -160
+      "minimum": -400,
+      "maximum": -360
     },
     "SPELLDAMAGERAW": {
-      "minimum": -36,
-      "maximum": -24
+      "minimum": -80,
+      "maximum": -70
     }
   },
   "itemOnlyIDs": {
     "durabilityModifier": -106000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": -15,
+    "intelligenceRequirement": -20,
     "defenceRequirement": 0,
     "agilityRequirement": 0,
     "attackSpeedModifier": 0,

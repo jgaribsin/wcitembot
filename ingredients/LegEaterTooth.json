@@ -1,0 +1,58 @@
+{
+  "name": "Leg Eater Tooth",
+  "tier": 1,
+  "level": 103,
+  "skills": [
+    "WEAPONSMITHING"
+      ],
+  "sprite": {
+    "id": 154,
+    "damage": 0
+  },
+  "groups": [
+    "EARTH",
+    "THUNDER",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "EARTHDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 9
+    },
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 9
+    },
+    "HEALTHREGEN": {
+      "minimum": -12,
+      "maximum": -8
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -75000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 10,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nicktreeLegEater",
+      "rarity": 4,
+      "rarityOffset": 0
+     }
+  ]
+}

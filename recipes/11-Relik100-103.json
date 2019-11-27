@@ -1,0 +1,106 @@
+{
+  "level": {
+    "minimum": 100,
+    "maximum": 103
+  },
+  "type": "RELIK",
+  "skill": "WOODWORKING",
+  "materials": [
+    {
+      "item": "Refined Starfish Oil",
+      "amount": 12
+    },
+    {
+      "item": "Refined Sky Wood",
+      "amount": 6
+    }
+  ],
+  "sprites": {
+    "RAINBOW": {
+      "id": 273,
+      "damage": 2
+    },
+    "STEALING": {
+      "id": 273,
+      "damage": 1
+    },
+    "SLOW": {
+      "id": 273,
+      "damage": 0
+    },
+    "MAGIC": {
+      "id": 273,
+      "damage": 2
+    },
+    "OFFENSIVE": {
+      "id": 273,
+      "damage": 0
+    },
+    "MELEE": {
+      "id": 273,
+      "damage": 0
+    },
+    "DEFAULT": {
+      "id": 273,
+      "damage": 0
+    },
+    "DEFENSIVE": {
+      "id": 273,
+      "damage": 8
+    },
+    "FIRE": {
+      "id": 273,
+      "damage": 8
+    },
+    "AIR": {
+      "id": 273,
+      "damage": 8
+    },
+    "EARTH": {
+      "id": 273,
+      "damage": 0
+    },
+    "WATER": {
+      "id": 273,
+      "damage": 2
+    },
+    "THUNDER": {
+      "id": 273,
+      "damage": 1
+    },
+    "QUICK": {
+      "id": 273,
+      "damage": 8
+    },
+    "RANGED": {
+      "id": 273,
+      "damage": 1
+    }
+  },
+  "names": {
+    "RAINBOW": "itemrainbow",
+    "STEALING": "itemstealing",
+    "SLOW": "itemslow",
+    "MAGIC": "itemmagic",
+    "OFFENSIVE": "itemoffensive",
+    "MELEE": "itemmelee",
+    "DEFAULT": "itemdefault",
+    "DEFENSIVE": "itemdefensive",
+    "FIRE": "itemfire",
+    "AIR": "itemair",
+    "EARTH": "itemearth",
+    "WATER": "itemwater",
+    "THUNDER": "itemthunder",
+    "QUICK": "itemquick",
+    "RANGED": "itemranged"
+  },
+  "healthOrDamage": {
+    "minimum": 379,
+    "maximum": 382
+  },
+  "durability": {
+    "minimum": 522000,
+    "maximum": 525000
+  },
+  "xp": 5250
+}

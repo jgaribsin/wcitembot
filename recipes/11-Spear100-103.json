@@ -99,8 +99,8 @@
     "maximum": 255
   },
   "durability": {
-    "minimum": 298000,
-    "maximum": 302000
+    "minimum": 522000,
+    "maximum": 529000
   },
   "xp": 5250
 }
