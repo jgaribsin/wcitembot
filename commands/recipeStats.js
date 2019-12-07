@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args, botFiles) => {
       tierMult = 1.4;
       break;
   }
-  let recipes = botFiles.recipes;
+  let recipes = botFiles.recipes.recipes;
   var foundRecipe;
 
   recipes = recipes.filter(recipe => (recipe.type == itemType));

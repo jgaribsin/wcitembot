@@ -5,11 +5,12 @@ const fs = require("fs");
 client.commands = new Discord.Collection();
 client.recipes = new Discord.Collection();
 var ingredients;
+var recipes;
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
 let items = require('./items.json');
-let recipes = require('./recipes.json');
+let revampItems = require('./elemRevamp.json');
 
 var ingredientsLoaded = 0;
 var recipesLoaded = 0;
@@ -45,21 +46,47 @@ fs.readdir("./ingredients", (err, files) => {
   jsfile.forEach((f, i) => {
     let props = require(`./ingredients/${f}`);
     ingredients += JSON.stringify(props, null, 2);
-    if (i != jsfile.length-1) ingredients += ",\n";
+    if (i != jsfile.length - 1) ingredients += ",\n";
+  });
+});
+
+fs.readdir("./recipes", (err, files) => {
+
+  if (err) console.log(err);
+
+  let jsfile = files.filter(f => f.split(".").pop() === "json")
+  if (jsfile.length <= 0) {
+    console.log("\nCouldn't find recipes.");
+    return;
+  }
+
+  jsfile.forEach((f, i) => {
+    let props = require(`./recipes/${f}`);
+    if (props.durability) {
+      props.durability.minimum = Math.round(props.durability.minimum / 1000);
+      props.durability.maximum = Math.round(props.durability.maximum / 1000);
+    }
+    recipes += JSON.stringify(props, null, 2);
+    if (i != jsfile.length - 1) recipes += ",\n";
   });
 });
 
 client.on('ready', () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   client.user.setActivity("D:", { type: 'PLAYING' });
-  console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
   console.log(`Successfully loaded ${items.items.length} items!`);
 
   ingredients = `{"ingredients":[${ingredients.split("undefined").join("")}]}`;
   ingredients = JSON.parse(ingredients);
+
+  recipes = `{"recipes":[${recipes.split("undefined").join("")}]}`;
+  recipes = JSON.parse(recipes);
+
   fs.writeFileSync(`ingredientsFile.json`, JSON.stringify(ingredients, null, 2));
+  fs.writeFileSync(`recipesFile.json`, JSON.stringify(recipes, null, 2));
 
   console.log(`Successfully loaded ${ingredients.ingredients.length - 31} ingredients!`); // subtracting 31 because 30 powders, 1 blank ingredient for the crafter
+  console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
 });
 
 client.on('message', message => {
@@ -92,9 +119,10 @@ client.on('message', message => {
 
   var botFiles = new Object();
   botFiles.ingredients = require("./ingredientsFile.json");
+  botFiles.recipes = require("./recipesFile.json");
   botFiles.commands = client.commands;
   botFiles.items = items.items;
-  botFiles.recipes = recipes.recipes;
+  botFiles.revampItems = revampItems.items;
   botFiles.prefix = prefix;
 
   let commandFile = client.commands.get(command);

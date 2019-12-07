@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     message.channel.send("Please enter an item type.\n");
     return;
   }
-  if (itemType == "BOW" || itemType == "WAND" || itemType == "SPEAR" || itemType == "DAGGER") {
+  if (itemType == "BOW" || itemType == "WAND" || itemType == "SPEAR" || itemType == "DAGGER" || itemType == "RELIK" || itemType == "FLAIL") {
     if (args[1]) var atkSpeed = args[1].toString().toUpperCase();
     else {
       message.channel.send("Please enter an attack speed.\n");
@@ -87,7 +87,7 @@ module.exports.run = async (client, message, args, botFiles) => {
 
   /* ----------------------------------------------------------------------------------- */
 
-  var recipes = botFiles.recipes;
+  var recipes = botFiles.recipes.recipes;
   let ingrArr = botFiles.ingredients.ingredients;
 
   var botResponse = "";
@@ -102,7 +102,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     });
   }
   else {
-    message.channel.send(`No recipes found for \`T${tier}\` Lv. \`${uLevel}\`.`);
+    message.channel.send(`No recipes found for \`T${tier}\` Lv. \`${uLevel}\`. 0 length`);
     err = true;
     return;
   }
@@ -290,6 +290,14 @@ module.exports.run = async (client, message, args, botFiles) => {
         "minimum": 0,
         "maximum": 0
       },
+      "LOOT_QUALITY": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "LOOTBONUS": {
+        "minimum": 0,
+        "maximum": 0
+      },
       "REFLECTION": {
         "minimum": 0,
         "maximum": 0
@@ -303,6 +311,14 @@ module.exports.run = async (client, message, args, botFiles) => {
         "maximum": 0
       },
       "SPEED": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "STAMINA": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "STAMINA_REGEN": {
         "minimum": 0,
         "maximum": 0
       },
@@ -502,14 +518,14 @@ module.exports.run = async (client, message, args, botFiles) => {
       "STRENGTHPOINTS", "DEXTERITYPOINTS", "INTELLIGENCEPOINTS", "AGILITYPOINTS", "DEFENSEPOINTS", "HEALTHREGENRAW",
       "SPELLDAMAGERAW", "DAMAGEBONUSRAW", "FIREDAMAGEBONUS", "WATERDAMAGEBONUS", "AIRDAMAGEBONUS", "THUNDERDAMAGEBONUS",
       "EARTHDAMAGEBONUS", "FIREDEFENSE", "WATERDEFENSE", "AIRDEFENSE", "THUNDERDEFENSE", "EARTHDEFENSE", "DAMAGEBONUS", "SPELLDAMAGE", "HEALTHREGEN",
-      "SCRIBING", "JEWELING", "ALCHEMISM", "COOKING", "WEAPONSMITHING", "TAILORING", "WOODWORKING", "ARMOURING"];
+      "SCRIBING", "JEWELING", "ALCHEMISM", "COOKING", "WEAPONSMITHING", "TAILORING", "WOODWORKING", "ARMOURING", "STAMINA_REGEN", "STAMINA", "LOOT_QUALITY"];
 
     var frontDisplay = ["Knockback %", "Mana Regen", "Lifesteal", "Mana Steal",
       "XP Bonus", "Loot Bonus", "Reflection", "Thorns", "Exploding", "Attack Speed", "Speed", "Poison", "Health Bonus", "Soul Point Regen",
       "Stealing", "Strength Points", "Dexterity Points", "Intelligence Points", "Agility Points", "Defense Points", "Raw Health Regen",
       "Raw Spell Damage", "Raw Melee Damage", "Fire Damage %", "Water Damage %", "Air Damage %", "Thunder Damage %",
       "Earth Damage %", "Fire Defense %", "Water Defense %", "Air Defense %", "Thunder Defense %", "Earth Defense %", "Melee Damage %", "Spell Damage %", "Health Regen %",
-      "Scribing", "Jeweling", "Alchemism", "Cooking", "Weaponsmithing", "Tailoring", "Woodworking", "Armouring"];
+      "Scribing", "Jeweling", "Alchemism", "Cooking", "Weaponsmithing", "Tailoring", "Woodworking", "Armouring", "Spring Regen", "Stamina", "Loot Quality"];
 
     backDisplay.forEach((x, i) => identificationsDisplay = identificationsDisplay.split(backDisplay[i]).join(frontDisplay[i]));
     if (identificationsDisplay.length < 1) identificationsDisplay = "No identifications";
