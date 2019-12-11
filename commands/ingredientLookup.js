@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, message, args, botFiles) => {
 
-  var ingrStats = ["HEALTHREGEN", "KNOCKBACK", "MANAREGEN", "DAMAGEBONUS", "SPELLDAMAGE", "LIFESTEAL", "MANASTEAL", "XPBONUS", "LOOTBONUS",
-    "REFLECTION", "THORNS", "EXPLODING", "SPEED", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",
+  var ingrStats = ["HEALTHREGEN", "KNOCKBACK", "MANAREGEN", "DAMAGEBONUS", "SPELLDAMAGE", "LIFESTEAL", "MANASTEAL", "XPBONUS", "LOOTBONUS", "LOOT_QUALITY",
+    "REFLECTION", "THORNS", "EXPLODING", "SPEED", "STAMINA_REGEN", "STAMINA", "ATTACKSPEED", "POISON", "HEALTHBONUS", "SOULPOINTS", "EMERALDSTEALING",
     "STRENGTHPOINTS", "DEXTERITYPOINTS", "INTELLIGENCEPOINTS", "AGILITYPOINTS", "DEFENSEPOINTS", "HEALTHREGENRAW",
     "SPELLDAMAGERAW", "DAMAGEBONUSRAW", "FIREDAMAGEBONUS", "WATERDAMAGEBONUS", "AIRDAMAGEBONUS", "THUNDERDAMAGEBONUS",
     "EARTHDAMAGEBONUS", "FIREDEFENSE", "WATERDEFENSE", "AIRDEFENSE", "THUNDERDEFENSE", "EARTHDEFENSE", "FIREDAMAGERAW",
@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args, botFiles) => {
     "THUNDERDAMAGECONVERT", "EARTHDAMAGECONVERT", "FIREDEFENSERAW", "WATERDEFENSERAW", "AIRDEFENSERAW", "THUNDERDEFENSERAW", "EARTHDEFENSERAW"];
 
   var ingrDisplay = ["Health Regen %", "Knockback %", "Mana Regen", "Melee Damage %", "Spell Damage %", "Lifesteal", "Mana Steal",
-    "XP Bonus", "Loot Bonus", "Reflection", "Thorns", "Exploding", "Speed", "Attack Speed", "Poison", "Health Bonus", "Soul Point Regen",
+    "XP Bonus", "Loot Bonus", "Loot Quality", "Reflection", "Thorns", "Exploding", "Speed", "Sprint Regen", "Sprint", "Attack Speed", "Poison", "Health Bonus", "Soul Point Regen",
     "Stealing", "Strength Points", "Dexterity Points", "Intelligence Points", "Agility Points", "Defense Points", "Raw Health Regen",
     "Raw Spell Damage", "Raw Melee Damage", "Fire Damage %", "Water Damage %", "Air Damage %", "Thunder Damage %",
     "Earth Damage %", "Fire Defense %", "Water Defense %", "Air Defense %", "Thunder Defense %", "Earth Defense %", "Raw Fire Damage",
