@@ -17,19 +17,15 @@
   ],
   "identifications": {
     "MANAREGEN": {
-      "minimum": 1,
-      "maximum": 2
-    },
-    "MANASTEAL": {
-      "minimum": 1,
+      "minimum": 2,
       "maximum": 2
     }
   },
   "itemOnlyIDs": {
-    "durabilityModifier": -79000,
+    "durabilityModifier": -99000,
     "strengthRequirement": 0,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": 45,
+    "intelligenceRequirement": 35,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },

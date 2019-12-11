@@ -15,17 +15,13 @@
     "WATER"
   ],
   "identifications": {
-    "HEALTHREGEN": {
-      "minimum": -15,
-      "maximum": -12
-     },
     "WATERDAMAGEBONUS": {
-      "minimum": 12,
-      "maximum": 15
+      "minimum": 11,
+      "maximum": 13
      },
     "FIREDAMAGEBONUS": {
-      "minimum": 12,
-      "maximum": 15
+      "minimum": 11,
+      "maximum": 13
      }
   },
   "itemOnlyIDs": {

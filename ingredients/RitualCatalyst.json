@@ -21,8 +21,8 @@
       "maximum": -1
     },
     "SPELLDAMAGE": {
-      "minimum": 18,
-      "maximum": 22
+      "minimum": 20,
+      "maximum": 24
     },
     "MANASTEAL": {
       "minimum": 2,
@@ -31,9 +31,9 @@
   },
   "itemOnlyIDs": {
     "durabilityModifier": -149000,
-    "strengthRequirement": -50,
+    "strengthRequirement": -55,
     "dexterityRequirement": 0,
-    "intelligenceRequirement": 50,
+    "intelligenceRequirement": 55,
     "defenceRequirement": 0,
     "agilityRequirement": 0
   },
