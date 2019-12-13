@@ -7,7 +7,7 @@ var uniqueMultipliers = [1.4, 1.35, 1.3, 1.25, 1.2, 1.15, 1.1, 1.05, 1, 1, 1, 1,
 var setMultipliers = [1.6, 1.55, 1.5, 1.45, 1.4, 1.325, 1.275, 1.225, 1.15, 1.125, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.075, 1.075, 1.05, 1.05, 1.05]; /* 90 and above is 105% */
 var rareMultipliers = [1.8, 1.75, 1.7, 1.65, 1.6, 1.5, 1.45, 1.4, 1.3, 1.25, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.15, 1.15, 1.1, 1.1, 1.1]; /* 90 and above is 110% */
 var legendaryMultipliers = [2.2, 2.15, 2.1, 2.05, 2, 1.9, 1.8, 1.7, 1.6, 1.5, 1.4, 1.4, 1.4, 1.4, 1.4, 1.4, 1.35, 1.35, 1.3, 1.3, 1.3]; /* 90 and above is 130% */
-var epicMultipliers = [2.4, 2.35, 2.3, 2.25, 2.2, 2.1, 2, 1.9, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.55, 1.55, 1.5, 1.5, 1.5]; /* 90 and above is 130% */
+var fabledMultipliers = [2.4, 2.35, 2.3, 2.25, 2.2, 2.1, 2, 1.9, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.55, 1.55, 1.5, 1.5, 1.5]; /* 90 and above is 130% */
 var mythicMultipliers = [2.6, 2.55, 2.5, 2.45, 2.4, 2.3, 2.2, 2.1, 2, 1.9, 1.8, 1.8, 1.8, 1.8, 1.8, 1.8, 1.75, 1.75, 1.7, 1.7, 1.7]; /* 90 and above is 170% */
 
 // https://i.imgur.com/bocaBjD.png
@@ -39,8 +39,8 @@ exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier 
     return rareMultipliers[Math.round(level / 5)];
   else if (rarity === "legendary" || rarity === "Legendary" || rarity === "l")
     return legendaryMultipliers[Math.round(level / 5)];
-  else if (rarity === "epic" || rarity === "Epic" || rarity === "e")
-    return epicMultipliers[Math.round(level / 5)];
+  else if (rarity === "fabled" || rarity === "Fabled" || rarity === "f")
+    return fabledMultipliers[Math.round(level / 5)];
   else if (rarity === "mythic" || rarity === "Mythic" || rarity === "m")
     return mythicMultipliers[Math.round(level / 5)];
 }
