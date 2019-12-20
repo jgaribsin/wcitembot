@@ -186,13 +186,13 @@ exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
     typeMultiplier = 1.0;
-    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.82 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "accessory" || itemType === "necklace" || itemType === "bracelet" || itemType === "ring") {
     typeMultiplier = 1 / 3;
-    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.63 * typeMultiplier * 1000) / 1000;
+    returnValue = Math.round(exports.calcBaseDam(level, rarity, "dagger", "normal") * 0.82 * typeMultiplier * 1000) / 1000;
   } else if (itemType === "spear" || itemType === "bow" || itemType === "wand" || itemType === "dagger" || itemType === "flail" || itemType === "relik") {
     var weaponDamage = exports.calcBaseDam(level, rarity, itemType, atkSpeed);
-    returnValue = weaponDamage / 2;
+    returnValue = weaponDamage / 1.54; // .65x base damages
   }
 
   return returnValue;

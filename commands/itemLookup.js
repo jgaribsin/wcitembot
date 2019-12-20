@@ -123,6 +123,9 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iThorns = foundItem.thorns;
     var iExploding = foundItem.exploding;
     var iSpeed = foundItem.speed;
+    var iSprint = foundItem.sprint;
+    var iSprintRegen = foundItem.sprintRegen;
+    var iJumpHeight = foundItem.jumpHeight;
     var iAttackSpeedBonus = foundItem.attackSpeedBonus;
     var iPoison = foundItem.poison;
     var iHealthBonus = foundItem.healthBonus;
