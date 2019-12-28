@@ -156,13 +156,16 @@ module.exports.run = async (client, message, args, botFiles) => {
     var iSpellPct3 = foundItem.spellCostPct3;
     var iSpellPct4 = foundItem.spellCostPct4;
 
-    var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, iManaSteal, iXp, iLoot, iReflection, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
+    var identificationStats = [iHealthRegen, iManaRegen, iSpellDamage, iDamageBonus, iLifeSteal, 
+      iManaSteal, iXp, iLoot, iReflection, iThorns, iExploding, iSpeed, iAttackSpeedBonus, iPoison, iHealthBonus, iSoulPoints, iKnockback, iJumpHeight, 
+      iEmeraldStealing, iHealthRegenRaw, iSpellDamageRaw, iDamageBonusRaw,
       iBonusFireDamage, iBonusWaterDamage, iBonusAirDamage, iBonusThunderDamage, iBonusEarthDamage,
       iBonusFireDefense, iBonusWaterDefense, iBonusAirDefense, iBonusThunderDefense, iBonusEarthDefense,
       iSpellRaw1, iSpellRaw2, iSpellRaw3, iSpellRaw4, iSpellPct1, iSpellPct2, iSpellPct3, iSpellPct4];
 
-    var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", "manaSteal", "xpBonus", "lootBonus", "reflection", "thorns", "exploding", "speed",
-      "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback",
+    var identificationDisplay = ["healthRegen", "manaRegen", "spellDamage", "damageBonus", "lifeSteal", 
+    "manaSteal", "xpBonus", "lootBonus", "reflection", "thorns", "exploding", "speed",
+      "attackSpeedBonus", "poison", "healthBonus", "soulPoints", "knockback", "jumpHeight", 
       "emeraldStealing", "healthRegenRaw", "spellDamageRaw", "damageBonusRaw", "bonusFireDamage", "bonusWaterDamage", "bonusAirDamage", "bonusThunderDamage", "bonusEarthDamage",
       "bonusFireDefense", "bonusWaterDefense", "bonusAirDefense", "bonusThunderDefense", "bonusEarthDefense",
       "spellCostRaw1", "spellCostRaw2", "spellCostRaw3", "spellCostRaw4", "spellCostPct1", "spellCostPct2", "spellCostPct3", "spellCostPct4"];
