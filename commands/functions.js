@@ -29,6 +29,8 @@ module.exports.run = async (client, message, args, botFiles) => {
 exports.prefix = ".";
 
 exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier of health/damage based off an item's rarity and level
+  if (level > 100) level = 100;
+
   if (rarity === "normal" || rarity === "Normal" || rarity === "n")
     return normalMultipliers[Math.round(level / 5)];
   else if (rarity === "unique" || rarity === "Unique" || rarity === "u")
@@ -47,6 +49,8 @@ exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier 
 
 exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
   var atkSpeedMultiplier; // Multiplier based off the item's attack speed
+  if (level > 100) level = 100;
+  
   // Checks user input for the full
   if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
     atkSpeedMultiplier = 4.0; // 1.785
