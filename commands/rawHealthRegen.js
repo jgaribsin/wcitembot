@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (args[0]) var level = parseInt(args[0]);
   if (args[1]) var rarity = args[1];
   if (args[2]) var itemType = args[2].toString();
-  let itemRarities = ['mythic', 'epic', 'legendary', 'rare', 'set', 'unique', 'normal'];
+  let itemRarities = ['mythic', 'fabled', 'legendary', 'rare', 'set', 'unique', 'normal'];
   let ingRarities = ['0', '1', '2', '3'];
   ['m', 'e', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
     if (rarity == x) rarity = itemRarities[i]
