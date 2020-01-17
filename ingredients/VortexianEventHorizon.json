@@ -23,11 +23,11 @@
   },
   "itemOnlyIDs": {
     "durabilityModifier": -180000,
-    "strengthRequirement": 40,
-    "dexterityRequirement": 40,
-    "intelligenceRequirement": 40,
-    "defenceRequirement": 40,
-    "agilityRequirement": 40
+    "strengthRequirement": 45,
+    "dexterityRequirement": 45,
+    "intelligenceRequirement": 45,
+    "defenceRequirement": 45,
+    "agilityRequirement": 45
   },
   "consumableOnlyIDs": {
     "duration": 0,

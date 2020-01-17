@@ -47,12 +47,12 @@
     {
       "name": "CruukUmbralSentinel",
       "rarity": 6,
-      "rarityOffset": 0
+      "rarityOffset": 300
     },
     {
       "name": "CruukDernicLurker",
       "rarity": 6,
-      "rarityOffset": 0
+      "rarityOffset": 300
     }
   ]
 }

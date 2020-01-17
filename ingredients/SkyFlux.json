@@ -1,0 +1,52 @@
+{
+  "name": "Sky Flux",
+  "tier": 2,
+  "level": 99,
+  "skills": [
+    "SCRIBING"
+      ],
+  "sprite": {
+    "id": 351,
+    "damage": 15
+  },
+  "groups": [
+    "AIR"
+  ],
+  "identifications": {
+    "AIRDAMAGEBONUS": {
+      "minimum": 6,
+      "maximum": 10
+    },
+    "AIRDEFENSE": {
+      "minimum": 14,
+      "maximum": 18
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -190,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "ImaxeSIRAREMOB1",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

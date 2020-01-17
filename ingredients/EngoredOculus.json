@@ -55,22 +55,22 @@
     {
       "name": "Salt-LonglegGripperFast",
       "rarity": 6,
-      "rarityOffset": 0
+      "rarityOffset": 300
     },
     {
       "name": "Salt-Blinder",
       "rarity": 6,
-      "rarityOffset": 0
+      "rarityOffset": 300
     },
     {
       "name": "Salted-ScaredEye",
       "rarity": 6,
-      "rarityOffset": 0
+      "rarityOffset": 300
     },
     {
       "name": "Salt-RAREBlinders",
       "rarity": 3,
-      "rarityOffset": 0
+      "rarityOffset": 300
     }
   ]
 }

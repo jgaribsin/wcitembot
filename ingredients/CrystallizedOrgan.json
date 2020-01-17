@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "LOOT_QUALITY": {
-      "minimum": 3,
-      "maximum": 5
+      "minimum": 2,
+      "maximum": 3
     }
   },
   "itemOnlyIDs": {
@@ -29,7 +29,7 @@
     "powderSlotModifier": 0
   },
   "consumableOnlyIDs": {
-    "duration": 0,
+    "duration": -400,
     "charges": 0
   },
   "ingredientPositionModifiers": {
@@ -44,7 +44,7 @@
     {
       "name": "Salt-Observer2",
       "rarity": 4,
-      "rarityOffset": 0
+      "rarityOffset": 100
     },
     {
       "name": "CruukRAREFaceOfFear",

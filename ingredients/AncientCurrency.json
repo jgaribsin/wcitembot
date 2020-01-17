@@ -14,8 +14,8 @@
   ],
   "identifications": {
     "LOOT_QUALITY": {
-      "minimum": 5,
-      "maximum": 7
+      "minimum": 3,
+      "maximum": 4
     },
     "LOOTBONUS": {
       "minimum": 5,
@@ -48,12 +48,12 @@
     {
       "name": "Salted-ScaredEye",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "Salt-Observer2",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     }
   ]
 }

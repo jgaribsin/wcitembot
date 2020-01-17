@@ -1,0 +1,53 @@
+{
+  "name": "Wriggling Wooden Arm",
+  "tier": 2,
+  "level": 50,
+  "skills": [
+    "WOODWORKING"
+      ],
+  "sprite": {
+    "id": 280,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUS": {
+      "minimum": 8,
+      "maximum": 9
+    },
+    "FIREDEFENSE": {
+      "minimum": -14,
+      "maximum": -10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "RAREJbipTposingStand",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}
+

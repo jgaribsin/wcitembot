@@ -52,6 +52,11 @@
     {
       "name": "CruukToxxulousRipper",
       "rarity": 5,
+      "rarityOffset": 200
+     },
+    {
+      "name": "nicktreeLegEater",
+      "rarity": 5,
       "rarityOffset": 0
      }
   ]

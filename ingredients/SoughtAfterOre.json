@@ -15,8 +15,8 @@
   ],
   "identifications": {
     "LOOT_QUALITY": {
-      "minimum": 2,
-      "maximum": 3
+      "minimum": 1,
+      "maximum": 2
     }
   },
   "itemOnlyIDs": {
@@ -45,12 +45,12 @@
     {
       "name": "CruukWilderedMiner",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "CruukEmeraldEnthralled",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     }
   ]
 }

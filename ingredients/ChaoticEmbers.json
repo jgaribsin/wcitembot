@@ -1,0 +1,53 @@
+{
+  "name": "Chaotic Embers",
+  "tier": 2,
+  "level": 30,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 385,
+    "damage": 0
+  },
+  "groups": [
+    "FIRE",
+    "OFFENSIVE"
+  ],
+  "identifications": {
+    "FIREDAMAGEBONUS": {
+      "minimum": 9,
+      "maximum": 10
+    },
+    "FIREDEFENSE": {
+      "minimum": -10,
+      "maximum": -9
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -55000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 8,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "nethergod",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

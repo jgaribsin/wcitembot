@@ -1,0 +1,53 @@
+{
+  "name": "Silver Bullet",
+  "tier": 2,
+  "level": 95,
+  "skills": [
+    "JEWELING"
+      ],
+  "sprite": {
+    "id": 265,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "MELEE"
+  ],
+  "identifications": {
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "DAMAGEBONUSRAW": {
+      "minimum": 35,
+      "maximum": 40
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -100000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 18,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "CorkusNeburMM105TacticalUnit",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Mythical Hoof",
+  "tier": 2,
+  "level": 92,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 281,
+    "damage": 0
+  },
+  "groups": [
+    "RANGED",
+    "RAINBOW"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+    "DEXTERITYPOINTS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+   "INTELLIGENCEPOINTS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+   "DEFENSEPOINTS": {
+      "minimum": 4,
+      "maximum": 5
+    },
+   "AGILITYPOINTS": {
+      "minimum": 4,
+      "maximum": 5
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -99000,
+    "strengthRequirement": 10,
+    "dexterityRequirement": 10,
+    "intelligenceRequirement": 10,
+    "defenceRequirement": 10,
+    "agilityRequirement": 10
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "DFpegasus",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

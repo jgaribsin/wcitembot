@@ -1,0 +1,56 @@
+{
+  "name": "Primeval Skin",
+  "tier": 2,
+  "level": 45,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 334,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "STRENGTHPOINTS": {
+      "minimum": 3,
+      "maximum": 4
+    },
+    "INTELLIGENCEPOINTS": {
+      "minimum": -5,
+      "maximum": -5
+    },
+    "DEFENSEPOINTS": {
+      "minimum": 2,
+      "maximum": 3
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -66000,
+    "strengthRequirement": 8,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 6,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "PepoAncientOrc",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

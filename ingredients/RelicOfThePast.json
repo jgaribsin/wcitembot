@@ -1,0 +1,52 @@
+{
+  "name": "Relic of the Past",
+  "tier": 2,
+  "level": 15,
+  "skills": [
+    "TAILORING"
+      ],
+  "sprite": {
+    "id": 405,
+    "damage": 0
+  },
+  "groups": [
+    "DEFENSIVE"
+  ],
+  "identifications": {
+    "DEFENSEPOINTS": {
+      "minimum": 3,
+      "maximum": 3
+    },
+    "HEALTHREGEN": {
+      "minimum": 6,
+      "maximum": 6
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -45000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 4,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoTimeAnomaly",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

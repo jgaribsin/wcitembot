@@ -1,0 +1,52 @@
+{
+  "name": "Dark Matter",
+  "tier": 2,
+  "level": 100,
+  "skills": [
+    "WOODWORKING"
+      ],
+  "sprite": {
+    "id": 173,
+    "damage": 0
+  },
+  "groups": [
+    "MELEE"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 130,
+      "maximum": 140
+    },
+    "SOULPOINTS": {
+      "minimum": -14,
+      "maximum": -13
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -110000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "VoidSquidRAREMOB",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

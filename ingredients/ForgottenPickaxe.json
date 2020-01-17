@@ -50,12 +50,12 @@
     {
       "name": "CruukWilderedMiner",
       "rarity": 4,
-      "rarityOffset": 0
+      "rarityOffset": 100
     },
     {
       "name": "CruukEmeraldEnthralled",
       "rarity": 4,
-      "rarityOffset": 0
+      "rarityOffset": 100
     }
   ]
 }

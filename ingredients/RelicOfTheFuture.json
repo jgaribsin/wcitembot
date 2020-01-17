@@ -1,0 +1,55 @@
+{
+  "name": "Relic of the Future",
+  "tier": 3,
+  "level": 15,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+      ],
+  "sprite": {
+    "id": 264,
+    "damage": 0
+  },
+  "groups": [
+    "THUNDER",
+    "MAGIC"
+  ],
+  "identifications": {
+    "THUNDERDAMAGEBONUS": {
+      "minimum": 7,
+      "maximum": 11
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 8,
+      "maximum": 14
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -70000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 6,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "LeoTimeAnomaly",
+      "rarity": 3,
+      "rarityOffset": 0
+     }
+  ]
+}

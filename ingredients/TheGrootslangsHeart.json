@@ -51,8 +51,8 @@
   },
   "droppedBy": [
     {
-      "name": "Swamp-GrootslangYoung",
-      "rarity": 5,
+      "name": "IngredientDummy",
+      "rarity": 1,
       "rarityOffset": 0
     }
   ]

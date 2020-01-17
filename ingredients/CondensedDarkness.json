@@ -53,32 +53,32 @@
     {
       "name": "SelvutRTDDuskKanter",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "SelvutRTDDuskKantyr",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "SelvutRTDChalkyKanter",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "SelvutRTDChalkyKantyr",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "Salt-Blinder",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "Salt-Eyebawl",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     }
   ]
 }

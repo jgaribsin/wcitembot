@@ -1,0 +1,45 @@
+{
+  "name": "Dominant Force",
+  "tier": 3,
+  "level": 50,
+  "dropsFromLootChest": false,
+  "skills": [
+    "WOODWORKING",
+    "SCRIBING"
+      ],
+  "sprite": {
+    "id": 263,
+    "damage": 1
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {},
+  "itemOnlyIDs": {
+    "durabilityModifier": -125000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -300,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": -75,
+    "right": -75,
+    "above": -50,
+    "under": -50,
+    "touching": 120,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "RAREJbipTposingStand",
+      "rarity": 3,
+      "rarityOffset": 0
+     }
+  ]
+}

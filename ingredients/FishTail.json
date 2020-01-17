@@ -1,0 +1,53 @@
+{
+  "name": "Fish Tail",
+  "tier": 2,
+  "level": 42,
+  "skills": [
+    "ALCHEMISM"
+      ],
+  "sprite": {
+    "id": 318,
+    "damage": 0
+  },
+  "groups": [
+    "MAGIC",
+    "WATER"
+  ],
+  "identifications": {
+    "MANAREGEN": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "WATERDEFENSE": {
+      "minimum": 8,
+      "maximum": 10
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": 0,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": -120,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "SelvutOceanDefishiousRARE",
+      "rarity": 1,
+      "rarityOffset": 0
+     }
+  ]
+}

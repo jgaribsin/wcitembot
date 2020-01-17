@@ -49,12 +49,12 @@
     {
       "name": "Salt-LonglegGripperFast",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "Salt-Blinder",
       "rarity": 5,
-      "rarityOffset": 0
+      "rarityOffset": 200
     },
     {
       "name": "Salt-RAREBlinders",

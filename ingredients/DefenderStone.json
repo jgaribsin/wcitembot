@@ -1,0 +1,57 @@
+{
+  "name": "Defender's Stone",
+  "tier": 2,
+  "level": 6,
+  "skills": [
+    "WEAPONSMITHING",
+    "WOODWORKING"
+      ],
+  "sprite": {
+    "id": 98,
+    "damage": 3
+  },
+  "groups": [
+    "RANGED"
+  ],
+  "identifications": {
+    "DAMAGEBONUSRAW": {
+      "minimum": 6,
+      "maximum": 8
+    },
+    "SPELLDAMAGERAW": {
+      "minimum": 4,
+      "maximum": 6
+    },
+    "HEALTHBONUS": {
+      "minimum": 5,
+      "maximum": 7
+    }
+  },
+  "itemOnlyIDs": {
+    "durabilityModifier": -60000,
+    "strengthRequirement": 0,
+    "dexterityRequirement": 0,
+    "intelligenceRequirement": 0,
+    "defenceRequirement": 0,
+    "agilityRequirement": 0
+  },
+  "consumableOnlyIDs": {
+    "duration": 0,
+    "charges": 0
+  },
+  "ingredientPositionModifiers": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "under": 0,
+    "touching": 0,
+    "notTouching": 0
+  },
+  "droppedBy": [
+    {
+      "name": "Salt-DefenderofthePlains",
+      "rarity": 1,
+      "rarityOffset": -70
+     }
+  ]
+}
