@@ -9,6 +9,9 @@ var recipes;
 const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
+// sets the guild IDs of the servers the bot is supposed to be in.
+let whitelistedGuilds = ['333532482060156939' /* pancke, personal test server */, '271518744243732481' /* wynncraft staff server */];
+
 let items = require('./items.json');
 let revampItems = require('./elemRevamp.json');
 
@@ -92,10 +95,6 @@ client.on('ready', () => {
   console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
 });
 
-client.guilds.cache.find("324489485482196992").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
-client.guilds.cache.find("476152252130656276").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
-client.guilds.cache.find("516792879004385315").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
-
 client.on('message', message => {
   if (message.content.includes("_ _")) reactNumbers(message);
   if (message.content.includes("_vote2_")) reactTwoLetters(message);
@@ -113,6 +112,11 @@ client.on('message', message => {
   if (message.author.bot) return;
   if (message.channel.type == "dm" && !isBotOwner) return;
 
+  // sends a message and returns if the current server is not whitelisted
+  if (!whitelistedGuilds.includes(message.guild.id)) {
+    message.channel.send(`**Err**: This server is not whitelisted.`);
+    return;
+  }
   // allows to check if the message was sent by the bot owner, Major#1275
   var isBotOwner = message.author.id == '153296359871479809';
 
