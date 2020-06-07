@@ -95,12 +95,14 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
 }
 
 exports.calcTotalBaseHealth = function (level, rarity) {
+  if (level > 100) level = 100;
   var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
 
   return Math.round(exports.calcMultiplier(level, rarity) * baseLevelTotalHealth * 1000) / 1000;
 }
 
 exports.calcHealth = function (level, rarity, itemType) {
+  if (level > 100) level = 100;
   var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
   var typeMultiplier;
 
@@ -144,6 +146,7 @@ exports.calcIngHealth = function (level, tier, job) {
 }
 
 exports.calcRawSpell = function (level, rarity, itemType) {
+  if (level > 100) level = 100;
   var typeMultiplier;
 
   if (itemType === "weapon" || itemType === "armour" || itemType === "armor"
@@ -186,6 +189,7 @@ exports.calcIngRawSpell = function (level, tier, job) {
 }
 
 exports.calcRawMelee = function (level, rarity, itemType, atkSpeed) {
+  if (level > 100) level = 100;
   var typeMultiplier;
   let returnValue = 0;
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots") {
@@ -233,6 +237,7 @@ exports.calcIngRawMelee = function (level, tier, job) {
 }
 
 exports.calcHealthRegen = function (level, rarity, itemType) {
+  if (level > 100) level = 100;
   var typeMultiplier;
 
   if (itemType === "weapon" || itemType === "armour" || itemType === "armor"
@@ -276,6 +281,7 @@ exports.calcIngHealthRegen = function (level, tier, job) {
 }
 
 exports.calcLifeSteal = function (level, rarity, itemType) {
+  if (level > 100) level = 100;
   var typeMultiplier;
 
   if (itemType === "armour" || itemType === "armor" || itemType === "helmet" || itemType === "chestplate" || itemType === "leggings" || itemType === "boots")
@@ -321,6 +327,7 @@ exports.calcIngLifeSteal = function (level, tier, job) {
 }
 // Note: This outputs baseline poison at a multiplier of 1. Higher multipliers may be added depending on an item's reliance on this stat
 exports.calcPoison = function (level, rarity, itemType) {
+  if (level > 100) level = 100;
   var typeMultiplier;
   var basePoison = 0;
   var X = level;
