@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 var fnc = require("./functions");
 module.exports.run = async (client, message, args, botFiles) => {
+
+  message.channel.send(`**Command deprecated.**\n\nYou have 30 days left in your free trial. Contact Major for a premium subscription (please don't actually)`);
+  return;
+  
   // setting inputs to relevant variables
   if (args[0]) var itemType = args[0].toString().toUpperCase();
   else {

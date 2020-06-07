@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   else botResponse += "Please enter an attack speed.\n";
 
   let itemRarities = ['mythic', 'fabled', 'legendary', 'rare', 'set', 'unique', 'normal'];
-  ['m', 'e', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
+  ['m', 'f', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
     if (rarity == x) rarity = itemRarities[i];
   });
 

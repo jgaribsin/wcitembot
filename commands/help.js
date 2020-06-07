@@ -17,24 +17,29 @@ module.exports.run = async (client, message, args, botFiles) => {
     .addField("Raw Melee Baseline", "`Weapons: .rm <level> <tier>  <weaponType> <attackSpeed>`\n`Armours/Accessories/Ingredients: .rm <level> <rarity/tier> [itemType/profession]`", false)
     .addField("Raw Spell Baseline", "`Items: .rs <level> <rarity/tier> [itemType/profession]`\n___", false)
 
-    .addField("Craft", "`Non-Weapons: .craft <itemType> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n`Weapons: .craft <itemType> <attackSpeed> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n\n`Note: You can enter \"blank\" for a blank ingredient in that slot.`", false)
     .addField("Durability & Duration Baseline", "`.dura <level> <tier>`", false)
-    .addField("Ingredient Baseline", "`.inb <ingredientName>`", false)
-    .addField("Ingredient Lookup", "`.in <ingredientName>`", false)
-    .addField("Item Baseline", "`.itb <itemName>`", false)
-    .addField("Item Lookup", "`.it <itemName>`", false)
     .addField("Tier Multiplier", "`.mult <level> <rarity>`", false)
-    .addField("Powder Stats", "`.powder <tier>`", false)
-    .addField("Recipe Stats", "`.recipe <level> <tier> <itemType>`\n___", false)
+    .addField("Powder Stats", "`.powder <tier>`\n___", false)
+    .addField("REVAMP Item Baseline", "`.ritb <itemName>`", false)
+    .addField("REVAMP Item Lookup", "`.rit <itemName>`", false)
 
     // .addBlankField(true)
-
+    
     .addField("Average Base Damage", "`.a <first1> <first2> [second1] [second2] ...`", false)
     .addField("Average Calculation", "`.av <n1> <n2> [n3] [n4] ...`", false)
     .addField("Division Calculation", "`.d <n1> <n2>`", false)
     .addField("Multiplication Calculation", "`.m <n1> <n2> [n3] [n4] ...`", false)
     .addField("Percentage Calculation", "`.% <n1> <n2>`", false)
     .addField("Submission Score Calculation", "`.score <fives> <fours> <threes> <twos> <ones>`\n___", false)
+    
+    .addField("**Deprecated Commands**", "_ _")
+    .addField("Craft", "`Non-Weapons: .craft <itemType> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n`Weapons: .craft <itemType> <attackSpeed> <level. <tier> <ingr1>, [ingr2], ..., [ingr6]`\n\n`Note: You can enter \"blank\" for a blank ingredient in that slot.`", false)
+    .addField("Item Baseline", "`.itb <itemName>`", false)
+    .addField("Item Lookup", "`.it <itemName>`", false)
+    .addField("Ingredient Lookup", "`.in <ingredientName>`", false)
+    .addField("Ingredient Baseline", "`.inb <ingredientName>`", false)
+    .addField("Recipe Stats", "`.recipe <level> <tier> <itemType>`", false)
+    
 
     .setFooter(`made by Major#1005`)
     .setTimestamp()

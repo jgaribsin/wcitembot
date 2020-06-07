@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args, botFiles) => {
   if (args[3]) var atkSpeed = args[3].toString();
   let itemRarities = ['mythic', 'fabled', 'legendary', 'rare', 'set', 'unique', 'normal'];
   let ingRarities = ['0', '1', '2', '3'];
-  ['m', 'e', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
+  ['m', 'f', 'l', 'r', 's', 'u', 'n'].forEach((x, i) => {
     if (rarity == x) rarity = itemRarities[i]
   });
 

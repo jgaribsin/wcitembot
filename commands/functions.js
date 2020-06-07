@@ -50,7 +50,7 @@ exports.calcMultiplier = function (level, rarity) { // Calculate the multiplier 
 exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calculate the base damage of weapons based off level, rarity, type (dagger, bow, spear, wand) and attack speed
   var atkSpeedMultiplier; // Multiplier based off the item's attack speed
   if (level > 100) level = 100;
-
+  
   // Checks user input for the full
   if (atkSpeed === "superslow" || atkSpeed === "ss" || atkSpeed === "SUPER_SLOW")
     atkSpeedMultiplier = 4.0; // 1.785
@@ -95,14 +95,12 @@ exports.calcBaseDam = function (level, rarity, weaponType, atkSpeed) { // Calcul
 }
 
 exports.calcTotalBaseHealth = function (level, rarity) {
-  if (level > 100) level = 100;
   var baseLevelTotalHealth = (baseTotalHealth[Math.ceil(level / 5)] - baseTotalHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseTotalHealth[Math.floor(level / 5)];
 
   return Math.round(exports.calcMultiplier(level, rarity) * baseLevelTotalHealth * 1000) / 1000;
 }
 
 exports.calcHealth = function (level, rarity, itemType) {
-  if (level > 100) level = 100;
   var baseLevelHealth = (baseHealth[Math.ceil(level / 5)] - baseHealth[Math.floor(level / 5)]) * (level % 5) / 5 + baseHealth[Math.floor(level / 5)];
   var typeMultiplier;
 
