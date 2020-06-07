@@ -77,7 +77,7 @@ client.on('ready', () => {
   console.log(`${guild.name} ${guild.id}`)
   if (guild.name != "Wynncraft Staff" || guild.name != "Pancke") {
     console.log(`Successfully left ${guild.name}`)
-    client.guild.leave(guild);
+    //client.guild.leave(guild);
   }
 });
   client.user.setActivity("D:", { type: 'PLAYING' });
