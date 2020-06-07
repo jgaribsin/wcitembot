@@ -73,6 +73,9 @@ fs.readdir("./recipes", (err, files) => {
 
 client.on('ready', () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+  client.guilds.forEach(guild => {
+  console.log(guild.name)
+});
   client.user.setActivity("D:", { type: 'PLAYING' });
   console.log(`Successfully loaded ${items.items.length} items!`);
 
