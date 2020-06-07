@@ -75,10 +75,6 @@ client.on('ready', () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   client.guilds.forEach(guild => {
   console.log(`${guild.name} ${guild.id}`)
-  if (guild.name != "Wynncraft Staff" || guild.name != "Pancke") {
-    console.log(`Successfully left ${guild.name}`)
-    //client.guild.leave(guild);
-  }
 });
   client.user.setActivity("D:", { type: 'PLAYING' });
   console.log(`Successfully loaded ${items.items.length} items!`);
@@ -95,6 +91,10 @@ client.on('ready', () => {
   console.log(`Successfully loaded ${ingredients.ingredients.length - 31} ingredients!`); // subtracting 31 because 30 powders, 1 blank ingredient for the crafter
   console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
 });
+
+guild.cache.find("324489485482196992").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
+guild.cache.find("476152252130656276").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
+guild.cache.find("516792879004385315").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
 
 client.on('message', message => {
   if (message.content.includes("_ _")) reactNumbers(message);
