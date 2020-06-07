@@ -92,9 +92,9 @@ client.on('ready', () => {
   console.log(`Successfully loaded ${recipes.recipes.length} recipes!`);
 });
 
-client.guild.cache.find("324489485482196992").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
-client.guild.cache.find("476152252130656276").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
-client.guild.cache.find("516792879004385315").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
+client.guilds.cache.find("324489485482196992").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
+client.guilds.cache.find("476152252130656276").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
+client.guilds.cache.find("516792879004385315").then(guild => client.guild.leave(guild).catch(err => console.log(err)));
 
 client.on('message', message => {
   if (message.content.includes("_ _")) reactNumbers(message);
