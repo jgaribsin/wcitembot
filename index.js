@@ -74,7 +74,11 @@ fs.readdir("./recipes", (err, files) => {
 client.on('ready', () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   client.guilds.forEach(guild => {
-  console.log(guild.name)
+  console.log(`${guild.name} ${guild.id}`)
+  if (guild.name != "Wynncraft Staff" || guild.name != "Pancke") {
+    console.log(`Successfully left ${guild.name}`)
+    client.guild.leave(guild);
+  }
 });
   client.user.setActivity("D:", { type: 'PLAYING' });
   console.log(`Successfully loaded ${items.items.length} items!`);
