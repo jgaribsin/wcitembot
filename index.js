@@ -10,7 +10,7 @@ const { Client, Attachment } = require('discord.js');
 const { RichEmbed } = require('discord.js');
 
 // sets the guild IDs of the servers the bot is supposed to be in.
-let whitelistedGuilds = ['333532482060156939' /* pancke, personal test server */, '271518744243732481' /* wynncraft staff server */];
+let whitelistedGuilds = ['333532482060156939' /* pancke, personal test server */, '271518744243732481' /* wynncraft staff server */, '476152252130656276' /* wynncraft trial server */];
 
 let items = require('./items.json');
 let revampItems = require('./elemRevamp.json');
